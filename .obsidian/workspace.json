@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "大一下_新/数据结构/笔记/数据结构笔记.md",
+                "file": "本科/编程/数据结构/数据结构笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -153,12 +153,11 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,7 +169,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "bc578a642cc03c80",
+  "active": "c48c84668dd7742f",
   "lastOpenFiles": [
     "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
     "本科/编程/数据结构/数据结构笔记.md",
