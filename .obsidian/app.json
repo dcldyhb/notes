@@ -1,1 +1,5 @@
-{}
+{
+  "readableLineLength": true,
+  "foldHeading": true,
+  "showInlineTitle": false
+}
