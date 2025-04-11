@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "本科/编程/数据结构/数据结构笔记.md",
+                "file": "本科/物理/大学物理3笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "数据结构笔记"
+              "title": "大学物理3笔记"
             }
           }
         ]
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "本科/编程/数据结构/数据结构笔记.md",
+                "file": "本科/物理/大学物理3笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "数据结构笔记 的大纲"
+              "title": "大学物理3笔记 的大纲"
             }
           }
         ],
@@ -172,6 +172,7 @@
   },
   "active": "ec212e915a711bf8",
   "lastOpenFiles": [
+    "本科/编程/数据结构/数据结构笔记.md",
     "本科/通识/汉字文化/玺印文与瓦当文.md",
     "本科/通识/汉字文化/image.png",
     "本科/通识/汉字文化/玺印文与.md",
@@ -188,7 +189,6 @@
     "本科/通识/汉字文化/卜辞形式.md",
     "本科/数学/数理方法笔记.md",
     "本科/数学/高数2笔记.md",
-    "本科/编程/数据结构/数据结构笔记.md",
     "未命名.canvas",
     "本科/编程/数据结构/数据结构笔记.html",
     "本科/编程/数据结构/image.png",
