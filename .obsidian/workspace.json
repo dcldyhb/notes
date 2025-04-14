@@ -11,10 +11,14 @@
             "id": "70ac4c4571365d2f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "本科/编程/数据结构/数据结构笔记.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "数据结构笔记"
             }
           }
         ]
@@ -138,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "本科/物理/大学物理3笔记.md",
+                "file": "本科/编程/数据结构/数据结构笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大学物理3笔记 的大纲"
+              "title": "数据结构笔记 的大纲"
             }
           },
           {
@@ -158,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -175,7 +179,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3044d0560b9a1e76",
+  "active": "c48c84668dd7742f",
   "lastOpenFiles": [
     "本科/编程/数据结构/数据结构笔记.md",
     "本科/通识/汉字文化/玺印文与瓦当文.md",
