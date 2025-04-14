@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,7 +179,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "70ac4c4571365d2f",
+  "active": "c48c84668dd7742f",
   "lastOpenFiles": [
     "本科/编程/数据结构/数据结构笔记.md",
     "本科/通识/汉字文化/玺印文与瓦当文.md",
