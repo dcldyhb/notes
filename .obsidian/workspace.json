@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5bc3f29c6565bf6d",
+        "id": "73b61ad72b2c6b03",
         "type": "tabs",
         "children": [
           {
-            "id": "ec212e915a711bf8",
+            "id": "70ac4c4571365d2f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "本科/物理/大学物理3笔记.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "大学物理3笔记"
+              "title": "新标签页"
             }
           }
         ]
