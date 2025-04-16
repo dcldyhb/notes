@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "13d012cba674f72e",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "大一下_新/数据结构/笔记/数据结构笔记.md",
+                "file": "本科/编程/数据结构/数据结构笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,11 +163,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,7 +181,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3044d0560b9a1e76",
+  "active": "70ac4c4571365d2f",
   "lastOpenFiles": [
     "本科/编程/数据结构/数据结构笔记.md",
     "本科/通识/汉字文化/玺印文与瓦当文.md",
