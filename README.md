@@ -1,6 +1,8 @@
 # notes
 本科笔记
 
+不赖![汤圆](https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504171443319.png){:heignt="2%" width="2%"}![汤圆](https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504171443319.png){:heignt="2%" width="2%"}
+
 ## 本科
 
 - 编程
