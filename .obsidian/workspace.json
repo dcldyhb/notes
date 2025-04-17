@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
+                "file": "本科/通识/汉字文化/汉唐气象波磔开——汉隶唐楷与轴心文明.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "汉唐气象波磔开——汉隶唐楷与轴心文明"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "本科/通识/汉字文化/汉唐气象波磔开——汉隶唐楷与轴心文明.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "汉唐气象波磔开——汉隶唐楷与轴心文明 的大纲"
             }
           },
           {
@@ -181,6 +181,7 @@
   },
   "active": "70ac4c4571365d2f",
   "lastOpenFiles": [
+    "README.md",
     "本科/编程/数据结构/数据结构笔记.md",
     "本科/通识/汉字文化/玺印文与瓦当文.md",
     "本科/通识/汉字文化/image.png",
@@ -203,7 +204,6 @@
     "本科/编程/数据结构/image.png",
     "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
     "本科/编程/数据结构/中缀计算式转换为后缀计算式 1.md",
-    "README.md",
     "大一下_新/高等数学2/笔记/第八章 多元函数微分学/偏导数、全微分.md",
     "大一下_新/数据结构/笔记/中缀计算式转换为后缀计算式.md",
     "大一下_新/数据结构/笔记/数据结构笔记.md",
