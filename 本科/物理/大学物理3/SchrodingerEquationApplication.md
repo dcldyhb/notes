@@ -104,4 +104,14 @@ $$
 > 1. $E_0 = \frac{1}{2}\hbar\omega > 0$ . There is no absolute rest.
 > 2. $\Delta E = \hbar\omega$. Similar to photons. There is the basisi for Plank's hypothesis on energy quanta.
 
+## Schrodinger equation for hydrogen atom
 
+central force field:
+
+$$
+V(r) = -\frac{Ze^2}{4\pi\epsilon_0r} = -\frac{e^2}{4\pi\epsilon_0r}
+$$
+
+$$
+\frac{\mathrm{d}\vec{L}}{\mathrm{t}} = \vec{r} \times \vec{F} = 0
+$$
