@@ -91,10 +91,9 @@ $$
 \begin{gathered}
     &-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} \psi(x)+ \frac{1}{2}m\omega^2x^2\psi(x) = E\psi(x) \\
     \Rightarrow & \left\{
-    \begin{array}{ll}
-        \frac{d^2\psi(x)}{dx^2} + \frac{2m}{\hbar^2}\left(E - \frac{1}{2}m\omega^2x^2\right)\psi(x) = 0 & \\
-        \Rightarrow & \frac{d^2\psi(x)}{dx^2} + k^2\left(1 - \frac{x^2}{a^2}\right)\psi(x) = 0
-    \end{array}
-    \right. \\
+\begin{array}{ll}
+   E_n
+\end{array}
+\right.
 \end{gathered}
 $$
