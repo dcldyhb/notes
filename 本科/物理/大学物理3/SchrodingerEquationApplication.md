@@ -136,4 +136,6 @@ $$
 \left[-\frac{\hbar^2}{2m}\nabla^2+U(\vec{r})\right]\Psi(\vec{r})=E\Psi(\vec{r})
 $$
 
-The Coulamb potential has spherical symmetry, so we can use spherical coordinates.
+The Coulamb potential has spherical symmetry, so we can use spherical coordinates $(r , \theta , \phi)$.
+
+
