@@ -118,4 +118,8 @@ $$
 
 $\vec{L}$ is constant vector.
 
+Schrödinger equation:
 
+$$
+\left[-\frac{\hbar^2}{2m}\nabla^2+U(\vec{r})\right]\Psi(\vec{r})=E\Psi(\vec{r})
+$$
