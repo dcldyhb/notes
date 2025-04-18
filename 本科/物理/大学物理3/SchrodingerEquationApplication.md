@@ -138,4 +138,14 @@ $$
 
 The Coulamb potential has spherical symmetry, so we can use spherical coordinates $(r , \theta , \phi)$.
 
+set
 
+$$
+\left\{
+\begin{array}{ll}
+    x = r\sin{\theta}\cos{\phi} \\
+    y = r\sin{\theta}\sin{\phi} \\
+    z = r\cos{\theta}
+\end{array}
+\right.
+$$
