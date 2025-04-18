@@ -100,5 +100,8 @@ $$
 $$
 
 > **Notes**
+> 
 > 1. $E_0 = \frac{1}{2}\hbar\omega > 0$ . There is no absolute rest.
-> $\Delta E = \hbar\omega$. Similar to the energy level of atom. There is the basisi for Plank's hypothesis on energy quanta.
+> 2. $\Delta E = \hbar\omega$. Similar to photons. There is the basisi for Plank's hypothesis on energy quanta.
+
+
