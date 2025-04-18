@@ -73,3 +73,5 @@ P = \left\vert \frac{\Psi(x_2)}{\Psi(x_1)} \right\vert^2 = e^{-2kD} = e^{-\frac{
 $$
 
 P deacays exponentially with the width of the barrier $D$. **Very sensitive**.
+
+With this effect, we developped STM.
