@@ -78,4 +78,18 @@ With this effect, we developped STM.
 
 ## 1-D harmornic oscillator
 
+$$
+\begin{gathered}
+    F(x) = -kx \\
+    V(x) = \frac{1}{2}kx^2 = \frac{1}{2}m\omega^2x^2 \quad (\omega = \sqrt{\frac{k}{m}}) 
+\end{gathered}
+$$
 
+Schrödinger equation:
+
+$$
+\begin{gathered}
+    -\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2} + \frac{1}{2}m\omega^2x^2\psi(x) = E\psi(x) \\
+    \Rightarrow \frac{d^2\psi(x)}{dx^2} = \frac{2m}{\hbar^2}(E - \frac{1}{2}m\omega^2x^2)\psi(x)
+\end{gathered}
+$$
