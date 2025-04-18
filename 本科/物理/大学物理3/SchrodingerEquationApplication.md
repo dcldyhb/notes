@@ -1,6 +1,6 @@
 # Schrodinger Equation Application
 
-## l-D finite
+## 1-D finite
 
 - potential well
 
@@ -75,3 +75,7 @@ $$
 P deacays exponentially with the width of the barrier $D$. **Very sensitive**.
 
 With this effect, we developped STM.
+
+## 1-D harmornic oscillator
+
+
