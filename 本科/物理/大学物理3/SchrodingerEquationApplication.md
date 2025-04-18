@@ -90,10 +90,10 @@ Schrödinger equation:
 $$
 \begin{gathered}
     &-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} \psi(x)+ \frac{1}{2}m\omega^2x^2\psi(x) = E\psi(x) \\
-    \Rightarrow  &\left\{
+    &\Rightarrow  \left\{
 \begin{array}{ll}
    E_n= (n+\frac{1}{2})\hbar\omega\\
-   \Psi_n(x) = \left(\frac{m\omega}{\pi\hbar}\right)^\frac{1}{4}(2^n\cdotn!)
+   \Psi_n(x) = \left(\frac{m\omega}{\pi\hbar}\right)^\frac{1}{4}(2^n\cdot n!)e^{-\frac{m\omega}{2\hbar}x^2}H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right) \\
 \end{array}
 \right.
 \end{gathered}
