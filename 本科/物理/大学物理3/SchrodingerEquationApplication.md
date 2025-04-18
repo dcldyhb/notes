@@ -116,10 +116,12 @@ $$
 \frac{\mathrm{d}\vec{L}}{\mathrm{d}t} = \vec{r} \times \vec{F} = \vec{0}
 $$
 
-$\vec{L}$ is constant vector.
+$\vec{L}$ is a constant vector.
 
 Schrödinger equation:
 
 $$
 \left[-\frac{\hbar^2}{2m}\nabla^2+U(\vec{r})\right]\Psi(\vec{r})=E\Psi(\vec{r})
 $$
+
+The Coulamb potential has spherical symmetry, so we can use spherical coordinates.
