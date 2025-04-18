@@ -1,0 +1,68 @@
+# Schrodinger Equation Application
+
+## l-D finite
+
+- potential well
+
+$$
+\begin{aligned}
+    V(x)=
+    \begin{cases}
+        0, & |x|<\frac{d}{2} \\
+        V_0, & |x|>\frac{d}{2}
+    \end{cases}
+\end{aligned}
+$$
+
+- outside well
+
+$$
+\begin{gathered}
+-\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2}+V_0\psi(x)=E\psi(x)\\
+\Rightarrow \frac{d^2\psi(x)}{dx^2}=\frac{2m}{\hbar^2}(V_0-E)\psi(x)\\
+\end{gathered}
+$$
+
+The solution should be exponential equation:
+
+$$
+\Psi (x) = 
+\left\{
+\begin{array}{ll}
+    A_{+}e^{k' x}, & x\leq-\frac{d}{2} \\
+    A_{-}e^{k' x}, & x\geq\frac{d}{2}
+\end{array}
+\right.
+$$
+
+## Tunel effect
+
+![Tunel effect](https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504181642705.png)
+
+$$
+V(x)=
+\left\{
+\begin{array}{ll}
+    0, & x < x_1 \quad \text{or} \quad x > x_2 \\
+    V_0, & x_1 < x < x_2
+\end{array}
+\right.
+$$
+
+Classically , if $E<V_0$, the partide will be totally reflected back.
+However , **quantum mechanics** will give a different result.
+
+
+$$
+\frac{d^2\psi(x)}{dx^2}=\frac{2m}{\hbar^2}(V_0-E)\psi(x)
+$$
+
+general solution is:
+
+$$
+\Psi (x) = Ae^{-k x} + Be^{k x}
+$$
+
+For region Ⅰand Ⅲ, $V_0 - E < 0$, $k$ is imaginary, so $\Psi(x)$ is a prapagatry wave.
+For region Ⅱ, $V_0 - E > 0$, $k$ is real, so $\Psi(x)$ is a exponential decay ray.
+
