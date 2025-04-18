@@ -113,5 +113,9 @@ V(r) = -\frac{Ze^2}{4\pi\epsilon_0r} = -\frac{e^2}{4\pi\epsilon_0r}
 $$
 
 $$
-\frac{\mathrm{d}\vec{L}}{\mathrm{t}} = \vec{r} \times \vec{F} = 0
+\frac{\mathrm{d}\vec{L}}{\mathrm{d}t} = \vec{r} \times \vec{F} = \vec{0}
 $$
+
+$\vec{L}$ is constant vector.
+
+
