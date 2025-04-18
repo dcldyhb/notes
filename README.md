@@ -26,4 +26,4 @@
   - [大学物理2笔记](本科/物理/大学物理2笔记.md)
   - 大学物理3
     - [大学物理3笔记](本科/物理/大学物理3/大学物理3笔记.md)
-    - [Schrodinger Equation Application](本科/物理/大学物理3/Schrodinger Equation Application.md)
+    - [Schrodinger Equation Application](本科/物理/大学物理3/SchrodingerEquationApplication.md)
