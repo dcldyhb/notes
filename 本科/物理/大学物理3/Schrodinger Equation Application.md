@@ -66,3 +66,9 @@ $$
 For region Ⅰand Ⅲ, $V_0 - E < 0$, $k$ is imaginary, so $\Psi(x)$ is a prapagatory wave.
 For region Ⅱ, $V_0 - E > 0$, $k$ is real, so $\Psi(x)$ is a exponential decay ray.
 
+### probability of tunnel effect
+
+$$
+P = \vert \Psi(x_2) \vert^2 = \frac{1}{2} \left( \frac{V_0 - E}{V_0} \right) e^{-2k(x_2-x_1)}
+$$
+
