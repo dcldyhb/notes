@@ -69,6 +69,6 @@ For region Ⅱ, $V_0 - E > 0$, $k$ is real, so $\Psi(x)$ is a exponential decay 
 ### probability of tunnel effect
 
 $$
-P = \vert \Psi(x_2) \vert^2 = \frac{1}{2} \left( \frac{V_0 - E}{V_0} \right) e^{-2k(x_2-x_1)}
+P = \left\vert \frac{\Psi(x_2)}{\Psi(x_1)} \right\vert^2 = e^{-2kD} = e^{-\frac{2}{\hbar}}
 $$
 
