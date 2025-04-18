@@ -63,6 +63,6 @@ $$
 \Psi (x) = Ae^{-k x} + Be^{k x}
 $$
 
-For region Ⅰand Ⅲ, $V_0 - E < 0$, $k$ is imaginary, so $\Psi(x)$ is a prapagatry wave.
+For region Ⅰand Ⅲ, $V_0 - E < 0$, $k$ is imaginary, so $\Psi(x)$ is a prapagatory wave.
 For region Ⅱ, $V_0 - E > 0$, $k$ is real, so $\Psi(x)$ is a exponential decay ray.
 
