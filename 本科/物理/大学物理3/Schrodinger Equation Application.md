@@ -69,6 +69,7 @@ For region Ⅱ, $V_0 - E > 0$, $k$ is real, so $\Psi(x)$ is a exponential decay 
 ### probability of tunnel effect
 
 $$
-P = \left\vert \frac{\Psi(x_2)}{\Psi(x_1)} \right\vert^2 = e^{-2kD} = e^{-\frac{2}{\hbar}}
+P = \left\vert \frac{\Psi(x_2)}{\Psi(x_1)} \right\vert^2 = e^{-2kD} = e^{-\frac{2}{\hbar}\sqrt{2m(V_0-E)}D}
 $$
 
+P deacays exponentially with the width of the barrier $D$. **Very sensitive**.
