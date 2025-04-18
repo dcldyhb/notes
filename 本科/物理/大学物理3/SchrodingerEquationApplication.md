@@ -90,9 +90,9 @@ Schrödinger equation:
 $$
 \begin{gathered}
     &-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} \psi(x)+ \frac{1}{2}m\omega^2x^2\psi(x) = E\psi(x) \\
-    \Rightarrow & \left\{
+    \Rightarrow  &\left\{
 \begin{array}{ll}
-   E_n
+   E_n= (n+\frac{1}{2})\hbar\omega, & n=0,1,2,\cdots \\
 \end{array}
 \right.
 \end{gathered}
