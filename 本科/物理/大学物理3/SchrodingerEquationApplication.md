@@ -98,3 +98,5 @@ $$
 \right.
 \end{gathered}
 $$
+
+>[!notes]
