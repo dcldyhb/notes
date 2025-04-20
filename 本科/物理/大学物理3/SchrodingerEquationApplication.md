@@ -155,26 +155,3 @@ $$
 $$
 \nabla^2 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} = \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r}\right) + \frac{1}{r^2\sin{\theta}}\frac{\partial}{\partial \theta}\left(\sin{\theta}\frac{\partial}{\partial \theta}\right) + \frac{1}{r^2\sin^2{\theta}}\frac{\partial^2}{\partial \phi^2} \equiv \hat{L}^2
 $$
-
-自由粒子能量为 $E$，在台阶势垒
-
-$$
-V(x)=
-\left\{
-\begin{array}{ll}
-V_0, & x>0\\
-0, & x\leq 0
-\end{array}
-\right.
-$$
-
-其中  $V_0 > 0$，在 $x =0$ 处反射，计算当粒子能量 $E>V_0$ 和 $0<E<V_0$ 这两种情况下的反射系数和透射系数
-
-设粒子对势垒的穿透系数 $T \approx e^{-\frac{2a}{\hbar}\sqrt{2m(V_0-E)}}$ ，其中 $a = 1nm$ ，$V_0-E = 1eV$ ，求电子的穿透系数
-
-解:
-
-$$
-T \approx e^{-\frac{2a}{\hbar}\sqrt{2m(V_0-E)}} = e^{-\frac{2a}{\hbar}\sqrt{2m(1eV)}} = e^{-\frac{2 \times 10^{-9}}{1.055 \times 10^{-34}}\sqrt{2 \times 9.11 \times 10^{-31} \times 1.6 \times 10^{-19}}} = e^{-0.0001} \approx 0.9999
-$$
-
