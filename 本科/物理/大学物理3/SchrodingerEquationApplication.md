@@ -155,3 +155,17 @@ $$
 $$
 \nabla^2 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} = \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r}\right) + \frac{1}{r^2\sin{\theta}}\frac{\partial}{\partial \theta}\left(\sin{\theta}\frac{\partial}{\partial \theta}\right) + \frac{1}{r^2\sin^2{\theta}}\frac{\partial^2}{\partial \phi^2} \equiv \hat{L}^2
 $$
+
+自由粒子能量为 $E$，在台阶势垒
+
+$$
+V(x)=
+\left\{
+\begin{array}{LL}
+V_0, & x>0\\
+0, & x\leq 0
+\end{array}
+\right.
+$$
+
+其中  $V_0 > 0$，在 $x =0$ 处反射，计算当粒子能量 $E>V_0$ 和 $0<E<V_0$ 这两种情况下的反射系数和透射系数
