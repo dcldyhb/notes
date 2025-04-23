@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "数据结构笔记"
             }
+          },
+          {
+            "id": "6d4576cb93428251",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,7 +194,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "70ac4c4571365d2f",
+  "active": "6d4576cb93428251",
   "lastOpenFiles": [
     "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
     "本科/通识/汉字文化/小篆.md",
