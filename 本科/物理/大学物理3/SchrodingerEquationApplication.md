@@ -12,16 +12,14 @@
 
 # Schrodinger Equation Application
 
-## 1-D finite square  well
+## 1-D finite square well
 
 $$
 V(x) = 
-\left\{
-\begin{array}{ll}
+\begin{cases}
     0 , & |x|<\frac{d}{2} \\
     V_0 , & |x|>\frac{d}{2}
-\end{array}
-\right.
+\end{cases}
 $$
 
 - inside the well
@@ -33,22 +31,55 @@ $$
 set $k^2 = \frac{2mE}{\hbar^2}$
 
 $$
-\begin{aligned}
-&\frac{\mathrm{d}^2\Psi}{\mathrm{d}x^2} &&= -k^2\Psi\\
-&\Psi &&= A\sin(kx) + B\cos(kx)\\
-\end{aligned}
+\begin{cases}
+\frac{\mathrm{d}^2\Psi}{\mathrm{d}x^2} = -k^2\Psi\\
+\Psi  = A\sin(kx) + B\cos(kx)\\
+\end{cases}
 $$
 
 - potential well
 
 $$
-\begin{aligned}
-    V(x)=
-    \begin{cases}
-        0, & |x|<\frac{d}{2} \\
-        V_0, & |x|>\frac{d}{2}
-    \end{cases}
-\end{aligned}
+V(x)=
+\begin{cases}
+    0, & |x|<d \\
+    V_0, & |x|>d
+\end{cases}
+$$
+
+$$
+\Psi = A \sin(kx+\delta)
+$$
+
+from the boundary condition, we have:
+
+$$
+\begin{cases}
+    \Psi(0) = 0 \\
+    \Psi(d) = 0
+\end{cases}
+$$
+
+$$
+\begin{cases}
+    \delta = 0\\
+    k = \frac{n\pi}{d} 
+\end{cases}
+\Rightarrow
+\begin{cases}
+    \Psi_n(x) = A\sin(\frac{n\pi}{d}x)\\
+    E_n = \frac{n^2h^2}{8m^2d^2}
+\end{cases}
+$$
+
+$\Psi$ should be normalized, so
+
+$$
+\int_{-\infty}^{+\infty}\vert \Psi_n(x)\vert^2 \mathrm{d}x = A^2 \frac{d}{2} = 1 \Rightarrow A = \sqrt{\frac{2}{d}}
+$$
+
+$$
+\Psi_n(x) = \sqrt{\frac{2}{d}}\sin(\frac{n\pi}{d}x)
 $$
 
 - outside well
@@ -64,12 +95,10 @@ The solution should be exponential equation:
 
 $$
 \Psi (x) = 
-\left\{
-\begin{array}{ll}
+\begin{cases}
     A_{+}e^{k' x}, & x\leq-\frac{d}{2} \\
     A_{-}e^{k' x}, & x\geq\frac{d}{2}
-\end{array}
-\right.
+\end{cases}
 $$
 
 ## Tunel effect
@@ -78,12 +107,10 @@ $$
 
 $$
 V(x)=
-\left\{
-\begin{array}{ll}
+\begin{cases}
     0, & x < x_1 \quad \text{or} \quad x > x_2 \\
     V_0, & x_1 < x < x_2
-\end{array}
-\right.
+\end{cases}
 $$
 
 Classically , if $E<V_0$, the partide will be totally reflected back.
@@ -129,12 +156,11 @@ Schrödinger equation:
 $$
 \begin{gathered}
     &-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} \psi(x)+ \frac{1}{2}m\omega^2x^2\psi(x) = E\psi(x) \\
-    &\Rightarrow  \left\{
-\begin{array}{ll}
+    &\Rightarrow
+\begin{cases}
    E_n= (n+\frac{1}{2})\hbar\omega\\
    \Psi_n(x) = \left(\frac{m\omega}{\pi\hbar}\right)^\frac{1}{4}(2^n\cdot n!)e^{-\frac{m\omega}{2\hbar}x^2}H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right) \\
-\end{array}
-\right.
+\end{cases}
 \end{gathered}
 $$
 
@@ -168,13 +194,11 @@ The Coulamb potential has spherical symmetry, so we can use spherical coordinate
 set
 
 $$
-\left\{
-\begin{array}{ll}
+\begin{cases}
     x = r\sin{\theta}\cos{\phi} \\
     y = r\sin{\theta}\sin{\phi} \\
     z = r\cos{\theta}
-\end{array}
-\right.
+\end{cases}
 $$
 
 $$
