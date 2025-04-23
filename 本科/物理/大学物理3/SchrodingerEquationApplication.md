@@ -12,7 +12,32 @@
 
 # Schrodinger Equation Application
 
-## 1-D finite
+## 1-D finite square  well
+
+$$
+V(x) = 
+\left\{
+\begin{array}{ll}
+    0 , & |x|<\frac{d}{2} \\
+    V_0 , & |x|>\frac{d}{2}
+\end{array}
+\right.
+$$
+
+- inside the well
+
+$$
+-\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2} = E\psi(x)
+$$
+
+set $k^2 = \frac{2mE}{\hbar^2}$
+
+$$
+\begin{aligned}
+&\frac{\mathrm{d}^2\Psi}{\mathrm{d}x^2} &&= -k^2\Psi\\
+&\Psi &&= A\sin(kx) + B\cos(kx)\\
+\end{aligned}
+$$
 
 - potential well
 
