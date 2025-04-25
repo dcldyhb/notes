@@ -204,3 +204,39 @@ $$
 $$
 \nabla^2 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} = \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r}\right) + \frac{1}{r^2\sin{\theta}}\frac{\partial}{\partial \theta}\left(\sin{\theta}\frac{\partial}{\partial \theta}\right) + \frac{1}{r^2\sin^2{\theta}}\frac{\partial^2}{\partial \phi^2} \equiv \hat{L}^2
 $$
+
+$$
+-\frac{\hbar^2}{2m}\left[\frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r}\right) \Psi(\vec{r})+ \frac{1}{r^2\sin{\theta}}\frac{\partial}{\partial \theta}\left(\sin{\theta}\frac{\partial}{\partial \theta}\right) \Psi(\vec{r})+ \frac{1}{r^2\sin^2{\theta}}\frac{\partial^2}{\partial \phi^2}\Psi(\vec{r})\right] - \frac{Ze^2}{4\pi\epsilon_0r}\Psi(\vec{r}) = E\Psi(\vec{r})
+$$
+
+set $\Psi(\vec{r}) = R(r)Y(\theta , \phi)$
+
+$$
+\frac{1}{\hbar^2}\hat{L}^2Y = \frac{1}{R}\frac{\mathrm{d}}{\mathrm{d}r}\left(r^2\frac{\mathrm{d}}{\mathrm{d}r}R\right)+\frac{2mr^2}{\hbar^2}(E-V(r)) = const.
+$$
+
+The solution $\displaystyle \Psi_{n,m,l}(r , \theta , \phi) = R_n(r)Y_{l,m}(\theta , \phi)$ is function of $\hat{H},\hat{L^2},\hat{L_z}$.
+
+$$
+\begin{cases}
+    \hat{H}\Psi_{n,m,l} = \frac{E}{n^2}\Psi_{n,m,l} \\
+    \hat{L^2}\Psi_{n,m,l} = l(l+1)\hbar^2\Psi_{n,m,l} \\
+    \hat{L_z}\Psi_{n,m,l} = m\hbar\Psi_{n,m,l}
+\end{cases}
+$$
+
+- **n**
+  - The peinciple quantum number describing the size of the orbit as well as the energy of the orbit.
+  - $\Psi_{n,0}$ has $(n-1)$ nodes
+  - $n = 1,2,3,\cdots$
+
+![pic](https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504251621261.png)
+
+- **l**
+  - The angular momentum quantum number describing the shape of the orbit.
+  - $l = 0,1,2,\cdots,n-1$
+- **m**
+  - The magnetic quantum number describing the orientation of the orbit.
+  - $m = 0 ,\pm 1 , \pm 2 , \cdots , \pm l$
+
+[goback](/README.md)
