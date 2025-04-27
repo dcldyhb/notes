@@ -143,12 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "本科/物理/大学物理3/大学物理3笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "大学物理3笔记 的大纲"
             }
           },
           {
@@ -162,12 +163,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 398.5,
-    "collapsed": true
+    "width": 398.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,6 +182,7 @@
   },
   "active": "39667073bf111ce3",
   "lastOpenFiles": [
+    "本科/物理/大学物理3/image.png",
     "本科/编程/数据结构/数据结构笔记.md",
     "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
     "本科/通识/汉字文化/汉唐气象波磔开——汉隶唐楷与轴心文明.md",
