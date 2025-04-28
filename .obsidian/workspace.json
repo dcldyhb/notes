@@ -8,6 +8,26 @@
         "type": "tabs",
         "children": [
           {
+            "id": "e0d5c84d9cbb3dc9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "本科/物理/大学物理3/大学物理3笔记.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "大学物理3笔记"
+            }
+          }
+        ]
+      },
+      {
+        "id": "1f7bc668bb4703a3",
+        "type": "tabs",
+        "children": [
+          {
             "id": "39667073bf111ce3",
             "type": "leaf",
             "state": {
@@ -181,7 +201,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "39667073bf111ce3",
+  "active": "e0d5c84d9cbb3dc9",
   "lastOpenFiles": [
     "本科/物理/大学物理3/image.png",
     "本科/编程/数据结构/数据结构笔记.md",
