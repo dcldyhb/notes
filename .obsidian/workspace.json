@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "本科/物理/大学物理1笔记.md",
+                "file": "本科/物理/大学物理3/大学物理3笔记.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "大学物理1笔记"
+              "title": "大学物理3笔记"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "13d012cba674f72e",
@@ -143,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "本科/物理/大学物理1笔记.md",
+                "file": "本科/物理/大学物理3/大学物理3笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大学物理1笔记 的大纲"
+              "title": "大学物理3笔记 的大纲"
             }
           },
           {
@@ -183,6 +182,7 @@
   },
   "active": "df890fa53783790b",
   "lastOpenFiles": [
+    "本科/物理/大学物理1笔记.md",
     "本科/物理/大学物理2笔记.md",
     "本科/数学/高数2笔记.md",
     "本科/通识/汉字文化/汉字与政治文明.md",
@@ -200,7 +200,6 @@
     "本科/物理/大学物理3/image.png",
     "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
     "本科/通识/汉字文化/image.png",
-    "本科/物理/大学物理1笔记.md",
     "本科/通识/汉字文化/小篆.md",
     "本科/物理/大学物理3/SchrodingerEquationApplication.md",
     "README.md",
