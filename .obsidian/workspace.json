@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "本科/物理/大学物理1笔记.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "13d012cba674f72e",
