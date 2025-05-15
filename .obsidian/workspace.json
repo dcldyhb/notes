@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "本科/数学/高数2笔记.md",
+                "file": "本科/通识/汉字文化/避讳与姓名文化.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "高数2笔记"
+              "title": "避讳与姓名文化"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "13d012cba674f72e",
@@ -182,8 +183,8 @@
   },
   "active": "df890fa53783790b",
   "lastOpenFiles": [
-    "本科/数学/数理方法笔记.md",
     "本科/数学/高数2笔记.md",
+    "本科/数学/数理方法笔记.md",
     "本科/物理/大学物理3/大学物理3笔记.md",
     "本科/物理/大学物理1笔记.md",
     "本科/物理/大学物理2笔记.md",
