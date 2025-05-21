@@ -1,5 +1,5 @@
 {
-  "readableLineLength": false,
+  "readableLineLength": true,
   "foldHeading": true,
   "showInlineTitle": false,
   "showLineNumber": true,
@@ -9,5 +9,6 @@
     "landscape": false,
     "margin": "2",
     "downscalePercent": 100
-  }
+  },
+  "strictLineBreaks": true
 }
