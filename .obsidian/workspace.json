@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "本科/物理/大学物理3/大学物理3笔记.md",
+                "file": "本科/物理/大学物理1笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大学物理3笔记 的大纲"
+              "title": "大学物理1笔记 的大纲"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
