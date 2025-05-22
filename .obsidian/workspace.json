@@ -137,6 +137,16 @@
             }
           },
           {
+            "id": "3044d0560b9a1e76",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
             "id": "c48c84668dd7742f",
             "type": "leaf",
             "state": {
@@ -149,16 +159,6 @@
               },
               "icon": "lucide-list",
               "title": "数据结构笔记 的大纲"
-            }
-          },
-          {
-            "id": "3044d0560b9a1e76",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
             }
           }
         ],
@@ -179,7 +179,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "15ffd7cfb7844ae8",
+  "active": "c48c84668dd7742f",
   "lastOpenFiles": [
     "本科/未命名.md",
     "未命名.md",
