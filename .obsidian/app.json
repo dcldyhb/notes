@@ -11,5 +11,6 @@
     "downscalePercent": 100
   },
   "strictLineBreaks": false,
-  "defaultViewMode": "preview"
+  "defaultViewMode": "preview",
+  "focusNewTab": false
 }
