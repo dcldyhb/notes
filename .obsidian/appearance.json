@@ -3,5 +3,6 @@
   "baseFontSizeAction": true,
   "baseFontSize": 16,
   "accentColor": "#39c5bb",
-  "theme": "system"
+  "theme": "system",
+  "nativeMenus": true
 }
