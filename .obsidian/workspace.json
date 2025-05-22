@@ -101,7 +101,7 @@
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
               "title": "数据结构笔记 的反向链接列表"
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "本科/物理/大学物理1笔记.md",
+                "file": "本科/编程/数据结构/数据结构笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大学物理1笔记 的大纲"
+              "title": "数据结构笔记 的大纲"
             }
           },
           {
@@ -157,8 +157,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5,
-    "collapsed": true
+    "width": 398.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,7 +179,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1421030a3f6ad83c",
+  "active": "15ffd7cfb7844ae8",
   "lastOpenFiles": [
     "本科/未命名.md",
     "未命名.md",
