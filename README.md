@@ -16,4 +16,3 @@
   - 大学物理3
     - [大学物理3笔记](本科/物理/大学物理3/大学物理3笔记.md)
     - [Schrodinger Equation Application](本科/物理/大学物理3/SchrodingerEquationApplication.md)
-- [未命名](本科/未命名.md)
