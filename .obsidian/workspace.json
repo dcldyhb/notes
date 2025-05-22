@@ -19,7 +19,52 @@
               },
               "icon": "lucide-file",
               "title": "数据结构笔记"
-            }
+            },
+            "group": "aee6dbb091541c6c"
+          }
+        ]
+      },
+      {
+        "id": "da2d9be7b824f1ef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b7aa739a9c64813",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "本科/编程/数据结构/数据结构笔记.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "数据结构笔记 的关系图"
+            },
+            "group": "aee6dbb091541c6c"
           }
         ]
       }
@@ -180,7 +225,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "15ffd7cfb7844ae8",
+  "active": "5b7aa739a9c64813",
   "lastOpenFiles": [
     "README.md",
     "本科/通识/汉字文化/汉字与民族审美精神.md",
