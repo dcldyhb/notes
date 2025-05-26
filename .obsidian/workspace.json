@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "本科/物理/大学物理3/大学物理3笔记.md",
+                "file": "本科/数学/高数2笔记.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "大学物理3笔记"
+              "title": "高数2笔记"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "本科/物理/大学物理3/大学物理3笔记.md",
+                "file": "本科/数学/高数2笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大学物理3笔记 的大纲"
+              "title": "高数2笔记 的大纲"
             }
           }
         ],
@@ -179,11 +179,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c48c84668dd7742f",
+  "active": "15ffd7cfb7844ae8",
   "lastOpenFiles": [
+    "本科/物理/大学物理3/大学物理3笔记.md",
     "本科/物理/大学物理3/SchrodingerEquationApplication.md",
     "本科/物理/大学物理2笔记.md",
-    "本科/物理/大学物理3/大学物理3笔记.md",
     "README.md",
     "本科/编程/数据结构/数据结构笔记.md",
     "本科/未命名.md",
