@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "本科/编程/数据结构/数据结构笔记.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "数据结构笔记"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "本科/编程/数据结构/数据结构笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "数据结构笔记 的大纲"
             }
           }
         ],
@@ -181,13 +181,13 @@
   },
   "active": "15ffd7cfb7844ae8",
   "lastOpenFiles": [
+    "README.md",
     "本科/编程/数据结构/数据结构笔记.md",
     "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
     "本科/数学/高数2笔记.md",
     "本科/物理/大学物理3/大学物理3笔记.md",
     "本科/物理/大学物理3/SchrodingerEquationApplication.md",
     "本科/物理/大学物理2笔记.md",
-    "README.md",
     "本科/未命名.md",
     "未命名.md",
     "本科/通识/汉字文化/汉字与民族审美精神.md",
