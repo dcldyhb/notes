@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  7 JUN 2025 00:30
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  7 JUN 2025 00:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1232,23 +1232,27 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1049.
+(hyperref)                removing `math shift' on input line 1055.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1049.
+(hyperref)                removing `math shift' on input line 1055.
 
 
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [21]
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[22]
 No file main.bbl.
 
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
-[22] (./main.aux)
+[23] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025/02/12>
@@ -1265,4 +1269,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  107i,16n,124p,1208b,2239s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (25 pages).
+Output written on main.pdf (26 pages).
