@@ -88,57 +88,65 @@
 \section{二重积分的性质}
 
 \begin{enumerate}
-    \item $\displaystyle\iint_D\,\mathrm{d}\sigma = \iint_D 1\,\mathrm{d}\sigma = A_D \quad\left(\text{D 的面积}\right)$.
-    \item \textbf{线性性：} 设 $f,g\in R(D)$，$\alpha , \beta$，是任意常数，则 $\alpha f +\beta g \in R(D)$，且
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(\displaystyle\iint_D\,\mathrm{d}\sigma = \iint_D 1\,\mathrm{d}\sigma = A_D \quad\left(\text{D 的面积}\right)\).
+\item
+  \textbf{线性性：} 设
+  \(f,g\in R(D)\)，\(\alpha , \beta\)，是任意常数，则
+  \(\alpha f +\beta g \in R(D)\)，且
 
-    $$
-    \iint_D (\alpha f +\beta g)\,\mathrm{d}\sigma = \alpha \iint_D f\,\mathrm{d}\sigma + \beta \iint_D g\,\mathrm{d}\sigma
-    $$
-    
-    \item **区域可加性：** 若 $f\in R(D)$ 且积分区域 $D$ 分为内部不相交的子区域 $D_1 , D_2$，则
+  \[\iint_D (\alpha f +\beta g)\,\mathrm{d}\sigma = \alpha \iint_D f\,\mathrm{d}\sigma + \beta \iint_D g\,\mathrm{d}\sigma\]
+\item
+  \textbf{区域可加性：} 若 \(f\in R(D)\) 且积分区域 \(D\)
+  分为内部不相交的子区域 \(D_1 , D_2\)，则
 
-    $$
-    \iint_D f(x,y) \,\mathrm{d}\sigma = \iint_{D_1} f(x,y)\,\mathrm{d}\sigma + \iint_{D_2} f(x,y)\,\mathrm{d}\sigma
-    $$
+  \[\iint_D f(x,y) \,\mathrm{d}\sigma = \iint_{D_1} f(x,y)\,\mathrm{d}\sigma + \iint_{D_2} f(x,y)\,\mathrm{d}\sigma\]
+\item
+  \textbf{保序性：} 若 \(f,g\in R(D)\)，且当 \((x,y)\in D\)
+  时，\(f(x,y)\leq g(x,y)\)，则
 
-    \item **保序性：** 若 $f,g\in R(D)$，且当 $(x,y)\in D$ 时，$f(x,y)\leq g(x,y)$，则
+  \[\iint_D f(x,y)\,\mathrm{d}\sigma \leq \iint_D g(x,y)\,\mathrm{d}\sigma\]
 
-    $$
-    \iint_D f(x,y)\,\mathrm{d}\sigma \leq \iint_D g(x,y)\,\mathrm{d}\sigma
-    $$
-    \begin{enumerate}
-        \item **推论1：** 若 $f\in R(D)$ ,则 $\vert f(x,y) \vert \in R(D)$，且
+  \begin{itemize}
+  \item
+    \textbf{推论1：} 若 \(f\in R(D)\) ,则
+    \(\vert f(x,y) \vert \in R(D)\)，且
+  \end{itemize}
 
-   $$
-    \left\vert \iint_D f(x,y)\,\mathrm{d}\sigma \right\vert \leq \iint_D \vert f(x,y) \vert \,\mathrm{d}\sigma
-   $$
+  \[\left\vert \iint_D f(x,y)\,\mathrm{d}\sigma \right\vert \leq \iint_D \vert f(x,y) \vert \,\mathrm{d}\sigma\]
 
-        \item **推论2：** 若 $f\in R(D)$，且当 $(x,y)\in D$ 时， $m\leq f(x,y) \leq M$，则
+  \begin{itemize}
+  \item
+    \textbf{推论2：} 若 \(f\in R(D)\)，且当 \((x,y)\in D\) 时，
+    \(m\leq f(x,y) \leq M\)，则
+  \end{itemize}
 
-   $$
-    mA_D \leq \iint_D f(x,y)\,\mathrm{d}\sigma \leq MA_D
-   $$
-        \item **推论3：** 若 $f\in R(D)$，且当 $(x,y)\in D$ 时，$f(x,y) \geq 0$，则
+  \[mA_D \leq \iint_D f(x,y)\,\mathrm{d}\sigma \leq MA_D\]
 
-   $$
-    \iint_D f(x,y)\,\mathrm{d}\sigma \geq 0
-   $$
-    \end{enumerate}
-    \item **积分中值定理：** 若 $f(x,y)\in C(D)$ ，$g(x,y)\in R(D)$，且 $g$ 在 $D$ 上不变号，则 $\exists \xi , \eta \in D$，使得
+  \begin{itemize}
+  \item
+    \textbf{推论3：} 若 \(f\in R(D)\)，且当 \((x,y)\in D\)
+    时，\(f(x,y) \geq 0\)，则
+  \end{itemize}
 
-    $$
-    \iint_D f(x,y)g(x,y)\,\mathrm{d}\sigma = f(\xi ,\eta )\iint_D g(x,y)\,\mathrm{d}\sigma
-    $$
+  \[\iint_D f(x,y)\,\mathrm{d}\sigma \geq 0\]
+\item
+  \textbf{积分中值定理：} 若 \(f(x,y)\in C(D)\) ，\(g(x,y)\in R(D)\)，且
+  \(g\) 在 \(D\) 上不变号，则 \(\exists \xi , \eta \in D\)，使得
 
-    \begin{enumerate}
-        \item **推论：** 若 $f(x,y)\in C(D)$，则存在 $(\xi , \eta )\in D$，使得
+  \[\iint_D f(x,y)g(x,y)\,\mathrm{d}\sigma = f(\xi ,\eta )\iint_D g(x,y)\,\mathrm{d}\sigma\]
 
-   $$
-    \iint_D f(x,y)\,\mathrm{d}\sigma = f(\xi ,\eta )A_D
-   $$
+  \begin{itemize}
+  \item
+    \textbf{推论：} 若 \(f(x,y)\in C(D)\)，则存在
+    \((\xi , \eta )\in D\)，使得
+  \end{itemize}
 
-   称 $f(\xi,\eta) = \frac{\iint_D f\,\mathrm{d}\sigma}{A_D}$ 为函数 $f(x,y)$ 在有界闭区域 $D$ 上的**平均值**
-    \end{enumerate}
+  \[\iint_D f(x,y)\,\mathrm{d}\sigma = f(\xi ,\eta )A_D\]
+
+  称 \(f(\xi,\eta) = \frac{\iint_D f\,\mathrm{d}\sigma}{A_D}\) 为函数
+  \(f(x,y)\) 在有界闭区域 \(D\) 上的\textbf{平均值}
 \end{enumerate}
 
 \section{二重积分的计算}
@@ -171,6 +179,36 @@ $$
     &\equiv \int_a^b f(x,y)\,\mathrm{d}x\mathrm{d}y
 \end{aligned}
 $$
+
+\subsubsection{$y$ 型正则区域}
+
+$$
+D = \left\{(x,y)\bigg| \varphi_1(y)\leq x\leq \varphi_2(y),c\leq y\leq d\right\}
+$$
+
+化为先 $x$ 后 $y$ 的二次积分
+
+$$
+\begin{aligned}
+    \iint_D f(x,y)\,\mathrm{d}x\mathrm{d}y &= \int_c^d\left[\int_{\varphi_1(y)}^{\varphi_2(y)} f(x,y)\,\mathrm{d}x\right]\mathrm{d}y \\
+    &\equiv \int_c^d f(x,y)\,\mathrm{d}x\mathrm{d}y
+\end{aligned}
+$$
+
+\subsubsection{一般区域的二重积分}
+
+分割成若干个正则子区域，利用积分区域可加性，分别在子区域上积分后求和
+
+\begin{remark}
+    直角坐标计算二重积分的步骤
+
+    \begin{enumerate}
+        \item **画出积分区域** $D$ 的草图，并**确定类型**
+        \item 按照所确定的类型**表示区域** $D$
+        \item **化二重积分为二次积分**（注意上下限）
+        \item **计算**二重积分
+    \end{enumerate}
+\end{remark}
 
 \begin{assumption}
     这是一个假设环境。
