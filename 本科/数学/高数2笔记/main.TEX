@@ -1016,37 +1016,313 @@ z = \rho\cos\varphi
 
 \subsubsection{积分判别法}
 
+\begin{definition}
+    设 \(\displaystyle \sum_{n=1}^\infty a_n\)
+为\textbf{正项级数}，若非负函数 \(f(X)\) 在 \([1,+\infty)\)
+上\textbf{单调递减}，且
+\(a_n = f(n)\quad \left(\forall n \in \mathbb{N}^+\right)\)，则级数
+\(\displaystyle \sum_{n=1}^\infty a_n\) 与反常积分
+\(\displaystyle \int_1^{+\infty} f(x)\,\mathrm{d}x\) 有相同的敛散性
+
+\begin{itemize}
+\item
+  条件 \(\left[1,+\infty\right)\) 可改为
+  \(\left[a,+\infty\right)，(a>1)\)
+\end{itemize}
+\end{definition}
+
 \section{任意项级数的敛散性}
+
+\textbf{任意项级数}
+
+正负项分布是任意的级数
 
 \subsection{错级数敛散性的判别法}
 
 \subsubsection{交错级数}
 
+\begin{definition}
+    各项正负相间的级数称为\textbf{交错级数}，其形式为
+
+\[\pm\sum_{n=1}^\infty {-1}^{n-1}a_n \quad \left(\text{其中}a_n > 0\right)\]
+\end{definition}
+
 \subsubsection{Leibniz 判别法}
+
+\begin{definition}
+    若交错级数
+\(\displaystyle \sum_{n=1}^\infty (-1)^{n-1}a_n \,\left(a_n>0\right)\)
+满足:
+begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(a_{n+1} \leq a_n \quad \left(n = 1 ,2 ,\ldots\right)\)
+\item
+  \(\displaystyle\lim_{n\to\infty}a_n =0\)
+\end{enumerate}
+
+则级数 \(\displaystyle \sum_{n=1}^\infty (-1)^{n-1}a_n\)
+收敛，且其余项级数满足
+
+\[\left\vert \sum_{k=n+1}^\infty a_k \right\vert \leq a_{n+1}\]
+
+\begin{quote}
+我们称满足定理条件的级数为 \textbf{leibniz 型级数}
+\end{quote}
+\end{definition}
 
 \subsection{Abel 判别法和 Dirichlet 判别法}
 
+\begin{theorem}
+    （Abel 判别法）若 \(\{a_n\}\) 单调且有界，\(\displaystyle\sum_{n=1}^\infty b_n\)
+收敛，则 \(\displaystyle \sum_{n=1}^\infty a_nb_n\) 收敛
+\end{theorem}
+
+\begin{theorem}
+    （Abel 判别法）若 \(\{a_n\}\) 单调趋于 \(0\)，\(\displaystyle \sum_{n=1}^\infty b_n\)
+的部分和数列有界，则 \(\displaystyle \sum_{n=1}^\infty a_nb_n\) 收敛
+\end{theorem}
+
 \subsection{绝对收敛与条件收敛}
 
+\begin{definition}
+    设 \(\displaystyle \sum_{n=1}^\infty a_n\) 为任意项级数
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  若级数 \(\displaystyle \sum_{n=1}^\infty \vert a_n \vert\)
+  收敛，则称级数 \(\displaystyle \sum_{n=1}^\infty a_n\)
+  为\textbf{绝对收敛}
+\item
+  若 \(\displaystyle \sum_{n=1}^\infty \vert a_n \vert\) 发散，而
+  \(\displaystyle \sum_{n=1}^\infty a_n\) 收敛，但 ，则称
+  \(\displaystyle \sum_{n=1}^\infty a_n\) \textbf{条件收敛}
+\end{enumerate}
+\end{definition}
+
+\begin{definition}
+    若 \(\displaystyle \sum_{n=1}^\infty a_n\) 绝对收敛，则
+\(\displaystyle \sum_{n=1}^\infty a_n\) 收敛
+\end{definition}
+
+\begin{remark}
+    \textbf{常用结论：}
+
+\[\displaystyle \sum_{n=1}^\infty \frac{(-1)^{n}}{n^p}\begin{cases}\text{绝对收敛} & ,p>1\\ \text{条件收敛} & , 0 < p\leq 1 \end{cases}\]
+\end{remark}
+
+\begin{definition}
+    （绝对收敛与条件收敛的本质）
+    \begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  绝对收敛的级数，可以改变任意项的顺序，其收敛性与和均不变（即满足加法交换律）
+\item
+  条件收敛的级数，总可以适当改变项的顺序，使其按照任意预定的方式收敛或者发散
+\end{enumerate}
+\end{definition}
+
 \section{函数项级数}
+
+\begin{definition}
+    设函数列 \(\{u_n{x}\} (n=1,2,\ldots)\) 在数集 \(X\) 上有定义，则称形式和
+
+\[\sum_{n=1}^\infty u_n(x)= u_1(x) + u_2(x) + \cdots + u_n(x) + \cdots\]
+
+为\textbf{函数项级数}，其中 \(u_n(x)\) 称为\textbf{通项}
+\end{definition}
+
+\begin{definition}
+    若数项级数 \(\displaystyle \sum_{n=1}^\infty u_n(x_0)\) 收敛，则 \(x_0\)
+为函数项级数 \(\displaystyle \sum_{n=1}^\infty u_n(x)\)
+的一个\textbf{收敛点}，否则称为\textbf{发散点}，全体收敛点所组成的集合
+\(I\) 称为\textbf{收敛域}
+\end{definition}
+
+\begin{definition}
+    记 \(\displaystyle S_n(x) =\sum_{k=1}^\infty u_k(x)\),为
+\(\displaystyle \sum_{n=1}^\infty u_n(x)\) 的前 \(n\)
+项\textbf{部分和(函数)}，记
+\(\displaystyle r_n(x) = \sum_{k=n+1}^\infty u_k(x)\) 为\textbf{余和}
+\end{definition}
+
+\begin{definition}
+    对于收敛域 \(I\) 中的任意一点 \(x\)，记
+\(\displaystyle \sum_{n=1}^\infty u_n(x)\) 的和为 \(S(x)\)，称此函数
+\(S(x)\) 为 \(\displaystyle \sum_{n=1}^\infty u_n(x)\) 的\textbf{和函数}
+
+显然，\(\forall x\in I\)，\(\displaystyle \lim_{n\to +\infty}S_n(x) =S(x)\)，\(\displaystyle \lim_{n\to +\infty}r_n(x)=0\)
+\end{definition}
 
 \section{幂级数}
 
 \subsection{幂级数及其收敛半径}
 
+在函数项级数中，最简单及最重要的级数形如
+
+\[\sum_{n=0}^\infty a_n(x-x_0)^n = a_0 +a_1x + a_2(x-x_0)^2 + \ldots + a_n(x-x_0)^n + \ldots\]
+
+称为\textbf{幂级数}，其中常数项 \(a_0,a_1,\ldots,a_n,\ldots\)
+称为幂级数的\textbf{系数}
+
+幂级数更加一半的形式为 \(\displaystyle \sum_{n=0}^\infty a_n(x-x_0)^n\)
+
 \subsubsection{Abel 定理}
+
+\begin{enumerate}
+\item
+  若幂级数 \(\displaystyle \sum_{n=0}^\infty a_n(x-x_0)^n\) 在
+  \(x=x_0(x\neq 0)\) 收敛，则当
+  \(\vert x \vert <\vert x_0\vert\)，时，幂级数
+  \(\displaystyle \sum_{n=0}^\infty a_n(x-x_0)^n\) 绝对收敛
+\item
+  若幂级数 \(\displaystyle \sum_{n=0}^\infty a_nx^n\) 在 \(x=x_1\)
+  发散，则当 \(\vert x \vert >\vert x_1\vert\) 时，幂级数
+  \(\displaystyle \sum_{n=0}^\infty a_nx^n\) 发散
+\end{enumerate}
+
+\begin{lemma}
+    （幂级数收敛域的情况）幂级数 \(\displaystyle \sum_{n=0}^\infty a_n(x-x_0)^n\) 的收敛域 \(I\)
+仅有以下几种情况：
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  仅在 \(x=0\) 的情况收敛（\(R=0\)）
+\item
+  在区间 \((-R,R)(R>0)\) 内绝对收敛，在
+  \((-\infty ,-R)\bigcup(R,+\infty)\) 发散
+\item
+  在区间 \((-R,R)\) 内绝对收敛（\(R=+\infty\)）
+\end{enumerate}
+\end{lemma}
 
 \section{幂级数收敛半径的求法}
 
 \subsection{系数模比值法}
 
+\begin{theorem}
+    对幂级数 \(\displaystyle \sum_{n=1}^\infty a_nx^n\)，若
+\(\displaystyle \lim_{n\to+\infty}\left\vert\frac{a_{n+1}}{a_n}\right\vert = \rho\)，则收敛半径
+\(\displaystyle R=\begin{cases}0,\rho=+\infty\newline  \frac{1}{\rho}, 0<\rho<+\infty\newline +\infty ,\rho=0\end{cases}\)
+\end{theorem}
+
 \subsection{系数模根值法}
+
+\begin{theorem}
+    对幂级数 \(\displaystyle \sum_{n=1}^\infty a_nx^n\)，若
+\(\displaystyle \lim_{n\to+\infty}\sqrt[n]{\left\vert a_n\right\vert} = \rho\)，则收敛半径
+\(\displaystyle R=\begin{cases}0,\rho=+\infty\newline  \frac{1}{\rho}, 0<\rho<+\infty\newline +\infty ,\rho=0\end{cases}\)
+\end{theorem}
 
 \section{幂级数的性质}
 
+\begin{enumerate}
+\item
+  设幂级数 \(\displaystyle \sum_{n=0}^\infty a_nx^n\) 和
+  \(\displaystyle \sum_{n=0}^\infty b_nx^n\) 的收敛半径分别为 \(R_1\) 和
+  \(R_2\)，则 \(\displaystyle \sum_{n=0}^\infty (a_n+b_n)x^n\)
+  的收敛半径为 \(R=\min\{R_1,R_2\}\)
+\item
+  若幂级数 \(\displaystyle \sum_{n=0}^\infty a_nx^n\) 的收敛半径
+  \(R>0\)，在收敛区间 \((-R,R)\) 内的和函数为 \(S(n)\)，则 \(S(n)\) 在
+  \((-R,R)\) 上连续；若 \(\displaystyle\sum_{n=0}^\infty a_nx^n\) 在
+  \(x=R\) 或 \(x=-R\) 收敛，则和函数 \(S(n)\) 在 \(x=R\) 左连续或
+  \(x=-R\) 处右连续，即
+  \(\displaystyle \lim_{x\to R^-}S(x)=S(R)=\sum_{n=0}^\infty a_nR^n\)
+\item
+  若幂级数 \(\displaystyle \sum_{n=0}^\infty a_nx^n\) 的收敛半径
+  \(R>0\)，在收敛区间 \((-R,R)\) 内的和函数为 \(S(n)\)，则 \(S(n)\) 在
+  \((-R,R)\) 上可导，且有\textbf{逐项求导公式}
+\end{enumerate}
+
+\[\begin{aligned}
+  S'(x) = &\left(\sum_{n=0}^\infty a_nx^n\right)'\\
+    = &\sum_{n=0}^\infty \left(a_nx^n\right)'\\
+    = &\sum_{n=0}^\infty na_nx^{n-1}\\
+  \end{aligned}\]
+
+且幂级数 \(\displaystyle \sum_{n=0}^\infty na_nx^{n-1}\) 的收敛半径仍为
+\(R\)
+
+\begin{enumerate}
+\item
+  若幂级数 \(\displaystyle \sum_{n=0}^\infty a_nx^n\) 的收敛半径
+  \(R>0\)，在收敛区间 \((-R,R)\) 内的和函数为 \(S(n)\)，则 \(S(n)\) 在
+  \((-R,R)\) 上可导，且有\textbf{逐项求积公式}
+\end{enumerate}
+
+\[\begin{aligned}
+  \int_0^xS(t)\,\mathrm{d}t = &\int_0^x\left(\sum_{n=0}^\infty a_nt^n\right)\,\mathrm{d}t\\
+    = &\sum_{n=0}^\infty \int_0^x a_nt^n\,\mathrm{d}t\\
+    = &\sum_{n=0}^\infty \frac{a_n}{n+1}x^{n+1}\\
+  \end{aligned}\]
+
+且幂级数 \(\displaystyle \sum_{n=0}^\infty a_nt^n\) 的收敛半径仍为 \(R\)
+
 \subsection{幂级数的分析性质}
 
+\begin{enumerate}
+    \item 若幂级数 \(\displaystyle \sum_{n=0}^\infty a_nx^n\) 的收敛半径为
+\(R>0\)，在收敛区间 \((-R,R)\) 上连续；若
+\(\displaystyle\sum_{n=0}^\infty a_nx^n\) 在 \(x=R\) 或 \(x=-R\)
+收敛，则和函数 \(S(n)\) 在 \(x=R\) 左连续或 \(x=-R\) 处右连续，即
+
+\[\displaystyle \lim_{x\to R^-}S(x)=S(R)=\sum_{n=0}^\infty a_nR^n\]
+
+    \item 若幂函数 \(\displaystyle \sum_{n=0}^\infty a_nx^n\) 的收敛半径为
+\(R>0\)，在收敛区间 \((-R,R)\) 上的和函数为 \(S(n)\)，则 \(S(n)\) 在
+\((-R,R)\) 上可导，且有\textbf{逐项求导公式}
+
+\[\begin{aligned}
+S'(x) = &\left(\sum_{n=0}^\infty a_nx^n\right)'\\
+  = &\sum_{n=0}^\infty \left(a_nx^n\right)'\\
+  = &\sum_{n=0}^\infty na_nx^{n-1}\\
+\end{aligned}\]
+
+且幂级数 \(\displaystyle \sum_{n=0}^\infty na_nx^{n-1}\) 的收敛半径仍为
+\(R\)
+
+    \item 若幂级数 \(\displaystyle \sum_{n=0}^\infty a_nx^n\) 的收敛半径为
+\(R>0\)，在收敛区间 \((-R,R)\) 上的和函数为 \(S(n)\)，则 \(S(n)\) 在
+\((-R,R)\) 上可导，且有\textbf{逐项求积公式}
+
+\[\begin{aligned}
+\int_0^xS(t)\,\mathrm{d}t = &\int_0^x\left(\sum_{n=0}^\infty a_nt^n\right)\,\mathrm{d}t\\
+  = &\sum_{n=0}^\infty \int_0^x a_nt^n\,\mathrm{d}t\\
+  = &\sum_{n=0}^\infty \frac{a_n}{n+1}x^{n+1}\\
+\end{aligned}
+\]
+且幂级数 \(\displaystyle \sum_{n=0}^\infty a_nt^n\) 的收敛半径仍为 \(R\)
+\end{enumerate}
+
+\begin{remark}
+    \begin{enumerate}
+\item
+  幂函数逐项求导，逐项积分后，收敛半径不变，但是收敛域可能改变
+\item
+  幂函数在收敛区间内具有任意阶导数
+\end{enumerate}
+\end{remark}
+
 \subsection{Taylor 级数}
+
+\begin{definition}
+    设函数 \(f(x)\) 在 \(x_0\) 的某领域内有任意阶导数，称幂级数
+
+\[\sum_{n=0}^\infty \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n\]
+
+为 \(f(x)\) 在 \(x_0\) 处的 \textbf{Taylor} 级数，记为
+
+\[f(x) = \sum_{n=0}^\infty \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n\]
+
+\(x_0=0\) 是，称为 \textbf{Maclaurin 级数}
+\end{definition}
+
+\begin{theorem}
+    （唯一性）若 \(f(x)\) 在 \(x_0\) 可展开为幂级数，则展开式唯一，且恰为 Taylor 级数
+\end{theorem}
 
 \subsection{常用的初等函数的幂级数展开式}
 
