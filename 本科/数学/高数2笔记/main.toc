@@ -1,3 +1,4 @@
 \contentsline {chapter}{\numberline {第 1 章}重积分}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}重积分的概念和性质}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}二重积分的性质}{1}{section.1.2}%
 \contentsfinish 
