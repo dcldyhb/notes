@@ -1,0 +1,97 @@
+%%
+%% This is file `sjtu-lang-en.def',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% sjtutex.dtx  (with options: `lang,en')
+%% 
+%%     Copyright (C) SJTUG
+%%       2018--2025 Weijian Wu   <alexarawu@outlook.com>
+%%       2022--2025 Zilong Li    <logcreative@outlook.com>
+%%       2024--2025 Boshi Yuan   <nemoyuan2008@outlook.com>
+%% 
+%%     This work may be distributed and/or modified under the
+%%     conditions of the LaTeX Project Public License, either
+%%     version 1.3c of this license or (at your option) any later
+%%     version. The latest version of this license is in:
+%% 
+%%       http://www.latex-project.org/lppl.txt
+%% 
+%%     and version 1.3 or later is part of all distributions of
+%%     LaTeX version 2005/12/01 or later.
+%% 
+\GetIdInfo$Id: sjtutex.dtx 24e1ee7 2025-03-29 01:12:32 +0800 Alexara Wu <alexarawu@outlook.com> $
+  {English specific definition (SJTUTeX)}
+\ProvidesExplFile{sjtu-lang-en.def}
+  {\ExplFileDate}{2.2.1}{\ExplFileDescription}
+\NewHook { sjtutex / lang / en }
+\keys_define:nn { sjtu / private }
+  {
+    lang / en .code:n =
+      {
+        \tl_set_eq:NN \l__sjtu_lang_tl \l_keys_value_tl
+        \normalfont
+        \UseHook { sjtutex / lang / en }
+      } ,
+    en .meta:n = { lang = en } ,
+    en .groups:n = { lang }
+  }
+\AddToHook { sjtutex / lang / en }
+  {
+    \tl_set:Nn \languagename { english }
+    \ctex_set:n { autoindent = 1.5 em }
+  }
+\cs_set_eq:NN \__sjtu_title_case_aux_en:n \MakeUppercase
+\clist_map_inline:nn
+  {
+    { keywords } { Key~words       } ,
+    { info_sep } { \hbox { :~ }    } ,
+    { item_sep } { ,~              }
+  }
+  { \__sjtu_name_const:nnn { en } #1 }
+\clist_const:Nn \c__sjtu_name_month_en_clist
+  {
+    January, February, March, April, May, June,
+    July, August, September, October, November, December
+  }
+\cs_new:Npn \__sjtu_ordinal_en:n #1
+  {
+    \int_to_arabic:n {#1}
+    \exp_not:N \textsuperscript
+      {
+        \int_case:nnF { \int_mod:nn {#1} { 100 } }
+          {
+            { 11 } { th }
+            { 12 } { th }
+            { 13 } { th }
+          }
+          {
+            \int_case:nnF { \int_mod:nn {#1} { 10 } }
+              {
+                { 1 } { st }
+                { 2 } { nd }
+                { 3 } { rd }
+              }
+              { th }
+          }
+      }
+  }
+\cs_new:Npn \__sjtu_date_aux_en:nnn #1#2#3
+  {
+    \clist_item:Nn \c__sjtu_name_month_en_clist {#2} ~
+    \__sjtu_ordinal_en:n {#3} ,~
+    \int_to_arabic:n {#1}
+  }
+\cs_new:Npn \__sjtu_date_aux_en:w #1-#2-#3 \q_stop
+  { \__sjtu_date_aux_en:nnn {#1} {#2} {#3} }
+\cs_new:Npn \__sjtu_date_aux_short_en:nn #1#2
+  {
+    \clist_item:Nn \c__sjtu_name_month_en_clist {#2} ,~
+    \int_to_arabic:n {#1}
+  }
+\cs_new:Npn \__sjtu_date_aux_short_en:w #1-#2 \q_stop
+  { \__sjtu_date_aux_short_en:nn {#1} {#2} }
+\endinput
+%%
+%% End of file `sjtu-lang-en.def'.

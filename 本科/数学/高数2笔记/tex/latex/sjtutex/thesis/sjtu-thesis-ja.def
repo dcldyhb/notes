@@ -1,0 +1,62 @@
+%%
+%% This is file `sjtu-thesis-ja.def',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% sjtutex.dtx  (with options: `thesis-i18n,ja')
+%% 
+%%     Copyright (C) SJTUG
+%%       2018--2025 Weijian Wu   <alexarawu@outlook.com>
+%%       2022--2025 Zilong Li    <logcreative@outlook.com>
+%%       2024--2025 Boshi Yuan   <nemoyuan2008@outlook.com>
+%% 
+%%     This work may be distributed and/or modified under the
+%%     conditions of the LaTeX Project Public License, either
+%%     version 1.3c of this license or (at your option) any later
+%%     version. The latest version of this license is in:
+%% 
+%%       http://www.latex-project.org/lppl.txt
+%% 
+%%     and version 1.3 or later is part of all distributions of
+%%     LaTeX version 2005/12/01 or later.
+%% 
+\GetIdInfo$Id: sjtutex.dtx 24e1ee7 2025-03-29 01:12:32 +0800 Alexara Wu <alexarawu@outlook.com> $
+  {Japanese config for thesis (SJTUTeX)}
+\ProvidesExplFile{sjtu-thesis-ja.def}
+  {\ExplFileDate}{2.2.1}{\ExplFileDescription}
+\__sjtu_name_const_from_clist:nnnn { ja }
+  { degree_level } { \g__sjtu_thesis_type_int }
+  { 学士, 修士, 博士 }
+\clist_map_inline:nn
+  {
+    { univ             } { 上海交通大学         } ,
+    { address          } { 中国・上海           } ,
+    { thesis           } { 学位請求論文         } ,
+    { title_page       } { 標題紙               } ,
+    { declaration      } { 誓約書・公表許諾書   } ,
+    { abstract         } { 要 \protect \quad 旨 }
+  }
+  { \__sjtu_name_const:nnn { ja } #1 }
+\clist_map_inline:nn
+  {
+    { author           } { 氏名       } ,
+    { supervisor       } { 指導教員   } ,
+    { assoc_supervisor } { 副指導教員 } ,
+    { co_supervisor    } { 共同指導   }
+  }
+  { \__sjtu_name_set:nnn { ja } #1 }
+\keys_define:nn { sjtu / info / ja }
+  {
+    subject          .initial:n =
+      {
+        \c__sjtu_name_univ_ja_tl
+        \c__sjtu_name_degree_level_ja_tl
+        \c__sjtu_name_thesis_ja_tl
+      }
+  }
+\DeclareInstanceCopy { sjtu / page }
+  { title / ja } { title b }
+\endinput
+%%
+%% End of file `sjtu-thesis-ja.def'.

@@ -1,0 +1,101 @@
+%%
+%% This is file `sjtu-cjk-font-mac.def',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% sjtutex.dtx  (with options: `font,cjk,mac')
+%% 
+%%     Copyright (C) SJTUG
+%%       2018--2025 Weijian Wu   <alexarawu@outlook.com>
+%%       2022--2025 Zilong Li    <logcreative@outlook.com>
+%%       2024--2025 Boshi Yuan   <nemoyuan2008@outlook.com>
+%% 
+%%     This work may be distributed and/or modified under the
+%%     conditions of the LaTeX Project Public License, either
+%%     version 1.3c of this license or (at your option) any later
+%%     version. The latest version of this license is in:
+%% 
+%%       http://www.latex-project.org/lppl.txt
+%% 
+%%     and version 1.3 or later is part of all distributions of
+%%     LaTeX version 2005/12/01 or later.
+%% 
+\GetIdInfo$Id: sjtutex.dtx 24e1ee7 2025-03-29 01:12:32 +0800 Alexara Wu <alexarawu@outlook.com> $
+  {macOS CJK fonts definition (SJTUTeX)}
+\ProvidesExplFile{sjtu-cjk-font-mac.def}
+  {\ExplFileDate}{2.2.1}{\ExplFileDescription}
+\__sjtu_if_engine_opentype:TF
+  {
+    \__sjtu_if_main_lang_ja:TF
+      {
+        \setCJKmainfont { HiraMinProN  }
+          [
+            UprightFont    = *-W3 ,
+            BoldFont       = *-W6
+          ]
+        \setCJKsansfont { HiraKakuProN }
+          [
+            UprightFont    = *-W3 ,
+            BoldFont       = *-W6
+          ]
+        \setCJKmonofont { HiraMinProN-W3 }
+        \setCJKfamilyfont { jamin  } { HiraMinProN  }
+          [
+            UprightFont    = *-W3 ,
+            BoldFont       = *-W6
+          ]
+        \setCJKfamilyfont { jagoth } { HiraKakuProN }
+          [
+            UprightFont    = *-W3 ,
+            BoldFont       = *-W6
+          ]
+        \NewDocumentCommand \mincho   { } { \CJKfamily { jamin   } }
+        \NewDocumentCommand \gothic   { } { \CJKfamily { jagoth  } }
+      }
+      {
+        \setCJKmainfont { Songti~SC  }
+          [
+            UprightFont    = *~Light ,
+            BoldFont       = *~Bold ,
+            ItalicFont     = Kaiti~SC~Regular ,
+            BoldItalicFont = Kaiti~SC~Bold
+          ]
+        \setCJKsansfont { Heiti~SC   }
+          [
+            UprightFont    = *~Medium ,
+            AutoFakeBold   = 3
+          ]
+        \setCJKmonofont { STFangsong }
+      }
+    \setCJKfamilyfont { zhsong } { Songti~SC  }
+      [
+        UprightFont    = *~Light ,
+        BoldFont       = *~Bold ,
+        ItalicFont     = Kaiti~SC~Regular ,
+        BoldItalicFont = Kaiti~SC~Bold
+      ]
+    \setCJKfamilyfont { zhhei  } { Heiti~SC   }
+      [
+        UprightFont    = *~Medium ,
+        AutoFakeBold   = 3
+      ]
+    \setCJKfamilyfont { zhfs   } { STFangsong }
+    \setCJKfamilyfont { zhkai  } { Kaiti~SC   }
+      [
+        UprightFont    = *~Regular ,
+        BoldFont       = *~Bold
+        ]
+    \NewDocumentCommand \songti   { } { \CJKfamily { zhsong  } }
+    \NewDocumentCommand \heiti    { } { \CJKfamily { zhhei   } }
+    \NewDocumentCommand \fangsong { } { \CJKfamily { zhfs    } }
+    \NewDocumentCommand \kaishu   { } { \CJKfamily { zhkai   } }
+  }
+  {
+    \__sjtu_if_main_lang_ja:TF
+      { \__sjtu_fontset_error:nn { cjk } { mac } }
+      { \ctex_file_input:n { ctex-fontset-mac.def } }
+  }
+\endinput
+%%
+%% End of file `sjtu-cjk-font-mac.def'.
