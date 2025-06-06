@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "本科/编程/数据结构/数据结构笔记.md",
+                "file": "本科/数学/高数2笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "数据结构笔记 的反向链接列表"
+              "title": "高数2笔记 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "本科/编程/数据结构/数据结构笔记.md",
+                "file": "本科/数学/高数2笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "数据结构笔记 的出链列表"
+              "title": "高数2笔记 的出链列表"
             }
           },
           {
@@ -179,7 +179,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "15ffd7cfb7844ae8",
+  "active": "c48c84668dd7742f",
   "lastOpenFiles": [
     "本科/通识/汉字文化/汉字与传统思想.md",
     "本科/通识/汉字文化/汉字与传统思想.png",
