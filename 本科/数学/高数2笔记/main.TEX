@@ -203,15 +203,38 @@
 分割成若干个正则子区域，利用积分区域可加性，分别在子区域上积分后求和
 
 \begin{remark}
-    直角坐标计算二重积分的步骤
+直角坐标计算二重积分的步骤
 
-    \begin{enumerate}
-        \item **画出积分区域** $D$ 的草图，并**确定类型**
-        \item 按照所确定的类型**表示区域** $D$
-        \item **化二重积分为二次积分**（注意上下限）
-        \item **计算**二重积分
-    \end{enumerate}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{画出积分区域} \(D\) 的草图，并\textbf{确定类型}
+\item
+  按照所确定的类型\textbf{表示区域} \(D\)
+\item
+  \textbf{化二重积分为二次积分}（注意上下限）
+\item
+  \textbf{计算}二重积分
+\end{enumerate}
 \end{remark}
+
+\subsection{极坐标系下的计算}
+
+当积分区域的边界曲线或被积函数用极坐标表示较为简单时，可用极坐标来计算二重积分.
+
+面积元素 \(\Delta \sigma\) 在极坐标下为
+
+\[\boxed{\Delta\sigma= r\mathrm{d}r\mathrm{d}\theta}\]
+
+从直角坐标到极坐标时的二重积分变换公式为
+
+\[\iint_D f(x,y)\,\mathrm{d}\sigma = \iint_D f(r\cos\theta,r\sin\theta)r\,\mathrm{d}r\mathrm{d}\theta\]
+
+\[\left\{\left(r,\theta\right)\left \vert r_1(\theta)\leq r \leq r_2(\theta) , \alpha \leq \theta \leq \beta \right.\right\}\]
+
+则
+
+\[\iint_D f(x,y)\,\mathrm{d}\sigma = \int_\alpha^\beta\, \mathrm{d}\theta\int_{r_1(\theta)}^{r_2(\theta)} f(r\cos\theta,r\sin\theta)r\,\mathrm{d}r\]
 
 \begin{assumption}
     这是一个假设环境。
