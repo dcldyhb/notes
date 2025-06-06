@@ -90,7 +90,7 @@
 \contentsline {section}{\numberline {3.7}幂级数的性质}{24}{section.3.7}%
 \contentsline {subsection}{\numberline {3.7.1}幂级数的分析性质}{25}{subsection.3.7.1}%
 \contentsline {subsection}{\numberline {3.7.2}Taylor 级数}{26}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}常用的初等函数的幂级数展开式}{26}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}正弦级数和余弦级数}{26}{subsection.3.7.4}%
-\contentsline {subsection}{\numberline {3.7.5}周期为 $2l$ 的 Fourier 级数}{26}{subsection.3.7.5}%
+\contentsline {subsection}{\numberline {3.7.3}常用的初等函数的幂级数展开式}{27}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}正弦级数和余弦级数}{27}{subsection.3.7.4}%
+\contentsline {subsection}{\numberline {3.7.5}周期为 $2l$ 的 Fourier 级数}{27}{subsection.3.7.5}%
 \contentsfinish 
