@@ -141,6 +141,37 @@
     \end{enumerate}
 \end{enumerate}
 
+\section{二重积分的计算}
+
+\subsection{直角坐标系下的计算}
+
+当二重积分存在时，可利用平行于坐标轴的直线来划分积分区域 $D$，此时，面积元素
+
+$$
+\mathrm{d}\sigma = \mathrm{d}x\mathrm{d}y
+$$
+
+故二重积分在直角坐标系下可表示为
+
+$$
+\iint_D f(x,y)\,\mathrm{d}\sigma = \iint_D f(x,y)\,\mathrm{d}x\mathrm{d}y
+$$
+
+\subsubsection{$x$ 型正则区域}
+
+$$
+D = \left\{(x,y)\bigg| \varphi_1(x)\leq y\leq \varphi_2(x),a\leq x\leq b\right\}
+$$
+
+化为先 $y$ 后 $x$ 的二次积分
+
+$$
+\begin{aligned}
+    \iint_D f(x,y)\,\mathrm{d}x\mathrm{d}y &= \int_a^b\left[\int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y)\,\mathrm{d}y\right]\mathrm{d}x \\
+    &\equiv \int_a^b f(x,y)\,\mathrm{d}x\mathrm{d}y
+\end{aligned}
+$$
+
 \begin{assumption}
     这是一个假设环境。
 \end{assumption}
