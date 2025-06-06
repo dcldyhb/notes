@@ -1332,22 +1332,108 @@ S'(x) = &\left(\sum_{n=0}^\infty a_nx^n\right)'\\
 
 \subsection{常用的初等函数的幂级数展开式}
 
+\begin{enumerate}
+\item
+  \(\displaystyle e^x = \sum_{n=0}^\infty \frac{x^n}{n!} \quad (x\in\mathbb{R})\)
+\item
+  \(\displaystyle \sin x = \sum_{n=0}^\infty \frac{(-1)^nx^{2n+1}}{(2n+1)!} \quad (x\in\mathbb{R})\)
+\item
+  \(\displaystyle \cos x = \sum_{n=0}^\infty \frac{(-1)^nx^{2n}}{(2n)!} \quad (x\in\mathbb{R})\)
+\item
+  \(\displaystyle \ln(1+x) = \sum_{n=1}^\infty \frac{(-1)^{n-1}x^n}{n} \quad (\left\vert x \right\vert<1)\)
+\item
+  \(\displaystyle (1+x)^\alpha = \sum_{n=0}^\infty \frac{\alpha(\alpha-1)\cdots(\alpha-n+1)}{n!}x^n \quad (\left\vert x\right\vert<1)\)
+\item
+  \(\displaystyle \frac{1}{1-x} = \sum_{n=0}^\infty x^n \quad (\left\vert x\right\vert<1)\)
+\item
+  \(\displaystyle \frac{1}{1+x} = \sum_{n=0}^\infty (-1)^nx^n \quad (\left\vert x\right\vert<1)\)
+\item
+  \(\displaystyle \arctan{x} = \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{2n+1} \quad (\left\vert x\right\vert\leq 1)\)
+\end{enumerate}
+
 \subsection{正弦级数和余弦级数}
+
+若周期为 \(2\pi\) 的函数 \(f(x)\) 是奇函数时，其 Fourier 系数
+\(a_n=0\)，从而
+
+\[f(x) \sim \sum_{n=1}^{+\infty}b_n\sin(nx)\quad\text{正弦级数}\]
+
+其中
+\(\displaystyle b_n =\frac{2}{\pi}\int_0^\pi f(x)\sin(nx) \,\mathrm{d}x\)
+
+若周期为 \(2\pi\) 的函数 \(f(x)\) 是偶函数，其 Fourier 系数
+\(b_n=0\)，从而
+
+\[f(x) \sim \frac{a_0}{2}+\sum_{n=0}^{+\infty}a_n\cos(nx)\quad\text{余弦级数}\]
+
+其中
+\(\displaystyle a_n =\frac{1}{\pi}\int_0^\pi f(x)\cos(nx) \,\mathrm{d}x\)
+
+若函数 \(f(x)\) 定义在 \([0,\pi]\) 上，可作奇延拓
+
+\[F(x)=
+\begin{cases}
+  f(x),  0< x< \pi\\
+  -f(-x),  -\pi < x < 0\\
+  0, & x=0,\pm\pi\\
+\end{cases}\]
+
+使得 \(F(x)\) 为 \([-\pi,\pi]\) 上的奇函数
+
+也可作偶延拓
+
+\[G(x)=
+\begin{cases}
+  f(x),  0< x< \pi\\
+  f(-x),  -\pi < x < 0\\
+  0,  x=0,\pm\pi\\
+\end{cases}\]
+
+使得函数 \(G(x)\) 为 \([-\pi,\pi]\) 上的偶函数
+
+对于一定义在 \([0,\pi]\) 上的函数
+\(f(x)\)，可以对其先做奇延拓或者偶延拓，再将其展开为
+正弦级数或者余弦级数
 
 \subsection{周期为 $2l$ 的 Fourier 级数}
 
-\begin{assumption}
-    这是一个假设环境。
-\end{assumption}
+设函数 \(f(x)\) 在区间 \([-l,l]\) 上可积，作代换
+\(x =\frac{l}{\pi}t\)，使得 \(F(t) = f\left(\frac{l}{\pi}t\right)\) 为
+\([-\pi,\pi]\) 上的可积函数，从而
 
-\begin{axiom}
-    这是一个公理环境。
-\end{axiom}
+\[F(t) \sim \frac{a_0}{2}+\sum_{n=1}^{+\infty}a_n\cos(nt)+\sum_{n=1}^{+\infty}b_n\sin(nt)\]
 
-\begin{conjecture}
-    这是一个猜想环境。
-\end{conjecture}
+其中
 
-\nocite{*}
-\bibliography{ref}
+\[\begin{aligned}
+a_n &= \frac{1}{\pi}\int_{-\pi}^{\pi}F(t)\cos(nt)\,\mathrm{d}t = \frac{1}{l}\int_{-l}^{l}f(x)\cos\left(\frac{\pi n}{l}x\right)\,\mathrm{d}x\\
+b_n &= \frac{1}{\pi}\int_{-\pi}^{\pi}F(t)\sin(nt)\,\mathrm{d}t = \frac{1}{l}\int_{-l}^{l}f(x)\sin\left(\frac{\pi n}{l}x\right)\,\mathrm{d}x
+\end{aligned}\]
+
+故
+
+\[f(x) \sim \frac{a_0}{2}+\sum_{n=1}^{+\infty}\left(a_n\cos\left(\frac{\pi n}{l}x\right)+b_n\sin\left(\frac{\pi n}{l}x\right)\right)\]
+
+其中
+
+\[\begin{aligned}
+a_n &= \frac{1}{l}\int_{-l}^{l}f(x)\cos\left(\frac{\pi n}{l}x\right)\,\mathrm{d}x\\
+b_n &= \frac{1}{l}\int_{-l}^{l}f(x)\sin\left(\frac{\pi n}{l}x\right)\,\mathrm{d}x
+\end{aligned}\]
+
+\begin{theorem}
+    若 \(f(x)\) 在 \([-l,l]\) 上满足 Dirichlet 条件，则 Fourier 级数
+
+\[\frac{a_0}{2}+\sum_{n=1}^{+\infty}\left(a_n\cos\left(\frac{\pi n}{l}x\right)+b_n\sin\left(\frac{\pi n}{l}x\right)\right)\]
+
+收敛到
+
+\[S(n) =
+\begin{cases}
+  f(x), & x \text{为} f(x) \text{的连续点}\\
+  \frac{f(x^+)+f(x^-)}{2}, & x \text{为} f(x) \text{的间断点}\\
+  \frac{f(l^-)+f(-l^+)}{2} ,& x=\pm l
+\end{cases}\]
+\end{theorem}
+
 \end{document}
