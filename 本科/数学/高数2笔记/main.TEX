@@ -54,36 +54,47 @@
 \chapter{重积分}
 \section{重积分的概念和性质}
 \begin{definition}
-    设 $D$ 是平面上的有界闭区域，$f(x,y)$ 为 $D$ 上的有界函数，$I$ 为实数.若对 $D$ 的任意分割 $\Delta D_1 , \Delta D_2 , \cdots , \Delta D_n$ ，任取 $(\xi_i , \eta_i)\in\Delta D_i(i=1,\ldots,n)$，作和 $\displaystyle\sum_{i=1}^nf(\xi_i,\eta_i)\Delta \sigma_i$ （$\Delta \sigma_i$ 为 $D_i$ 的面积），总有
+    设 \(D\) 是平面上的有界闭区域，\(f(x,y)\) 为 \(D\) 上的有界函数，\(I\) 为实数.若对 \(D\) 的任意分割 \(\Delta D_1 , \Delta D_2 , \cdots , \Delta D_n\) ，任 \((\xi_i , \eta_i)\in\Delta D_i(i=1,\ldots,n)\)，作和 \(\displaystyle\sum_{i=1}^nf(\xi_i,\eta_i)\Delta \sigma_i\)（\(\Delta \sigma_i\) 为 \(D_i\) 的面积），总有
 
-    $$
-    \lim_{\lambda\to 0}\sum_{i=1}^nf(\xi_i,\eta_i)\Delta \sigma_i = I
-    $$
+    \[\lim_{\lambda\to 0}\sum_{i=1}^nf(\xi_i,\eta_i)\Delta \sigma_i = I\]
 
-    其中 $\displaystyle\lambda = \max_{1\leq i\leq d} \{d_i\}$，$d_i$ 是小区域 $\Delta D_i$ 的直径，则称函数 $f(x,y)$ 在 $D$ 上\textbf{可积}，记为 $f\in R(D)$；极限值 $I$ 称为 $f(x,y)$ 在 $D$ 上的\textbf{二重积分}，记作
+    其中 \(\displaystyle\lambda = \max_{1\leq i\leq d} \{d_i\}\)，\(d_i\) 是小区域 \(\Delta D_i\) 的直径，则称函数 \(f(x,y)\) 在 \(D\) 上\textbf{可积}，记为 \(f\in R(D)\)；极限值 \(I\) 称为 \(f(x,y)\) 在\(D\) 上的\textbf{二重积分}，记作
 
-    $$
-    \iint_D f(x,y)\,\mathrm{d}\sigma.
-    $$
+    \[\iint_D f(x,y)\,\mathrm{d}\sigma.\]
 \end{definition}
 
-\begin{enumerate}
-    \item $\displaystyle \iint$ 积分号
-    \item $D$ 积分区域
-    \item $f(x,y)$ 被积函数
-    \item $\mathrm{d}\sigma$ 面积元素（微元）
-    \item 二重积分的几何意义
-        \begin{enumerate}
-            \item 当被积函数大于 $0$ 时，二重积分是柱体体积
-            \item 当被积函数小于 $0$ 时，二重积分是柱体体积的负值
-            \item 一般的，为曲顶柱体体积的代数和
-        \end{enumerate}
-    \item 可积的充分条件
-        \begin{enumerate}
-            \item 若函数 $f(x,y)$ 在区域 $D$ 上连续，则 $f(x,y)\in D$
-        \end{enumerate}
-    \item $f(x,y)$ 在 $D$ 上的可积性及积分值与其在 $D$ 内\textbf{有限条光滑曲线}上的定义无关
-\end{enumerate}
+\begin{itemize}
+\item
+  \(\displaystyle \iint\) 积分号
+\item
+  \(D\) 积分区域
+\item
+  \(f(x,y)\) 被积函数
+\item
+  \(\mathrm{d}\sigma\) 面积元素（微元）
+\item
+  二重积分的几何意义
+
+  \begin{itemize}
+  \item
+    当被积函数大于 \(0\) 时，二重积分是柱体体积
+  \item
+    当被积函数小于 \(0\) 时，二重积分是柱体体积的负值
+  \item
+    一般的，为曲顶柱体体积的代数和
+  \end{itemize}
+\item
+  可积的充分条件
+
+  \begin{itemize}
+  \item
+    \textbf{定理：} 若函数 \(f(x,y)\) 在区域 \(D\) 上连续，则
+    \(f(x,y)\in D\).
+  \end{itemize}
+\item
+  \(f(x,y)\) 在 \(D\) 上的可积性及积分值与其在 \(D\)
+  内\textbf{有限条光滑曲线}上的定义无关
+\end{itemize}
 
 \section{二重积分的性质}
 
@@ -153,47 +164,35 @@
 
 \subsection{直角坐标系下的计算}
 
-当二重积分存在时，可利用平行于坐标轴的直线来划分积分区域 $D$，此时，面积元素
+当二重积分存在时，可利用平行于坐标轴的直线来划分积分区域 \(D\)，此时，面积元素
 
-$$
-\mathrm{d}\sigma = \mathrm{d}x\mathrm{d}y
-$$
+\[\mathrm{d}\sigma = \mathrm{d}x\mathrm{d}y\]
 
 故二重积分在直角坐标系下可表示为
 
-$$
-\iint_D f(x,y)\,\mathrm{d}\sigma = \iint_D f(x,y)\,\mathrm{d}x\mathrm{d}y
-$$
+\[\iint_D f(x,y)\,\mathrm{d}\sigma = \iint_D f(x,y)\,\mathrm{d}x\mathrm{d}y\]
 
-\subsubsection{$x$ 型正则区域}
+\subsubsection{\(x\) 型正则区域}
 
-$$
-D = \left\{(x,y)\bigg| \varphi_1(x)\leq y\leq \varphi_2(x),a\leq x\leq b\right\}
-$$
+\[D = \left\{(x,y)\bigg| \varphi_1(x)\leq y\leq \varphi_2(x),a\leq x\leq b\right\}\]
 
-化为先 $y$ 后 $x$ 的二次积分
+化为先 \(y\) 后 \(x\) 的二次积分
 
-$$
 \begin{aligned}
     \iint_D f(x,y)\,\mathrm{d}x\mathrm{d}y &= \int_a^b\left[\int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y)\,\mathrm{d}y\right]\mathrm{d}x \\
     &\equiv \int_a^b f(x,y)\,\mathrm{d}x\mathrm{d}y
 \end{aligned}
-$$
 
-\subsubsection{$y$ 型正则区域}
+\subsubsection{\(y\) 型正则区域}
 
-$$
-D = \left\{(x,y)\bigg| \varphi_1(y)\leq x\leq \varphi_2(y),c\leq y\leq d\right\}
-$$
+\[D = \left\{(x,y)\bigg| \varphi_1(y)\leq x\leq \varphi_2(y),c\leq y\leq d\right\}\]
 
-化为先 $x$ 后 $y$ 的二次积分
+化为先 \(x\) 后 \(y\) 的二次积分
 
-$$
 \begin{aligned}
     \iint_D f(x,y)\,\mathrm{d}x\mathrm{d}y &= \int_c^d\left[\int_{\varphi_1(y)}^{\varphi_2(y)} f(x,y)\,\mathrm{d}x\right]\mathrm{d}y \\
     &\equiv \int_c^d f(x,y)\,\mathrm{d}x\mathrm{d}y
 \end{aligned}
-$$
 
 \subsubsection{一般区域的二重积分}
 
