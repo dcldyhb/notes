@@ -31,9 +31,9 @@
 %  },
 %}
 
-\title{上海交通大学报告模板示例文档}
-\author{某某}
-\subject{XX期末课程论文}
+\title{高数2笔记}
+\author{dcldyhb}
+\subject{高等数学2}
 \keywords{上海交大, 饮水思源, 爱国荣校}
 
 \begin{document}
@@ -44,16 +44,28 @@
 \pagestyle{plain}     % 设置为普通页码样式
 \tableofcontents
 
-\begin{abstract}
-本模板是上海交通大学本科生课程论文、学位论文、学术报告等文档的LaTeX模板，旨在帮助学生快速上手LaTeX排版。
-\end{abstract}
+%\begin{abstract}
+%本模板是上海交通大学本科生课程论文、学位论文、学术报告等文档的LaTeX模板，旨在帮助学生快速上手LaTeX排版。
+%\end{abstract}
 
 \newpage
 \setcounter{page}{1}  % 将页码设置为1
 \pagestyle{plain}     % 设置为普通页码样式
-\chapter{欢迎}
-\section{欢迎使用 SJTUReport}
-你好，\LaTeX{}!
+\chapter{重积分}
+\section{重积分的概念和性质}
+\begin{definition}
+    设 $D$ 是平面上的有界闭区域，$f(x,y)$ 为 $D$ 上的有界函数，$I$ 为实数.若对 $D$ 的任意分割 $\Delta D_1 , \Delta D_2 , \cdots , \Delta D_n$ ，任取 $(\xi_i , \eta_i)\in\Delta D_i(i=1,\ldots,n)$，作和 $\displaystyle\sum_{i=1}^nf(\xi_i,\eta_i)\Delta \sigma_i$ （$\Delta \sigma_i$ 为 $D_i$ 的面积），总有
+
+    $$
+    \lim_{\lambda\to 0}\sum_{i=1}^nf(\xi_i,\eta_i)\Delta \sigma_i = I
+    $$
+
+    其中 $\displaystyle\lambda = \max_{1\leq i\leq d} \{d_i\}$，$d_i$ 是小区域 $\Delta D_i$ 的直径，则称函数 $f(x,y)$ 在 $D$ 上**可积**，记为 $f\in R(D)$；极限值 $I$ 称为 $f(x,y)$ 在 $D$ 上的**二重积分**，记作
+
+    $$
+    \iint_D f(x,y)\,\mathrm{d}\sigma.
+    $$
+\end{definition}
 
 \begin{assumption}
     这是一个假设环境。
