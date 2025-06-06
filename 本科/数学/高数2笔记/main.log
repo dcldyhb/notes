@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  6 JUN 2025 22:56
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  6 JUN 2025 22:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1086,214 +1086,46 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 
 ]
 第 1 章
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:50: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 \documentclass
-                   {book}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:51: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 \usepackage
-                {amsmath}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:52: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.52 \usepackage
-                {amsfonts}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:53: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53 \usepackage
-                {amssymb}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:54: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.54 \usepackage
-                {mathrsfs}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:55: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55 \usepackage
-                {graphicx}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:56: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 \usepackage
-                {hyperref}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:57: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 \usepackage
-                {booktabs}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:58: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.58 \usepackage
-                {multirow}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:59: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.59 \usepackage
-                {caption}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:60: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.60 \usepackage
-                {subcaption}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:61: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.61 \usepackage
-                {float}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:62: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.62 \usepackage
-                {enumitem}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:63: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.63 \usepackage
-                {mathtools}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:64: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 \usepackage
-                {bm}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:71: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.71 \begin{document}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 8.0pt on input line 57.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 6.0pt on input line 57.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 8.0pt on input line 57.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 6.0pt on input line 57.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 8.0pt on input line 57.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 6.0pt on input line 57.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 8.0pt on input line 57.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 6.0pt on input line 57.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 8.0pt on input line 57.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 6.0pt on input line 57.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 8.0pt on input line 57.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 6.0pt on input line 57.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 8.0pt on input line 57.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 6.0pt on input line 57.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 8.0pt on input line 57.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 6.0pt on input line 57.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 8.0pt on input line 57.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 6.0pt on input line 57.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 8.0pt on input line 57.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 6.0pt on input line 57.
 
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
@@ -1301,67 +1133,23 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 [2
 
 ]
-第 2 章
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.0pt on input line 83.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.0pt on input line 83.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.0pt on input line 83.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.0pt on input line 83.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 83.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.0pt on input line 83.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 83.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.0pt on input line 83.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 83.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.0pt on input line 83.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 83.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 83.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 83.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.0pt on input line 83.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 8.0pt on input line 83.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 6.0pt on input line 83.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 8.0pt on input line 83.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 6.0pt on input line 83.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 8.0pt on input line 83.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 6.0pt on input line 83.
-
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
-[3
-
-]
+[3]
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [4]
-
-File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
-<use sjtu-vi-logo-std-h-cor-red.pdf>
-[5]
-Overfull \hbox (12.53003pt too wide) in paragraph at lines 252--253
+Overfull \hbox (12.53003pt too wide) in paragraph at lines 226--227
 []\TU/SimSun(0)/m/n/12.045 设 变 换 $\OML/ntxmi/m/it/12.045 T \OT1/ntxtlf/m/n/12.045 : []$ \TU/SimSun(0)/m/n/12.045 有 连 续 偏 导 数，|  且 满 足 $\OML/ntxmi/m/it/12.045 J \U/ntxmia/m/it/12.045 = [] [][]= [] [] <
  []
 
 
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[5]
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
@@ -1390,20 +1178,20 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [12]
+Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
+
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [13]
-Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
-Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
-Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
+Missing character: There is no − ("2212) in font ntx-Regular-tlf-ot1!
 
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [14]
-Missing character: There is no − ("2212) in font ntx-Regular-tlf-ot1!
-
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
@@ -1416,19 +1204,15 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [17]
+Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
+
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [18]
-Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
-Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
-Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
-
-
-File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
-<use sjtu-vi-logo-std-h-cor-red.pdf>
-[19]
-Overfull \hbox (26.94083pt too wide) in paragraph at lines 938--939
+Overfull \hbox (26.94083pt too wide) in paragraph at lines 912--913
 []\TU/SimSun(0)/m/n/12.045 设 $[][] \OML/ntxmi/m/it/12.045 a[]$ \TU/SimSun(0)/m/n/12.045 为 \TU/SimSun(0)/b/n/12.045 正 项 级 数\TU/SimSun(0)/m/n/12.045 ，|  若 非 负 函 数 $\OML/ntxmi/m/it/12.045 f\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$ \TU/SimSun(0)/m/n/12.045 在 $\LMS/ntxsy/m/n/12.045 »\OT1/ntxtlf/m/n/12.045 1\OML/ntxmi/m/it/12.045 ; \LMS/ntxsy/m/n/12.045 Ï1º$ \TU/SimSun(0)/m/n/12.045 上 \TU/SimSun(0)/b/n/12.045 单 调 递 减\TU/SimSun(0)/m/n/12.045 ，|  且 $\OML/ntxmi/m/it/12.045 a[] \U/ntxmia/m/it/12.045 = \OML/ntxmi/m/it/12.045 f\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 n\LMS/ntxsy/m/n/12.045 º  []$\TU/SimSun(0)/m/n/12.045 ，|
  []
 
@@ -1437,28 +1221,28 @@ Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
-[20]
+[19]
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
-[21]
-Overfull \hbox (0.18681pt too wide) in paragraph at lines 1043--1044
+[20]
+Overfull \hbox (0.18681pt too wide) in paragraph at lines 1017--1018
 []\TU/SimSun(0)/m/n/12.045 对 于 收 敛 域 $\OML/ntxmi/m/it/12.045 I$ \TU/SimSun(0)/m/n/12.045 中 的 任 意 一 点 $\OML/ntxmi/m/it/12.045 x$\TU/SimSun(0)/m/n/12.045 ，|  记 $[][] \OML/ntxmi/m/it/12.045 u[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$ \TU/SimSun(0)/m/n/12.045 的 和 为 $\OML/ntxmi/m/it/12.045 S\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$\TU/SimSun(0)/m/n/12.045 ，|  称 此 函 数 $\OML/ntxmi/m/it/12.045 S\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$ \TU/SimSun(0)/m/n/12.045 为 $[][] \OML/ntxmi/m/it/12.045 u[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$
  []
 
 No file main.bbl.
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1067: Missing $ inserted.
+c:/Documents/notes/本科/数学/高数2笔记/main.tex:1041: Missing $ inserted.
 <inserted text> 
                 $
-l.1067 \end{document}
+l.1041 \end{document}
                      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1067: Missing } inserted.
+c:/Documents/notes/本科/数学/高数2笔记/main.tex:1041: Missing } inserted.
 <inserted text> 
                 }
-l.1067 \end{document}
+l.1041 \end{document}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1466,10 +1250,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1067: Extra }, or forgotten \endgroup.
+c:/Documents/notes/本科/数学/高数2笔记/main.tex:1041: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.1067 \end{document}
+l.1041 \end{document}
                      
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1478,13 +1262,13 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1067: LaTeX Error: \begin{enumerate} on input line 1063 ended by \end{document}.
+c:/Documents/notes/本科/数学/高数2笔记/main.tex:1041: LaTeX Error: \begin{enumerate} on input line 1037 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1067 \end{document}
+l.1041 \end{document}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1494,7 +1278,7 @@ or  <return>  to continue without it.
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
-[22] (./main.aux)
+[21] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025/02/12>
@@ -1507,12 +1291,11 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  C81D17B67B5DDDD5F6E7564CF4610C55;2712.
+(rerunfilecheck)             After:  034D0F6DE81AB0D27D728343FA1FED70;2619.
  )
-(\end occurred inside a group at level 2)
+(\end occurred inside a group at level 1)
 
-### semi simple group (level 2) entered at line 1063 (\begingroup)
-### semi simple group (level 1) entered at line 71 (\begingroup)
+### semi simple group (level 1) entered at line 1037 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
  24318 strings out of 473832
@@ -1521,6 +1304,6 @@ Here is how much of TeX's memory you used:
  47004 multiletter control sequences out of 15000+600000
  593342 words of font info for 153 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,124p,1208b,2335s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,16n,124p,1208b,2150s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (23 pages).
+Output written on main.pdf (22 pages).
