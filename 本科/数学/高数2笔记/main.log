@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  7 JUN 2025 00:48
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  7 JUN 2025 00:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -864,51 +864,52 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 \c@problem=\count361
 \c@proposition=\count362
 \c@theorem=\count363
- (./main.aux)
+
+No file main.aux.
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 39.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 39.
- (c:/texlive/2025/texmf-dist/tex/latex/newtx/omlntxmi.fd
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 40.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 40.
+(c:/texlive/2025/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 39.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 39.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 40.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 40.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 39.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 39.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 40.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 40.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 39.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 39.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 40.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 40.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Info: Command `\dddot' is already robust on input line 39.
-LaTeX Info: Command `\ddddot' is already robust on input line 39.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Info: Command `\dddot' is already robust on input line 40.
+LaTeX Info: Command `\ddddot' is already robust on input line 40.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -951,88 +952,91 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package bicaption Info: Main language is not set on input line 39.
-Package hyperref Info: Link coloring OFF on input line 39.
- (./main.out) (./main.out)
+Package bicaption Info: Main language is not set on input line 40.
+Package hyperref Info: Link coloring OFF on input line 40.
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 42.
- (c:/texlive/2025/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 43.
+(c:/texlive/2025/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 15.05624pt on input line 42.
+(Font)              scaled to size 15.05624pt on input line 43.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 12.045pt on input line 42.
+(Font)              scaled to size 12.045pt on input line 43.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 9.03374pt on input line 42.
+(Font)              scaled to size 9.03374pt on input line 43.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 42.
+(Font)              scaled to size 15.05624pt on input line 43.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.045pt on input line 42.
+(Font)              scaled to size 12.045pt on input line 43.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 42.
+(Font)              scaled to size 9.03374pt on input line 43.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 42.
+(Font)              scaled to size 15.05624pt on input line 43.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.045pt on input line 42.
+(Font)              scaled to size 12.045pt on input line 43.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 42.
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 42.
+(Font)              scaled to size 9.03374pt on input line 43.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 43.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 15.05624pt on input line 42.
+(Font)              scaled to size 15.05624pt on input line 43.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.045pt on input line 42.
+(Font)              scaled to size 12.045pt on input line 43.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 9.03374pt on input line 42.
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 42.
+(Font)              scaled to size 9.03374pt on input line 43.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 43.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 42.
+(Font)              scaled to size 15.05624pt on input line 43.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.045pt on input line 42.
+(Font)              scaled to size 12.045pt on input line 43.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 42.
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 42.
+(Font)              scaled to size 9.03374pt on input line 43.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 43.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 42.
+(Font)              scaled to size 15.05624pt on input line 43.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.045pt on input line 42.
+(Font)              scaled to size 12.045pt on input line 43.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 42.
+(Font)              scaled to size 9.03374pt on input line 43.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 42.
+(Font)              scaled to size 15.05624pt on input line 43.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.045pt on input line 42.
+(Font)              scaled to size 12.045pt on input line 43.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 42.
+(Font)              scaled to size 9.03374pt on input line 43.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 15.05624pt on input line 42.
+(Font)              scaled to size 15.05624pt on input line 43.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 12.045pt on input line 42.
+(Font)              scaled to size 12.045pt on input line 43.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 9.03374pt on input line 42.
+(Font)              scaled to size 9.03374pt on input line 43.
 LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 15.05624pt on input line 42.
+(Font)              scaled to size 15.05624pt on input line 43.
 LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 12.045pt on input line 42.
+(Font)              scaled to size 12.045pt on input line 43.
 LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 9.03374pt on input line 42.
+(Font)              scaled to size 9.03374pt on input line 43.
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 15.05624pt on input line 42.
+(Font)              scaled to size 15.05624pt on input line 43.
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 12.045pt on input line 42.
+(Font)              scaled to size 12.045pt on input line 43.
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 9.03374pt on input line 42.
+(Font)              scaled to size 9.03374pt on input line 43.
 
 
 [1
@@ -1066,66 +1070,62 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"SimHei/OT:script=hani;language=dflt;embolden=3;"
 
- (./main.toc
+
+No file main.toc.
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+
 
 LaTeX Font Info:    Font shape `TU/texgyreheros(0)/m/n' will be
-(Font)              scaled to size 8.49173pt on input line 62.
+(Font)              scaled to size 8.49173pt on input line 52.
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [1
 
 
 ]
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 6.0pt on input line 95.
-)
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
-
-
-File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
-<use sjtu-vi-logo-std-h-cor-red.pdf>
-[2]
 第 1 章
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 8.0pt on input line 58.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 6.0pt on input line 58.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 8.0pt on input line 58.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 6.0pt on input line 58.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 8.0pt on input line 58.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 6.0pt on input line 58.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 8.0pt on input line 58.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 6.0pt on input line 58.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 8.0pt on input line 58.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 6.0pt on input line 58.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 8.0pt on input line 58.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 6.0pt on input line 58.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 8.0pt on input line 58.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 6.0pt on input line 58.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 8.0pt on input line 58.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 6.0pt on input line 58.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 8.0pt on input line 58.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 6.0pt on input line 58.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 8.0pt on input line 58.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 6.0pt on input line 58.
 
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
@@ -1141,7 +1141,7 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [3]
-Overfull \hbox (73.01181pt too wide) in paragraph at lines 242--243
+Overfull \hbox (73.01181pt too wide) in paragraph at lines 243--244
 [][]\TU/SimHei(0)/b/n/12.045 定 理 \TU/TeXGyreTermesX(0)/b/n/12.045 1.1 []\TU/SimSun(0)/m/n/12.045 设 变 换 $\OML/ntxmi/m/it/12.045 T \OT1/ntxtlf/m/n/12.045 : []$ \TU/SimSun(0)/m/n/12.045 有 连 续 偏 导 数，|  且 满 足 $\OML/ntxmi/m/it/12.045 J \U/ntxmia/m/it/12.045 = [] [][]= [] [] <
  []
 
@@ -1171,6 +1171,24 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [9]
 第 2 章
+c:/Documents/notes/本科/数学/高数2笔记/main.tex:478: Undefined control sequence.
+l.478 \[\int_{\wideparen
+                        {AB}} f(x,y)\,\mathrm{d}s=\oint_{\wideparen{BA}} f(x...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Documents/notes/本科/数学/高数2笔记/main.tex:478: Undefined control sequence.
+l.478 ...B}} f(x,y)\,\mathrm{d}s=\oint_{\wideparen
+                                                  {BA}} f(x,y)\,\mathrm{d}s\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
@@ -1182,6 +1200,25 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [11]
+c:/Documents/notes/本科/数学/高数2笔记/main.tex:562: Undefined control sequence.
+l.562 \[\int_{\wideparen
+                        {AB}} \vec{F}(x,y) \cdot \mathrm{d}\vec{r} = -\oint_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Documents/notes/本科/数学/高数2笔记/main.tex:562: Undefined control sequence.
+l.562 ...ot \mathrm{d}\vec{r} = -\oint_{\wideparen
+                                                  {BA}} \vec{F}(x,y) \cdot \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
@@ -1240,12 +1277,12 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [22]
-Overfull \hbox (0.19055pt too wide) in paragraph at lines 1144--1148
+Overfull \hbox (0.19055pt too wide) in paragraph at lines 1145--1149
 [][]\TU/SimHei(0)/b/n/12.045 定 义 \TU/TeXGyreTermesX(0)/b/n/12.045 3.12 []\TU/SimSun(0)/m/n/12.045 记 $\OML/ntxmi/m/it/12.045 S[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º \U/ntxmia/m/it/12.045 = [] \OML/ntxmi/m/it/12.045 u[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$\TU/TeXGyreTermesX(0)/m/n/12.045 , \TU/SimSun(0)/m/n/12.045 为 $[] \OML/ntxmi/m/it/12.045 u[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$ \TU/SimSun(0)/m/n/12.045 的 前 $\OML/ntxmi/m/it/12.045 n$ \TU/SimSun(0)/m/n/12.045 项 \TU/SimSun(0)/b/n/12.045 部 分 和 \TU/TeXGyreTermesX(0)/b/n/12.045 (\TU/SimSun(0)/b/n/12.045 函 数\TU/TeXGyreTermesX(0)/b/n/12.045 )\TU/SimSun(0)/m/n/12.045 ，|  记 $\OML/ntxmi/m/it/12.045 r[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º \U/ntxmia/m/it/12.045 = [] \OML/ntxmi/m/it/12.045 u[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$
  []
 
 
-Overfull \hbox (72.89766pt too wide) in paragraph at lines 1206--1209
+Overfull \hbox (72.89766pt too wide) in paragraph at lines 1207--1210
 [][]\TU/SimHei(0)/b/n/12.045 定 理 \TU/TeXGyreTermesX(0)/b/n/12.045 3.9 []\TU/SimSun(0)/m/n/12.045 对 幂 级 数 $[] \OML/ntxmi/m/it/12.045 a[]x[]$\TU/SimSun(0)/m/n/12.045 ，|  若 $[] [] \U/ntxmia/m/it/12.045 = \OML/ntxmi/m/it/12.045 ^^Z$\TU/SimSun(0)/m/n/12.045 ，|  则 收 敛 半 径 $\OML/ntxmi/m/it/12.045 R \U/ntxmia/m/it/12.045 = []$ 
  []
 
@@ -1254,7 +1291,7 @@ Overfull \hbox (72.89766pt too wide) in paragraph at lines 1206--1209
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [23]
-Overfull \hbox (78.16362pt too wide) in paragraph at lines 1214--1217
+Overfull \hbox (78.16362pt too wide) in paragraph at lines 1215--1218
 [][]\TU/SimHei(0)/b/n/12.045 定 理 \TU/TeXGyreTermesX(0)/b/n/12.045 3.10 []\TU/SimSun(0)/m/n/12.045 对 幂 级 数 $[] \OML/ntxmi/m/it/12.045 a[]x[]$\TU/SimSun(0)/m/n/12.045 ，|  若 $[] [] \U/ntxmia/m/it/12.045 = \OML/ntxmi/m/it/12.045 ^^Z$\TU/SimSun(0)/m/n/12.045 ，|  则 收 敛 半 径 $\OML/ntxmi/m/it/12.045 R \U/ntxmia/m/it/12.045 = []$ 
  []
 
@@ -1277,11 +1314,11 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 [27]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1398.
+(hyperref)                removing `math shift' on input line 1399.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1398.
+(hyperref)                removing `math shift' on input line 1399.
 
 
 
@@ -1296,16 +1333,26 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025/02/12>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 10DC3856316D2EBE41605B10EF6A3636;8529.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  10DC3856316D2EBE41605B10EF6A3636;8529.
  ) 
 Here is how much of TeX's memory you used:
- 24343 strings out of 473832
- 485764 string characters out of 5733158
- 877034 words of memory out of 5000000
- 47021 multiletter control sequences out of 15000+600000
+ 24312 strings out of 473832
+ 485344 string characters out of 5733158
+ 872568 words of memory out of 5000000
+ 46998 multiletter control sequences out of 15000+600000
  593342 words of font info for 153 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,124p,1208b,2239s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,16n,124p,1208b,2248s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (32 pages).
+Output written on main.pdf (31 pages).
