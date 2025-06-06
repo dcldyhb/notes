@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>高数2笔记</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<head>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+<h1 id="高等数学2笔记">高等数学2笔记</h1>
+<h2 id="重积分">重积分</h2>
+<h3 id="重积分的概念和性质">重积分的概念和性质</h3>
+<h4 id="二重积分的概念">二重积分的概念</h4>
+<p><strong>定义：</strong></p>
+<p>设 <span class="math inline"><em>D</em></span>
+是平面上的有界闭区域，<span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>)</span> 为 <span
+class="math inline"><em>D</em></span> 上的有界函数，<span
+class="math inline"><em>I</em></span> 为实数.若对 <span
+class="math inline"><em>D</em></span> 的任意分割 <span
+class="math inline"><em>Δ</em><em>D</em><sub>1</sub>, <em>Δ</em><em>D</em><sub>2</sub>, ⋯, <em>Δ</em><em>D</em><sub><em>n</em></sub></span>
+，任取 <span
+class="math inline">(<em>ξ</em><sub><em>i</em></sub>, <em>η</em><sub><em>i</em></sub>) ∈ <em>Δ</em><em>D</em><sub><em>i</em></sub>(<em>i</em> = 1, …, <em>n</em>)</span>，作和
+<span
+class="math inline">$\displaystyle\sum_{i=1}^nf(\xi_i,\eta_i)\Delta
+\sigma_i$</span> （<span
+class="math inline"><em>Δ</em><em>σ</em><sub><em>i</em></sub></span> 为
+<span class="math inline"><em>D</em><sub><em>i</em></sub></span>
+的面积），总有</p>
+<p><span class="math display">$$
+\lim_{\lambda\to 0}\sum_{i=1}^nf(\xi_i,\eta_i)\Delta \sigma_i = I
+$$</span></p>
+<p>其中 <span
+class="math inline"><em>λ</em> = max<sub>1 ≤ <em>i</em> ≤ <em>d</em></sub>{<em>d</em><sub><em>i</em></sub>}</span>，<span
+class="math inline"><em>d</em><sub><em>i</em></sub></span> 是小区域
+<span
+class="math inline"><em>Δ</em><em>D</em><sub><em>i</em></sub></span>
+的直径，则称函数 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>)</span> 在 <span
+class="math inline"><em>D</em></span> 上<strong>可积</strong>，记为
+<span
+class="math inline"><em>f</em> ∈ <em>R</em>(<em>D</em>)</span>；极限值
+<span class="math inline"><em>I</em></span> 称为 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>)</span> 在 <span
+class="math inline"><em>D</em></span>
+上的<strong>二重积分</strong>，记作</p>
+<p><span
+class="math display">∬<sub><em>D</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>σ</em>.</span></p>
+<ul>
+<li><p><span class="math inline">∬</span> 积分号</p></li>
+<li><p><span class="math inline"><em>D</em></span> 积分区域</p></li>
+<li><p><span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>)</span>
+被积函数</p></li>
+<li><p><span class="math inline">d<em>σ</em></span>
+面积元素（微元）</p></li>
+<li><p>二重积分的几何意义</p>
+<ul>
+<li>当被积函数大于 <span class="math inline">0</span>
+时，二重积分是柱体体积</li>
+<li>当被积函数小于 <span class="math inline">0</span>
+时，二重积分是柱体体积的负值</li>
+<li>一般的，为曲顶柱体体积的代数和</li>
+</ul></li>
+<li><p>可积的充分条件</p>
+<ul>
+<li><strong>定理：</strong> 若函数 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>)</span> 在区域
+<span class="math inline"><em>D</em></span> 上连续，则 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>) ∈ <em>D</em></span>.</li>
+</ul></li>
+<li><p><span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>)</span> 在 <span
+class="math inline"><em>D</em></span> 上的可积性及积分值与其在 <span
+class="math inline"><em>D</em></span>
+内<strong>有限条光滑曲线</strong>上的定义无关</p></li>
+</ul>
+<h3 id="二重积分的性质">二重积分的性质</h3>
+<ol type="1">
+<li><p><span
+class="math inline">∬<sub><em>D</em></sub> d<em>σ</em> = ∬<sub><em>D</em></sub>1 d<em>σ</em> = <em>A</em><sub><em>D</em></sub>  (D
+的面积)</span>.</p></li>
+<li><p><strong>线性性：</strong> 设 <span
+class="math inline"><em>f</em>, <em>g</em> ∈ <em>R</em>(<em>D</em>)</span>，<span
+class="math inline"><em>α</em>, <em>β</em></span>，是任意常数，则 <span
+class="math inline"><em>α</em><em>f</em> + <em>β</em><em>g</em> ∈ <em>R</em>(<em>D</em>)</span>，且</p>
+<p><span
+class="math display">∬<sub><em>D</em></sub>(<em>α</em><em>f</em> + <em>β</em><em>g</em>) d<em>σ</em> = <em>α</em>∬<sub><em>D</em></sub><em>f</em> d<em>σ</em> + <em>β</em>∬<sub><em>D</em></sub><em>g</em> d<em>σ</em></span></p></li>
+<li><p><strong>区域可加性：</strong> 若 <span
+class="math inline"><em>f</em> ∈ <em>R</em>(<em>D</em>)</span>
+且积分区域 <span class="math inline"><em>D</em></span>
+分为内部不相交的子区域 <span
+class="math inline"><em>D</em><sub>1</sub>, <em>D</em><sub>2</sub></span>，则</p>
+<p><span
+class="math display">∬<sub><em>D</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>σ</em> = ∬<sub><em>D</em><sub>1</sub></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>σ</em> + ∬<sub><em>D</em><sub>2</sub></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>σ</em></span></p></li>
+<li><p><strong>保序性：</strong> 若 <span
+class="math inline"><em>f</em>, <em>g</em> ∈ <em>R</em>(<em>D</em>)</span>，且当
+<span class="math inline">(<em>x</em>, <em>y</em>) ∈ <em>D</em></span>
+时，<span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>) ≤ <em>g</em>(<em>x</em>, <em>y</em>)</span>，则</p>
+<p><span
+class="math display">∬<sub><em>D</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>σ</em> ≤ ∬<sub><em>D</em></sub><em>g</em>(<em>x</em>, <em>y</em>) d<em>σ</em></span></p>
+<ul>
+<li><strong>推论1：</strong> 若 <span
+class="math inline"><em>f</em> ∈ <em>R</em>(<em>D</em>)</span> ,则 <span
+class="math inline">|<em>f</em>(<em>x</em>, <em>y</em>)| ∈ <em>R</em>(<em>D</em>)</span>，且</li>
+</ul>
+<p><span
+class="math display">|∬<sub><em>D</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>σ</em>| ≤ ∬<sub><em>D</em></sub>|<em>f</em>(<em>x</em>, <em>y</em>)| d<em>σ</em></span></p>
+<ul>
+<li><strong>推论2：</strong> 若 <span
+class="math inline"><em>f</em> ∈ <em>R</em>(<em>D</em>)</span>，且当
+<span class="math inline">(<em>x</em>, <em>y</em>) ∈ <em>D</em></span>
+时， <span
+class="math inline"><em>m</em> ≤ <em>f</em>(<em>x</em>, <em>y</em>) ≤ <em>M</em></span>，则</li>
+</ul>
+<p><span
+class="math display"><em>m</em><em>A</em><sub><em>D</em></sub> ≤ ∬<sub><em>D</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>σ</em> ≤ <em>M</em><em>A</em><sub><em>D</em></sub></span></p>
+<ul>
+<li><strong>推论3：</strong> 若 <span
+class="math inline"><em>f</em> ∈ <em>R</em>(<em>D</em>)</span>，且当
+<span class="math inline">(<em>x</em>, <em>y</em>) ∈ <em>D</em></span>
+时，<span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>) ≥ 0</span>，则</li>
+</ul>
+<p><span
+class="math display">∬<sub><em>D</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>σ</em> ≥ 0</span></p></li>
+<li><p><strong>积分中值定理：</strong> 若 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>) ∈ <em>C</em>(<em>D</em>)</span>
+，<span
+class="math inline"><em>g</em>(<em>x</em>, <em>y</em>) ∈ <em>R</em>(<em>D</em>)</span>，且
+<span class="math inline"><em>g</em></span> 在 <span
+class="math inline"><em>D</em></span> 上不变号，则 <span
+class="math inline">∃<em>ξ</em>, <em>η</em> ∈ <em>D</em></span>，使得</p>
+<p><span
+class="math display">∬<sub><em>D</em></sub><em>f</em>(<em>x</em>, <em>y</em>)<em>g</em>(<em>x</em>, <em>y</em>) d<em>σ</em> = <em>f</em>(<em>ξ</em>, <em>η</em>)∬<sub><em>D</em></sub><em>g</em>(<em>x</em>, <em>y</em>) d<em>σ</em></span></p>
+<ul>
+<li><strong>推论：</strong> 若 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>) ∈ <em>C</em>(<em>D</em>)</span>，则存在
+<span
+class="math inline">(<em>ξ</em>, <em>η</em>) ∈ <em>D</em></span>，使得</li>
+</ul>
+<p><span
+class="math display">∬<sub><em>D</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>σ</em> = <em>f</em>(<em>ξ</em>, <em>η</em>)<em>A</em><sub><em>D</em></sub></span></p>
+<p>称 <span class="math inline">$f(\xi,\eta) = \frac{\iint_D
+f\,\mathrm{d}\sigma}{A_D}$</span> 为函数 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>)</span>
+在有界闭区域 <span class="math inline"><em>D</em></span>
+上的<strong>平均值</strong></p></li>
+</ol>
+<h3 id="二重积分的计算">二重积分的计算</h3>
+<h4 id="直角坐标系下的计算">直角坐标系下的计算</h4>
+<p>当二重积分存在时，可利用平行于坐标轴的直线来划分积分区域 <span
+class="math inline"><em>D</em></span>，此时，面积元素</p>
+<p><span
+class="math display">d<em>σ</em> = d<em>x</em>d<em>y</em></span></p>
+<p>故二重积分在直角坐标系下可表示为</p>
+<p><span
+class="math display">∬<sub><em>D</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>σ</em> = ∬<sub><em>D</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>x</em>d<em>y</em></span></p>
+<h5 id="x-型正则区域"><span class="math inline"><em>x</em></span>
+型正则区域</h5>
+<p><span
+class="math display"><em>D</em> = {(<em>x</em>, <em>y</em>)|<em>φ</em><sub>1</sub>(<em>x</em>) ≤ <em>y</em> ≤ <em>φ</em><sub>2</sub>(<em>x</em>), <em>a</em> ≤ <em>x</em> ≤ <em>b</em>}</span></p>
+<p>化为先 <span class="math inline"><em>y</em></span> 后 <span
+class="math inline"><em>x</em></span> 的二次积分</p>
+<p><span class="math display">$$
+\begin{aligned}
+    \iint_D f(x,y)\,\mathrm{d}x\mathrm{d}y &amp;=
+\int_a^b\left[\int_{\varphi_1(x)}^{\varphi_2(x)}
+f(x,y)\,\mathrm{d}y\right]\mathrm{d}x \\
+    &amp;\equiv \int_a^b f(x,y)\,\mathrm{d}x\mathrm{d}y
+\end{aligned}
+$$</span></p>
+<h5 id="y-型正则区域"><span class="math inline"><em>y</em></span>
+型正则区域</h5>
+<p><span
+class="math display"><em>D</em> = {(<em>x</em>, <em>y</em>)|<em>φ</em><sub>1</sub>(<em>y</em>) ≤ <em>x</em> ≤ <em>φ</em><sub>2</sub>(<em>y</em>), <em>c</em> ≤ <em>y</em> ≤ <em>d</em>}</span></p>
+<p>化为先 <span class="math inline"><em>x</em></span> 后 <span
+class="math inline"><em>y</em></span> 的二次积分</p>
+<p><span class="math display">$$
+\begin{aligned}
+    \iint_D f(x,y)\,\mathrm{d}x\mathrm{d}y &amp;=
+\int_c^d\left[\int_{\varphi_1(y)}^{\varphi_2(y)}
+f(x,y)\,\mathrm{d}x\right]\mathrm{d}y \\
+    &amp;\equiv \int_c^d f(x,y)\,\mathrm{d}x\mathrm{d}y
+\end{aligned}
+$$</span></p>
+<h5 id="一般区域的二重积分">一般区域的二重积分</h5>
+<p>分割成若干个正则子区域，利用积分区域可加性，分别在子区域上积分后求和</p>
+<blockquote>
+<p>直角坐标计算二重积分的步骤</p>
+<ol type="1">
+<li><strong>画出积分区域</strong> <span
+class="math inline"><em>D</em></span>
+的草图，并<strong>确定类型</strong></li>
+<li>按照所确定的类型<strong>表示区域</strong> <span
+class="math inline"><em>D</em></span></li>
+<li><strong>化二重积分为二次积分</strong>（注意上下限）</li>
+<li><strong>计算</strong>二重积分</li>
+</ol>
+</blockquote>
+<h4 id="极坐标系下的计算">极坐标系下的计算</h4>
+<p>当积分区域的边界曲线或被积函数用极坐标表示较为简单时，可用极坐标来计算二重积分.</p>
+<p>面积元素 <span class="math inline"><em>Δ</em><em>σ</em></span>
+在极坐标下为</p>
+<p><span class="math display">$$
+\boxed{\Delta\sigma= r\mathrm{d}r\mathrm{d}\theta}
+$$</span></p>
+<p>从直角坐标到极坐标时的二重积分变换公式为</p>
+<p><span
+class="math display">∬<sub><em>D</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>σ</em> = ∬<sub><em>D</em></sub><em>f</em>(<em>r</em>cos <em>θ</em>, <em>r</em>sin <em>θ</em>)<em>r</em> d<em>r</em>d<em>θ</em></span></p>
+<p><span
+class="math display">{(<em>r</em>, <em>θ</em>)|<em>r</em><sub>1</sub>(<em>θ</em>) ≤ <em>r</em> ≤ <em>r</em><sub>2</sub>(<em>θ</em>), <em>α</em> ≤ <em>θ</em> ≤ <em>β</em>}</span></p>
+<p>则</p>
+<p><span
+class="math display">∬<sub><em>D</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>σ</em> = ∫<sub><em>α</em></sub><sup><em>β</em></sup> d<em>θ</em>∫<sub><em>r</em><sub>1</sub>(<em>θ</em>)</sub><sup><em>r</em><sub>2</sub>(<em>θ</em>)</sup><em>f</em>(<em>r</em>cos <em>θ</em>, <em>r</em>sin <em>θ</em>)<em>r</em> d<em>r</em></span></p>
+<h4 id="二重积分的变量代换">二重积分的变量代换</h4>
+<p><strong>定理：</strong></p>
+<p>设变换 <span class="math inline">$\displaystyle T
+:\begin{cases}x=x(u,v)\\y=y(u,v)\end{cases}$</span> 有连续偏导数，且满足
+<span class="math inline">$\displaystyle J = \frac{\partial
+(x,y)}{\partial (u,v)}\coloneqq \begin{vmatrix}x_u ,x_v\newline
+y_u,y_v\end{vmatrix} \left(\text{Jacobi 行列式}\right)\neq 0$</span>，而
+<span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>) ∈ <em>C</em>(<em>D</em>)</span>，则</p>
+<p><span
+class="math display">∬<sub><em>D</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>σ</em> = ∬<sub><em>D</em><sup>*</sup></sub><em>f</em>(<em>x</em>(<em>u</em>, <em>v</em>), <em>y</em>(<em>u</em>, <em>v</em>))|<em>J</em>| d<em>u</em>d<em>v</em></span></p>
+<ul>
+<li><p>在定理条件下，变换 <span class="math inline"><em>T</em></span>
+一定存在逆变换 <span
+class="math inline">$T^{-1}:\begin{cases}u=u(x,y)\\v=v(x,y)\end{cases}$</span>，且
+<span class="math inline">$\frac{\partial (u,v)}{\partial (x,y)}\cdot
+\frac{\partial (x,y)}{\partial (u,v)} = 1$</span></p>
+<p>有时，借助此式求 <span class="math inline"><em>J</em></span>
+较为简单</p></li>
+<li><p>当 Jacobi 行列式仅在区域 <span
+class="math inline"><em>D</em><sup>*</sup></span>
+内个别点上或个别曲线上为 <span class="math inline">0</span>
+时，定理结论仍成立</p></li>
+<li><p>在广义极坐标 <span
+class="math inline">$\begin{cases}x=ar\cos\theta\\y=br\sin\theta\end{cases}$</span>
+下，<span
+class="math inline"><em>J</em> = <em>a</em><em>b</em><em>r</em></span></p></li>
+</ul>
+<h3 id="三重积分">三重积分</h3>
+<h4 id="三重积分的定义">三重积分的定义</h4>
+<p><strong>定义：</strong></p>
+<p>设 <span class="math inline"><em>Ω</em></span> 是 <span
+class="math inline">ℝ<sup>3</sup></span> 中的有界闭区域，三元函数 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>)</span>
+在 <span class="math inline"><em>Ω</em></span> 上有界，<span
+class="math inline"><em>I</em></span> 为实数. 若将 <span
+class="math inline"><em>Ω</em></span> 任意分割成 <span
+class="math inline"><em>n</em></span> 个小区域 <span
+class="math inline"><em>Δ</em><em>Ω</em><sub>1</sub>, <em>Δ</em><em>Ω</em><sub>2</sub>, …, <em>Δ</em><em>Ω</em><sub><em>n</em></sub></span>，任取
+<span class="math inline">$\left(\varepsilon_i,\eta_i,\xi_i
+\right)\in\Delta\Omega_i\left(i=1,2,\ldotp,n\right)$</span>，作和 <span
+class="math inline">$\displaystyle\sum_{i=1}^nf\left(\varepsilon_i,\eta_i,\xi_i
+\right)\Delta V_i$</span>，（<span
+class="math inline"><em>Δ</em><em>V</em><sub><em>i</em></sub></span> 是
+<span
+class="math inline"><em>Δ</em><em>Ω</em><sub><em>i</em></sub></span>
+的体积），总有</p>
+<p><span class="math display">$$
+\lim_{\lambda\to 0}\sum_{i=1}^nf\left(\varepsilon_i,\eta_i,\xi_i
+\right)\Delta V_i = I
+$$</span></p>
+<p>其中 <span
+class="math inline"><em>λ</em> = max<sub>1 ≤ <em>i</em> ≤ <em>n</em></sub>{<em>d</em><sub><em>i</em></sub>}</span>，<span
+class="math inline"><em>d</em><sub><em>i</em></sub></span> 是 <span
+class="math inline"><em>Δ</em><em>Ω</em><sub><em>i</em></sub></span>
+的直径，则称函数 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>)</span>
+在 <span class="math inline"><em>Ω</em></span>
+上<strong>可积</strong>，记为 <span
+class="math inline"><em>f</em> ∈ <em>R</em>(<em>Ω</em>)</span>； <span
+class="math inline"><em>I</em></span> 称为 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>)</span>
+在 <span class="math inline"><em>Ω</em></span>
+上的<strong>三重积分</strong>，记作</p>
+<p><span
+class="math display">∭<sub><em>Ω</em></sub><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) d<em>V</em></span></p>
+<p>其中 <span class="math inline"><em>V</em><sub><em>Ω</em></sub></span>
+是区域 <span class="math inline"><em>Ω</em></span> 的体积</p>
+<ul>
+<li>若 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>)</span>
+表示占有三维空间区域 <span class="math inline"><em>Ω</em></span>
+的物体的体密度函数，则 <span
+class="math inline">∭<sub><em>Ω</em></sub><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) d<em>V</em></span>
+给出了物体的<strong>质量</strong></li>
+<li>类似二重积分，三重积分具有线性性，区域可加性，保序性以及推论和积分中值定理，并且有
+<span
+class="math inline">∭<sub><em>Ω</em></sub> d<em>V</em> = <em>V</em><sub><em>Ω</em></sub></span></li>
+</ul>
+<h4 id="直角坐标系下的计算-1">直角坐标系下的计算</h4>
+<p>直角坐标系下，由于 <span
+class="math inline">d<em>V</em> = d<em>x</em>d<em>y</em>d<em>z</em></span>，故</p>
+<p><span
+class="math display">∭<sub><em>Ω</em></sub><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) d<em>V</em> = ∭<sub><em>Ω</em></sub><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) d<em>x</em>d<em>y</em>d<em>z</em></span></p>
+<h5 id="柱线法坐标面投影法">柱线法（坐标面投影法）</h5>
+<p>设 <span class="math inline"><em>Ω</em></span> 是以曲面 <span
+class="math inline"><em>z</em> = <em>z</em><sub>1</sub>(<em>x</em>, <em>y</em>)</span>
+为底，曲面 <span
+class="math inline"><em>x</em> = <em>x</em><sub>2</sub>(<em>x</em>, <em>y</em>)</span>，而侧面是母线平行于
+<span class="math inline"><em>z</em></span> 轴的柱体所围成的区域</p>
+<p>设 <span class="math inline"><em>Ω</em></span> 在 <span
+class="math inline"><em>x</em><em>O</em><em>y</em></span>
+面上的投影区域为 <span class="math inline"><em>D</em><sub>1</sub></span>
+，则 <span class="math inline"><em>Ω</em></span> 可表示为</p>
+<p><span
+class="math display"><em>Ω</em> = {(<em>x</em>, <em>y</em>, <em>z</em>)|(<em>x</em>, <em>y</em>) ∈ <em>D</em><sub>1</sub>, <em>z</em><sub>1</sub>(<em>x</em>, <em>y</em>) ≤ <em>z</em> ≤ <em>z</em><sub>2</sub>(<em>x</em>, <em>y</em>)(<em>x</em>, <em>y</em>) ∈ <em>D</em>}</span></p>
+<p>则物体总质量为</p>
+<p><span
+class="math display">∬<sub><em>D</em></sub>(∫<sub><em>z</em><sub>1</sub>(<em>x</em>, <em>y</em>)</sub><sup><em>z</em><sub>2</sub>(<em>x</em>, <em>y</em>)</sup><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) d<em>z</em>) d<em>x</em>d<em>y</em></span></p>
+<p>故有</p>
+<p><span
+class="math display">∭<sub><em>Ω</em></sub><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) d<em>V</em> = ∬<sub><em>D</em><sub>1</sub></sub> d<em>x</em>d<em>y</em>∫<sub><em>z</em><sub>1</sub>(<em>x</em>, <em>y</em>)</sub><sup><em>z</em><sub>2</sub>(<em>x</em>, <em>y</em>)</sup><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) d<em>z</em></span></p>
+<h5 id="截面法坐标轴投影法">截面法（坐标轴投影法）</h5>
+<p>设区域 <span class="math inline"><em>Ω</em></span> 在 <span
+class="math inline"><em>z</em></span> 轴上的投影区间为 <span
+class="math inline">[<em>h</em><sub>1</sub>, <em>h</em><sub>2</sub>]</span>，即
+<span class="math inline"><em>Ω</em></span> 介于平面 <span
+class="math inline"><em>z</em> = <em>h</em><sub>1</sub></span> 和 <span
+class="math inline"><em>z</em> = <em>h</em><sub>2</sub></span> 之间，过
+<span class="math inline"><em>z</em></span> 处且垂直于 <span
+class="math inline"><em>z</em></span> 轴的平面截 <span
+class="math inline"><em>Ω</em></span> 得截面区域 <span
+class="math inline"><em>D</em><sub><em>z</em></sub></span>，则 <span
+class="math inline"><em>Ω</em></span> 可表示为</p>
+<p><span
+class="math display"><em>Ω</em> = {(<em>x</em>, <em>y</em>, <em>z</em>)|<em>h</em><sub>1</sub> ≤ <em>z</em> ≤ <em>h</em><sub>2</sub>, (<em>x</em>, <em>y</em>) ∈ <em>D</em><sub><em>z</em></sub>}</span></p>
+<p>物体总质量为</p>
+<p><span
+class="math display">∫<sub><em>h</em><sub>1</sub></sub><sup><em>h</em><sub>2</sub></sup>(∬<sub><em>D</em><sub><em>z</em></sub></sub><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) d<em>x</em>d<em>y</em>) d<em>z</em></span></p>
+<p>故有</p>
+<p><span
+class="math display">∭<sub><em>Ω</em></sub><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) d<em>V</em> = ∫<sub><em>h</em><sub>1</sub></sub><sup><em>h</em><sub>2</sub></sup> d<em>z</em>∬<sub><em>D</em><sub><em>z</em></sub></sub><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) d<em>x</em>d<em>y</em></span></p>
+<h4 id="三重积分的变量代换">三重积分的变量代换</h4>
+<p><strong>定理：</strong></p>
+<p>设变换 <span
+class="math inline">$T:\begin{cases}x=x(u,v,w)\\y=y(u,v,w)\\z=z(u,v,w)\end{cases}$</span>
+有连续偏导数，且满足 <span class="math inline">$J=\frac{\partial
+(x,y,z)}{\partial (u,v,w)}\neq 0$</span>，而 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) ∈ <em>C</em>(<em>Ω</em>)</span>，则</p>
+<p><span
+class="math display">∭<sub><em>Ω</em></sub><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) d<em>V</em> = ∭<sub><em>Ω</em><sup>*</sup></sub><em>f</em>(<em>x</em>(<em>u</em>, <em>v</em>, <em>w</em>), <em>y</em>(<em>u</em>, <em>v</em>, <em>w</em>), <em>z</em>(<em>u</em>, <em>v</em>, <em>w</em>))|<em>J</em>| d<em>u</em>d<em>v</em>d<em>w</em></span></p>
+<h5 id="柱面坐标系下的计算">柱面坐标系下的计算</h5>
+<p>柱面坐标系，实际上就是将 <span
+class="math inline"><em>x</em>, <em>y</em></span> 坐标转换为极坐标</p>
+<p><span class="math display">$$
+\begin{cases}
+x = r\cos\theta\\
+y = r\sin\theta\\
+z = z
+\end{cases}
+$$</span></p>
+<p>其 Jacobi 行列式为</p>
+<p><span class="math display">$$
+J = \frac{\partial (x,y,z)}{\partial (r,\theta,z)} = \begin{vmatrix}
+\cos\theta &amp; -r\sin\theta &amp; 0\\
+\sin\theta &amp; r\cos\theta &amp; 0\\
+0 &amp; 0 &amp; 1
+\end{vmatrix} = r
+$$</span></p>
+<p>则柱面积分积分公式为</p>
+<p><span
+class="math display">∭<sub><em>Ω</em></sub><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) d<em>V</em> = ∭<sub><em>Ω</em><sup>*</sup></sub><em>f</em>(<em>r</em>cos <em>θ</em>, <em>r</em>sin <em>θ</em>, <em>z</em>)<em>r</em> d<em>r</em>d<em>θ</em>d<em>z</em></span></p>
+<h5 id="球面坐标系下的计算">球面坐标系下的计算</h5>
+<p>球面坐标系，实际上就是将 <span
+class="math inline"><em>x</em>, <em>y</em>, <em>z</em></span>
+坐标转换为球坐标</p>
+<p><span class="math display">$$
+\begin{cases}
+x = \rho\sin\varphi\cos\theta\\
+y = \rho\sin\varphi\sin\theta\\
+z = \rho\cos\varphi
+\end{cases}
+$$</span></p>
+<p>其 Jacobi 行列式为</p>
+<p><span class="math display">$$
+J = \frac{\partial (x,y,z)}{\partial (\rho,\varphi,\theta)} =
+\begin{vmatrix}
+\sin\varphi\cos\theta &amp; \rho\cos\varphi\cos\theta &amp;
+-\rho\sin\varphi\sin\theta\\
+\sin\varphi\sin\theta &amp; \rho\cos\varphi\sin\theta &amp;
+\rho\sin\varphi\cos\theta\\
+\cos\varphi &amp; -\rho\sin\varphi &amp; 0
+\end{vmatrix} = \rho^2\sin\varphi
+$$</span></p>
+<p>则球面积分积分公式为</p>
+<p><span
+class="math display">∭<sub><em>Ω</em></sub><em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) d<em>V</em> = ∭<sub><em>Ω</em><sup>*</sup></sub><em>f</em>(<em>ρ</em>sin <em>φ</em>cos <em>θ</em>, <em>ρ</em>sin <em>φ</em>sin <em>θ</em>, <em>ρ</em>cos <em>φ</em>)<em>ρ</em><sup>2</sup>sin <em>φ</em> d<em>ρ</em>d<em>φ</em>d<em>θ</em></span></p>
+<h3 id="重积分的应用">重积分的应用</h3>
+<h4 id="重积分的几何应用">重积分的几何应用</h4>
+<h5 id="平面图形的面积">平面图形的面积</h5>
+<p><span
+class="math display"><em>A</em>(<em>D</em>) = ∬<sub><em>D</em></sub> d<em>σ</em> = ∬<sub><em>D</em></sub> d<em>x</em>d<em>y</em></span></p>
+<h5 id="立体的体积">立体的体积</h5>
+<p><span
+class="math display"><em>V</em>(<em>Ω</em>) = ∭<sub><em>Ω</em></sub> d<em>V</em> = ∭<sub><em>Ω</em></sub> d<em>x</em>d<em>y</em>d<em>z</em></span></p>
+<h5 id="曲面的面积">曲面的面积</h5>
+<p>设空间曲面 <span
+class="math inline"><em>S</em> : <em>z</em> = <em>f</em>(<em>x</em>, <em>y</em>), (<em>x</em>, <em>y</em>) ∈ <em>D</em></span>.</p>
+<p>则曲面 <span class="math inline"><em>S</em></span> 的面积为</p>
+<p><span class="math display">$$
+A(S) = \iint_D \sqrt{1+z_x^2+z_y^2}\,\mathrm{d}x\mathrm{d}y
+$$</span></p>
+<h4 id="重积分的物理应用">重积分的物理应用</h4>
+<h6 id="质心">质心</h6>
+<p>体密度为 <span
+class="math inline"><em>ρ</em>(<em>x</em>, <em>y</em>)</span>
+的物体占据空间 <span
+class="math inline"><em>Ω</em></span>，其质心坐标为</p>
+<p><span class="math display">$$
+\begin{cases}
+  \displaystyle\bar{x} = \frac{\iiint_\Omega
+x\rho(x,y,z)\,\mathrm{d}V}{\iiint_\Omega\mu(x,y,z)\,\mathrm{d}V} \\
+  \displaystyle\bar{y} = \frac{\iiint_\Omega
+y\rho(x,y,z)\,\mathrm{d}V}{\iiint_\Omega\mu(x,y,z)\,\mathrm{d}V}\\
+  \displaystyle\bar{z} = \frac{\iiint_\Omega
+z\rho(x,y,z)\,\mathrm{d}V}{\iiint_\Omega\mu(x,y,z)\,\mathrm{d}V}
+\end{cases}
+$$</span></p>
+<h5 id="转动惯量">转动惯量</h5>
+<p>设物体的密度为 <span
+class="math inline"><em>ρ</em>(<em>x</em>, <em>y</em>, <em>z</em>)</span>，则物体分别关于
+<span class="math inline"><em>x</em></span>，<span
+class="math inline"><em>y</em></span>，<span
+class="math inline"><em>z</em></span> 轴的转动惯量为</p>
+<p><span class="math display">$$
+\begin{cases}
+  I_x = \iiint_\Omega \rho(x,y,z)(y^2+z^2)\,\mathrm{d}V\\
+  I_y = \iiint_\Omega \rho(x,y,z)(x^2+z^2)\,\mathrm{d}V\\s
+  I_z = \iiint_\Omega \rho(x,y,z)(x^2+y^2)\,\mathrm{d}V
+\end{cases}
+$$</span></p>
+<h5 id="引力">引力</h5>
+<p><span class="math display">$$
+\begin{aligned}
+  &amp;\mathrm{d}\vec{F} = G\frac{m_0\mathrm{d}m}{r^3}\vec{r}\\
+  =&amp;
+G\frac{m_0\rho(x,y,z)\mathrm{d}V}{r^3}\cdot\left(x-x_0,y-y_0,z-z_0\right)\\
+  =&amp;\left(\mathrm{d}F_x,\mathrm{d}F_y,\mathrm{d}F_z\right)
+\end{aligned}
+$$</span></p>
+<h2 id="曲线积分和曲面积分">曲线积分和曲面积分</h2>
+<h3 id="第一类曲线积分和曲面积分">第一类曲线积分和曲面积分</h3>
+<h4 id="第一类曲线积分的概念">第一类曲线积分的概念</h4>
+<p><strong>定义：</strong></p>
+<p>设 <span class="math inline"><em>C</em></span> 是 <span
+class="math inline"><em>x</em><em>O</em><em>y</em></span>
+面上的一条光滑曲线弧，函数 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>)</span> 是定义在
+<span class="math inline"><em>C</em></span> 上的有界函数，在 <span
+class="math inline"><em>C</em></span> 上任意插入分点 <span
+class="math inline"><em>A</em> = <em>A</em><sub>0</sub>, <em>A</em><sub>1</sub>, …, <em>A</em><sub><em>n</em> − 1</sub>, <em>A</em><sub><em>n</em></sub> = <em>B</em></span>，将其分成
+<span class="math inline"><em>n</em></span> 个小弧段，记第 <span
+class="math inline"><em>i</em></span> 个小弧段的弧长为 <span
+class="math inline"><em>Δ</em><em>s</em><sub><em>i</em></sub></span>，在第
+<span class="math inline"><em>i</em></span> 个小段上任取点 <span
+class="math inline">(<em>ϵ</em><sub><em>i</em></sub>, <em>η</em><sub><em>i</em></sub>)</span>，和式
+<span
+class="math inline">$\displaystyle\sum_{i=1}^{+\infty}f(\epsilon_i,\eta_i)\Delta
+s_i$</span>，当 <span
+class="math inline"><em>λ</em> = max<sub>1 ≤ <em>i</em> ≤ <em>n</em></sub>{<em>Δ</em><em>s</em><sub><em>i</em></sub>} → 0</span>
+时，有确定的极限值 <span class="math inline"><em>I</em></span>，即</p>
+<p><span class="math display">$$
+\lim_{\lambda\to 0}\sum_{i=1}^nf(\epsilon_i,\eta_i)\Delta s_i = I
+$$</span></p>
+<p>则称函数 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>)</span> 在曲线
+<span class="math inline"><em>C</em></span>
+上<strong>可积</strong>，并将此极限值 <span
+class="math inline"><em>I</em></span> 称为函数 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>)</span> 在曲线
+<span class="math inline"><em>C</em></span>
+上的<strong>第一类曲线积分</strong>，记作 <span
+class="math inline">∫<sub><em>C</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>s</em></span>，即</p>
+<p><span class="math display">$$
+I = \int_C f(x,y)\,\mathrm{d}s = \lim_{\lambda\to
+0}\sum_{i=1}^nf(\epsilon_i,\eta_i)\Delta s_i
+$$</span></p>
+<ul>
+<li>第一类曲线积分的几何含义为柱面的面积</li>
+<li><span
+class="math inline">∫<sub><em>C</em></sub> d<em>s</em> = ∫<sub><em>c</em></sub>1 d<em>s</em> = <em>s</em><sub><em>C</em></sub></span></li>
+<li>若 <span class="math inline"><em>C</em></span> 是封闭曲线，即 <span
+class="math inline"><em>C</em></span> 的二端点重合，则记第一类曲线积分为
+<span
+class="math inline">∮<sub><em>C</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>s</em></span></li>
+</ul>
+<h4 id="第一类曲线积分的性质">第一类曲线积分的性质</h4>
+<h5 id="与曲线方向无关">与曲线方向无关</h5>
+<p>若曲线 <span class="math inline"><em>C</em></span> 的端点为 <span
+class="math inline"><em>A</em></span> 和 <span
+class="math inline"><em>B</em></span>，<span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>)</span> 在曲线
+<span class="math inline"><em>C</em></span> 上可积，则</p>
+<p><span class="math display">$$
+\int_{\widehat{AB}} f(x,y)\,\mathrm{d}s=\oint_{\widehat{BA}}
+f(x,y)\,\mathrm{d}s
+$$</span></p>
+<h5 id="线性性">线性性</h5>
+<p>若 <span class="math inline"><em>f</em>, <em>g</em></span> 在曲线
+<span class="math inline"><em>C</em></span> 上可积，<span
+class="math inline"><em>α</em>, <em>β</em></span> 是任意常数，则 <span
+class="math inline"><em>α</em><em>f</em> + <em>β</em><em>g</em></span>
+在曲线 <span class="math inline"><em>C</em></span> 上可积，且</p>
+<p><span
+class="math display">∫<sub><em>C</em></sub>(<em>α</em><em>f</em> + <em>β</em><em>g</em>) d<em>s</em> = <em>α</em>∫<sub><em>C</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>s</em> + <em>β</em>∫<sub><em>C</em></sub><em>g</em>(<em>x</em>, <em>y</em>) d<em>s</em></span></p>
+<h5 id="路径可加性">路径可加性</h5>
+<p>若曲线 <span class="math inline"><em>C</em></span> 由两段光滑曲线
+<span class="math inline"><em>C</em><sub>1</sub></span> 和 <span
+class="math inline"><em>C</em><sub>2</sub></span> 首尾连接而成，则 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>)</span> 在曲线
+<span class="math inline"><em>C</em></span> 上可积，等价于 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>)</span> 在曲线
+<span class="math inline"><em>C</em><sub>1</sub></span> 和 <span
+class="math inline"><em>C</em><sub>2</sub></span> 上均可积，且</p>
+<p><span
+class="math display">∫<sub><em>C</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>s</em> = ∫<sub><em>C</em><sub>1</sub></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>s</em> + ∫<sub><em>C</em><sub>2</sub></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>s</em></span></p>
+<h5 id="中值定理">中值定理</h5>
+<p>设函数 <span class="math inline"><em>f</em></span> 在光滑曲线 <span
+class="math inline"><em>C</em></span> 上连续，则 <span
+class="math inline">∃(<em>ϵ</em>, <em>η</em>) ∈ <em>C</em></span>，使得</p>
+<p><span
+class="math display">∫<sub><em>C</em></sub><em>f</em>(<em>x</em>, <em>y</em>) d<em>s</em> = <em>f</em>(<em>ϵ</em>, <em>η</em>) ⋅ <em>s</em><sub><em>C</em></sub></span></p>
+<p>其中 <span class="math inline"><em>s</em><sub><em>C</em></sub></span>
+是曲线段 <span class="math inline"><em>C</em></span> 的长度</p>
+<h4 id="第一类曲线积分的计算">第一类曲线积分的计算</h4>
+<p>设函数 <span
+class="math inline"><em>f</em>(<em>x</em>, <em>y</em>)</span> 在光滑曲线
+<span class="math inline"><em>C</em></span> 上连续，<span
+class="math inline"><em>C</em></span> 的参数方程为 <span
+class="math inline">$\begin{cases}x=x(t)\\y=y(t)\end{cases}$</span>，<span
+class="math inline"><em>t</em> ∈ [<em>a</em>, <em>b</em>]</span>，满足
+<span
+class="math inline"><em>x</em><sup>′</sup>(<em>t</em>)</span>，<span
+class="math inline"><em>y</em><sup>′</sup>(<em>t</em>)</span> 连续，且
+<span
+class="math inline"><em>x</em><sup>′</sup>(<em>t</em>)<sup>2</sup> + <em>y</em><sup>′</sup>(<em>t</em>)<sup>2</sup> ≠ 0</span>，则</p>
+<p><span class="math display">$$
+\int_C f(x,y)\,\mathrm{d}s = \int_\alpha^\beta f(x(t),y(t))\sqrt{x'(t)^2
++ y'(t)^2}\,\mathrm{d}t
+$$</span></p>
+<ul>
+<li>右端积分限应 <span
+class="math inline"><em>α</em> &lt; <em>β</em></span></li>
+<li>当曲线 <span class="math inline"><em>C</em></span> 形式为 <span
+class="math inline"><em>y</em> = <em>y</em>(<em>x</em>)</span>，<span
+class="math inline"><em>x</em> ∈ [<em>a</em>, <em>b</em>]</span> 时，则
+<span class="math inline">$\displaystyle\int_Cf(x,y)\,\mathrm{d}s
+=\int_a^bf(x,y(x))\sqrt{1+y'^2(x)}\,\mathrm{d}x$</span></li>
+<li>当曲线 <span class="math inline"><em>C</em></span> 为极坐标 <span
+class="math inline"><em>r</em> = <em>r</em>(<em>θ</em>)</span>，<span
+class="math inline"><em>θ</em> ∈ [<em>α</em>, <em>β</em>]</span> 时，则
+<span class="math inline">$\displaystyle\int_Cf(x,y)\,\mathrm{d}s =
+\int_\alpha^\beta
+f(r(\theta)\cos\theta,r(\theta)\sin\theta)\sqrt{r(\theta)^2+r'^2(\theta)}\,\mathrm{d}\theta$</span></li>
+</ul>
+<h3 id="第二类曲线积分与曲面积分">第二类曲线积分与曲面积分</h3>
+<h4 id="第二类曲线积分的概念">第二类曲线积分的概念</h4>
+<p><strong>定义：</strong></p>
+<p>设 <span class="math inline"><em>C</em></span>
+为平面光滑定向曲线(<span
+class="math inline"><em>A</em> → <em>B</em></span>)，且向量值函数 <span
+class="math inline"><em>F⃗</em>(<em>x</em>, <em>y</em>) = <em>R</em>(<em>x</em>, <em>y</em>)<em>i⃗</em> + <em>Q</em>(<em>x</em>, <em>y</em>)<em>j⃗</em></span>
+在 <span class="math inline"><em>C</em></span> 上有界，<span
+class="math inline"><em>e⃗</em><sub><em>τ</em></sub></span> 为 <span
+class="math inline"><em>C</em></span> 上点 <span
+class="math inline">(<em>x</em>, <em>y</em>)</span>
+处于定向一致的单位切向量，若</p>
+<p><span
+class="math display">∫<sub><em>C</em></sub><em>F⃗</em>(<em>x</em>, <em>y</em>) ⋅ <em>e⃗</em><sub><em>τ</em></sub> d<em>s</em></span></p>
+<p>存在，则称为<strong>向量值函数 <span
+class="math inline"><em>F⃗</em></span> 在定向曲线 <span
+class="math inline"><em>C</em></span>
+上的曲线积分或第二类曲线积分</strong></p>
+<p>若 <span
+class="math inline"><em>e⃗</em><sub><em>τ</em></sub>(<em>x</em>, <em>y</em>) = (cos <em>α</em>, cos <em>β</em>)</span>，则</p>
+<p><span class="math display">$$
+\begin{aligned}
+  \int_C \vec{F}(x,y) \cdot \vec{e}_\tau \,\mathrm{d}s &amp;= \int_C
+P(x,y)\cos\alpha + Q(x,y)\cos\beta \,\mathrm{d}s \\
+  &amp;= \int_C P(x,y)\cos\alpha \,\mathrm{d}s + \int_C Q(x,y)\cos\beta
+\,\mathrm{d}s \\
+  &amp;= \int_C P(x,y)\,\mathrm{d}x +  Q(x,y)\,\mathrm{d}y
+\end{aligned}
+$$</span></p>
+<p>这是对坐标的曲线积分</p>
+<p>记 <span
+class="math inline"><em>r⃗</em> = (<em>x</em>, <em>y</em>)</span>，则
+<span
+class="math inline">d<em>e⃗</em> = <em>e⃗</em><sub><em>τ</em></sub> d<em>s</em></span>
+称为<strong>定向弧微分</strong></p>
+<p>从而有向量形式的第一类曲线积分</p>
+<p><span
+class="math display">∫<sub><em>C</em></sub><em>F⃗</em>(<em>x</em>, <em>y</em>) ⋅ d<em>e⃗</em> = ∫<sub><em>C</em></sub><em>F⃗</em> ⋅ d<em>r⃗</em></span></p>
+<h5 id="第二类曲线积分的性质">第二类曲线积分的性质</h5>
+<p>第二类曲线积分与<strong>曲线方向有关</strong>，即</p>
+<p><span class="math display">$$
+\int_{\widehat{AB}} \vec{F}(x,y) \cdot \mathrm{d}\vec{r} =
+-\oint_{\widehat{BA}} \vec{F}(x,y) \cdot \mathrm{d}\vec{r}
+$$</span></p>
+<p>此外线性性与对定向积分路径的可加性等仍然成立</p>
+<h5 id="第二类曲线积分的计算">第二类曲线积分的计算</h5>
+<p>若曲线 <span class="math inline"><em>C</em></span> 为 <span
+class="math inline">$\begin{cases}x=x(t)\\y=y(t)\end{cases}$</span>，<span
+class="math inline"><em>t</em> : <em>α</em> → <em>β</em></span></p>
+<p>起点 <span class="math inline"><em>A</em></span> 对应 <span
+class="math inline"><em>α</em></span>，终点 <span
+class="math inline"><em>B</em></span> 对应 <span
+class="math inline"><em>β</em></span></p>
+<p>考察 <span
+class="math inline">∫<sub><em>C</em></sub><em>P</em> d<em>x</em> + <em>Q</em> d<em>y</em> = ∫<sub><em>C</em></sub><em>F⃗</em> ⋅ <em>e⃗</em><sub><em>τ</em></sub> d<em>s</em></span>，沿曲线
+<span class="math inline"><em>C</em></span> 有 <span
+class="math inline"><em>F⃗</em> = (<em>P</em>(<em>x</em>(<em>t</em>), <em>y</em>(<em>t</em>)), <em>Q</em>(<em>x</em>(<em>t</em>), <em>y</em>(<em>t</em>)))</span>，则</p>
+<p><span
+class="math display">∫<sub><em>C</em></sub><em>P</em> d<em>x</em> + <em>Q</em> d<em>y</em> = ∫<sub><em>α</em></sub><sup><em>β</em></sup><em>P</em>(<em>x</em>(<em>t</em>), <em>y</em>(<em>t</em>)) d<em>x</em>(<em>t</em>) + <em>Q</em>(<em>x</em>(<em>t</em>), <em>y</em>(<em>t</em>)) d<em>y</em>(<em>t</em>)</span></p>
+<h4 id="第二类曲面积分的概念">第二类曲面积分的概念</h4>
+<h5 id="双侧曲面">双侧曲面</h5>
+<p><strong>定义：</strong></p>
+<p>若点 <span class="math inline"><em>P</em></span> 沿曲面 <span
+class="math inline"><em>S</em></span>
+上任何不越过曲面边界的连续闭曲线移动后回到起始位置时，法向量 <span
+class="math inline"><em>n⃗</em></span> 保持原来的指向，则称 <span
+class="math inline"><em>S</em></span> 为<strong>双侧曲面</strong></p>
+<p>典型的，Mobius 面不是双侧曲面</p>
+<p>选定双侧曲面 <span class="math inline"><em>S</em></span>
+一侧为正向，称为<strong>正侧</strong>，记为 <span
+class="math inline"><em>S</em><sup>+</sup></span> ，其相反测记作 <span
+class="math inline"><em>S</em><sup>−</sup></span></p>
+<h5 id="双侧曲面定侧">双侧曲面定侧</h5>
+<p>若 <span
+class="math inline"><em>S</em> : <em>z</em> = <em>z</em>(<em>x</em>, <em>y</em>)</span>，<span
+class="math inline">(<em>x</em>, <em>y</em>) ∈ <em>D</em><sub><em>x</em><em>y</em></sub></span>，<span
+class="math inline">$\vec{n}_0=\left(\cos\alpha,\cos\beta,\cos\gamma\right)=\pm\frac{\left(-z_x,-z_y,1\right)}{\sqrt{1+z_x^2+z_y^2}}$</span></p>
+<p>若选取 <span
+class="math inline">$\vec{n}_0=\left(\cos\alpha,\cos\beta,\cos\gamma\right)=\frac{\left(-z_x,-z_y,1\right)}{\sqrt{1+z_x^2+z_y^2}}$</span>，则说明
+<span
+class="math inline">cos <em>γ</em> &gt; 0</span>，选取了曲面的上侧</p>
+<p>一般的</p>
+<p><span class="math display">$$
+\begin{cases}
+  \cos\alpha &gt;0 \Leftrightarrow \text{前侧}，\cos\alpha &lt; 0
+\Leftrightarrow \text{后侧}\\
+  \cos\beta &gt;0 \Leftrightarrow \text{右侧}，\cos\beta &lt; 0
+\Leftrightarrow \text{左侧}\\
+  \cos\gamma &gt;0 \Leftrightarrow \text{上侧}，\cos\gamma &lt; 0
+\Leftrightarrow \text{下侧}
+\end{cases}
+$$</span></p>
+<p>习惯上选取曲面片的上侧为 <span
+class="math inline"><em>S</em><sup>+</sup></span>；对于封闭曲面，选取外侧为
+<span class="math inline"><em>S</em><sup>+</sup></span></p>
+<p>对于向量值函数 <span
+class="math inline"><em>F⃗</em> = (<em>P</em>, <em>Q</em>, <em>R</em>)</span></p>
+<p><span
+class="math display">∫<sub><em>C</em></sub><em>F⃗</em>⋅ d<em>S</em> = ∫<sub><em>c</em></sub><em>P</em> d<em>x</em>d<em>y</em> + <em>Q</em> d<em>y</em>d<em>z</em> + <em>R</em> d<em>z</em>d<em>x</em></span></p>
+<h5 id="第二类曲面积分的性质">第二类曲面积分的性质</h5>
+<p>第二类曲面积分与在曲面的哪一侧积分有关</p>
+<p><span
+class="math display">∬<sub><em>S</em><sup>+</sup></sub><em>P</em> d<em>x</em>d<em>y</em> + <em>Q</em> d<em>y</em>d<em>z</em> + <em>R</em> d<em>z</em>d<em>x</em> = −∬<sub><em>S</em><sup>−</sup></sub><em>P</em> d<em>x</em>d<em>y</em> + <em>Q</em> d<em>y</em>d<em>z</em> + <em>R</em> d<em>z</em>d<em>x</em></span></p>
+<p>此外第二类曲面积分也具有线性性和可加性等性质</p>
+<h4 id="第二类曲面积分的计算">第二类曲面积分的计算</h4>
+<h5 id="合一投影法">合一投影法</h5>
+<p><span
+class="math display">∬<sub><em>S</em><sup>+</sup></sub><em>P</em> d<em>x</em>d<em>y</em> + <em>Q</em> d<em>y</em>d<em>z</em> + <em>R</em> d<em>z</em>d<em>x</em> = ∬<sub><em>D</em><sub><em>x</em><em>y</em></sub></sub>(−<em>P</em><em>z</em><sub><em>x</em></sub> − <em>Q</em><em>z</em><sub><em>y</em></sub> + <em>R</em>) d<em>x</em>d<em>y</em></span></p>
+<h5 id="分面投影法">分面投影法</h5>
+<p>分 <span
+class="math inline"><em>P</em> d<em>x</em>d<em>y</em></span>，<span
+class="math inline"><em>Q</em> d<em>y</em>d<em>z</em></span>，<span
+class="math inline"><em>R</em> d<em>z</em>d<em>x</em></span>
+三个部分进行积分</p>
+<p>常在部分曲面垂直坐标轴时进行</p>
+<h5 id="公式法">公式法</h5>
+<p>常用于参数方程确定的曲面</p>
+<p>设 <span
+class="math inline"><em>S</em> : <em>r⃗</em> = (<em>x</em>(<em>u</em>, <em>v</em>), <em>y</em>(<em>u</em>, <em>v</em>), <em>z</em>(<em>u</em>, <em>v</em>))</span>，其中
+<span
+class="math inline">(<em>u</em>, <em>v</em>) ∈ <em>D</em><sub><em>x</em><em>y</em></sub></span>，则</p>
+<p><span class="math display">$$
+\iint_{S^+}\vec{F}\cdot\,\mathrm{d}\vec{S} =
+\iint_{D_{uv}}\vec{F}\cdot\left(\vec{r}_u\times\vec{r_v}\right)\,\mathrm{d}u\mathrm{d}v
+$$</span></p>
+<h3 id="green-公式及其应用">Green 公式及其应用</h3>
+<h4 id="green-公式">Green 公式</h4>
+<h5 id="连通区域及其边界方向">连通区域及其边界方向</h5>
+<p>设 <span class="math inline"><em>D</em></span> 为平面区域, 若 <span
+class="math inline"><em>D</em></span> 内的任意一条闭曲线所围的区域都落在
+<span class="math inline"><em>D</em></span> 内, 则称 <span
+class="math inline"><em>D</em></span> 是单连通的, 否则称 <span
+class="math inline"><em>D</em></span> 为复连通的</p>
+<p>当点沿区域边界朝一个方向前进时, 区域总在它的左侧,
+则将此方向规定为边界曲线 <span class="math inline"><em>C</em></span>
+的正向,记为 <span class="math inline"><em>C</em><sup>+</sup></span>, 与
+<span class="math inline"><em>C</em><sup>+</sup></span> 相反方向为 <span
+class="math inline"><em>C</em><sup>−</sup></span></p>
+<h5 id="green-公式-1">Green 公式</h5>
+<p><strong>定理：</strong></p>
+<p>设有界闭区域 <span class="math inline"><em>D</em></span>
+由分段光滑曲线 <span class="math inline"><em>C</em></span> 围成，函数
+<span class="math inline"><em>P</em>(<em>x</em>, <em>y</em>)</span>,
+<span class="math inline"><em>Q</em>(<em>x</em>, <em>y</em>)</span> 在
+<span class="math inline"><em>D</em></span> 上有一阶连续偏导数, 则</p>
+<p><span class="math display">$$
+\oint_{C^+} P\,\mathrm{d}x + Q\,\mathrm{d}y = \iint_D
+\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial
+y}\right)\,\mathrm{d}x\mathrm{d}y
+$$</span></p>
+<ul>
+<li>对于复连通区域 <span class="math inline"><em>D</em></span>，Green
+公式仍然成立，但需将 <span class="math inline"><em>C</em></span>
+分成若干个单连通区域 <span
+class="math inline"><em>D</em><sub><em>i</em></sub></span>，并对每个区域应用
+Green 公式</li>
+<li>公式也可以记为 <span class="math inline">$\displaystyle\oint_{C^+}
+P\,\mathrm{d}x + Q\,\mathrm{d}y = \iint_D
+\begin{vmatrix}\frac{\partial}{\partial x}&amp;\frac{\partial}{\partial
+y}\newline P&amp;Q\end{vmatrix}\,\mathrm{d}x\mathrm{d}y$</span></li>
+</ul>
+<h5 id="green-公式的向量形式">Green 公式的向量形式</h5>
+<p><span
+class="math display">∮<sub><em>C</em><sup>+</sup></sub><em>F⃗</em>⋅ d<em>r⃗</em> = ∬<sub><em>D</em></sub>∇ × <em>F⃗</em> d<em>x</em>d<em>y</em></span></p>
+<h4 id="曲线积分与路径无关的条件">曲线积分与路径无关的条件</h4>
+<p><strong>定义：</strong></p>
+<p>设 <span
+class="math inline"><em>P</em>(<em>x</em>, <em>y</em>)</span>，<span
+class="math inline"><em>Q</em>(<em>x</em>, <em>y</em>)</span> 在区域
+<span class="math inline"><em>D</em></span> 内连续，若对 <span
+class="math inline"><em>D</em></span> 内任意两点 <span
+class="math inline"><em>A</em></span>，<span
+class="math inline"><em>B</em></span> 以及 <span
+class="math inline"><em>D</em></span> 内连接 <span
+class="math inline"><em>A</em>, <em>B</em></span> 的任意二分段光滑曲线
+<span class="math inline"><em>C</em><sub>1</sub></span>，<span
+class="math inline"><em>C</em><sub>2</sub></span>，均有</p>
+<p><span
+class="math display">∫<sub><em>C</em><sub>1</sub></sub><em>P</em> d<em>x</em> + <em>Q</em> d<em>y</em> = ∫<sub><em>C</em><sub>2</sub></sub><em>P</em> d<em>x</em> + <em>Q</em> d<em>y</em></span></p>
+<p>则称曲线积分 <span
+class="math inline">∫<sub><em>C</em></sub><em>P</em> d<em>x</em> + <em>Q</em> d<em>y</em></span>
+在 <span class="math inline"><em>D</em></span>
+内<strong>与路径无关</strong></p>
+<p><strong>定理：</strong></p>
+<p>设函数 <span class="math inline"><em>P</em></span>，<span
+class="math inline"><em>Q</em></span> 在<strong>单连通</strong>区域
+<span class="math inline"><em>D</em></span>
+上有连续偏导数，则下述四命题等价</p>
+<ol type="1">
+<li>在 <span class="math inline"><em>D</em></span>
+内的任一条分段光滑闭曲线 <span class="math inline"><em>C</em></span>
+上，有 <span
+class="math inline">∫<sub><em>C</em></sub><em>P</em> d<em>x</em> + <em>Q</em> d<em>y</em> = 0</span></li>
+<li>曲线积分 <span
+class="math inline">∫<sub><em>C</em></sub><em>P</em> d<em>x</em> + <em>Q</em> d<em>y</em></span>
+在 <span class="math inline"><em>D</em></span> 内与路径无关</li>
+<li>存在 <span class="math inline"><em>D</em></span> 上的可微函数 <span
+class="math inline"><em>u</em>(<em>x</em>, <em>y</em>)</span> 使得 <span
+class="math inline">d<em>u</em> = <em>P</em> d<em>x</em> + <em>Q</em> d<em>y</em></span>，此时称
+<span class="math inline"><em>u</em>(<em>x</em>, <em>y</em>)</span> 为
+<span
+class="math inline"><em>P</em> d<em>x</em> + <em>Q</em> d<em>y</em></span>
+的一个<strong>原函数</strong></li>
+<li><span class="math inline">$\displaystyle \frac{\partial Q}{\partial
+x} = \frac{\partial P}{\partial y}$</span> 在 <span
+class="math inline"><em>D</em></span> 内恒成立</li>
+</ol>
+<h4 id="全微分求积与全微分方程">全微分求积与全微分方程</h4>
+<p>设函数 <span class="math inline"><em>P</em></span>，<span
+class="math inline"><em>Q</em></span> 在单连通区域 <span
+class="math inline"><em>D</em></span> 上有连续偏导数，且 <span
+class="math inline">$\displaystyle \frac{\partial Q}{\partial x} =
+\frac{\partial P}{\partial y}$</span> ，则 <span
+class="math inline"><em>P</em> d<em>x</em> + <em>Q</em> d<em>y</em></span>
+为某函数 <span class="math inline"><em>u</em></span> 的全微分，且取定
+<span
+class="math inline">(<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>) ∈ <em>D</em></span></p>
+<p><span
+class="math display"><em>u</em>(<em>x</em>, <em>y</em>) = <em>u</em>(<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>) + ∫<sub>(<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>)</sub><sup>(<em>x</em>, <em>y</em>)</sup><em>P</em> d<em>x</em> + <em>Q</em> d<em>y</em>,  (<em>x</em>, <em>y</em>) ∈ <em>D</em></span></p>
+<p>从而全体函数为 <span
+class="math inline"><em>u</em>(<em>x</em>, <em>y</em>) + <em>C</em></span></p>
+<p>称求 <span
+class="math inline"><em>P</em> d<em>x</em> + <em>Q</em> d<em>y</em></span>
+的原函数的过程为<strong>全微分求积</strong></p>
+<p>若 <span
+class="math inline"><em>P</em> d<em>x</em> + <em>Q</em> d<em>y</em></span>
+是某二元函数的全微分，称方程</p>
+<p><span
+class="math display"><em>P</em>(<em>x</em>, <em>y</em>) d<em>x</em> + <em>Q</em>(<em>x</em>, <em>y</em>) d<em>y</em> = 0</span></p>
+<p>为<strong>全微分方程</strong></p>
+<p>求出一个原函数 <span
+class="math inline"><em>u</em>(<em>x</em>, <em>y</em>)</span>，则方程的通解为
+<span
+class="math inline"><em>u</em>(<em>x</em>, <em>y</em>) = <em>C</em></span>，其中
+<span class="math inline"><em>C</em></span> 是任意常数</p>
+<h3 id="gauss-公式和-strokes-公式">Gauss 公式和 Strokes 公式</h3>
+<h4 id="gauss-公式">Gauss 公式</h4>
+<p><strong>定理：</strong></p>
+<p>设函数 <span
+class="math inline"><em>P</em>(<em>x</em>, <em>y</em>, <em>z</em>)</span>，<span
+class="math inline"><em>Q</em>(<em>x</em>, <em>y</em>, <em>z</em>)</span>，<span
+class="math inline"><em>R</em>(<em>x</em>, <em>y</em>, <em>z</em>)</span>
+在空间有界闭区域 <span class="math inline"><em>Ω</em></span>
+上有连续偏导数，<span class="math inline"><em>Ω</em></span>
+的边界时光滑或分片光滑的闭曲面 <span
+class="math inline"><em>Σ</em></span>，则</p>
+<p><span class="math display">$$
+\oiint_{\Sigma^+} P\,\mathrm{d}x\mathrm{d}y + Q\,\mathrm{d}y\mathrm{d}z
++ R\,\mathrm{d}z\mathrm{d}x = \iiint_\Omega \left(\frac{\partial
+P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial
+R}{\partial z}\right)\,\mathrm{d}x\mathrm{d}y\mathrm{d}z
+$$</span></p>
+<ul>
+<li>令 <span class="math inline">$P=\frac{x}{3}$</span>，<span
+class="math inline">$Q=\frac{y}{3}$</span>，<span
+class="math inline">$R=\frac{z}{3}$</span>，则可导出 <span
+class="math inline">$\displaystyle V_\Omega =
+\frac{1}{3}\oiint_{\Sigma^+} x\,\mathrm{d}y\mathrm{d}z +
+y\,\mathrm{d}z\mathrm{d}x +
+z\,\mathrm{d}x\mathrm{d}y$</span>，即体积公式</li>
+<li>使用 Gauss 公式时，注意 <span
+class="math inline"><em>Σ</em><sup>+</sup></span> 的方向应与 <span
+class="math inline"><em>Ω</em></span> 的外侧一致</li>
+</ul>
+<h5 id="向量形式的-gauss-公式">向量形式的 Gauss 公式</h5>
+<p><span
+class="math display">∯<sub><em>Σ</em><sup>+</sup></sub><em>F⃗</em>⋅ d<em>S⃗</em> = ∭<sub><em>Ω</em></sub>∇ ⋅ <em>F⃗</em> d<em>x</em>d<em>y</em>d<em>z</em></span></p>
+<h4 id="通量和散度">通量和散度</h4>
+<h5 id="通量">通量</h5>
+<p>若给定向量场</p>
+<p><span
+class="math display"><em>F⃗</em> = (<em>P</em>(<em>x</em>, <em>y</em>, <em>z</em>), <em>Q</em>(<em>x</em>, <em>y</em>, <em>z</em>), <em>R</em>(<em>x</em>, <em>y</em>, <em>z</em>))</span></p>
+<p>则称曲面积分</p>
+<p><span
+class="math display"><em>Φ</em> = ∯<sub><em>Σ</em><sup>+</sup></sub><em>F⃗</em>⋅ d<em>S⃗</em> = ∯<sub><em>Σ</em><sup>+</sup></sub><em>P</em> d<em>x</em>d<em>y</em> + <em>Q</em> d<em>y</em>d<em>z</em> + <em>R</em> d<em>z</em>d<em>x</em></span></p>
+<p>为向量场 <span class="math inline"><em>F⃗</em></span> 在通过定侧曲面
+<span class="math inline"><em>Σ</em><sup>+</sup></span>
+的<strong>通量</strong></p>
+<h5 id="散度">散度</h5>
+<p>称</p>
+<p><span class="math display">$$
+\mathrm{div}\vec{F} = \nabla\cdot\vec{F}=\frac{\partial P}{\partial x} +
+\frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z}
+$$</span></p>
+<p>为向量场 <span class="math inline"><em>F⃗</em></span>
+的<strong>散度</strong></p>
+<p>则 Gauss 公式可写为</p>
+<p><span
+class="math display"><em>Φ</em> = ∯<sub><em>Σ</em><sup>+</sup></sub><em>F⃗</em>⋅ d<em>S⃗</em> = ∭<sub><em>Ω</em></sub>div<em>F⃗</em> d<em>V</em></span></p>
+<h2 id="级数">级数</h2>
+<h3 id="数项级数">数项级数</h3>
+<h4 id="数项级数的概念">数项级数的概念</h4>
+<p><strong>定义：</strong></p>
+<p>给定数列 <span
+class="math inline">{<em>a</em><sub><em>n</em></sub>}</span> ，和式</p>
+<p><span class="math display">$$
+\sum_{n=1}^{\infty} a_n = a_1 + a_2 + \cdots + a_n + \cdots
+$$</span></p>
+<p>称为 <strong>（无穷）极数</strong> ，<span
+class="math inline"><em>a</em><sub><em>n</em></sub></span>
+称为级数的<strong>通项</strong>（或<strong>一般项</strong>）</p>
+<ul>
+<li><span class="math inline">$\displaystyle S_n = \sum_{k=1}^n
+a_k$</span> 称为级数 <span
+class="math inline">∑<sub><em>n</em> = 1</sub><em>a</em><sub><em>n</em></sub></span>
+的前 <span class="math inline"><em>n</em></span>
+项<strong>部分和</strong></li>
+<li><span class="math inline">$\displaystyle\sum_{k=n+1}^\infty
+a_k$</span> 称为级数 <span
+class="math inline">∑<sub><em>n</em> = 1</sub><em>a</em><sub><em>n</em></sub></span>
+的<strong>余项级数</strong></li>
+</ul>
+<p><strong>定义：</strong></p>
+<ul>
+<li>若级数 <span class="math inline">$\displaystyle\sum_{n=1}^\infty
+a_n$</span> 的部分和数列 <span
+class="math inline">{<em>S</em><sub><em>n</em></sub>}</span> 收敛，且
+<span
+class="math inline">lim<sub><em>n</em> → ∞</sub><em>S</em><sub><em>n</em></sub> = <em>S</em></span>，则称级数
+<span class="math inline">$\displaystyle \sum_{n=1}^\infty a_n$</span>
+<strong>收敛</strong>，<span class="math inline"><em>S</em></span>
+称为级数 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+a_n$</span> 的<strong>和</strong>，记作 <span
+class="math inline">$\displaystyle \sum_{n=1}^\infty a_n =
+S$</span></li>
+<li>若部分和数列 <span
+class="math inline">{<em>S</em><sub><em>n</em></sub>}</span>
+发散，则称级数 <span class="math inline">$\displaystyle
+\sum_{n=1}^\infty a_n$</span> <strong>发散</strong></li>
+</ul>
+<blockquote>
+<p>常用结论：</p>
+<p><strong>等比数列</strong> <span class="math inline">$\displaystyle
+\sum_{n=1}^\infty aq^{n-1}\begin{cases}\text{收敛于}\frac{a}{1-q} &amp;
+,\vert q \vert &lt; 1\newline \text{发散} &amp; ,\vert q \vert \geq
+1\end{cases}$</span></p>
+</blockquote>
+<h4 id="数项级数的基本性质">数项级数的基本性质</h4>
+<h5 id="基本性质">基本性质</h5>
+<ol type="1">
+<li>若常数 <span class="math inline"><em>α</em> ≠ 0</span>，则级数 <span
+class="math inline">$\displaystyle \sum_{n=1}^\infty a_n$</span> 与级数
+<span class="math inline">$\displaystyle \sum_{n=1}^\infty \alpha
+a_n$</span> 有相同敛散性</li>
+<li><strong>线性性：</strong> 若级数 <span
+class="math inline">$\displaystyle \sum_{n=1}^\infty a_n =
+S$</span>，<span class="math inline">$\displaystyle \sum_{n=1}^\infty
+b_n = T$</span>，则 <span
+class="math inline">∀<em>α</em>, <em>β</em> ∈ ℝ</span>，有 <span
+class="math inline">$\displaystyle \sum_{n=1}^\infty (\alpha a_n + \beta
+b_n) = \alpha S + \beta T$</span></li>
+<li><strong>可加性：</strong>
+将级数增加、删减或改换<strong>有限项</strong>，不改变级数的<strong>敛散性</strong></li>
+<li><strong>结合律：</strong> 若级数收敛于 <span
+class="math inline"><em>S</em></span>，则将相邻若干项添加括号所成新级数仍收敛于
+<span class="math inline"><em>S</em></span>
+<ul>
+<li>其本质是部分和数列收敛于 <span
+class="math inline"><em>S</em></span>，则子列均收敛于 <span
+class="math inline"><em>S</em></span></li>
+<li>加括号后级数收敛 <span class="math inline">⇏</span> 原级数收敛</li>
+<li>加括号后级数发散 <span class="math inline">⇒</span> 原级数发散</li>
+</ul></li>
+</ol>
+<h5 id="级数收敛的必要条件">级数收敛的必要条件</h5>
+<p><strong>定理：</strong></p>
+<p>若 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+a_n$</span> 收敛，则 <span
+class="math inline">lim<sub><em>n</em> → ∞</sub><em>a</em><sub><em>n</em></sub> = 0</span></p>
+<ul>
+<li>若 <span class="math inline">$\displaystyle \lim_{n\to\infty} a_n
+\neq 0 \nRightarrow \displaystyle \sum_{n=1}^\infty a_n$</span>
+发散</li>
+<li>若 <span class="math inline">$\displaystyle \lim_{n\to\infty} a_n =
+0 \nRightarrow \displaystyle \sum_{n=1}^\infty a_n$</span>
+收敛，比如调和级数</li>
+</ul>
+<h3 id="正项级数敛散性">正项级数敛散性</h3>
+<h4 id="正项级数">正项级数</h4>
+<p><strong>定义：</strong></p>
+<p>若级数 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+a_n$</span> 满足 <span
+class="math inline"><em>a</em><sub><em>n</em></sub> &gt; 0  (<em>n</em> ∈ ℕ<sup>+</sup>)</span>，则称此级数为<strong>正项级数</strong></p>
+<p><strong>定理：（收敛原理）</strong></p>
+<p>正项级数 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+a_n$</span> 收敛 <span class="math inline">⇔</span> 是其部分和数列 <span
+class="math inline">{<em>S</em><sub><em>n</em></sub>}</span> 有上界，即
+<span
+class="math inline">∃<em>M</em> ∈ ℝ, ∀<em>n</em> ∈ ℕ<sup>+</sup> : <em>S</em><sub><em>n</em></sub> ≤ <em>M</em></span></p>
+<blockquote>
+<p><span class="math inline"><em>p</em></span> 级数</p>
+<p><span class="math inline">$\displaystyle \sum_{n=1}^\infty
+\frac{1}{n^p} \begin{cases}\text{收敛} &amp; ,p&gt;1\newline \text{发散}
+&amp; ,p\leq 1\end{cases}$</span></p>
+</blockquote>
+<h4 id="正项级数敛散性判别法">正项级数敛散性判别法</h4>
+<h5 id="比较判别法">比较判别法</h5>
+<p><strong>定理：</strong></p>
+<p>设正项级数 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+a_n$</span>，<span class="math inline">$\displaystyle \sum_{n=1}^\infty
+b_n$</span> 满足 <span
+class="math inline"><em>a</em><sub><em>n</em></sub> ≤ <em>b</em><sub><em>n</em></sub>  (∀<em>n</em> ∈ ℕ<sup>+</sup>)</span>
+，则 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+b_n$</span> 收敛 <span class="math inline">$\Rightarrow \displaystyle
+\sum_{n=1}^\infty a_n$</span> 收敛，<span
+class="math inline">$\displaystyle \sum_{n=1}^\infty a_n$</span> 发散
+<span class="math inline">$\Rightarrow \displaystyle \sum_{n=1}^\infty
+b_n$</span> 发散</p>
+<ul>
+<li>条件 <span
+class="math inline">∀<em>n</em> ∈ ℕ<sup>+</sup>，<em>a</em><sub><em>n</em></sub> ≤ <em>b</em><sub><em>n</em></sub></span>
+可改为 <span
+class="math inline">∃<em>N</em>, <em>C</em> &gt; 0, ∀<em>n</em> ∈ ℕ<sup>+</sup>，∀<em>n</em> ≥ <em>N</em>，<em>a</em><sub><em>n</em></sub> ≤ <em>C</em><em>b</em><sub><em>n</em></sub></span></li>
+<li>使用该判别法时需要有参照级数，常选<strong>等比级数</strong>或
+<strong><span class="math inline"><em>p</em></span>
+级数</strong>作参照</li>
+</ul>
+<h5 id="比较判别法极限形式">比较判别法（极限形式）</h5>
+<p><strong>定理：</strong></p>
+<p>正项级数 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+a_n$</span>，<span class="math inline">$\displaystyle \sum_{n=1}^\infty
+b_n$</span> 满足 <span class="math inline">$\displaystyle
+\lim_{n\to\infty} \frac{a_n}{b_n} = l$</span></p>
+<ul>
+<li>当 <span class="math inline">0 &lt; <em>l</em> &lt; +∞</span>
+时，<span class="math inline">$\displaystyle \sum_{n=1}^\infty
+a_n$</span> 与 <span class="math inline">$\displaystyle
+\sum_{n=1}^\infty b_n$</span> 同敛散</li>
+<li>当 <span class="math inline"><em>l</em> = 0</span> 时，<span
+class="math inline">$\displaystyle \sum_{n=1}^\infty b_n$</span> 收敛
+<span class="math inline">$\Rightarrow \displaystyle \sum_{n=1}^\infty
+a_n$</span> 收敛</li>
+<li>当 <span class="math inline"><em>l</em> = +∞</span> 时，<span
+class="math inline">$\displaystyle \sum_{n=1}^\infty b_n$</span> 发散
+<span class="math inline">$\Rightarrow \displaystyle \sum_{n=1}^\infty
+a_n$</span> 发散</li>
+</ul>
+<blockquote>
+<p>通常使用 <span class="math inline">$b_n = \frac{1}{n^p}$</span>
+作为参照物，因为我们此时在分析无穷小 <span
+class="math inline"><em>a</em><sub><em>n</em></sub></span> 的阶</p>
+</blockquote>
+<h5 id="比值判别法dalembert-判别法">比值判别法（d’Alembert 判别法）</h5>
+<p><strong>定理：</strong></p>
+<p>若<strong>正项级数</strong> <span class="math inline">$\displaystyle
+\sum_{n=1}^\infty a_n$</span> 满足 <span
+class="math inline">$\displaystyle \lim_{n\to\infty} \frac{a_{n+1}}{a_n}
+= l$</span>，则</p>
+<ul>
+<li>当 <span class="math inline">0 ≤ <em>l</em> &lt; 1</span> 时，<span
+class="math inline">$\displaystyle \sum_{n=1}^\infty a_n$</span>
+收敛</li>
+<li>当 <span class="math inline"><em>l</em> &gt; 1</span> 时，<span
+class="math inline">$\displaystyle \sum_{n=1}^\infty a_n$</span>
+发散</li>
+<li>当 <span class="math inline"><em>l</em> = 1</span>
+时，判别法失效</li>
+</ul>
+<blockquote>
+<p>Stirling 公式： <span class="math inline">$n! \sim
+\left(\frac{n}{e}\right)^n \sqrt{2n\pi} \quad (n\to\infty)$</span></p>
+</blockquote>
+<blockquote>
+<p>当 <span class="math inline"><em>a</em><sub><em>n</em></sub></span>
+是一些乘积构成或含 <span class="math inline"><em>n</em>!</span>
+时，可以考虑比值法</p>
+</blockquote>
+<h5 id="根值判别法cauchy-判别法">根值判别法（Cauchy 判别法）</h5>
+<p><strong>定理：</strong></p>
+<p>若正项级数 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+a_n$</span> 满足 <span class="math inline">$\displaystyle
+\lim_{n\to\infty} \sqrt[n]{a_n} = l$</span>，则</p>
+<ol type="1">
+<li>当 <span class="math inline">0 ≤ <em>l</em> &lt; 1</span> 时，<span
+class="math inline">$\displaystyle \sum_{n=1}^\infty a_n$</span>
+收敛</li>
+<li>当 <span class="math inline">1 &lt; <em>l</em> ≤ +∞</span> 时，<span
+class="math inline">$\displaystyle \sum_{n=1}^\infty a_n$</span>
+发散</li>
+<li>当 <span class="math inline"><em>l</em> = 1</span>
+时，判别法失效</li>
+</ol>
+<blockquote>
+<p>当 <span class="math inline"><em>a</em><sub><em>n</em></sub></span>
+中含有 <span class="math inline"><em>n</em></span>
+次方时，可以考虑使用根值法</p>
+</blockquote>
+<blockquote>
+<p>比值法和根值法实际上可看作是在将级数与等比级数作比较，均智能判断收敛速度不满与等比级数的级数.当所求级数存在时，可称级数为<strong>拟等比级数</strong></p>
+</blockquote>
+<blockquote>
+<p>根值法优于比值法</p>
+<ul>
+<li><span
+class="math inline">$\displaystyle\lim_{n\to\infty}\frac{a_{n+1}}{a_n}
+=  l \Rightarrow \displaystyle \sqrt[n]{a_n} = l$</span></li>
+<li><span class="math inline">$\displaystyle \sqrt[n]{a_n} =l
+\nRightarrow \displaystyle\lim_{n\to\infty}\frac{a_{n+1}}{a_n}
+=  l$</span></li>
+</ul>
+</blockquote>
+<h5 id="积分判别法">积分判别法</h5>
+<p><strong>定理：</strong></p>
+<p>设 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+a_n$</span> 为<strong>正项级数</strong>，若非负函数 <span
+class="math inline"><em>f</em>(<em>X</em>)</span> 在 <span
+class="math inline">[1, +∞)</span> 上<strong>单调递减</strong>，且 <span
+class="math inline"><em>a</em><sub><em>n</em></sub> = <em>f</em>(<em>n</em>)  (∀<em>n</em> ∈ ℕ<sup>+</sup>)</span>，则级数
+<span class="math inline">$\displaystyle \sum_{n=1}^\infty a_n$</span>
+与反常积分 <span
+class="math inline">∫<sub>1</sub><sup>+∞</sup><em>f</em>(<em>x</em>) d<em>x</em></span>
+有相同的敛散性</p>
+<ul>
+<li>条件 <span class="math inline">[1, +∞)</span> 可改为 <span
+class="math inline">[<em>a</em>, +∞)，(<em>a</em> &gt; 1)</span></li>
+</ul>
+<h3 id="任意项级数的敛散性">任意项级数的敛散性</h3>
+<p><strong>任意项级数</strong></p>
+<p>正负项分布是任意的级数</p>
+<h4 id="交错级数敛散性的判别法">交错级数敛散性的判别法</h4>
+<h5 id="交错级数">交错级数</h5>
+<p><strong>定义：</strong></p>
+<p>各项正负相间的级数称为<strong>交错级数</strong>，其形式为</p>
+<p><span class="math display">$$
+\pm\sum_{n=1}^\infty {-1}^{n-1}a_n \quad \left(\text{其中}a_n &gt;
+0\right)
+$$</span></p>
+<h5 id="leibniz-判别法">Leibniz 判别法</h5>
+<p><strong>定理：</strong></p>
+<p>若交错级数 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+(-1)^{n-1}a_n \,\left(a_n&gt;0\right)$</span> 满足:</p>
+<ol type="1">
+<li><span
+class="math inline"><em>a</em><sub><em>n</em> + 1</sub> ≤ <em>a</em><sub><em>n</em></sub>  (<em>n</em> = 1, 2, …)</span></li>
+<li><span
+class="math inline">lim<sub><em>n</em> → ∞</sub><em>a</em><sub><em>n</em></sub> = 0</span></li>
+</ol>
+<p>则级数 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+(-1)^{n-1}a_n$</span> 收敛，且其余项级数满足</p>
+<p><span class="math display">$$
+\left\vert \sum_{k=n+1}^\infty a_k \right\vert \leq a_{n+1}
+$$</span></p>
+<blockquote>
+<p>我们称满足定理条件的级数为 <strong>leibniz 型级数</strong></p>
+</blockquote>
+<h4 id="abel-判别法和-dirichlet-判别法">Abel 判别法和 Dirichlet
+判别法</h4>
+<p><strong>定理：（Abel 判别法）</strong></p>
+<p>若 <span class="math inline">{<em>a</em><sub><em>n</em></sub>}</span>
+单调且有界，<span class="math inline">$\displaystyle\sum_{n=1}^\infty
+b_n$</span> 收敛，则 <span class="math inline">$\displaystyle
+\sum_{n=1}^\infty a_nb_n$</span> 收敛</p>
+<p><strong>定理：（Dirichlet 判别法）</strong></p>
+<p>若 <span class="math inline">{<em>a</em><sub><em>n</em></sub>}</span>
+单调趋于 <span class="math inline">0</span>，<span
+class="math inline">$\displaystyle \sum_{n=1}^\infty b_n$</span>
+的部分和数列有界，则 <span class="math inline">$\displaystyle
+\sum_{n=1}^\infty a_nb_n$</span> 收敛</p>
+<h4 id="绝对收敛与条件收敛">绝对收敛与条件收敛</h4>
+<p><strong>定义：</strong></p>
+<p>设 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+a_n$</span> 为任意项级数</p>
+<ol type="1">
+<li>若级数 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+\vert a_n \vert$</span> 收敛，则称级数 <span
+class="math inline">$\displaystyle \sum_{n=1}^\infty a_n$</span>
+为<strong>绝对收敛</strong></li>
+<li>若 <span class="math inline">$\displaystyle \sum_{n=1}^\infty \vert
+a_n \vert$</span> 发散，而 <span class="math inline">$\displaystyle
+\sum_{n=1}^\infty a_n$</span> 收敛，但 ，则称 <span
+class="math inline">$\displaystyle \sum_{n=1}^\infty a_n$</span>
+<strong>条件收敛</strong></li>
+</ol>
+<p><strong>定理：</strong></p>
+<p>若 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+a_n$</span> 绝对收敛，则 <span class="math inline">$\displaystyle
+\sum_{n=1}^\infty a_n$</span> 收敛</p>
+<blockquote>
+<p><strong>常用结论：</strong></p>
+<p><span class="math display">$$
+\displaystyle \sum_{n=1}^\infty
+\frac{(-1)^{n}}{n^p}\begin{cases}\text{绝对收敛} &amp; ,p&gt;1\\
+\text{条件收敛} &amp; , 0 &lt; p\leq 1 \end{cases}
+$$</span></p>
+</blockquote>
+<p><strong>定理：（绝对收敛与条件收敛的本质）</strong></p>
+<ol type="1">
+<li>绝对收敛的级数，可以改变任意项的顺序，其收敛性与和均不变（即满足加法交换律）</li>
+<li>条件收敛的级数，总可以适当改变项的顺序，使其按照任意预定的方式收敛或者发散</li>
+</ol>
+<h3 id="函数项级数">函数项级数</h3>
+<p><strong>定义：</strong></p>
+<p>设函数列 <span
+class="math inline">{<em>u</em><sub><em>n</em></sub><em>x</em>}(<em>n</em> = 1, 2, …)</span>
+在数集 <span class="math inline"><em>X</em></span>
+上有定义，则称形式和</p>
+<p><span class="math display">$$
+\sum_{n=1}^\infty u_n(x)= u_1(x) + u_2(x) + \cdots + u_n(x) + \cdots
+$$</span></p>
+<p>为<strong>函数项级数</strong>，其中 <span
+class="math inline"><em>u</em><sub><em>n</em></sub>(<em>x</em>)</span>
+称为<strong>通项</strong></p>
+<p><strong>定义：</strong></p>
+<p>若数项级数 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+u_n(x_0)$</span> 收敛，则 <span
+class="math inline"><em>x</em><sub>0</sub></span> 为函数项级数 <span
+class="math inline">$\displaystyle \sum_{n=1}^\infty u_n(x)$</span>
+的一个<strong>收敛点</strong>，否则称为<strong>发散点</strong>，全体收敛点所组成的集合
+<span class="math inline"><em>I</em></span>
+称为<strong>收敛域</strong></p>
+<p><strong>定义</strong></p>
+<p>记 <span class="math inline">$\displaystyle S_n(x) =\sum_{k=1}^\infty
+u_k(x)$</span>,为 <span class="math inline">$\displaystyle
+\sum_{n=1}^\infty u_n(x)$</span> 的前 <span
+class="math inline"><em>n</em></span>
+项<strong>部分和(函数)</strong>，记 <span
+class="math inline">$\displaystyle r_n(x) = \sum_{k=n+1}^\infty
+u_k(x)$</span> 为<strong>余和</strong></p>
+<p><strong>定义：</strong></p>
+<p>对于收敛域 <span class="math inline"><em>I</em></span> 中的任意一点
+<span class="math inline"><em>x</em></span>，记 <span
+class="math inline">$\displaystyle \sum_{n=1}^\infty u_n(x)$</span>
+的和为 <span class="math inline"><em>S</em>(<em>x</em>)</span>，称此函数
+<span class="math inline"><em>S</em>(<em>x</em>)</span> 为 <span
+class="math inline">$\displaystyle \sum_{n=1}^\infty u_n(x)$</span>
+的<strong>和函数</strong></p>
+<p>显然，<span
+class="math inline">∀<em>x</em> ∈ <em>I</em></span>，<span
+class="math inline">lim<sub><em>n</em> → +∞</sub><em>S</em><sub><em>n</em></sub>(<em>x</em>) = <em>S</em>(<em>x</em>)</span>，<span
+class="math inline">lim<sub><em>n</em> → +∞</sub><em>r</em><sub><em>n</em></sub>(<em>x</em>) = 0</span></p>
+<h3 id="幂级数">幂级数</h3>
+<h4 id="幂级数及其收敛半径">幂级数及其收敛半径</h4>
+<p>在函数项级数中，最简单及最重要的级数形如</p>
+<p><span class="math display">$$
+\sum_{n=0}^\infty a_n(x-x_0)^n = a_0 +a_1x + a_2(x-x_0)^2 + \ldots +
+a_n(x-x_0)^n + \ldots
+$$</span></p>
+<p>称为<strong>幂级数</strong>，其中常数项 <span
+class="math inline"><em>a</em><sub>0</sub>, <em>a</em><sub>1</sub>, …, <em>a</em><sub><em>n</em></sub>, …</span>
+称为幂级数的<strong>系数</strong></p>
+<p>幂级数更加一半的形式为 <span class="math inline">$\displaystyle
+\sum_{n=0}^\infty a_n(x-x_0)^n$</span></p>
+<h5 id="abel-定理"><strong>Abel 定理</strong></h5>
+<ol type="1">
+<li>若幂级数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+a_n(x-x_0)^n$</span> 在 <span
+class="math inline"><em>x</em> = <em>x</em><sub>0</sub>(<em>x</em> ≠ 0)</span>
+收敛，则当 <span
+class="math inline">|<em>x</em>| &lt; |<em>x</em><sub>0</sub>|</span>，时，幂级数
+<span class="math inline">$\displaystyle \sum_{n=0}^\infty
+a_n(x-x_0)^n$</span> 绝对收敛</li>
+<li>若幂级数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+a_nx^n$</span> 在 <span
+class="math inline"><em>x</em> = <em>x</em><sub>1</sub></span>
+发散，则当 <span
+class="math inline">|<em>x</em>| &gt; |<em>x</em><sub>1</sub>|</span>
+时，幂级数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+a_nx^n$</span> 发散</li>
+</ol>
+<h6 id="推论幂级数收敛域的情况">推论（幂级数收敛域的情况）</h6>
+<p>幂级数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+a_n(x-x_0)^n$</span> 的收敛域 <span
+class="math inline"><em>I</em></span> 仅有以下几种情况：</p>
+<ol type="1">
+<li>仅在 <span class="math inline"><em>x</em> = 0</span>
+的情况收敛（<span class="math inline"><em>R</em> = 0</span>）</li>
+<li>在区间 <span
+class="math inline">(−<em>R</em>, <em>R</em>)(<em>R</em> &gt; 0)</span>
+内绝对收敛，在 <span
+class="math inline">(−∞, −<em>R</em>)⋃(<em>R</em>, +∞)</span> 发散</li>
+<li>在区间 <span class="math inline">(−<em>R</em>, <em>R</em>)</span>
+内绝对收敛（<span class="math inline"><em>R</em> = +∞</span>）</li>
+</ol>
+<h3 id="幂级数收敛半径的求法">幂级数收敛半径的求法</h3>
+<h4 id="系数模比值法">系数模比值法</h4>
+<p><strong>定理：</strong></p>
+<p>对幂级数 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+a_nx^n$</span>，若 <span class="math inline">$\displaystyle
+\lim_{n\to+\infty}\left\vert\frac{a_{n+1}}{a_n}\right\vert =
+\rho$</span>，则收敛半径 <span class="math inline">$\displaystyle
+R=\begin{cases}&amp;0,&amp;&amp;\rho=+\infty\newline &amp;
+\frac{1}{\rho},&amp;&amp; 0&lt;\rho&lt;+\infty\newline &amp;+\infty
+,&amp;&amp;\rho=0\end{cases}$</span></p>
+<h4 id="系数模根值法">系数模根值法</h4>
+<p><strong>定理：</strong></p>
+<p>对幂级数 <span class="math inline">$\displaystyle \sum_{n=1}^\infty
+a_nx^n$</span>，若 <span class="math inline">$\displaystyle
+\lim_{n\to+\infty}\sqrt[n]{\left\vert a_n\right\vert} =
+\rho$</span>，则收敛半径 <span class="math inline">$\displaystyle
+R=\begin{cases}&amp;0,&amp;&amp;\rho=+\infty\newline &amp;
+\frac{1}{\rho},&amp;&amp; 0&lt;\rho&lt;+\infty\newline &amp;+\infty
+,&amp;&amp;\rho=0\end{cases}$</span></p>
+<h3 id="幂级数的性质">幂级数的性质</h3>
+<ol type="1">
+<li>设幂级数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+a_nx^n$</span> 和 <span class="math inline">$\displaystyle
+\sum_{n=0}^\infty b_nx^n$</span> 的收敛半径分别为 <span
+class="math inline"><em>R</em><sub>1</sub></span> 和 <span
+class="math inline"><em>R</em><sub>2</sub></span>，则 <span
+class="math inline">$\displaystyle \sum_{n=0}^\infty
+(a_n+b_n)x^n$</span> 的收敛半径为 <span
+class="math inline"><em>R</em> = min {<em>R</em><sub>1</sub>, <em>R</em><sub>2</sub>}</span></li>
+<li>若幂级数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+a_nx^n$</span> 的收敛半径 <span
+class="math inline"><em>R</em> &gt; 0</span>，在收敛区间 <span
+class="math inline">(−<em>R</em>, <em>R</em>)</span> 内的和函数为 <span
+class="math inline"><em>S</em>(<em>n</em>)</span>，则 <span
+class="math inline"><em>S</em>(<em>n</em>)</span> 在 <span
+class="math inline">(−<em>R</em>, <em>R</em>)</span> 上连续；若 <span
+class="math inline">$\displaystyle\sum_{n=0}^\infty a_nx^n$</span> 在
+<span class="math inline"><em>x</em> = <em>R</em></span> 或 <span
+class="math inline"><em>x</em> = −<em>R</em></span> 收敛，则和函数 <span
+class="math inline"><em>S</em>(<em>n</em>)</span> 在 <span
+class="math inline"><em>x</em> = <em>R</em></span> 左连续或 <span
+class="math inline"><em>x</em> = −<em>R</em></span> 处右连续，即 <span
+class="math inline">$\displaystyle \lim_{x\to
+R^-}S(x)=S(R)=\sum_{n=0}^\infty a_nR^n$</span></li>
+<li>若幂级数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+a_nx^n$</span> 的收敛半径 <span
+class="math inline"><em>R</em> &gt; 0</span>，在收敛区间 <span
+class="math inline">(−<em>R</em>, <em>R</em>)</span> 内的和函数为 <span
+class="math inline"><em>S</em>(<em>n</em>)</span>，则 <span
+class="math inline"><em>S</em>(<em>n</em>)</span> 在 <span
+class="math inline">(−<em>R</em>, <em>R</em>)</span>
+上可导，且有<strong>逐项求导公式</strong></li>
+</ol>
+<p><span class="math display">$$
+  \begin{aligned}
+  S'(x) = &amp;\left(\sum_{n=0}^\infty a_nx^n\right)'\\
+    = &amp;\sum_{n=0}^\infty \left(a_nx^n\right)'\\
+    = &amp;\sum_{n=0}^\infty na_nx^{n-1}\\
+  \end{aligned}
+$$</span></p>
+<p>且幂级数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+na_nx^{n-1}$</span> 的收敛半径仍为 <span
+class="math inline"><em>R</em></span></p>
+<ol start="4" type="1">
+<li>若幂级数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+a_nx^n$</span> 的收敛半径 <span
+class="math inline"><em>R</em> &gt; 0</span>，在收敛区间 <span
+class="math inline">(−<em>R</em>, <em>R</em>)</span> 内的和函数为 <span
+class="math inline"><em>S</em>(<em>n</em>)</span>，则 <span
+class="math inline"><em>S</em>(<em>n</em>)</span> 在 <span
+class="math inline">(−<em>R</em>, <em>R</em>)</span>
+上可导，且有<strong>逐项求积公式</strong></li>
+</ol>
+<p><span class="math display">$$
+  \begin{aligned}
+  \int_0^xS(t)\,\mathrm{d}t = &amp;\int_0^x\left(\sum_{n=0}^\infty
+a_nt^n\right)\,\mathrm{d}t\\
+    = &amp;\sum_{n=0}^\infty \int_0^x a_nt^n\,\mathrm{d}t\\
+    = &amp;\sum_{n=0}^\infty \frac{a_n}{n+1}x^{n+1}\\
+  \end{aligned}
+$$</span></p>
+<p>且幂级数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+a_nt^n$</span> 的收敛半径仍为 <span
+class="math inline"><em>R</em></span></p>
+<h4 id="幂级数的分析性质">幂级数的分析性质</h4>
+<p><strong>性质：</strong></p>
+<p>若幂级数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+a_nx^n$</span> 的收敛半径为 <span
+class="math inline"><em>R</em> &gt; 0</span>，在收敛区间 <span
+class="math inline">(−<em>R</em>, <em>R</em>)</span> 上连续；若 <span
+class="math inline">$\displaystyle\sum_{n=0}^\infty a_nx^n$</span> 在
+<span class="math inline"><em>x</em> = <em>R</em></span> 或 <span
+class="math inline"><em>x</em> = −<em>R</em></span> 收敛，则和函数 <span
+class="math inline"><em>S</em>(<em>n</em>)</span> 在 <span
+class="math inline"><em>x</em> = <em>R</em></span> 左连续或 <span
+class="math inline"><em>x</em> = −<em>R</em></span> 处右连续，即</p>
+<p><span class="math display">$$
+\displaystyle \lim_{x\to R^-}S(x)=S(R)=\sum_{n=0}^\infty a_nR^n
+$$</span></p>
+<p><strong>性质：</strong></p>
+<p>若幂函数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+a_nx^n$</span> 的收敛半径为 <span
+class="math inline"><em>R</em> &gt; 0</span>，在收敛区间 <span
+class="math inline">(−<em>R</em>, <em>R</em>)</span> 上的和函数为 <span
+class="math inline"><em>S</em>(<em>n</em>)</span>，则 <span
+class="math inline"><em>S</em>(<em>n</em>)</span> 在 <span
+class="math inline">(−<em>R</em>, <em>R</em>)</span>
+上可导，且有<strong>逐项求导公式</strong></p>
+<p><span class="math display">$$
+\begin{aligned}
+S'(x) = &amp;\left(\sum_{n=0}^\infty a_nx^n\right)'\\
+  = &amp;\sum_{n=0}^\infty \left(a_nx^n\right)'\\
+  = &amp;\sum_{n=0}^\infty na_nx^{n-1}\\
+\end{aligned}
+$$</span></p>
+<p>且幂级数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+na_nx^{n-1}$</span> 的收敛半径仍为 <span
+class="math inline"><em>R</em></span></p>
+<p><strong>性质：</strong></p>
+<p>若幂级数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+a_nx^n$</span> 的收敛半径为 <span
+class="math inline"><em>R</em> &gt; 0</span>，在收敛区间 <span
+class="math inline">(−<em>R</em>, <em>R</em>)</span> 上的和函数为 <span
+class="math inline"><em>S</em>(<em>n</em>)</span>，则 <span
+class="math inline"><em>S</em>(<em>n</em>)</span> 在 <span
+class="math inline">(−<em>R</em>, <em>R</em>)</span>
+上可导，且有<strong>逐项求积公式</strong></p>
+<p><span class="math display">$$
+\begin{aligned}
+\int_0^xS(t)\,\mathrm{d}t = &amp;\int_0^x\left(\sum_{n=0}^\infty
+a_nt^n\right)\,\mathrm{d}t\\
+  = &amp;\sum_{n=0}^\infty \int_0^x a_nt^n\,\mathrm{d}t\\
+  = &amp;\sum_{n=0}^\infty \frac{a_n}{n+1}x^{n+1}\\
+\end{aligned}
+$$</span></p>
+<p>且幂级数 <span class="math inline">$\displaystyle \sum_{n=0}^\infty
+a_nt^n$</span> 的收敛半径仍为 <span
+class="math inline"><em>R</em></span></p>
+<blockquote>
+<ol type="1">
+<li>幂函数逐项求导，逐项积分后，收敛半径不变，但是收敛域可能改变</li>
+<li>幂函数在收敛区间内具有任意阶导数</li>
+</ol>
+</blockquote>
+<h4 id="taylor-级数">Taylor 级数</h4>
+<p><strong>定义：</strong></p>
+<p>设函数 <span class="math inline"><em>f</em>(<em>x</em>)</span> 在
+<span class="math inline"><em>x</em><sub>0</sub></span>
+的某领域内有任意阶导数，称幂级数</p>
+<p><span class="math display">$$
+\sum_{n=0}^\infty \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n
+$$</span></p>
+<p>为 <span class="math inline"><em>f</em>(<em>x</em>)</span> 在 <span
+class="math inline"><em>x</em><sub>0</sub></span> 处的
+<strong>Taylor</strong> 级数，记为</p>
+<p><span class="math display">$$
+f(x) = \sum_{n=0}^\infty \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n
+$$</span></p>
+<p><span class="math inline"><em>x</em><sub>0</sub> = 0</span> 是，称为
+<strong>Maclaurin 级数</strong></p>
+<p><strong>定理（唯一性）</strong></p>
+<p>若 <span class="math inline"><em>f</em>(<em>x</em>)</span> 在 <span
+class="math inline"><em>x</em><sub>0</sub></span>
+可展开为幂级数，则展开式唯一，且恰为 Taylor 级数</p>
+<p><strong>定理</strong></p>
+<p>设 <span class="math inline"><em>f</em>(<em>x</em>)</span> 在 <span
+class="math inline"><em>x</em><sub>0</sub></span> 的某领域 <span
+class="math inline"><em>I</em></span> 内任意阶可导，则在 <span
+class="math inline"><em>I</em></span> 内</p>
+<p><span class="math display">$$
+f(x) = \sum_{n=0}^\infty \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n
+\Leftrightarrow \lim_{n\to\infty}R_n(x) =0
+$$</span></p>
+<h4 id="常用的初等函数的幂级数展开式">常用的初等函数的幂级数展开式</h4>
+<ol type="1">
+<li><span class="math inline">$\displaystyle e^x = \sum_{n=0}^\infty
+\frac{x^n}{n!} \quad (x\in\mathbb{R})$</span></li>
+<li><span class="math inline">$\displaystyle \sin x = \sum_{n=0}^\infty
+\frac{(-1)^nx^{2n+1}}{(2n+1)!} \quad (x\in\mathbb{R})$</span></li>
+<li><span class="math inline">$\displaystyle \cos x = \sum_{n=0}^\infty
+\frac{(-1)^nx^{2n}}{(2n)!} \quad (x\in\mathbb{R})$</span></li>
+<li><span class="math inline">$\displaystyle \ln(1+x) =
+\sum_{n=1}^\infty \frac{(-1)^{n-1}x^n}{n} \quad (\left\vert x
+\right\vert&lt;1)$</span></li>
+<li><span class="math inline">$\displaystyle (1+x)^\alpha =
+\sum_{n=0}^\infty \frac{\alpha(\alpha-1)\cdots(\alpha-n+1)}{n!}x^n \quad
+(\left\vert x\right\vert&lt;1)$</span></li>
+<li><span class="math inline">$\displaystyle \frac{1}{1-x} =
+\sum_{n=0}^\infty x^n \quad (\left\vert x\right\vert&lt;1)$</span></li>
+<li><span class="math inline">$\displaystyle \frac{1}{1+x} =
+\sum_{n=0}^\infty (-1)^nx^n \quad (\left\vert
+x\right\vert&lt;1)$</span></li>
+<li><span class="math inline">$\displaystyle \arctan{x} =
+\sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{2n+1} \quad (\left\vert
+x\right\vert\leq 1)$</span></li>
+</ol>
+<h4 id="正弦级数和余弦级数">正弦级数和余弦级数</h4>
+<p>若周期为 <span class="math inline">2<em>π</em></span> 的函数 <span
+class="math inline"><em>f</em>(<em>x</em>)</span> 是奇函数时，其 Fourier
+系数 <span
+class="math inline"><em>a</em><sub><em>n</em></sub> = 0</span>，从而</p>
+<p><span class="math display">$$
+f(x) \sim \sum_{n=1}^{+\infty}b_n\sin(nx)\quad\text{正弦级数}
+$$</span></p>
+<p>其中 <span class="math inline">$\displaystyle b_n
+=\frac{2}{\pi}\int_0^\pi f(x)\sin(nx) \,\mathrm{d}x$</span></p>
+<p>若周期为 <span class="math inline">2<em>π</em></span> 的函数 <span
+class="math inline"><em>f</em>(<em>x</em>)</span> 是偶函数，其 Fourier
+系数 <span
+class="math inline"><em>b</em><sub><em>n</em></sub> = 0</span>，从而</p>
+<p><span class="math display">$$
+f(x) \sim
+\frac{a_0}{2}+\sum_{n=0}^{+\infty}a_n\cos(nx)\quad\text{余弦级数}
+$$</span></p>
+<p>其中 <span class="math inline">$\displaystyle a_n
+=\frac{1}{\pi}\int_0^\pi f(x)\cos(nx) \,\mathrm{d}x$</span></p>
+<p>若函数 <span class="math inline"><em>f</em>(<em>x</em>)</span> 定义在
+<span class="math inline">[0, <em>π</em>]</span> 上，可作奇延拓</p>
+<p><span class="math display">$$
+F(x)=
+\begin{cases}
+  f(x), &amp; 0&lt; x&lt; \pi\\
+  -f(-x), &amp; -\pi &lt; x &lt; 0\\
+  0, &amp; x=0,\pm\pi\\
+\end{cases}
+$$</span></p>
+<p>使得 <span class="math inline"><em>F</em>(<em>x</em>)</span> 为 <span
+class="math inline">[−<em>π</em>, <em>π</em>]</span> 上的奇函数</p>
+<p>也可作偶延拓</p>
+<p><span class="math display">$$
+G(x)=
+\begin{cases}
+  f(x), &amp; 0&lt; x&lt; \pi\\
+  f(-x), &amp; -\pi &lt; x &lt; 0\\
+  0, &amp; x=0,\pm\pi\\
+\end{cases}
+$$</span></p>
+<p>使得函数 <span class="math inline"><em>G</em>(<em>x</em>)</span> 为
+<span class="math inline">[−<em>π</em>, <em>π</em>]</span>
+上的偶函数</p>
+<p>对于一定义在 <span class="math inline">[0, <em>π</em>]</span>
+上的函数 <span
+class="math inline"><em>f</em>(<em>x</em>)</span>，可以对其先做奇延拓或者偶延拓，再将其展开为
+正弦级数或者余弦级数</p>
+<h4 id="周期为-2l-的-fourier-级数">周期为 <span
+class="math inline">2<em>l</em></span> 的 Fourier 级数</h4>
+<p>设函数 <span class="math inline"><em>f</em>(<em>x</em>)</span> 在区间
+<span class="math inline">[−<em>l</em>, <em>l</em>]</span>
+上可积，作代换 <span class="math inline">$x
+=\frac{l}{\pi}t$</span>，使得 <span class="math inline">$F(t) =
+f\left(\frac{l}{\pi}t\right)$</span> 为 <span
+class="math inline">[−<em>π</em>, <em>π</em>]</span>
+上的可积函数，从而</p>
+<p><span class="math display">$$
+F(t) \sim
+\frac{a_0}{2}+\sum_{n=1}^{+\infty}a_n\cos(nt)+\sum_{n=1}^{+\infty}b_n\sin(nt)
+$$</span></p>
+<p>其中</p>
+<p><span class="math display">$$
+\begin{aligned}
+a_n &amp;= \frac{1}{\pi}\int_{-\pi}^{\pi}F(t)\cos(nt)\,\mathrm{d}t =
+\frac{1}{l}\int_{-l}^{l}f(x)\cos\left(\frac{\pi
+n}{l}x\right)\,\mathrm{d}x\\
+b_n &amp;= \frac{1}{\pi}\int_{-\pi}^{\pi}F(t)\sin(nt)\,\mathrm{d}t =
+\frac{1}{l}\int_{-l}^{l}f(x)\sin\left(\frac{\pi
+n}{l}x\right)\,\mathrm{d}x
+\end{aligned}
+$$</span></p>
+<p>故</p>
+<p><span class="math display">$$
+f(x) \sim \frac{a_0}{2}+\sum_{n=1}^{+\infty}\left(a_n\cos\left(\frac{\pi
+n}{l}x\right)+b_n\sin\left(\frac{\pi n}{l}x\right)\right)
+$$</span></p>
+<p>其中</p>
+<p><span class="math display">$$
+\begin{aligned}
+a_n &amp;= \frac{1}{l}\int_{-l}^{l}f(x)\cos\left(\frac{\pi
+n}{l}x\right)\,\mathrm{d}x\\
+b_n &amp;= \frac{1}{l}\int_{-l}^{l}f(x)\sin\left(\frac{\pi
+n}{l}x\right)\,\mathrm{d}x
+\end{aligned}
+$$</span></p>
+<p><strong>定理：</strong></p>
+<p>若 <span class="math inline"><em>f</em>(<em>x</em>)</span> 在 <span
+class="math inline">[−<em>l</em>, <em>l</em>]</span> 上满足 Dirichlet
+条件，则 Fourier 级数</p>
+<p><span class="math display">$$
+\frac{a_0}{2}+\sum_{n=1}^{+\infty}\left(a_n\cos\left(\frac{\pi
+n}{l}x\right)+b_n\sin\left(\frac{\pi n}{l}x\right)\right)
+$$</span></p>
+<p>收敛到</p>
+<p><span class="math display">$$
+S(n) =
+\begin{cases}
+  f(x), &amp; x \text{为} f(x) \text{的连续点}\\
+  \frac{f(x^+)+f(x^-)}{2}, &amp; x \text{为} f(x) \text{的间断点}\\
+  \frac{f(l^-)+f(-l^+)}{2} ,&amp; x=\pm l
+\end{cases}
+$$</span></p>
+</body>
+</html>
