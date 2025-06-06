@@ -44,29 +44,1024 @@
 \pagestyle{plain}     % 设置为普通页码样式
 \tableofcontents
 
-\begin{abstract}
-本模板是上海交通大学本科生课程论文、学位论文、学术报告等文档的LaTeX模板，旨在帮助学生快速上手LaTeX排版。
-\end{abstract}
+以下是将上述内容转换为 LaTeX 格式的源码，从 `\chapter` 开始：
 
-\newpage
-\setcounter{page}{1}  % 将页码设置为1
-\pagestyle{plain}     % 设置为普通页码样式
-\chapter{欢迎}
-\section{欢迎使用 SJTUReport}
-你好，\LaTeX{}!
+```latex
+\documentclass{book}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{bm}
 
-\begin{assumption}
-    这是一个假设环境。
-\end{assumption}
+% 设置 MathJax （如果需要在网页上显示）
+% 这里注释掉，因为 LaTeX 编译不需要 MathJax
+% \usepackage{mathjax}
+% \mathjax{https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML}
 
-\begin{axiom}
-    这是一个公理环境。
-\end{axiom}
+\begin{document}
 
-\begin{conjecture}
-    这是一个猜想环境。
-\end{conjecture}
+\chapter{高等数学 2 笔记}
 
+\section{重积分}
+
+\subsection{重积分的概念和性质}
+
+\subsubsection{二重积分的概念}
+
+\textbf{定义：}
+
+设 \(D\) 是平面上的有界闭区域，\(f(x,y)\) 为 \(D\) 上的有界函数，\(I\) 为实数。若对 \(D\) 的任意分割 \(\Delta D_1, \Delta D_2, \cdots, \Delta D_n\) ，任取 \((\xi_i, \eta_i)\in\Delta D_i(i = 1,\ldots,n)\)，作和 \(\sum_{i = 1}^n f(\xi_i,\eta_i)\Delta \sigma_i\) （\(\Delta \sigma_i\) 为 \(D_i\) 的面积），总有
+
+\[
+\lim_{\lambda\to 0}\sum_{i = 1}^n f(\xi_i,\eta_i)\Delta \sigma_i = I
+\]
+
+其中 \(\lambda = \max_{1\leq i\leq n} \{d_i\}\)，\(d_i\) 是小区域 \(\Delta D_i\) 的直径，则称函数 \(f(x,y)\) 在 \(D\) 上\textbf{可积}，记为 \(f\in R(D)\)；极限值 \(I\) 称为 \(f(x,y)\) 在 \(D\) 上的\textbf{二重积分}，记作
+
+\[
+\iint_D f(x,y)\,\mathrm{d}\sigma.
+\]
+
+\begin{itemize}
+    \item \(\iint\) 积分号
+    \item \(D\) 积分区域
+    \item \(f(x,y)\) 被积函数
+    \item \(\mathrm{d}\sigma\) 面积元素（微元）
+\end{itemize}
+
+- 二重积分的几何意义
+  - 当被积函数大于 \(0\) 时，二重积分是柱体体积
+  - 当被积函数小于 \(0\) 时，二重积分是柱体体积的负值
+  - 一般的，为曲顶柱体体积的代数和
+
+- 可积的充分条件
+  - \textbf{定理：} 若函数 \(f(x,y)\) 在区域 \(D\) 上连续，则 \(f(x,y)\in D\)。
+
+- \(f(x,y)\) 在 \(D\) 上的可积性及积分值与其在 \(D\) 内\textbf{有限条光滑曲线}上的定义无关
+
+\subsubsection{二重积分的性质}
+
+\begin{enumerate}
+    \item \(\iint_D\,\mathrm{d}\sigma = \iint_D 1\,\mathrm{d}\sigma = A_D \quad\left(\text{D 的面积}\right)\)。
+    \item \textbf{线性性：} 设 \(f,g\in R(D)\)，\(\alpha, \beta\) 是任意常数，则 \(\alpha f +\beta g \in R(D)\)，且
+
+    \[
+    \iint_D (\alpha f +\beta g)\,\mathrm{d}\sigma = \alpha \iint_D f\,\mathrm{d}\sigma + \beta \iint_D g\,\mathrm{d}\sigma
+    \]
+
+    \item \textbf{区域可加性：} 若 \(f\in R(D)\) 且积分区域 \(D\) 分为内部不相交的子区域 \(D_1, D_2\)，则
+
+    \[
+    \iint_D f(x,y) \,\mathrm{d}\sigma = \iint_{D_1} f(x,y)\,\mathrm{d}\sigma + \iint_{D_2} f(x,y)\,\mathrm{d}\sigma
+    \]
+
+    \item \textbf{保序性：} 若 \(f,g\in R(D)\)，且当 \((x,y)\in D\) 时，\(f(x,y)\leq g(x,y)\)，则
+
+    \[
+    \iint_D f(x,y)\,\mathrm{d}\sigma \leq \iint_D g(x,y)\,\mathrm{d}\sigma
+    \]
+
+    - \textbf{推论 1：} 若 \(f\in R(D)\)，则 \(\vert f(x,y) \vert \in R(D)\)，且
+
+    \[
+    \left\vert \iint_D f(x,y)\,\mathrm{d}\sigma \right\vert \leq \iint_D \vert f(x,y) \vert \,\mathrm{d}\sigma
+    \]
+
+    - \textbf{推论 2：} 若 \(f\in R(D)\)，且当 \((x,y)\in D\) 时， \(m\leq f(x,y) \leq M\)，则
+
+    \[
+    mA_D \leq \iint_D f(x,y)\,\mathrm{d}\sigma \leq MA_D
+    \]
+
+    - \textbf{推论 3：} 若 \(f\in R(D)\)，且当 \((x,y)\in D\) 时，\(f(x,y) \geq 0\)，则
+
+    \[
+    \iint_D f(x,y)\,\mathrm{d}\sigma \geq 0
+    \]
+
+    \item \textbf{积分中值定理：} 若 \(f(x,y)\in C(D)\) ，\(g(x,y)\in R(D)\)，且 \(g\) 在 \(D\) 上不变号，则 \(\exists \xi, \eta \in D\)，使得
+
+    \[
+    \iint_D f(x,y)g(x,y)\,\mathrm{d}\sigma = f(\xi, \eta )\iint_D g(x,y)\,\mathrm{d}\sigma
+    \]
+
+    - \textbf{推论：} 若 \(f(x,y)\in C(D)\)，则存在 \((\xi, \eta )\in D\)，使得
+
+    \[
+    \iint_D f(x,y)\,\mathrm{d}\sigma = f(\xi, \eta )A_D
+    \]
+
+    称 \(f(\xi,\eta) = \frac{\iint_D f\,\mathrm{d}\sigma}{A_D}\) 为函数 \(f(x,y)\) 在有界闭区域 \(D\) 上的\textbf{平均值}
+\end{enumerate}
+
+\subsection{二重积分的计算}
+
+\subsubsection{直角坐标系下的计算}
+
+当二重积分存在时，可利用平行于坐标轴的直线来划分积分区域 \(D\)，此时，面积元素
+
+\[
+\mathrm{d}\sigma = \mathrm{d}x\mathrm{d}y
+\]
+
+故二重积分在直角坐标系下可表示为
+
+\[
+\iint_D f(x,y)\,\mathrm{d}\sigma = \iint_D f(x,y)\,\mathrm{d}x\mathrm{d}y
+\]
+
+\paragraph{\(x\) 型正则区域}
+
+\[
+D = \left\{(x,y)\mid \varphi_1(x)\leq y\leq \varphi_2(x),a\leq x\leq b\right\}
+\]
+
+化为先 \(y\) 后 \(x\) 的二次积分
+
+\[
+\begin{aligned}
+    \iint_D f(x,y)\,\mathrm{d}x\mathrm{d}y &= \int_a^b\left[\int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y)\,\mathrm{d}y\right]\mathrm{d}x \\
+    &\equiv \int_a^b f(x,y)\,\mathrm{d}x\mathrm{d}y
+\end{aligned}
+\]
+
+\paragraph{\(y\) 型正则区域}
+
+\[
+D = \left\{(x,y)\mid \varphi_1(y)\leq x\leq \varphi_2(y),c\leq y\leq d\right\}
+\]
+
+化为先 \(x\) 后 \(y\) 的二次积分
+
+\[
+\begin{aligned}
+    \iint_D f(x,y)\,\mathrm{d}x\mathrm{d}y &= \int_c^d\left[\int_{\varphi_1(y)}^{\varphi_2(y)} f(x,y)\,\mathrm{d}x\right]\mathrm{d}y \\
+    &\equiv \int_c^d f(x,y)\,\mathrm{d}x\mathrm{d}y
+\end{aligned}
+\]
+
+\paragraph{一般区域的二重积分}
+
+分割成若干个正则子区域，利用积分区域可加性，分别在子区域上积分后求和
+
+\begin{quote}
+直角坐标计算二重积分的步骤
+
+1. \textbf{画出积分区域} \(D\) 的草图，并\textbf{确定类型}
+2. 按照所确定的类型\textbf{表示区域} \(D\)
+3. \textbf{化二重积分为二次积分}（注意上下限）
+4. \textbf{计算}二重积分
+\end{quote}
+
+\subsubsection{极坐标系下的计算}
+
+当积分区域的边界曲线或被积函数用极坐标表示较为简单时，可用极坐标来计算二重积分。
+
+面积元素 \(\Delta \sigma\) 在极坐标下为
+
+\[
+\boxed{\Delta\sigma = r\mathrm{d}r\mathrm{d}\theta}
+\]
+
+从直角坐标到极坐标时的二重积分变换公式为
+
+\[
+\iint_D f(x,y)\,\mathrm{d}\sigma = \iint_D f(r\cos\theta,r\sin\theta)r\,\mathrm{d}r\mathrm{d}\theta
+\]
+
+若积分区域 \(D\) 可表示为 \(\left\{(r,\theta)\mid r_1(\theta)\leq r \leq r_2(\theta), \alpha \leq \theta \leq \beta \right\}\)，则
+
+\[
+\iint_D f(x,y)\,\mathrm{d}\sigma = \int_\alpha^\beta\, \mathrm{d}\theta\int_{r_1(\theta)}^{r_2(\theta)} f(r\cos\theta,r\sin\theta)r\,\mathrm{d}r
+\]
+
+\subsubsection{二重积分的变量代换}
+
+\textbf{定理：}
+
+设变换 \(T :\begin{cases}x = x(u,v)\\y = y(u,v)\end{cases}\) 有连续偏导数，且满足 \(J = \frac{\partial (x,y)}{\partial (u,v)}\coloneqq \begin{vmatrix}x_u & x_v\\ y_u & y_v\end{vmatrix} \left(\text{Jacobi 行列式}\right)\neq 0\)，而 \(f(x,y)\in C(D)\)，则
+
+\[
+\iint_D f(x,y)\,\mathrm{d}\sigma = \iint_{D^*} f(x(u,v),y(u,v))\left\vert J \right\vert \,\mathrm{d}u\mathrm{d}v
+\]
+
+- 在定理条件下，变换 \(T\) 一定存在逆变换 \(T^{-1}:\begin{cases}u = u(x,y)\\v = v(x,y)\end{cases}\)，且 \(\frac{\partial (u,v)}{\partial (x,y)}\cdot \frac{\partial (x,y)}{\partial (u,v)} = 1\)
+
+  有时，借助此式求 \(J\) 较为简单
+
+- 当 Jacobi 行列式仅在区域 \(D^*\) 内个别点上或个别曲线上为 \(0\) 时，定理结论仍成立
+- 在广义极坐标 \(\begin{cases}x = ar\cos\theta\\y = br\sin\theta\end{cases}\) 下，\(J = abr\)
+
+\subsection{三重积分}
+
+\subsubsection{三重积分的定义}
+
+\textbf{定义：}
+
+设 \(\Omega\) 是 \(\mathbb{R}^3\) 中的有界闭区域，三元函数 \(f(x,y,z)\) 在 \(\Omega\) 上有界，\(I\) 为实数。 若将 \(\Omega\) 任意分割成 \(n\) 个小区域 \(\Delta \Omega_1,\Delta\Omega_2,\ldots,\Delta\Omega_n\)，任取 \((\varepsilon_i,\eta_i,\xi_i )\in\Delta\Omega_i\left(i = 1,2,\ldots,n\right)\)，作和 \(\sum_{i = 1}^n f(\varepsilon_i,\eta_i,\xi_i )\Delta V_i\)，（\(\Delta V_i\) 是 \(\Delta\Omega_i\) 的体积），总有
+
+\[
+\lim_{\lambda\to 0}\sum_{i = 1}^n f(\varepsilon_i,\eta_i,\xi_i )\Delta V_i = I
+\]
+
+其中 \(\lambda = \max_{1\leq i\leq n}\{d_i\}\)，\(d_i\) 是 \(\Delta\Omega_i\) 的直径，则称函数 \(f(x,y,z)\) 在 \(\Omega\) 上\textbf{可积}，记为 \(f\in R(\Omega)\)； \(I\) 称为 \(f(x,y,z)\) 在 \(\Omega\) 上的\textbf{三重积分}，记作
+
+\[
+\iiint_\Omega f(x,y,z)\,\mathrm{d}V
+\]
+
+其中 \(V_\Omega\) 是区域 \(\Omega\) 的体积
+
+- 若 \(f(x,y,z)\) 表示占有三维空间区域 \(\Omega\) 的物体的体密度函数，则 \(\iiint_\Omega f(x,y,z)\,\mathrm{d}V\) 给出了物体的\textbf{质量}
+- 类似二重积分，三重积分具有线性性，区域可加性，保序性以及推论和积分中值定理，并且有 \(\iiint_\Omega \,\mathrm{d}V = V_\Omega\)
+
+\subsubsection{直角坐标系下的计算}
+
+直角坐标系下，由于 \(\mathrm{d}V = \mathrm{d}x\mathrm{d}y\mathrm{d}z\)，故
+
+\[
+\iiint_\Omega f(x,y,z)\,\mathrm{d}V = \iiint_\Omega f(x,y,z)\,\mathrm{d}x\mathrm{d}y\mathrm{d}z
+\]
+
+\paragraph{柱线法（坐标面投影法）}
+
+设 \(\Omega\) 是以曲面 \(z = z_1(x,y)\) 为底，曲面 \(z = z_2(x,y)\)，而侧面是母线平行于 \(z\) 轴的柱体所围成的区域
+
+设 \(\Omega\) 在 \(xOy\) 面上的投影区域为 \(D_1\) ，则 \(\Omega\) 可表示为
+
+\[
+\Omega = \left\{(x,y,z)\mid (x,y)\in D_1, z_1(x,y)\leq z\leq z_2(x,y),(x,y)\in D\right\}
+\]
+
+则物体总质量为
+
+\[
+\iint_D\left(\int_{z_1(x,y)}^{z_2(x,y)}f(x,y,z)\,\mathrm{d}z\right) \,\mathrm{d}x\mathrm{d}y
+\]
+
+故有
+
+\[
+\iiint_\Omega f(x,y,z)\,\mathrm{d}V = \iint_{D_1} \,\mathrm{d}x\mathrm{d}y\int_{z_1(x,y)}^{z_2(x,y)} f(x,y,z)\,\mathrm{d}z
+\]
+
+\paragraph{截面法（坐标轴投影法）}
+
+设区域 \(\Omega\) 在 \(z\) 轴上的投影区间为 \([h_1,h_2]\)，即 \(\Omega\) 介于平面 \(z = h_1\) 和 \(z = h_2\) 之间，过 \(z\) 处且垂直于 \(z\) 轴的平面截 \(\Omega\) 得截面区域 \(D_z\)，则 \(\Omega\) 可表示为
+
+\[
+\Omega = \left\{(x,y,z)\mid h_1\leq z\leq h_2, (x,y)\in D_z\right\}
+\]
+
+物体总质量为
+
+\[
+\int_{h_1}^{h_2}\left(\iint_{D_z} f(x,y,z)\,\mathrm{d}x\mathrm{d}y\right) \,\mathrm{d}z
+\]
+
+故有
+
+\[
+\iiint_\Omega f(x,y,z)\,\mathrm{d}V = \int_{h_1}^{h_2}\,\mathrm{d}z\iint_{D_z} f(x,y,z)\,\mathrm{d}x\mathrm{d}y
+\]
+
+\subsubsection{三重积分的变量代换}
+
+\textbf{定理：}
+
+设变换 \(T:\begin{cases}x = x(u,v,w)\\y = y(u,v,w)\\z = z(u,v,w)\end{cases}\) 有连续偏导数，且满足 \(J = \frac{\partial (x,y,z)}{\partial (u,v,w)}\neq 0\)，而 \(f(x,y,z)\in C(\Omega)\)，则
+
+\[
+\iiint_\Omega f(x,y,z)\,\mathrm{d}V = \iiint_{\Omega^*} f(x(u,v,w),y(u,v,w),z(u,v,w))\left\vert J \right\vert \,\mathrm{d}u\mathrm{d}v\mathrm{d}w
+\]
+
+\paragraph{柱面坐标系下的计算}
+
+柱面坐标系，实际上就是将 \(x,y\) 坐标转换为极坐标
+
+\[
+\begin{cases}
+x = r\cos\theta\\
+y = r\sin\theta\\
+z = z
+\end{cases}
+\]
+
+其 Jacobi 行列式为
+
+\[
+J = \frac{\partial (x,y,z)}{\partial (r,\theta,z)} = \begin{vmatrix}
+\cos\theta & -r\sin\theta & 0\\
+\sin\theta & r\cos\theta & 0\\
+0 & 0 & 1 
+\end{vmatrix} = r
+\]
+
+则柱面积分积分公式为
+
+\[
+\iiint_\Omega f(x,y,z)\,\mathrm{d}V = \iiint_{\Omega^*} f(r\cos\theta,r\sin\theta,z)r\,\mathrm{d}r\mathrm{d}\theta\mathrm{d}z
+\]
+
+\paragraph{球面坐标系下的计算}
+
+球面坐标系，实际上就是将 \(x,y,z\) 坐标转换为球坐标
+
+\[
+\begin{cases}
+x = \rho\sin\varphi\cos\theta\\
+y = \rho\sin\varphi\sin\theta\\
+z = \rho\cos\varphi
+\end{cases}
+\]
+
+其 Jacobi 行列式为
+
+\[
+J = \frac{\partial (x,y,z)}{\partial (\rho,\varphi,\theta)} = \begin{vmatrix}
+\sin\varphi\cos\theta & \rho\cos\varphi\cos\theta & -\rho\sin\varphi\sin\theta\\
+\sin\varphi\sin\theta & \rho\cos\varphi\sin\theta & \rho\sin\varphi\cos\theta\\
+\cos\varphi & -\rho\sin\varphi & 0
+\end{vmatrix} = \rho^2\sin\varphi
+\]
+
+则球面积分积分公式为
+
+\[
+\iiint_\Omega f(x,y,z)\,\mathrm{d}V = \iiint_{\Omega^*} f(\rho\sin\varphi\cos\theta,\rho\sin\varphi\sin\theta,\rho\cos\varphi)\rho^2\sin\varphi\,\mathrm{d}\rho\mathrm{d}\varphi\mathrm{d}\theta
+\]
+
+\subsection{重积分的应用}
+
+\subsubsection{重积分的几何应用}
+
+\paragraph{平面图形的面积}
+
+\[
+A(D) = \iint_D \,\mathrm{d}\sigma = \iint_D \,\mathrm{d}x\mathrm{d}y
+\]
+
+\paragraph{立体的体积}
+
+\[
+V(\Omega) = \iiint_\Omega \,\mathrm{d}V = \iiint_\Omega \,\mathrm{d}x\mathrm{d}y\mathrm{d}z
+\]
+
+\paragraph{曲面的面积}
+
+设空间曲面 \(S:z = f(x,y),(x,y)\in D\)。
+
+则曲面 \(S\) 的面积为
+
+\[
+A(S) = \iint_D \sqrt{1 + z_x^2 + z_y^2}\,\mathrm{d}x\mathrm{d}y
+\]
+
+\subsubsection{重积分的物理应用}
+
+\paragraph{质心}
+
+体密度为 \(\rho(x, y)\) 的物体占据空间 \(\Omega\)，其质心坐标为
+
+\[
+\begin{cases}
+  \bar{x} = \frac{\iiint_\Omega x\rho(x,y,z)\,\mathrm{d}V}{\iiint_\Omega\rho(x,y,z)\,\mathrm{d}V} \\
+  \bar{y} = \frac{\iiint_\Omega y\rho(x,y,z)\,\mathrm{d}V}{\iiint_\Omega\rho(x,y,z)\,\mathrm{d}V}\\
+  \bar{z} = \frac{\iiint_\Omega z\rho(x,y,z)\,\mathrm{d}V}{\iiint_\Omega\rho(x,y,z)\,\mathrm{d}V}
+\end{cases}
+\]
+
+\paragraph{转动惯量}
+
+设物体的密度为 \(\rho(x,y,z)\)，则物体分别关于 \(x\)，\(y\)，\(z\) 轴的转动惯量为
+
+\[
+\begin{cases}
+  I_x = \iiint_\Omega \rho(x,y,z)(y^2 + z^2)\,\mathrm{d}V\\
+  I_y = \iiint_\Omega \rho(x,y,z)(x^2 + z^2)\,\mathrm{d}V\\
+  I_z = \iiint_\Omega \rho(x,y,z)(x^2 + y^2)\,\mathrm{d}V
+\end{cases}
+\]
+
+\paragraph{引力}
+
+\[
+\begin{aligned}
+  \mathrm{d}\vec{F} &= G\frac{m_0\mathrm{d}m}{r^3}\vec{r}\\
+  &= G\frac{m_0\rho(x,y,z)\mathrm{d}V}{r^3}\cdot\left(x - x_0,y - y_0,z - z_0\right)\\
+  &= \left(\mathrm{d}F_x,\mathrm{d}F_y,\mathrm{d}F_z\right)
+\end{aligned}
+\]
+
+\section{曲线积分和曲面积分}
+
+\subsection{第一类曲线积分和曲面积分}
+
+\subsubsection{第一类曲线积分的概念}
+
+\textbf{定义：}
+
+设 \(C\) 是 \(xOy\) 面上的一条光滑曲线弧，函数 \(f(x,y)\) 是定义在 \(C\) 上的有界函数，在 \(C\) 上任意插入分点 \(A = A_0,A_1,\ldots,A_{n - 1},A_n = B\)，将其分成 \(n\) 个小弧段，记第 \(i\) 个小弧段的弧长为 \(\Delta s_i\)，在第 \(i\) 个小段上任取点 \((\epsilon_i,\eta_i)\)，和式 \(\sum_{i = 1}^{n}f(\epsilon_i,\eta_i)\Delta s_i\)，当 \(\lambda=\max_{1\leq i\leq n}\{\Delta s_i\}\to 0\) 时，有确定的极限值 \(I\)，即
+
+\[
+\lim_{\lambda\to 0}\sum_{i = 1}^n f(\epsilon_i,\eta_i)\Delta s_i = I
+\]
+
+则称函数 \(f(x,y)\) 在曲线 \(C\) 上\textbf{可积}，并将此极限值 \(I\) 称为函数 \(f(x,y)\) 在曲线 \(C\) 上的\textbf{第一类曲线积分}，记作 \(\int_Cf(x,y)\,\mathrm{d}s\)，即
+
+\[
+I = \int_C f(x,y)\,\mathrm{d}s = \lim_{\lambda\to 0}\sum_{i = 1}^n f(\epsilon_i,\eta_i)\Delta s_i
+\]
+
+- 第一类曲线积分的几何含义为柱面的面积
+- \(\int_C\,\mathrm{d}s = \int_C1\,\mathrm{d}s = s_C\)
+- 若 \(C\) 是封闭曲线，即 \(C\) 的二端点重合，则记第一类曲线积分为 \(\oint_Cf(x,y)\,\mathrm{d}s\)
+
+\subsubsection{第一类曲线积分的性质}
+
+\paragraph{与曲线方向无关}
+
+若曲线 \(C\) 的端点为 \(A\) 和 \(B\)，\(f(x,y)\) 在曲线 \(C\) 上可积，则
+
+\[
+\int_{\widehat{AB}} f(x,y)\,\mathrm{d}s=\int_{\widehat{BA}} f(x,y)\,\mathrm{d}s 
+\]
+
+\paragraph{线性性}
+
+若 \(f,g\) 在曲线 \(C\) 上可积，\(\alpha, \beta\) 是任意常数，则 \(\alpha f + \beta g\) 在曲线 \(C\) 上可积，且
+
+\[
+\int_C (\alpha f + \beta g)\,\mathrm{d}s = \alpha \int_C f(x,y)\,\mathrm{d}s + \beta \int_C g(x,y)\,\mathrm{d}s
+\]
+
+\paragraph{路径可加性}
+
+若曲线 \(C\) 由两段光滑曲线 \(C_1\) 和 \(C_2\) 首尾连接而成，则 \(f(x,y)\) 在曲线 \(C\) 上可积，等价于 \(f(x,y)\) 在曲线 \(C_1\) 和 \(C_2\) 上均可积，且
+
+\[
+\int_C f(x,y)\,\mathrm{d}s = \int_{C_1} f(x,y)\,\mathrm{d}s + \int_{C_2} f(x,y)\,\mathrm{d}s
+\]
+
+\paragraph{中值定理}
+
+设函数 \(f\) 在光滑曲线 \(C\) 上连续，则 \(\exists (\epsilon,\eta)\in C\)，使得
+
+\[
+\int_C f(x,y)\,\mathrm{d}s = f(\epsilon,\eta)\cdot s_C
+\]
+
+其中 \(s_C\) 是曲线段 \(C\) 的长度
+
+\subsubsection{第一类曲线积分的计算}
+
+设函数 \(f(x,y)\) 在光滑曲线 \(C\) 上连续，\(C\) 的参数方程为 \(\begin{cases}x = x(t)\\y = y(t)\end{cases}\)，\(t\in [a,b]\)，满足 \(x'(t)\)，\(y'(t)\) 连续，且 \(x'(t)^2 + y'(t)^2 \neq 0\)，则
+
+\[
+\int_C f(x,y)\,\mathrm{d}s = \int_a^b f(x(t),y(t))\sqrt{x'(t)^2 + y'(t)^2}\,\mathrm{d}t
+\]
+
+- 右端积分限应 \(a < b\)
+- 当曲线 \(C\) 形式为 \(y = y(x)\)，\(x\in [a,b]\) 时，则 \(\int_Cf(x,y)\,\mathrm{d}s =\int_a^bf(x,y(x))\sqrt{1 + y'^2(x)}\,\mathrm{d}x\)
+- 当曲线 \(C\) 为极坐标 \(r = r(\theta)\)，\(\theta\in [\alpha,\beta]\) 时，则 \(\int_Cf(x,y)\,\mathrm{d}s = \int_\alpha^\beta f(r(\theta)\cos\theta,r(\theta)\sin\theta)\sqrt{r(\theta)^2 + r'^2(\theta)}\,\mathrm{d}\theta\)
+
+\subsection{第二类曲线积分与曲面积分}
+
+\subsubsection{第二类曲线积分的概念}
+
+\textbf{定义：}
+
+设 \(C\) 为平面光滑定向曲线(\(A\rightarrow B\))，且向量值函数 \(\vec{F}(x,y) = P(x,y)\vec{i}+Q(x,y)\vec{j}\) 在 \(C\) 上有界，\(\vec{e}_\tau\) 为 \(C\) 上点 \((x,y)\) 处于定向一致的单位切向量，若
+
+\[
+\int_C \vec{F}(x,y) \cdot \vec{e}_\tau \,\mathrm{d}s
+\]
+
+存在，则称为\textbf{向量值函数 \(\vec{F}\) 在定向曲线 \(C\) 上的曲线积分或第二类曲线积分}
+
+若 \(\vec{e}_\tau(x,y) = (\cos\alpha,\cos\beta)\)，则
+
+\[
+\begin{aligned}
+  \int_C \vec{F}(x,y) \cdot \vec{e}_\tau \,\mathrm{d}s &= \int_C P(x,y)\cos\alpha + Q(x,y)\cos\beta \,\mathrm{d}s \\
+  &= \int_C P(x,y)\cos\alpha \,\mathrm{d}s + \int_C Q(x,y)\cos\beta \,\mathrm{d}s \\
+  &= \int_C P(x,y)\,\mathrm{d}x +  Q(x,y)\,\mathrm{d}y
+\end{aligned}
+\]
+
+这是对坐标的曲线积分
+
+记 \(\vec{r} = (x,y)\)，则 \(\mathrm{d}\vec{r} = \vec{e}_\tau \,\mathrm{d}s\) 称为\textbf{定向弧微分}
+
+从而有向量形式的第二类曲线积分
+
+\[
+\int_C \vec{F}(x,y) \cdot \mathrm{d}\vec{r} = \int_C \vec{F}\cdot \mathrm{d}\vec{r}
+\]
+
+\paragraph{第二类曲线积分的性质}
+
+第二类曲线积分与\textbf{曲线方向有关}，即
+
+\[
+\int_{\widehat{AB}} \vec{F}(x,y) \cdot \mathrm{d}\vec{r} = -\int_{\widehat{BA}} \vec{F}(x,y) \cdot \mathrm{d}\vec{r}
+\]
+
+此外线性性与对定向积分路径的可加性等仍然成立
+
+\paragraph{第二类曲线积分的计算}
+
+若曲线 \(C\) 为 \(\begin{cases}x = x(t)\\y = y(t)\end{cases}\)，\(t:\alpha\rightarrow \beta\)
+
+起点 \(A\) 对应 \(\alpha\)，终点 \(B\) 对应 \(\beta\)
+
+考察 \(\int_C P\,\mathrm{d}x + Q\,\mathrm{d}y = \int_C \vec{F}\cdot\vec{e}_\tau \,\mathrm{d}s\)，沿曲线 \(C\) 有 \(\vec{F} = \left(P\left(x(t),y(t)\right),Q\left(x(t),y(t)\right)\right)\)，则
+
+\[
+\int_C P\,\mathrm{d}x + Q\,\mathrm{d}y = \int_\alpha^\beta P\left(x(t),y(t)\right)\,\mathrm{d}x(t) + Q\left(x(t),y(t)\right)\,\mathrm{d}y(t)
+\]
+
+\subsubsection{第二类曲面积分的概念}
+
+\paragraph{双侧曲面}
+
+\textbf{定义：}
+
+若点 \(P\) 沿曲面 \(S\) 上任何不越过曲面边界的连续闭曲线移动后回到起始位置时，法向量 \(\vec{n}\) 保持原来的指向，则称 \(S\) 为\textbf{双侧曲面}
+
+典型的，Mobius 面不是双侧曲面
+
+选定双侧曲面 \(S\) 一侧为正向，称为\textbf{正侧}，记为 \(S^+\) ，其相反侧记作 \(S^-\)
+
+\paragraph{双侧曲面定侧}
+
+若 \(S:z = z(x,y)\)，\((x,y)\in D_{xy}\)，\(\vec{n}_0=\left(\cos\alpha,\cos\beta,\cos\gamma\right)=\pm\frac{\left(-z_x,-z_y,1\right)}{\sqrt{1 + z_x^2 + z_y^2}}\)
+
+若选取 \(\vec{n}_0=\left(\cos\alpha,\cos\beta,\cos\gamma\right)=\frac{\left(-z_x,-z_y,1\right)}{\sqrt{1 + z_x^2 + z_y^2}}\)，则说明 \(\cos\gamma > 0\)，选取了曲面的上侧
+
+一般的
+
+\[
+\begin{cases}
+  \cos\alpha > 0 \Leftrightarrow \text{前侧}，\cos\alpha < 0 \Leftrightarrow \text{后侧}\\
+  \cos\beta > 0 \Leftrightarrow \text{右侧}，\cos\beta < 0 \Leftrightarrow \text{左侧}\\
+  \cos\gamma > 0 \Leftrightarrow \text{上侧}，\cos\gamma < 0 \Leftrightarrow \text{下侧}
+\end{cases}
+\]
+
+习惯上选取曲面片的上侧为 \(S^+\)；对于封闭曲面，选取外侧为 \(S^+\)
+
+对于向量值函数 \(\vec{F} = (P,Q,R)\)
+
+\[
+\iint_S \vec{F}\cdot\,\mathrm{d}\vec{S} = \iint_S P\,\mathrm{d}x\mathrm{d}y + Q\,\mathrm{d}y\mathrm{d}z + R\,\mathrm{d}z\mathrm{d}x
+\]
+
+\paragraph{第二类曲面积分的性质}
+
+第二类曲面积分与在曲面的哪一侧积分有关
+
+\[
+\iint_{S^+}P\,\mathrm{d}x\mathrm{d}y + Q\,\mathrm{d}y\mathrm{d}z + R\,\mathrm{d}z\mathrm{d}x = -\iint_{S^-}P\,\mathrm{d}x\mathrm{d}y + Q\,\mathrm{d}y\mathrm{d}z + R\,\mathrm{d}z\mathrm{d}x
+\]
+
+此外第二类曲面积分也具有线性性和可加性等性质
+
+\subsubsection{第二类曲面积分的计算}
+
+\paragraph{合一投影法}
+
+\[
+\iint_{S^+}P\,\mathrm{d}x\mathrm{d}y + Q\,\mathrm{d}y\mathrm{d}z + R\,\mathrm{d}z\mathrm{d}x = \iint_{D_{xy}} \left(-Pz_x - Qz_y + R\right)\,\mathrm{d}x\mathrm{d}y
+\]
+
+\paragraph{分面投影法}
+
+分 \(P\,\mathrm{d}x\mathrm{d}y\)，\(Q\,\mathrm{d}y\mathrm{d}z\)，\(R\,\mathrm{d}z\mathrm{d}x\) 三个部分进行积分
+
+常在部分曲面垂直坐标轴时进行
+
+\paragraph{公式法}
+
+常用于参数方程确定的曲面
+
+设 \(S:\vec{r} = \left(x(u,v),y(u,v),z(u,v)\right)\)，其中 \((u,v)\in D_{uv}\)，则
+
+\[
+\iint_{S^+}\vec{F}\cdot\,\mathrm{d}\vec{S} = \iint_{D_{uv}}\vec{F}\cdot\left(\vec{r}_u\times\vec{r}_v\right)\,\mathrm{d}u\mathrm{d}v
+\]
+
+\subsection{Green 公式及其应用}
+
+\subsubsection{Green 公式}
+
+\paragraph{连通区域及其边界方向}
+
+设 \(D\) 为平面区域，若 \(D\) 内的任意一条闭曲线所围的区域都落在 \(D\) 内，则称 \(D\) 是单连通的，否则称 \(D\) 为复连通的
+
+当点沿区域边界朝一个方向前进时，区域总在它的左侧，则将此方向规定为边界曲线 \(C\) 的正向，记为 \(C^+\)，与 \(C^+\) 相反方向为 \(C^−\)
+
+\paragraph{Green 公式}
+
+\textbf{定理：}
+
+设有界闭区域 \(D\) 由分段光滑曲线 \(C\) 围成，函数 \(P(x, y)\)，\(Q(x, y)\) 在 \(D\) 上有一阶连续偏导数，则
+
+\[
+\oint_{C^+} P\,\mathrm{d}x + Q\,\mathrm{d}y = \iint_D \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)\,\mathrm{d}x\mathrm{d}y
+\]
+
+- 对于复连通区域 \(D\)，Green 公式仍然成立，但需将 \(C\) 分成若干个单连通区域 \(D_i\)，并对每个区域应用 Green 公式
+- 公式也可以记为 \(\oint_{C^+} P\,\mathrm{d}x + Q\,\mathrm{d}y = \iint_D \begin{vmatrix}\frac{\partial}{\partial x}&\frac{\partial}{\partial y}\\ P&Q\end{vmatrix}\,\mathrm{d}x\mathrm{d}y\)
+
+\paragraph{Green 公式的向量形式}
+
+\[
+\oint_{C^+} \vec{F}\cdot\,\mathrm{d}\vec{r} = \iint_D \nabla\times\vec{F}\,\mathrm{d}x\mathrm{d}y
+\]
+
+\subsubsection{曲线积分与路径无关的条件}
+
+\textbf{定义：}
+
+设 \(P(x,y)\)，\(Q(x,y)\) 在区域 \(D\) 内连续，若对 \(D\) 内任意两点 \(A\)，\(B\) 以及 \(D\) 内连接 \(A,B\) 的任意二分段光滑曲线 \(C_1\)，\(C_2\)，均有
+
+\[
+\int_{C_1} P\,\mathrm{d}x +Q\,\mathrm{d}y = \int_{C_2} P\,\mathrm{d}x +Q\,\mathrm{d}y
+\]
+
+则称曲线积分 \(\int_C P\,\mathrm{d}x +Q\,\mathrm{d}y\) 在 \(D\) 内\textbf{与路径无关}
+
+\textbf{定理：}
+
+设函数  \(P\)，\(Q\) 在\textbf{单连通}区域 \(D\) 上有连续偏导数，则下述四命题等价
+
+\begin{enumerate}
+    \item 在 \(D\) 内的任一条分段光滑闭曲线 \(C\) 上，有 \(\int_C P\,\mathrm{d}x +Q\,\mathrm{d}y = 0\)
+    \item 曲线积分 \(\int_C P\,\mathrm{d}x +Q\,\mathrm{d}y\) 在 \(D\) 内与路径无关
+    \item 存在 \(D\) 上的可微函数 \(u(x,y)\) 使得 \(\mathrm{d}u = P\,\mathrm{d}x +Q\,\mathrm{d}y\)，此时称 \(u(x,y)\) 为 \(P\,\mathrm{d}x +Q\,\mathrm{d}y\) 的一个\textbf{原函数}
+    \item \(\frac{\partial Q}{\partial x} = \frac{\partial P}{\partial y}\) 在 \(D\) 内恒成立
+\end{enumerate}
+
+\subsubsection{全微分求积与全微分方程}
+
+设函数 \(P\)，\(Q\) 在单连通区域 \(D\) 上有连续偏导数，且 \(\frac{\partial Q}{\partial x} = \frac{\partial P}{\partial y}\) ，则 \(P\,\mathrm{d}x +Q\,\mathrm{d}y\) 为某函数 \(u\) 的全微分，且取定 \((x_0,y_0)\in D\)
+
+\[
+u(x,y) = u(x_0,y_0) + \int_{(x_0,y_0)}^{(x,y)} P\,\mathrm{d}x +Q\,\mathrm{d}y,\quad (x,y)\in D
+\]
+
+从而全体函数为 \(u(x,y) + C\)
+
+称求 \(P\,\mathrm{d}x +Q\,\mathrm{d}y\) 的原函数的过程为\textbf{全微分求积}
+
+若 \(P\,\mathrm{d}x +Q\,\mathrm{d}y\) 是某二元函数的全微分，称方程
+
+\[
+P(x,y)\,\mathrm{d}x +Q(x,y)\,\mathrm{d}y = 0
+\]
+
+为\textbf{全微分方程}
+
+求出一个原函数 \(u(x,y)\)，则方程的通解为 \(u(x,y) = C\)，其中 \(C\) 是任意常数
+
+\subsection{Gauss 公式和 Stokes 公式}
+
+\subsubsection{Gauss 公式}
+
+\textbf{定理：}
+
+设函数 \(P(x,y,z)\)，\(Q(x,y,z)\)，\(R(x,y,z)\) 在空间有界闭区域 \(\Omega\) 上有连续偏导数，\(\Omega\) 的边界是光滑或分片光滑的闭曲面 \(\Sigma\)，则
+
+\[
+\oiint_{\Sigma^+} P\,\mathrm{d}x\mathrm{d}y + Q\,\mathrm{d}y\mathrm{d}z + R\,\mathrm{d}z\mathrm{d}x = \iiint_\Omega \left(\frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z}\right)\,\mathrm{d}x\mathrm{d}y\mathrm{d}z
+\]
+
+- 令 \(P=\frac{x}{3}\)，\(Q=\frac{y}{3}\)，\(R=\frac{z}{3}\)，则可导出 \(V_\Omega = \frac{1}{3}\oiint_{\Sigma^+} x\,\mathrm{d}y\mathrm{d}z + y\,\mathrm{d}z\mathrm{d}x + z\,\mathrm{d}x\mathrm{d}y\)，即体积公式
+- 使用 Gauss 公式时，注意 \(\Sigma^+\) 的方向应与 \(\Omega\) 的外侧一致
+
+\paragraph{向量形式的 Gauss 公式}
+
+\[
+\oiint_{\Sigma^+} \vec{F}\cdot\,\mathrm{d}\vec{S} = \iiint_\Omega \nabla\cdot\vec{F}\,\mathrm{d}x\mathrm{d}y\mathrm{d}z
+\]
+
+\subsubsection{通量和散度}
+
+\paragraph{通量}
+
+若给定向量场
+
+\[
+\vec{F} = \left(P(x,y,z),Q(x,y,z),R(x,y,z)\right)
+\]
+
+则称曲面积分
+
+\[
+\Phi = \oiint_{\Sigma^+} \vec{F}\cdot\,\mathrm{d}\vec{S} = \oiint_{\Sigma^+} P\,\mathrm{d}x\mathrm{d}y + Q\,\mathrm{d}y\mathrm{d}z + R\,\mathrm{d}z\mathrm{d}x
+\]
+
+为向量场 \(\vec{F}\) 在通过定侧曲面 \(\Sigma^+\) 的\textbf{通量}
+
+\paragraph{散度}
+
+称
+
+\[
+\mathrm{div}\vec{F} = \nabla\cdot\vec{F}=\frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z}
+\]
+
+为向量场 \(\vec{F}\) 的\textbf{散度}
+
+则 Gauss 公式可写为
+
+\[
+\Phi =\oiint_{\Sigma^+} \vec{F}\cdot\,\mathrm{d}\vec{S} = \iiint_\Omega \mathrm{div}\vec{F}\,\mathrm{d}V
+\]
+
+\section{级数}
+
+\subsection{数项级数}
+
+\subsubsection{数项级数的概念}
+
+\textbf{定义：}
+
+给定数列 \(\{a_n\}\) ，和式
+
+\[
+\sum_{n = 1}^{\infty} a_n = a_1 + a_2 + \cdots + a_n + \cdots
+\]
+
+称为 \textbf{（无穷）级数} ，\(a_n\) 称为级数的\textbf{通项}（或\textbf{一般项}）
+
+- \(S_n = \sum_{k = 1}^n a_k\) 称为级数 \(\sum_{n = 1}^{\infty} a_n\) 的前 \(n\) 项\textbf{部分和}
+- \(\sum_{k = n + 1}^\infty a_k\) 称为级数 \(\sum_{n = 1}^{\infty} a_n\) 的\textbf{余项级数}
+
+\textbf{定义：}
+
+- 若级数 \(\sum_{n = 1}^\infty a_n\) 的部分和数列 \(\{S_n\}\) 收敛，且 \(\lim_{n\to\infty}S_n = S\)，则称级数 \(\sum_{n = 1}^\infty a_n\) \textbf{收敛}，\(S\) 称为级数 \(\sum_{n = 1}^\infty a_n\) 的\textbf{和}，记作 \(\sum_{n = 1}^\infty a_n = S\)
+- 若部分和数列 \(\{S_n\}\) 发散，则称级数 \(\sum_{n = 1}^\infty a_n\) \textbf{发散}
+
+\begin{quote}
+常用结论：
+
+\textbf{等比数列} \(\sum_{n = 1}^\infty aq^{n - 1}\begin{cases}\text{收敛于}\frac{a}{1 - q} & ,\vert q \vert < 1\\ \text{发散} & ,\vert q \vert \geq 1\end{cases}\)
+\end{quote}
+
+\subsubsection{数项级数的基本性质}
+
+\paragraph{基本性质}
+
+\begin{enumerate}
+    \item 若常数 \(\alpha \neq 0\)，则级数 \(\sum_{n = 1}^\infty a_n\) 与级数 \(\sum_{n = 1}^\infty \alpha a_n\) 有相同敛散性
+    \item \textbf{线性性：} 若级数 \(\sum_{n = 1}^\infty a_n = S\)，\(\sum_{n = 1}^\infty b_n = T\)，则 \(\forall \alpha, \beta\in \mathbb{R}\)，有 \(\sum_{n = 1}^\infty (\alpha a_n + \beta b_n) = \alpha S + \beta T\)
+    \item \textbf{可加性：} 将级数增加、删减或改换\textbf{有限项}，不改变级数的\textbf{敛散性}
+    \item \textbf{结合律：} 若级数收敛于 \(S\)，则将相邻若干项添加括号所成新级数仍收敛于 \(S\)
+        - 其本质是部分和数列收敛于 \(S\)，则子列均收敛于 \(S\)
+        - 加括号后级数收敛 \(\nRightarrow\) 原级数收敛
+        - 加括号后级数发散 \(\Rightarrow\) 原级数发散
+\end{enumerate}
+
+\paragraph{级数收敛的必要条件}
+
+\textbf{定理：}
+
+若 \(\sum_{n = 1}^\infty a_n\) 收敛，则 \(\lim_{n\to\infty} a_n = 0\)
+
+- 若 \(\lim_{n\to\infty} a_n \neq 0 \nRightarrow \sum_{n = 1}^\infty a_n\) 发散
+- 若 \(\lim_{n\to\infty} a_n = 0 \nRightarrow \sum_{n = 1}^\infty a_n\) 收敛，比如调和级数
+
+\subsection{正项级数敛散性}
+
+\subsubsection{正项级数}
+
+\textbf{定义：}
+
+若级数 \(\sum_{n = 1}^\infty a_n\) 满足 \(a_n > 0 \quad \left(n\in\mathbb{N}^+\right)\)，则称此级数为\textbf{正项级数}
+
+\textbf{定理：（收敛原理）}
+
+正项级数 \(\sum_{n = 1}^\infty a_n\) 收敛 \(\Leftrightarrow\) 是其部分和数列 \(\{S_n\}\) 有上界，即 \(\exists M\in\mathbb{R},\forall n \in \mathbb{N}^+:S_n \leq M\)
+
+\begin{quote}
+\(p\) 级数
+
+\(\sum_{n = 1}^\infty \frac{1}{n^p} \begin{cases}\text{收敛} & ,p > 1\\ \text{发散} & ,p \leq 1\end{cases}\)
+\end{quote}
+
+\subsubsection{正项级数敛散性判别法}
+
+\paragraph{比较判别法}
+
+\textbf{定理：}
+
+设正项级数 \(\sum_{n = 1}^\infty a_n\)，\(\sum_{n = 1}^\infty b_n\) 满足 \(a_n \leq b_n \quad (\forall n \in \mathbb{N}^+)\) ，则 \(\sum_{n = 1}^\infty b_n\) 收敛 \(\Rightarrow \sum_{n = 1}^\infty a_n\) 收敛，\(\sum_{n = 1}^\infty a_n\) 发散 \(\Rightarrow \sum_{n = 1}^\infty b_n\) 发散
+
+- 条件 \(\forall n \in \mathbb{N}^+，a_n \leq b_n\) 可改为 \(\exists N,C > 0  ,\forall n\in \mathbb{N}^+，\forall n \geq N，a_n \leq Cb_n\)
+- 使用该判别法时需要有参照级数，常选\textbf{等比级数}或 \textbf{\(p\) 级数}作参照
+
+\paragraph{比较判别法（极限形式）}
+
+\textbf{定理：}
+
+正项级数 \(\sum_{n = 1}^\infty a_n\)，\(\sum_{n = 1}^\infty b_n\) 满足 \(\lim_{n\to\infty} \frac{a_n}{b_n} = l\)
+
+- 当 \(0 < l < +\infty\) 时，\(\sum_{n = 1}^\infty a_n\) 与 \(\sum_{n = 1}^\infty b_n\) 同敛散
+- 当 \(l = 0\) 时，\(\sum_{n = 1}^\infty b_n\) 收敛 \(\Rightarrow \sum_{n = 1}^\infty a_n\) 收敛
+- 当 \(l = +\infty\) 时，\(\sum_{n = 1}^\infty b_n\) 发散 \(\Rightarrow \sum_{n = 1}^\infty a_n\) 发散
+
+\begin{quote}
+通常使用 \(b_n = \frac{1}{n^p}\) 作为参照物，因为我们此时在分析无穷小 \(a_n\) 的阶
+\end{quote}
+
+\paragraph{比值判别法（d'Alembert 判别法）}
+
+\textbf{定理：}
+
+若\textbf{正项级数} \(\sum_{n = 1}^\infty a_n\) 满足 \(\lim_{n\to\infty} \frac{a_{n + 1}}{a_n} = l\)，则
+
+- 当 \(0\leq l < 1\) 时，\(\sum_{n = 1}^\infty a_n\) 收敛
+- 当 \(l > 1\) 时，\(\sum_{n = 1}^\infty a_n\) 发散
+- 当 \(l = 1\) 时，判别法失效
+
+\begin{quote}
+Stirling 公式： \(n! \sim \left(\frac{n}{e}\right)^n \sqrt{2n\pi} \quad (n\to\infty)\)
+\end{quote}
+
+\begin{quote}
+当 \(a_n\) 是一些乘积构成或含 \(n!\) 时，可以考虑比值法
+\end{quote}
+
+\paragraph{根值判别法（Cauchy 判别法）}
+
+\textbf{定理：}
+
+若正项级数 \(\sum_{n = 1}^\infty a_n\) 满足 \(\lim_{n\to\infty} \sqrt[n]{a_n} = l\)，则
+
+\begin{enumerate}
+    \item 当 \(0\leq l < 1\) 时，\(\sum_{n = 1}^\infty a_n\) 收敛
+    \item 当 \(1 < l \leq +\infty\) 时，\(\sum_{n = 1}^\infty a_n\) 发散
+    \item 当 \(l = 1\) 时，判别法失效
+\end{enumerate}
+
+\begin{quote}
+当 \(a_n\) 中含有 \(n\) 次方时，可以考虑使用根值法
+\end{quote}
+
+\begin{quote}
+比值法和根值法实际上可看作是在将级数与等比级数作比较，均只能判断收敛速度不慢于等比级数的级数。当所求级数存在时，可称级数为\textbf{拟等比级数}
+\end{quote}
+
+\begin{quote}
+根值法优于比值法
+
+- \(\lim_{n\to\infty}\frac{a_{n + 1}}{a_n} =  l \Rightarrow \lim_{n\to\infty}\sqrt[n]{a_n} = l\)
+- \(\lim_{n\to\infty}\sqrt[n]{a_n} = l \nRightarrow \lim_{n\to\infty}\frac{a_{n + 1}}{a_n} =  l\)
+\end{quote}
+
+\paragraph{积分判别法}
+
+\textbf{定理：}
+
+设 \(\sum_{n = 1}^\infty a_n\) 为\textbf{正项级数}，若非负函数 \(f(x)\) 在 \([1,+\infty)\) 上\textbf{单调递减}，且 \(a_n = f(n)\quad \left(\forall n \in \mathbb{N}^+\right)\)，则级数 \(\sum_{n = 1}^\infty a_n\) 与反常积分 \(\int_1^{+\infty} f(x)\,\mathrm{d}x\) 有相同的敛散性
+
+- 条件 \(\left[1,+\infty\right)\) 可改为 \(\left[a,+\infty\right)，(a > 1)\)
+
+\subsection{任意项级数的敛散性}
+
+\textbf{任意项级数}
+
+正负项分布是任意的级数
+
+\subsubsection{交错级数敛散性的判别法}
+
+\paragraph{交错级数}
+
+\textbf{定义：}
+
+各项正负相间的级数称为\textbf{交错级数}，其形式为
+
+\[
+\pm\sum_{n = 1}^\infty (-1)^{n - 1}a_n \quad \left(\text{其中}a_n > 0\right)
+\]
+
+\paragraph{Leibniz 判别法}
+
+\textbf{定理：}
+
+若交错级数 \(\sum_{n = 1}^\infty (-1)^{n - 1}a_n \,\left(a_n > 0\right)\) 满足:
+
+\begin{enumerate}
+    \item \(a_{n + 1} \leq a_n \quad \left(n = 1,2,\ldots\right)\)
+    \item \(\lim_{n\to\infty}a_n = 0\)
+\end{enumerate}
+
+则级数 \(\sum_{n = 1}^\infty (-1)^{n - 1}a_n\) 收敛，且其余项级数满足
+
+\[
+\left\vert \sum_{k = n + 1}^\infty a_k \right\vert \leq a_{n + 1}
+\]
+
+\begin{quote}
+我们称满足定理条件的级数为 \textbf{Leibniz 型级数}
+\end{quote}
+
+\subsubsection{Abel 判别法和 Dirichlet 判别法}
+
+\textbf{定理：（Abel 判别法）}
+
+若 \(\{a_n\}\) 单调且有界，\(\sum_{n = 1}^\infty b_n\) 收敛，则 \(\sum_{n = 1}^\infty a_nb_n\) 收敛
+
+\textbf{定理：（Dirichlet 判别法）}
+
+若 \(\{a_n\}\) 单调趋于 \(0\)，\(\sum_{n = 1}^\infty b_n\) 的部分和数列有界，则 \(\sum_{n = 1}^\infty a_nb_n\) 收敛
+
+\subsubsection{绝对收敛与条件收敛}
+
+\textbf{定义：}
+
+设 \(\sum_{n = 1}^\infty a_n\) 为任意项级数
+
+\begin{enumerate}
+    \item 若级数 \(\sum_{n = 1}^\infty \vert a_n \vert\) 收敛，则称级数 \(\sum_{n = 1}^\infty a_n\) 为\textbf{绝对收敛}
+    \item 若 \(\sum_{n = 1}^\infty \vert a_n \vert\) 发散，而 \(\sum_{n = 1}^\infty a_n\) 收敛，则称 \(\sum_{n = 1}^\infty a_n\) \textbf{条件收敛}
+\end{enumerate}
+
+\textbf{定理：}
+
+若 \(\sum_{n = 1}^\infty a_n\) 绝对收敛，则 \(\sum_{n = 1}^\infty a_n\) 收敛
+
+\begin{quote}
+\textbf{常用结论：}
+
+\[
+\sum_{n = 1}^\infty \frac{(-1)^{n}}{n^p}\begin{cases}\text{绝对收敛} & ,p > 1\\ \text{条件收敛} & , 0 < p \leq 1 \end{cases}
+\]
+\end{quote}
+
+\textbf{定理：（绝对收敛与条件收敛的本质）}
+
+\begin{enumerate}
+    \item 绝对收敛的级数，可以改变任意项的顺序，其收敛性与和均不变（即满足加法交换律）
+    \item 条件收敛的级数，总可以适当改变项的顺序，使其按照任意预定的方式收敛或者发散
+\end{enumerate}
+
+\subsection{函数项级数}
+
+\textbf{定义：}
+
+设函数列 \(\{u_n(x)\} (n = 1,2,\ldots)\) 在数集 \(X\) 上有定义，则称形式和
+
+\[
+\sum_{n = 1}^\infty u_n(x)= u_1(x) + u_2(x) + \cdots + u_n(x) + \cdots 
+\]
+
+为\textbf{函数项级数}，其中 \(u_n(x)\) 称为\textbf{通项}
+
+\textbf{定义：}
+
+若数项级数 \(\sum_{n = 1}^\infty u_n(x_0)\) 收敛，则 \(x_0\) 为函数项级数 \(\sum_{n = 1}^\infty u_n(x)\) 的一个\textbf{收敛点}，否则称为\textbf{发散点}，全体收敛点所组成的集合 \(I\) 称为\textbf{收敛域}
+
+\textbf{定义}
+
+记 \(S_n(x) =\sum_{k = 1}^n u_k(x)\) 为 \(\sum_{n = 1}^\infty u_n(x)\) 的前 \(n\) 项\textbf{部分和(函数)}，记 \(r_n(x) = \sum_{k = n + 1}^\infty u_k(x)\) 为\textbf{余和}
+
+\textbf{定义：}
+
+对于收敛域 \(I\) 中的任意一点 \(x\)，记 \(\sum_{n = 1}^\infty u_n(x)\) 的和为 \(S(x)\)，称此函数 \(S(x)\) 为 \(\sum_{n = 1}^\infty u_n(x)\) 的\textbf{和函数}
+
+显然，\(\forall x\in I\)，\(\lim_{n\to +\infty}S_n(x) = S(x)\)，\(\lim_{n\to +\infty}r_n(x)=0\)
+
+\subsection{幂级数}
+
+\subsubsection{幂级数及其收敛半径}
+
+在函数项级数中，最简单及最重要的级数形如
+
+\[
+\sum_{n = 0}^\infty a_n(x - x_0)^n = a_0 + a_1(x - x_0) + a_2(x - x_0)^2 + \ldots + a_n(x - x_0)^n + \ldots
+\]
+
+称为\textbf{幂级数}，其中常数项 \(a_0,a_1,\ldots,a_n,\ldots\) 称为幂级数的\textbf{系数}
+
+幂级数更一般的形式为 \(\sum_{n = 0}^\infty a_n(x - x_0)^n\)
+
+\paragraph{Abel 定理}
+
+\begin{enumerate}
+    \item 若幂级数 \(\sum_{n = 0}^\infty a_n(x - x_0)^n\) 在 \(x = x_0(x\neq 0)\) 收敛，则当 \(\vert x \vert <\vert
 \nocite{*}
 \bibliography{ref}
 \end{document}
