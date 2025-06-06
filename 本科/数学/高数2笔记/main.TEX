@@ -89,11 +89,56 @@
 
 \begin{enumerate}
     \item $\displaystyle\iint_D\,\mathrm{d}\sigma = \iint_D 1\,\mathrm{d}\sigma = A_D \quad\left(\text{D 的面积}\right)$.
-    \item **线性性：** 设 $f,g\in R(D)$，$\alpha , \beta$，是任意常数，则 $\alpha f +\beta g \in R(D)$，且
+    \item \textbf{线性性：} 设 $f,g\in R(D)$，$\alpha , \beta$，是任意常数，则 $\alpha f +\beta g \in R(D)$，且
 
     $$
     \iint_D (\alpha f +\beta g)\,\mathrm{d}\sigma = \alpha \iint_D f\,\mathrm{d}\sigma + \beta \iint_D g\,\mathrm{d}\sigma
     $$
+    
+    \item **区域可加性：** 若 $f\in R(D)$ 且积分区域 $D$ 分为内部不相交的子区域 $D_1 , D_2$，则
+
+    $$
+    \iint_D f(x,y) \,\mathrm{d}\sigma = \iint_{D_1} f(x,y)\,\mathrm{d}\sigma + \iint_{D_2} f(x,y)\,\mathrm{d}\sigma
+    $$
+
+    \item **保序性：** 若 $f,g\in R(D)$，且当 $(x,y)\in D$ 时，$f(x,y)\leq g(x,y)$，则
+
+    $$
+    \iint_D f(x,y)\,\mathrm{d}\sigma \leq \iint_D g(x,y)\,\mathrm{d}\sigma
+    $$
+    \begin{enumerate}
+        \item **推论1：** 若 $f\in R(D)$ ,则 $\vert f(x,y) \vert \in R(D)$，且
+
+   $$
+    \left\vert \iint_D f(x,y)\,\mathrm{d}\sigma \right\vert \leq \iint_D \vert f(x,y) \vert \,\mathrm{d}\sigma
+   $$
+
+        \item **推论2：** 若 $f\in R(D)$，且当 $(x,y)\in D$ 时， $m\leq f(x,y) \leq M$，则
+
+   $$
+    mA_D \leq \iint_D f(x,y)\,\mathrm{d}\sigma \leq MA_D
+   $$
+        \item **推论3：** 若 $f\in R(D)$，且当 $(x,y)\in D$ 时，$f(x,y) \geq 0$，则
+
+   $$
+    \iint_D f(x,y)\,\mathrm{d}\sigma \geq 0
+   $$
+    \end{enumerate}
+    \item **积分中值定理：** 若 $f(x,y)\in C(D)$ ，$g(x,y)\in R(D)$，且 $g$ 在 $D$ 上不变号，则 $\exists \xi , \eta \in D$，使得
+
+    $$
+    \iint_D f(x,y)g(x,y)\,\mathrm{d}\sigma = f(\xi ,\eta )\iint_D g(x,y)\,\mathrm{d}\sigma
+    $$
+
+    \begin{enumerate}
+        \item **推论：** 若 $f(x,y)\in C(D)$，则存在 $(\xi , \eta )\in D$，使得
+
+   $$
+    \iint_D f(x,y)\,\mathrm{d}\sigma = f(\xi ,\eta )A_D
+   $$
+
+   称 $f(\xi,\eta) = \frac{\iint_D f\,\mathrm{d}\sigma}{A_D}$ 为函数 $f(x,y)$ 在有界闭区域 $D$ 上的**平均值**
+    \end{enumerate}
 \end{enumerate}
 
 \begin{assumption}
