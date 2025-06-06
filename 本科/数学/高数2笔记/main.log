@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  6 JUN 2025 23:35
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  7 JUN 2025 00:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1066,61 +1066,66 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"SimHei/OT:script=hani;language=dflt;embolden=3;"
 
- (./main.toc)
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
-
+ (./main.toc
 
 LaTeX Font Info:    Font shape `TU/texgyreheros(0)/m/n' will be
-(Font)              scaled to size 8.49173pt on input line 51.
+(Font)              scaled to size 8.49173pt on input line 62.
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [1
 
 
 ]
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 8.0pt on input line 94.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 6.0pt on input line 94.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 8.0pt on input line 94.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 6.0pt on input line 94.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 8.0pt on input line 94.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 6.0pt on input line 94.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 8.0pt on input line 94.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 6.0pt on input line 94.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 8.0pt on input line 94.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 6.0pt on input line 94.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 8.0pt on input line 94.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 6.0pt on input line 94.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 8.0pt on input line 94.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 6.0pt on input line 94.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 8.0pt on input line 94.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 6.0pt on input line 94.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 8.0pt on input line 94.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 6.0pt on input line 94.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 8.0pt on input line 94.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 6.0pt on input line 94.
+)
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[2]
 第 1 章
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 6.0pt on input line 57.
 
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
@@ -1136,26 +1141,118 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [3]
+Overfull \hbox (73.01181pt too wide) in paragraph at lines 242--243
+[][]\TU/SimHei(0)/b/n/12.045 定 理 \TU/TeXGyreTermesX(0)/b/n/12.045 1.1 []\TU/SimSun(0)/m/n/12.045 设 变 换 $\OML/ntxmi/m/it/12.045 T \OT1/ntxtlf/m/n/12.045 : []$ \TU/SimSun(0)/m/n/12.045 有 连 续 偏 导 数，|  且 满 足 $\OML/ntxmi/m/it/12.045 J \U/ntxmia/m/it/12.045 = [] [][]= [] [] <
+ []
+
+
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[4]
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[5]
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[6]
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[7]
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[8]
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[9]
+第 2 章
+
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[10
+
+]
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[11]
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[12]
+Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
+
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[13]
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[14]
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[15]
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[16]
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[17]
+第 3 章
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 844.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 844.
+
+
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[18
+
+]
+Overfull \vbox (371.34116pt too high) has occurred while \output is active []
+
+
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[19]
 No file main.bbl.
 
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
-[4] (./main.aux)
+[20] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025/02/12>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 99EDFE772E4FC5C8EAAFA7909179C71A;915.
+(rerunfilecheck)             Checksum: C1A78DE097887E7AFE532A133F7682E5;8378.
  ) 
 Here is how much of TeX's memory you used:
- 24280 strings out of 473832
- 482543 string characters out of 5733158
- 869591 words of memory out of 5000000
- 46958 multiletter control sequences out of 15000+600000
+ 24310 strings out of 473832
+ 483516 string characters out of 5733158
+ 876874 words of memory out of 5000000
+ 46988 multiletter control sequences out of 15000+600000
  593342 words of font info for 153 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,16n,124p,1208b,2170s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (6 pages).
+Output written on main.pdf (23 pages).
