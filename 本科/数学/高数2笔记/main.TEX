@@ -777,9 +777,57 @@ z = \rho\cos\varphi
 
 \subsubsection{散度}
 
+称
+
+\[\mathrm{div}\vec{F} = \nabla\cdot\vec{F}=\frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z}\]
+
+为向量场 \(\vec{F}\) 的\textbf{散度}
+
+则 Gauss 公式可写为
+
+\[\Phi =\oiint_{\Sigma^+} \vec{F}\cdot\,\mathrm{d}\vec{S} = \iiint_\Omega \mathrm{div}\vec{F}\,\mathrm{d}V\]
+
 \chapter{级数}
 
 \section{数项级数}
+
+给定数列 \(\{a_n\}\) ，和式
+
+\[\sum_{n=1}^{\infty} a_n = a_1 + a_2 + \cdots + a_n + \cdots\]
+
+称为 \textbf{（无穷）极数} ，\(a_n\)
+称为级数的\textbf{通项}（或\textbf{一般项}）
+\end{definition}
+
+\begin{itemize}
+\item
+  \(\displaystyle S_n = \sum_{k=1}^n a_k\) 称为级数
+  \(\displaystyle \sum_{n=1} a_n\) 的前 \(n\) 项\textbf{部分和}
+\item
+  \(\displaystyle\sum_{k=n+1}^\infty a_k\) 称为级数
+  \(\displaystyle \sum_{n=1} a_n\) 的\textbf{余项级数}
+\end{itemize}
+
+\begin{definition}
+    begin{itemize}
+\item
+  若级数 \(\displaystyle\sum_{n=1}^\infty a_n\) 的部分和数列 \(\{S_n\}\)
+  收敛，且 \(\displaystyle \lim_{n\to\infty}S_n = S\)，则称级数
+  \(\displaystyle \sum_{n=1}^\infty a_n\) \textbf{收敛}，\(S\) 称为级数
+  \(\displaystyle \sum_{n=1}^\infty a_n\) 的\textbf{和}，记作
+  \(\displaystyle \sum_{n=1}^\infty a_n = S\)
+\item
+  若部分和数列 \(\{S_n\}\) 发散，则称级数
+  \(\displaystyle \sum_{n=1}^\infty a_n\) \textbf{发散}
+\end{itemize}
+\end{definition}
+
+\begin{remark}
+    常用结论：
+
+\textbf{等比数列}
+\(\displaystyle \sum_{n=1}^\infty aq^{n-1}\begin{cases}\text{收敛于}\frac{a}{1-q} & ,\vert q \vert < 1\newline \text{发散} & ,\vert q \vert \geq 1\end{cases}\)
+\end{remark}
 
 \subsection{数项级数的概念}
 
@@ -787,21 +835,167 @@ z = \rho\cos\varphi
 
 \subsubsection{基本性质}
 
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  若常数 \(\alpha \neq 0\)，则级数
+  \(\displaystyle \sum_{n=1}^\infty a_n\) 与级数
+  \(\displaystyle \sum_{n=1}^\infty \alpha a_n\) 有相同敛散性
+\item
+  \textbf{线性性：} 若级数
+  \(\displaystyle \sum_{n=1}^\infty a_n = S\)，\(\displaystyle \sum_{n=1}^\infty b_n = T\)，则
+  \(\forall \alpha , \beta\in \mathbb{R}\)，有
+  \(\displaystyle \sum_{n=1}^\infty (\alpha a_n + \beta b_n) = \alpha S + \beta T\)
+\item
+  \textbf{可加性：}
+  将级数增加、删减或改换\textbf{有限项}，不改变级数的\textbf{敛散性}
+\item
+  \textbf{结合律：} 若级数收敛于
+  \(S\)，则将相邻若干项添加括号所成新级数仍收敛于 \(S\)
+
+  \begin{itemize}
+  \item
+    其本质是部分和数列收敛于 \(S\)，则子列均收敛于 \(S\)
+  \item
+    加括号后级数收敛 \(\nRightarrow\) 原级数收敛
+  \item
+    加括号后级数发散 \(\Rightarrow\) 原级数发散
+  \end{itemize}
+\end{enumerate}
+
 \subsubsection{级数收敛的必要条件}
+
+\begin{theorem}
+    若 \(\displaystyle \sum_{n=1}^\infty a_n\) 收敛，则
+\(\displaystyle \lim_{n\to\infty} a_n = 0\)
+\end{theorem}
+
+\begin{itemize}
+\item
+  若
+  \(\displaystyle \lim_{n\to\infty} a_n \neq 0 \nRightarrow \displaystyle \sum_{n=1}^\infty a_n\)
+  发散
+\item
+  若
+  \(\displaystyle \lim_{n\to\infty} a_n = 0 \nRightarrow \displaystyle \sum_{n=1}^\infty a_n\)
+  收敛，比如调和级数
+\end{itemize}
 
 \section{正项级数敛散性}
 
 \subsection{正项级数}
 
+\begin{definition}
+    若级数 \(\displaystyle \sum_{n=1}^\infty a_n\) 满足
+\(a_n >0 \quad \left(n\in\mathbb{N}^+\right)\)，则称此级数为\textbf{正项级数}
+\end{definition}
+
+\begin{theorem}
+    \textbf{收敛原理:}正项级数 \(\displaystyle \sum_{n=1}^\infty a_n\) 收敛
+\(\Leftrightarrow\) 是其部分和数列 \(\{S_n\}\) 有上界，即
+\(\exists M\in\mathbb{R},\forall n \in \mathbb{N}^+:S_n \leq M\)
+\end{theorem}
+
+\begin{remark}
+    \(p\) 级数
+
+\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^p} \begin{cases}\text{收敛} & ,p>1\newline \text{发散} & ,p\leq 1\end{cases}\)
+\end{remark}
+
 \subsection{正项级数敛散性判别法}
 
 \subsubsection{比较判别法}
 
+\begin{theorem}
+    设正项级数
+\(\displaystyle \sum_{n=1}^\infty a_n\)，\(\displaystyle \sum_{n=1}^\infty b_n\)
+满足 \(a_n \leq b_n \quad (\forall n \in \mathbb{N}^+)\) ，则
+\(\displaystyle \sum_{n=1}^\infty b_n\) 收敛
+\(\Rightarrow \displaystyle \sum_{n=1}^\infty a_n\)
+收敛，\(\displaystyle \sum_{n=1}^\infty a_n\) 发散
+\(\Rightarrow \displaystyle \sum_{n=1}^\infty b_n\) 发散
+\end{theorem}
+
+\begin{itemize}
+\item
+  条件 \(\forall n \in \mathbb{N}^+，a_n \leq b_n\) 可改为
+  \(\exists N,C >0  ,\forall n\in \mathbb{N}^+，\forall n \geq N，a_n \leq Cb_n\)
+\item
+  使用该判别法时需要有参照级数，常选\textbf{等比级数}或 \textbf{\(p\)
+  级数}作参照
+\end{itemize}
+
 \subsubsection{比较判别法（极限形式）}
+
+\begin{theorem}
+    正项级数
+\(\displaystyle \sum_{n=1}^\infty a_n\)，\(\displaystyle \sum_{n=1}^\infty b_n\)
+满足 \(\displaystyle \lim_{n\to\infty} \frac{a_n}{b_n} = l\)
+
+\begin{itemize}
+\item
+  当 \(0 <l<+\infty\) 时，\(\displaystyle \sum_{n=1}^\infty a_n\) 与
+  \(\displaystyle \sum_{n=1}^\infty b_n\) 同敛散
+\item
+  当 \(l=0\) 时，\(\displaystyle \sum_{n=1}^\infty b_n\) 收敛
+  \(\Rightarrow \displaystyle \sum_{n=1}^\infty a_n\) 收敛
+\item
+  当 \(l=+\infty\) 时，\(\displaystyle \sum_{n=1}^\infty b_n\) 发散
+  \(\Rightarrow \displaystyle \sum_{n=1}^\infty a_n\) 发散
+\end{itemize}
+\end{theorem}
+
+\begin{remark}
+    通常使用 \(b_n = \frac{1}{n^p}\) 作为参照物，因为我们此时在分析无穷小
+\(a_n\) 的阶
+\end{remark}
 
 \subsubsection{比值判别法（d'Alembert 判别法）}
 
+\begin{theorem}
+    若\textbf{正项级数} \(\displaystyle \sum_{n=1}^\infty a_n\) 满足
+\(\displaystyle \lim_{n\to\infty} \frac{a_{n+1}}{a_n} = l\)，则
+
+\begin{itemize}
+\item
+  当 \(0\leq l<1\) 时，\(\displaystyle \sum_{n=1}^\infty a_n\) 收敛
+\item
+  当 \(l>1\) 时，\(\displaystyle \sum_{n=1}^\infty a_n\) 发散
+\item
+  当 \(l=1\) 时，判别法失效
+\end{itemize}
+\end{theorem}
+
+\begin{remark}
+    Stirling 公式：
+\(n! \sim \left(\frac{n}{e}\right)^n \sqrt{2n\pi} \quad (n\to\infty)\)
+\end{remark}
+
+\begin{remark}
+    当 \(a_n\) 是一些乘积构成或含 \(n!\) 时，可以考虑比值法
+\end{remark}
+
 \subsubsection{根值判别法（Cauchy 判别法）}
+
+\begin{theorem}
+若正项级数 \(\displaystyle \sum_{n=1}^\infty a_n\) 满足
+\(\displaystyle \lim_{n\to\infty} \sqrt[n]{a_n} = l\)，则
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  当 \(0\leq l<1\) 时，\(\displaystyle \sum_{n=1}^\infty a_n\) 收敛
+\item
+  当 \(1 < l \leq +\infty\) 时，\(\displaystyle \sum_{n=1}^\infty a_n\)
+  发散
+\item
+  当 \(l=1\) 时，判别法失效
+\end{enumerate}
+\end{theorem}
+
+\begin{remark}
+    当 \(a_n\) 中含有 \(n\) 次方时，可以考虑使用根值法
+\end{remark}
 
 \subsubsection{积分判别法}
 
