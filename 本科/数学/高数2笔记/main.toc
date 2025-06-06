@@ -7,22 +7,22 @@
 \contentsline {subsubsection}{\numberline {1.3.1.2}\(y\) 型正则区域}{3}{subsubsection.1.3.1.2}%
 \contentsline {subsubsection}{\numberline {1.3.1.3}一般区域的二重积分}{4}{subsubsection.1.3.1.3}%
 \contentsline {subsection}{\numberline {1.3.2}极坐标系下的计算}{4}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}二重积分的变量代换}{5}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.3}二重积分的变量代换}{4}{subsection.1.3.3}%
 \contentsline {section}{\numberline {1.4}三重积分}{5}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}三重积分的定义}{5}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}直角坐标系下的计算}{6}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.2}直角坐标系下的计算}{5}{subsection.1.4.2}%
 \contentsline {subsubsection}{\numberline {1.4.2.1}柱线法（坐标面投影法）}{6}{subsubsection.1.4.2.1}%
 \contentsline {subsubsection}{\numberline {1.4.2.2}截面法（坐标轴投影法）}{6}{subsubsection.1.4.2.2}%
 \contentsline {subsection}{\numberline {1.4.3}三重积分的变量代换}{7}{subsection.1.4.3}%
 \contentsline {subsubsection}{\numberline {1.4.3.1}柱面坐标系下的计算}{7}{subsubsection.1.4.3.1}%
-\contentsline {subsubsection}{\numberline {1.4.3.2}球面坐标系下的计算}{8}{subsubsection.1.4.3.2}%
+\contentsline {subsubsection}{\numberline {1.4.3.2}球面坐标系下的计算}{7}{subsubsection.1.4.3.2}%
 \contentsline {section}{\numberline {1.5}重积分的应用}{8}{section.1.5}%
 \contentsline {subsection}{\numberline {1.5.1}重积分的几何应用}{8}{subsection.1.5.1}%
 \contentsline {subsubsection}{\numberline {1.5.1.1}平面图形的面积}{8}{subsubsection.1.5.1.1}%
 \contentsline {subsubsection}{\numberline {1.5.1.2}立体的体积}{8}{subsubsection.1.5.1.2}%
 \contentsline {subsubsection}{\numberline {1.5.1.3}曲面的面积}{8}{subsubsection.1.5.1.3}%
-\contentsline {subsection}{\numberline {1.5.2}重积分的物理应用}{9}{subsection.1.5.2}%
-\contentsline {subsubsection}{\numberline {1.5.2.1}质心}{9}{subsubsection.1.5.2.1}%
+\contentsline {subsection}{\numberline {1.5.2}重积分的物理应用}{8}{subsection.1.5.2}%
+\contentsline {subsubsection}{\numberline {1.5.2.1}质心}{8}{subsubsection.1.5.2.1}%
 \contentsline {subsubsection}{\numberline {1.5.2.2}转动惯量}{9}{subsubsection.1.5.2.2}%
 \contentsline {subsubsection}{\numberline {1.5.2.3}引力}{9}{subsubsection.1.5.2.3}%
 \contentsline {chapter}{\numberline {第 2 章}曲线积分和曲面积分}{10}{chapter.2}%
@@ -46,18 +46,18 @@
 \contentsline {subsubsection}{\numberline {2.2.3.1}合一投影法}{14}{subsubsection.2.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.2.3.2}分面投影法}{14}{subsubsection.2.2.3.2}%
 \contentsline {subsubsection}{\numberline {2.2.3.3}公式法}{14}{subsubsection.2.2.3.3}%
-\contentsline {section}{\numberline {2.3}Green 公式及其应用}{15}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Green 公式}{15}{subsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.1.1}连通区域及其边界方向}{15}{subsubsection.2.3.1.1}%
+\contentsline {section}{\numberline {2.3}Green 公式及其应用}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Green 公式}{14}{subsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.1}连通区域及其边界方向}{14}{subsubsection.2.3.1.1}%
 \contentsline {subsubsection}{\numberline {2.3.1.2}Green 公式}{15}{subsubsection.2.3.1.2}%
 \contentsline {subsubsection}{\numberline {2.3.1.3}Green 公式的向量形式}{15}{subsubsection.2.3.1.3}%
 \contentsline {subsection}{\numberline {2.3.2}线积分与路径无关的条件}{15}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}全微分求积与全微分方程}{16}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.3}全微分求积与全微分方程}{15}{subsection.2.3.3}%
 \contentsline {section}{\numberline {2.4}Gauss 公式和 Strokes 公式}{16}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Gauss 公式}{16}{subsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.1.1}向量形式的 Gauss 公式}{17}{subsubsection.2.4.1.1}%
-\contentsline {subsection}{\numberline {2.4.2}通量和散度}{17}{subsection.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.4.2.1}通量}{17}{subsubsection.2.4.2.1}%
+\contentsline {subsubsection}{\numberline {2.4.1.1}向量形式的 Gauss 公式}{16}{subsubsection.2.4.1.1}%
+\contentsline {subsection}{\numberline {2.4.2}通量和散度}{16}{subsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.1}通量}{16}{subsubsection.2.4.2.1}%
 \contentsline {subsubsection}{\numberline {2.4.2.2}散度}{17}{subsubsection.2.4.2.2}%
 \contentsline {chapter}{\numberline {第 3 章}级数}{18}{chapter.3}%
 \contentsline {section}{\numberline {3.1}数项级数}{18}{section.3.1}%
@@ -80,7 +80,7 @@
 \contentsline {subsubsection}{\numberline {3.3.1.2}Leibniz 判别法}{21}{subsubsection.3.3.1.2}%
 \contentsline {subsection}{\numberline {3.3.2}Abel 判别法和 Dirichlet 判别法}{22}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}绝对收敛与条件收敛}{22}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}函数项级数}{23}{section.3.4}%
+\contentsline {section}{\numberline {3.4}函数项级数}{22}{section.3.4}%
 \contentsline {section}{\numberline {3.5}幂级数}{23}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}幂级数及其收敛半径}{23}{subsection.3.5.1}%
 \contentsline {subsubsection}{\numberline {3.5.1.1}Abel 定理}{23}{subsubsection.3.5.1.1}%
@@ -90,7 +90,7 @@
 \contentsline {section}{\numberline {3.7}幂级数的性质}{24}{section.3.7}%
 \contentsline {subsection}{\numberline {3.7.1}幂级数的分析性质}{25}{subsection.3.7.1}%
 \contentsline {subsection}{\numberline {3.7.2}Taylor 级数}{26}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}常用的初等函数的幂级数展开式}{27}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.3}常用的初等函数的幂级数展开式}{26}{subsection.3.7.3}%
 \contentsline {subsection}{\numberline {3.7.4}正弦级数和余弦级数}{27}{subsection.3.7.4}%
 \contentsline {subsection}{\numberline {3.7.5}周期为 $2l$ 的 Fourier 级数}{28}{subsection.3.7.5}%
 \contentsfinish 

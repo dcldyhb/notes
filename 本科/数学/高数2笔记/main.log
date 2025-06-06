@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  7 JUN 2025 00:58
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  7 JUN 2025 01:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -845,95 +845,12 @@ Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
 \c@LT@tables=\count351
 \c@LT@chunks=\count352
 \LT@p@ftn=\toks38
-) (c:/texlive/2025/texmf-dist/tex/latex/fdsymbol/fdsymbol.sty
-Package: fdsymbol 2025/02/17 v1.0 FdSymbol support package
- (c:/texlive/2025/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
-)
-LaTeX Info: Redefining \dagger on input line 81.
-LaTeX Info: Redefining \ddagger on input line 82.
-LaTeX Info: Redefining \mathparagraph on input line 83.
-LaTeX Info: Redefining \mathsection on input line 84.
-LaTeX Info: Redefining \mathdollar on input line 85.
-LaTeX Info: Redefining \mathsterling on input line 86.
-LaTeX Info: Redefining \circledR on input line 88.
-LaTeX Info: Redefining \circledS on input line 90.
-LaTeX Info: Redefining \Re on input line 92.
-LaTeX Info: Redefining \Im on input line 93.
-LaTeX Info: Redefining \thicksim on input line 95.
-LaTeX Info: Redefining \thickapprox on input line 96.
-LaTeX Info: Redefining \centerdot on input line 101.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 180.
-LaTeX Font Info:    Encoding `LMS' has changed to `U' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 180.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  LMS/ntxsy/m/n --> U/FdSymbolA/m/n on input line 180.
-LaTeX Font Info:    Encoding `LMS' has changed to `U' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 180.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  LMS/ntxsy/b/n --> U/FdSymbolA/m/n on input line 180.
-\symrelations=\mathgroup8
-\symarrows=\mathgroup9
-\symnarrows=\mathgroup10
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 184.
-LaTeX Font Info:    Encoding `LMX' has changed to `U' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 184.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  LMX/ntxexx/m/n --> U/FdSymbolE/m/n on input line 184.
-LaTeX Font Info:    Encoding `LMX' has changed to `U' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 184.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  LMX/ntxexx/b/n --> U/FdSymbolE/m/n on input line 184.
-\symdelimiters=\mathgroup11
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  U/FdSymbolA/m/n --> U/FdSymbolA/b/n on input line 186.
-LaTeX Font Info:    Overwriting symbol font `relations' in version `bold'
-(Font)                  U/FdSymbolB/m/n --> U/FdSymbolB/b/n on input line 187.
-LaTeX Font Info:    Overwriting symbol font `arrows' in version `bold'
-(Font)                  U/FdSymbolC/m/n --> U/FdSymbolC/b/n on input line 188.
-LaTeX Font Info:    Overwriting symbol font `narrows' in version `bold'
-(Font)                  U/FdSymbolD/m/n --> U/FdSymbolD/b/n on input line 189.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  U/FdSymbolE/m/n --> U/FdSymbolE/b/n on input line 190.
-LaTeX Font Info:    Overwriting symbol font `delimiters' in version `bold'
-(Font)                  U/FdSymbolF/m/n --> U/FdSymbolF/b/n on input line 191.
-LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 192.
-LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
-(Font)                  OMS/cmsy/m/n --> OMS/cmsy/b/n on input line 193.
-LaTeX Font Info:    Redeclaring math alphabet \mathbb on input line 194.
-LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 195.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 196.
-LaTeX Info: Redefining \vdots on input line 221.
-LaTeX Info: Redefining \relbar on input line 1205.
-LaTeX Info: Redefining \Relbar on input line 1206.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 1796.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 1797.
-LaTeX Font Info:    Redeclaring math accent \vec on input line 1799.
-LaTeX Font Info:    Redeclaring math symbol \setminus on input line 1902.
-LaTeX Font Info:    Redeclaring math symbol \mid on input line 1907.
-LaTeX Font Info:    Redeclaring math symbol \nmid on input line 1908.
-LaTeX Font Info:    Redeclaring math symbol \parallel on input line 1912.
-LaTeX Font Info:    Redeclaring math symbol \nparallel on input line 1913.
-LaTeX Font Info:    Redeclaring math symbol \shortmid on input line 1921.
-LaTeX Font Info:    Redeclaring math symbol \nshortmid on input line 1922.
-LaTeX Font Info:    Redeclaring math symbol \shortparallel on input line 1923.
-LaTeX Font Info:    Redeclaring math symbol \nshortparallel on input line 1924.
-LaTeX Font Info:    Redeclaring math symbol \braceld on input line 1944.
-LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 1945.
-LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 1946.
-LaTeX Font Info:    Redeclaring math symbol \braceru on input line 1947.
-LaTeX Info: Redefining \overbrace on input line 1963.
-LaTeX Info: Redefining \underbrace on input line 1966.
-LaTeX Info: Redefining \overgroup on input line 1969.
-LaTeX Info: Redefining \undergroup on input line 1970.
-LaTeX Font Info:    Redeclaring math symbol \surd on input line 1980.
 ) (c:/texlive/2025/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup12
-\symboldletters=\mathgroup13
-\symboldsymbols=\mathgroup14
-\symboldlargesymbols=\mathgroup15
+\symboldoperators=\mathgroup8
+\symboldletters=\mathgroup9
+\symboldsymbols=\mathgroup10
+\symboldlargesymbols=\mathgroup11
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
 \c@assumption=\count353
@@ -950,48 +867,48 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 40.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 40.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 39.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 39.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 40.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 40.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 39.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 39.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 40.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 40.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 39.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 39.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 40.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 40.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 39.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 39.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Info: Command `\dddot' is already robust on input line 40.
-LaTeX Info: Command `\ddddot' is already robust on input line 40.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Info: Command `\dddot' is already robust on input line 39.
+LaTeX Info: Command `\ddddot' is already robust on input line 39.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1034,112 +951,88 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package bicaption Info: Main language is not set on input line 40.
-Package hyperref Info: Link coloring OFF on input line 40.
+Package bicaption Info: Main language is not set on input line 39.
+Package hyperref Info: Link coloring OFF on input line 39.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 43.
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 42.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 15.05624pt on input line 43.
+(Font)              scaled to size 15.05624pt on input line 42.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 12.045pt on input line 43.
+(Font)              scaled to size 12.045pt on input line 42.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 9.03374pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 12.045pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 12.045pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 43.
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 43.
+(Font)              scaled to size 9.03374pt on input line 42.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 15.05624pt on input line 42.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 12.045pt on input line 42.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 9.03374pt on input line 42.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 15.05624pt on input line 42.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 12.045pt on input line 42.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 9.03374pt on input line 42.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 42.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 15.05624pt on input line 43.
+(Font)              scaled to size 15.05624pt on input line 42.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.045pt on input line 43.
+(Font)              scaled to size 12.045pt on input line 42.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 9.03374pt on input line 43.
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 43.
+(Font)              scaled to size 9.03374pt on input line 42.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 42.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 43.
+(Font)              scaled to size 15.05624pt on input line 42.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.045pt on input line 43.
+(Font)              scaled to size 12.045pt on input line 42.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 43.
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 43.
+(Font)              scaled to size 9.03374pt on input line 42.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 42.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 43.
+(Font)              scaled to size 15.05624pt on input line 42.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.045pt on input line 43.
+(Font)              scaled to size 12.045pt on input line 42.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 43.
+(Font)              scaled to size 9.03374pt on input line 42.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 43.
+(Font)              scaled to size 15.05624pt on input line 42.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.045pt on input line 43.
+(Font)              scaled to size 12.045pt on input line 42.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 12.045pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 12.045pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 12.045pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 12.045pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 43.
+(Font)              scaled to size 9.03374pt on input line 42.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 15.05624pt on input line 43.
+(Font)              scaled to size 15.05624pt on input line 42.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 12.045pt on input line 43.
+(Font)              scaled to size 12.045pt on input line 42.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 9.03374pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolA/b/n' will be
-(Font)              scaled to size 15.05624pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolA/b/n' will be
-(Font)              scaled to size 12.045pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolA/b/n' will be
-(Font)              scaled to size 9.03374pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolE/b/n' will be
-(Font)              scaled to size 15.05624pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolE/b/n' will be
-(Font)              scaled to size 12.045pt on input line 43.
-LaTeX Font Info:    Font shape `U/FdSymbolE/b/n' will be
-(Font)              scaled to size 9.03374pt on input line 43.
+(Font)              scaled to size 9.03374pt on input line 42.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 15.05624pt on input line 42.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 12.045pt on input line 42.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 9.03374pt on input line 42.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 15.05624pt on input line 42.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 12.045pt on input line 42.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 9.03374pt on input line 42.
 
 
 [1
@@ -1187,13 +1080,13 @@ LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
 (Font)              scaled to size 8.0pt on input line 95.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
 (Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
 (Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
 (Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
 (Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
 (Font)              scaled to size 6.0pt on input line 95.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
 (Font)              scaled to size 8.0pt on input line 95.
@@ -1211,33 +1104,17 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 8.0pt on input line 95.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 95.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
 (Font)              scaled to size 8.0pt on input line 95.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
 (Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolA/b/n' will be
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
 (Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolA/b/n' will be
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
 (Font)              scaled to size 6.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolE/b/n' will be
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
 (Font)              scaled to size 8.0pt on input line 95.
-LaTeX Font Info:    Font shape `U/FdSymbolE/b/n' will be
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
 (Font)              scaled to size 6.0pt on input line 95.
 )
 \tf@toc=\write4
@@ -1264,8 +1141,8 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [3]
-Overfull \hbox (80.35913pt too wide) in paragraph at lines 243--244
-[][]\TU/SimHei(0)/b/n/12.045 定 理 \TU/TeXGyreTermesX(0)/b/n/12.045 1.1 []\TU/SimSun(0)/m/n/12.045 设 变 换 $\OML/ntxmi/m/it/12.045 T \U/FdSymbolA/m/n/12.045 ^^B []$ \TU/SimSun(0)/m/n/12.045 有 连 续 偏 导 数，|  且 满 足 $\OML/ntxmi/m/it/12.045 J \U/FdSymbolB/m/n/12.045 ^^@ [] ^^T [] [] j
+Overfull \hbox (73.01181pt too wide) in paragraph at lines 242--243
+[][]\TU/SimHei(0)/b/n/12.045 定 理 \TU/TeXGyreTermesX(0)/b/n/12.045 1.1 []\TU/SimSun(0)/m/n/12.045 设 变 换 $\OML/ntxmi/m/it/12.045 T \OT1/ntxtlf/m/n/12.045 : []$ \TU/SimSun(0)/m/n/12.045 有 连 续 偏 导 数，|  且 满 足 $\OML/ntxmi/m/it/12.045 J \U/ntxmia/m/it/12.045 = [] [][]= [] [] <
  []
 
 
@@ -1273,10 +1150,6 @@ Overfull \hbox (80.35913pt too wide) in paragraph at lines 243--244
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [4]
-LaTeX Font Info:    Trying to load font information for U+msb on input line 269.
- (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
@@ -1367,8 +1240,13 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [22]
-Overfull \hbox (2.71786pt too wide) in paragraph at lines 1145--1149
-[][]\TU/SimHei(0)/b/n/12.045 定 义 \TU/TeXGyreTermesX(0)/b/n/12.045 3.12 []\TU/SimSun(0)/m/n/12.045 记 $\OML/ntxmi/m/it/12.045 S[]\U/FdSymbolF/m/n/12.045 ^^@\OML/ntxmi/m/it/12.045 x\U/FdSymbolF/m/n/12.045 ^^F \U/FdSymbolB/m/n/12.045 ^^@ [] \OML/ntxmi/m/it/12.045 u[]\U/FdSymbolF/m/n/12.045 ^^@\OML/ntxmi/m/it/12.045 x\U/FdSymbolF/m/n/12.045 ^^F$\TU/TeXGyreTermesX(0)/m/n/12.045 , \TU/SimSun(0)/m/n/12.045 为 $[] \OML/ntxmi/m/it/12.045 u[]\U/FdSymbolF/m/n/12.045 ^^@\OML/ntxmi/m/it/12.045 x\U/FdSymbolF/m/n/12.045 ^^F$ \TU/SimSun(0)/m/n/12.045 的 前 $\OML/ntxmi/m/it/12.045 n$ \TU/SimSun(0)/m/n/12.045 项 \TU/SimSun(0)/b/n/12.045 部 分 和 \TU/TeXGyreTermesX(0)/b/n/12.045 (\TU/SimSun(0)/b/n/12.045 函 数\TU/TeXGyreTermesX(0)/b/n/12.045 )\TU/SimSun(0)/m/n/12.045 ，|  记 $\OML/ntxmi/m/it/12.045 r[]\U/FdSymbolF/m/n/12.045 ^^@\OML/ntxmi/m/it/12.045 x\U/FdSymbolF/m/n/12.045 ^^F \U/FdSymbolB/m/n/12.045 ^^@ [] \OML/ntxmi/m/it/12.045 u[]\U/FdSymbolF/m/n/12.045 ^^@\OML/ntxmi/m/it/12.045 x\U/FdSymbolF/m/n/12.045 ^^F$
+Overfull \hbox (0.19055pt too wide) in paragraph at lines 1144--1148
+[][]\TU/SimHei(0)/b/n/12.045 定 义 \TU/TeXGyreTermesX(0)/b/n/12.045 3.12 []\TU/SimSun(0)/m/n/12.045 记 $\OML/ntxmi/m/it/12.045 S[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º \U/ntxmia/m/it/12.045 = [] \OML/ntxmi/m/it/12.045 u[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$\TU/TeXGyreTermesX(0)/m/n/12.045 , \TU/SimSun(0)/m/n/12.045 为 $[] \OML/ntxmi/m/it/12.045 u[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$ \TU/SimSun(0)/m/n/12.045 的 前 $\OML/ntxmi/m/it/12.045 n$ \TU/SimSun(0)/m/n/12.045 项 \TU/SimSun(0)/b/n/12.045 部 分 和 \TU/TeXGyreTermesX(0)/b/n/12.045 (\TU/SimSun(0)/b/n/12.045 函 数\TU/TeXGyreTermesX(0)/b/n/12.045 )\TU/SimSun(0)/m/n/12.045 ，|  记 $\OML/ntxmi/m/it/12.045 r[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º \U/ntxmia/m/it/12.045 = [] \OML/ntxmi/m/it/12.045 u[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$
+ []
+
+
+Overfull \hbox (72.89766pt too wide) in paragraph at lines 1206--1209
+[][]\TU/SimHei(0)/b/n/12.045 定 理 \TU/TeXGyreTermesX(0)/b/n/12.045 3.9 []\TU/SimSun(0)/m/n/12.045 对 幂 级 数 $[] \OML/ntxmi/m/it/12.045 a[]x[]$\TU/SimSun(0)/m/n/12.045 ，|  若 $[] [] \U/ntxmia/m/it/12.045 = \OML/ntxmi/m/it/12.045 ^^Z$\TU/SimSun(0)/m/n/12.045 ，|  则 收 敛 半 径 $\OML/ntxmi/m/it/12.045 R \U/ntxmia/m/it/12.045 = []$ 
  []
 
 
@@ -1376,13 +1254,8 @@ Overfull \hbox (2.71786pt too wide) in paragraph at lines 1145--1149
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [23]
-Overfull \hbox (88.64224pt too wide) in paragraph at lines 1207--1210
-[][]\TU/SimHei(0)/b/n/12.045 定 理 \TU/TeXGyreTermesX(0)/b/n/12.045 3.9 []\TU/SimSun(0)/m/n/12.045 对 幂 级 数 $[] \OML/ntxmi/m/it/12.045 a[]x[]$\TU/SimSun(0)/m/n/12.045 ，|  若 $[] [] \U/FdSymbolB/m/n/12.045 ^^@ \OML/ntxmi/m/it/12.045 ^^Z$\TU/SimSun(0)/m/n/12.045 ，|  则 收 敛 半 径 $\OML/ntxmi/m/it/12.045 R \U/FdSymbolB/m/n/12.045 ^^@ []$ 
- []
-
-
-Overfull \hbox (94.4782pt too wide) in paragraph at lines 1215--1218
-[][]\TU/SimHei(0)/b/n/12.045 定 理 \TU/TeXGyreTermesX(0)/b/n/12.045 3.10 []\TU/SimSun(0)/m/n/12.045 对 幂 级 数 $[] \OML/ntxmi/m/it/12.045 a[]x[]$\TU/SimSun(0)/m/n/12.045 ，|  若 $[] [] \U/FdSymbolB/m/n/12.045 ^^@ \OML/ntxmi/m/it/12.045 ^^Z$\TU/SimSun(0)/m/n/12.045 ，|  则 收 敛 半 径 $\OML/ntxmi/m/it/12.045 R \U/FdSymbolB/m/n/12.045 ^^@ []$ 
+Overfull \hbox (78.16362pt too wide) in paragraph at lines 1214--1217
+[][]\TU/SimHei(0)/b/n/12.045 定 理 \TU/TeXGyreTermesX(0)/b/n/12.045 3.10 []\TU/SimSun(0)/m/n/12.045 对 幂 级 数 $[] \OML/ntxmi/m/it/12.045 a[]x[]$\TU/SimSun(0)/m/n/12.045 ，|  若 $[] [] \U/ntxmia/m/it/12.045 = \OML/ntxmi/m/it/12.045 ^^Z$\TU/SimSun(0)/m/n/12.045 ，|  则 收 敛 半 径 $\OML/ntxmi/m/it/12.045 R \U/ntxmia/m/it/12.045 = []$ 
  []
 
 
@@ -1404,11 +1277,11 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 [27]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1399.
+(hyperref)                removing `math shift' on input line 1398.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1399.
+(hyperref)                removing `math shift' on input line 1398.
 
 
 
@@ -1427,12 +1300,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 10DC3856316D2EBE41605B10EF6A3636;8529.
  ) 
 Here is how much of TeX's memory you used:
- 26625 strings out of 473832
- 515360 string characters out of 5733158
- 878307 words of memory out of 5000000
- 49290 multiletter control sequences out of 15000+600000
- 596299 words of font info for 176 fonts, out of 8000000 for 9000
+ 24340 strings out of 473832
+ 485683 string characters out of 5733158
+ 877034 words of memory out of 5000000
+ 47018 multiletter control sequences out of 15000+600000
+ 593342 words of font info for 153 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,124p,1208b,2379s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,16n,124p,1208b,2248s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (32 pages).
