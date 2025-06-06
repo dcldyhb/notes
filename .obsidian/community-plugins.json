@@ -1,6 +1,5 @@
 [
   "obsidian-linter",
   "obsidian-git",
-  "obsidian-zotero-desktop-connector",
-  "obsidian-pandoc"
+  "obsidian-zotero-desktop-connector"
 ]
