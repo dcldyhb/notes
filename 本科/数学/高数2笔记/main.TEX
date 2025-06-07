@@ -327,7 +327,7 @@
 \subsection{三重积分的变量代换}
 
 \begin{theorem}
-    设变换 \(T:\begin{aligned}x=x(u,v,w)\\y=y(u,v,w)\\z=z(u,v,w)\end{aligned}\)
+    设变换 \(T:\left\{\begin{aligned}x=x(u,v,w)\\y=y(u,v,w)\\z=z(u,v,w)\end{aligned}\right.\)
 有连续偏导数，且满足
 \(J=\frac{\partial (x,y,z)}{\partial (u,v,w)}\neq 0\)，而
 \(f(x,y,z)\in C(\Omega)\)，则
@@ -339,12 +339,12 @@
 
 柱面坐标系，实际上就是将 \(x,y\) 坐标转换为极坐标
 
-\[
+\[\left\{
 \begin{aligned}
 x = r\cos\theta\\
 y = r\sin\theta\\
 z = z
-\end{aligned}
+\end{aligned}\right.
 \]
 
 其 Jacobi 行列式为
@@ -407,12 +407,12 @@ z = \rho\cos\varphi
 
 体密度为 \(\rho(x, y)\) 的物体占据空间 \(\Omega\)，其质心坐标为
 
-\[
+\[\left\{
 \begin{aligned}
   \displaystyle\bar{x} = \frac{\iiint_\Omega x\rho(x,y,z)\,\mathrm{d}V}{\iiint_\Omega\mu(x,y,z)\,\mathrm{d}V} \\
   \displaystyle\bar{y} = \frac{\iiint_\Omega y\rho(x,y,z)\,\mathrm{d}V}{\iiint_\Omega\mu(x,y,z)\,\mathrm{d}V}\\
   \displaystyle\bar{z} = \frac{\iiint_\Omega z\rho(x,y,z)\,\mathrm{d}V}{\iiint_\Omega\mu(x,y,z)\,\mathrm{d}V}
-\end{aligned}
+\end{aligned}\right.
 \]
 
 \subsubsection{转动惯量}\label{ux8f6cux52a8ux60efux91cf}
@@ -420,11 +420,11 @@ z = \rho\cos\varphi
 设物体的密度为 \(\rho(x,y,z)\)，则物体分别关于 \(x\)，\(y\)，\(z\)
 轴的转动惯量为
 
-\[\begin{aligned}
+\[\left\{\begin{aligned}
   I_x = \iiint_\Omega \rho(x,y,z)(y^2+z^2)\,\mathrm{d}V\\
   I_y = \iiint_\Omega \rho(x,y,z)(x^2+z^2)\,\mathrm{d}V\\
   I_z = \iiint_\Omega \rho(x,y,z)(x^2+y^2)\,\mathrm{d}V
-\end{aligned}\]
+\end{aligned}\right.\]
 
 \subsubsection{引力}
 
@@ -603,11 +603,11 @@ z = \rho\cos\varphi
 
 一般的
 
-\[\begin{aligned}
+\[\left\{\begin{aligned}
   \cos\alpha >0 \Leftrightarrow \text{前侧}，\cos\alpha < 0 \Leftrightarrow \text{后侧}\\
   \cos\beta >0 \Leftrightarrow \text{右侧}，\cos\beta < 0 \Leftrightarrow \text{左侧}\\
   \cos\gamma >0 \Leftrightarrow \text{上侧}，\cos\gamma < 0 \Leftrightarrow \text{下侧}
-\end{aligned}\]
+\end{aligned}\right.\]
 
 习惯上选取曲面片的上侧为 \(S^+\)；对于封闭曲面，选取外侧为 \(S^+\)
 
