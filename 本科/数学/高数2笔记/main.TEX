@@ -240,7 +240,7 @@
 
 \begin{theorem}
     设变换 \(\left\{\displaystyle T :\begin{aligned}x=x(u,v)\\y=y(u,v)\end{aligned}\right.\) 有连续偏导数，且满足 
-    \[\displaystyle J = \frac{\partial (x,y)}{\partial (u,v)}\coloneqq \begin{vmatrix}x_u ,x_v\newline y_u,y_v\end{vmatrix} \left(\text{Jacobi 行列式}\right)\neq 0\]，而 \(f(x,y)\in C(D)\)，则
+    \[\displaystyle J = \frac{\partial (x,y)}{\partial (u,v)}\coloneqq \begin{vmatrix}x_u ,x_v\\ y_u,y_v\end{vmatrix} \left(\text{Jacobi 行列式}\right)\neq 0\]，而 \(f(x,y)\in C(D)\)，则
 
     \[\iint_D f(x,y)\,\mathrm{d}\sigma = \iint_{D^*} f(x(u,v),y(u,v))\left\vert J \right\vert \,\mathrm{d}u\mathrm{d}v\]
 \end{theorem}
@@ -674,7 +674,7 @@ z = \rho\cos\varphi
   分成若干个单连通区域 \(D_i\)，并对每个区域应用 Green 公式
 \item
   公式也可以记为
-  \(\displaystyle\oint_{C^+} P\,\mathrm{d}x + Q\,\mathrm{d}y = \iint_D \begin{vmatrix}\frac{\partial}{\partial x}&\frac{\partial}{\partial y}\\ P&Q\end{vmatrix}\,\mathrm{d}x\mathrm{d}y\)
+  \(\displaystyle\oint_{C^+} P\,\mathrm{d}x + Q\,\mathrm{d}y = \iint_D \begin{vmatrix}\frac{\partial}{\partial x}&\frac{\partial}{\partial y}\ P&Q\end{vmatrix}\,\mathrm{d}x\mathrm{d}y\)
 \end{enumerate}
 
 \subsubsection{Green 公式的向量形式}
@@ -831,7 +831,7 @@ z = \rho\cos\varphi
     常用结论：
 
 \textbf{等比数列}
-\(\displaystyle \sum_{n=1}^\infty aq^{n-1}\begin{aligned}\text{收敛于}\frac{a}{1-q}  ,\vert q \vert < 1\newline \text{发散}  ,\vert q \vert \geq 1\end{aligned}\)
+\(\displaystyle \sum_{n=1}^\infty aq^{n-1}\left\{\begin{aligned}&\text{收敛于}\frac{a}{1-q}  ,&&\vert q \vert < 1\\ &\text{发散}  ,&&\vert q \vert \geq 1\end{aligned}\right.\)
 \end{remark}
 
 \subsection{数项级数的概念}
