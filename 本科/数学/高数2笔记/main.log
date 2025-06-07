@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  8 JUN 2025 01:42
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  8 JUN 2025 01:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1235,7 +1235,7 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [22]
-Overfull \hbox (0.19055pt too wide) in paragraph at lines 1145--1149
+Overfull \hbox (0.19055pt too wide) in paragraph at lines 1146--1150
 [][]\TU/SimHei(0)/b/n/12.045 定 义 \TU/TeXGyreTermesX(0)/b/n/12.045 3.12 []\TU/SimSun(0)/m/n/12.045 记 $\OML/ntxmi/m/it/12.045 S[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º \U/ntxmia/m/it/12.045 = [] \OML/ntxmi/m/it/12.045 u[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$\TU/TeXGyreTermesX(0)/m/n/12.045 , \TU/SimSun(0)/m/n/12.045 为 $[] \OML/ntxmi/m/it/12.045 u[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$ \TU/SimSun(0)/m/n/12.045 的 前 $\OML/ntxmi/m/it/12.045 n$ \TU/SimSun(0)/m/n/12.045 项 \TU/SimSun(0)/b/n/12.045 部 分 和 \TU/TeXGyreTermesX(0)/b/n/12.045 (\TU/SimSun(0)/b/n/12.045 函 数\TU/TeXGyreTermesX(0)/b/n/12.045 )\TU/SimSun(0)/m/n/12.045 ，|  记 $\OML/ntxmi/m/it/12.045 r[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º \U/ntxmia/m/it/12.045 = [] \OML/ntxmi/m/it/12.045 u[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$
  []
 
@@ -1262,11 +1262,11 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 [27]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1399.
+(hyperref)                removing `math shift' on input line 1400.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1399.
+(hyperref)                removing `math shift' on input line 1400.
 
 
 
