@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  8 JUN 2025 01:19
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  8 JUN 2025 01:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -674,7 +674,19 @@ Package fontspec Info:
 File: sjtu-lang-zh.def 2025/02/12 v2.2 Chinese specific definition (SJTUTeX)
 ) (c:/texlive/2025/texmf-dist/tex/latex/sjtutex/scheme/sjtu-scheme-zh.def
 File: sjtu-scheme-zh.def 2025/02/12 v2.2 Chinese scheme (SJTUTeX)
-)) (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+)) (c:/texlive/2025/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks32
+\thm@bodyfont=\toks33
+\thm@headfont=\toks34
+\thm@notefont=\toks35
+\thm@headpunct=\toks36
+\thm@preskip=\skip84
+\thm@postskip=\skip85
+\thm@headsep=\skip86
+\dth@everypar=\toks37
+LaTeX Info: Redefining \textsquare on input line 427.
+) (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
  (c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
@@ -776,7 +788,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip84
+\Hy@SectionHShift=\skip87
 )
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 6.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 6.
@@ -792,8 +804,8 @@ Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 6.
 Package: gbt7714 2022/10/03 v2.1.5 GB/T 7714 BibTeX Style
  (c:/texlive/2025/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip85
-\bibsep=\skip86
+\bibhang=\skip88
+\bibsep=\skip89
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count343
 )) (c:/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
@@ -817,10 +829,10 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisrulewidth=\dimen289
 ) (c:/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
-\LTleft=\skip87
-\LTright=\skip88
-\LTpre=\skip89
-\LTpost=\skip90
+\LTleft=\skip90
+\LTright=\skip91
+\LTpre=\skip92
+\LTpost=\skip93
 \LTchunksize=\count348
 \LTcapwidth=\dimen290
 \LT@head=\box63
@@ -832,7 +844,7 @@ Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
 \LT@rows=\count350
 \c@LT@tables=\count351
 \c@LT@chunks=\count352
-\LT@p@ftn=\toks32
+\LT@p@ftn=\toks38
 ) (c:/texlive/2025/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup8
@@ -841,12 +853,23 @@ Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldlargesymbols=\mathgroup11
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
-No file main.aux.
+\c@assumption=\count353
+\c@axiom=\count354
+\c@conjecture=\count355
+\c@corollary=\count356
+\c@definition=\count357
+\c@example=\count358
+\c@exercise=\count359
+\c@lemma=\count360
+\c@problem=\count361
+\c@proposition=\count362
+\c@theorem=\count363
+ (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 39.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 39.
-(c:/texlive/2025/texmf-dist/tex/latex/newtx/omlntxmi.fd
+ (c:/texlive/2025/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 39.
@@ -930,15 +953,12 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 Package caption Info: End \AtBeginDocument code.
 Package bicaption Info: Main language is not set on input line 39.
 Package hyperref Info: Link coloring OFF on input line 39.
+ (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 42.
-(c:/texlive/2025/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
+ (c:/texlive/2025/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
@@ -1046,88 +1066,66 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"SimHei/OT:script=hani;language=dflt;embolden=3;"
 
-
-No file main.toc.
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
-
+ (./main.toc
 
 LaTeX Font Info:    Font shape `TU/texgyreheros(0)/m/n' will be
-(Font)              scaled to size 8.49173pt on input line 51.
+(Font)              scaled to size 8.49173pt on input line 62.
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [1
 
 
 ]
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 8.0pt on input line 95.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 6.0pt on input line 95.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 8.0pt on input line 95.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 6.0pt on input line 95.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 8.0pt on input line 95.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 6.0pt on input line 95.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 8.0pt on input line 95.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 6.0pt on input line 95.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 8.0pt on input line 95.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 6.0pt on input line 95.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 8.0pt on input line 95.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 6.0pt on input line 95.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 8.0pt on input line 95.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 6.0pt on input line 95.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 8.0pt on input line 95.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 6.0pt on input line 95.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 8.0pt on input line 95.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 6.0pt on input line 95.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 8.0pt on input line 95.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 6.0pt on input line 95.
+)
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+
+
+File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
+<use sjtu-vi-logo-std-h-cor-red.pdf>
+[2]
 第 1 章
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:56: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 \begin{definition}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 6.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 8.0pt on input line 57.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 6.0pt on input line 57.
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:64: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 \end{definition}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
@@ -1140,66 +1138,12 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [2]
 
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:205: LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.205 \begin{remark}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [3]
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:219: LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.219 \end{remark}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:241: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.241 \begin{theorem}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (43.90306pt too wide) in paragraph at lines 242--243
-[]\TU/SimSun(0)/m/n/12.045 设 变 换 $\OML/ntxmi/m/it/12.045 T \OT1/ntxtlf/m/n/12.045 : []$ \TU/SimSun(0)/m/n/12.045 有 连 续 偏 导 数，|  且 满 足 $\OML/ntxmi/m/it/12.045 J \U/ntxmia/m/it/12.045 = [] [][]= [] [] <
+Overfull \hbox (73.01181pt too wide) in paragraph at lines 242--243
+[][]\TU/SimHei(0)/b/n/12.045 定 理 \TU/TeXGyreTermesX(0)/b/n/12.045 1.1 []\TU/SimSun(0)/m/n/12.045 设 变 换 $\OML/ntxmi/m/it/12.045 T \OT1/ntxtlf/m/n/12.045 : []$ \TU/SimSun(0)/m/n/12.045 有 连 续 偏 导 数，|  且 满 足 $\OML/ntxmi/m/it/12.045 J \U/ntxmia/m/it/12.045 = [] [][]= [] [] <
  []
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:245: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.245 \end{theorem}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 
 
@@ -1207,68 +1151,13 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [4]
 
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:267: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.267 \begin{definition}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:277: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.277 \end{definition}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [5]
 
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:328: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.328 \begin{theorem}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [6]
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:335: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.335 \end{theorem}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
@@ -1283,32 +1172,6 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 [9]
 第 2 章
 
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:442: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.442 \begin{definition}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:459: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.459 \end{definition}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
@@ -1320,62 +1183,9 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [11]
 
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:527: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.527 \begin{definition}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:537: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.537 \end{definition}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [12]
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:583: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.583 \begin{definition}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:587: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.587 \end{definition}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
 Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
 Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
@@ -1385,120 +1195,13 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [13]
 
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:663: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.663 \begin{theorem}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [14]
 
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:668: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.668 \end{theorem}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:683: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.683 \begin{definition}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:692: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.692 \end{definition}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:694: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.694 \begin{theorem}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:715: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.715 \end{theorem}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [15]
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:744: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.744 \begin{theorem}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:750: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.750 \end{theorem}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
@@ -1509,881 +1212,41 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 [17]
 第 3 章
 
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:796: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.796 \begin{definition}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:803: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.803 \end{definition}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:814: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.814 \begin{definition}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:826: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.826 \end{definition}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:828: LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.828 \begin{remark}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:833: LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.833 \end{remark}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [18
 
 ]
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:871: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.871 \begin{theorem}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:874: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.874 \end{theorem}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:891: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.891 \begin{definition}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:894: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.894 \end{definition}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:896: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.896 \begin{theorem}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:900: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.900 \end{theorem}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:902: LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.902 \begin{remark}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:906: LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.906 \end{remark}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:912: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.912 \begin{theorem}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:920: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.920 \end{theorem}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
 Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
 Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:933: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.933 \begin{theorem}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [19]
 
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:949: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.949 \end{theorem}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:951: LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.951 \begin{remark}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:954: LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.954 \end{remark}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:958: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.958 \begin{theorem}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:970: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.970 \end{theorem}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:972: LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.972 \begin{remark}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:975: LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.975 \end{remark}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:977: LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.977 \begin{remark}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:979: LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.979 \end{remark}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:983: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.983 \begin{theorem}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:997: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.997 \end{theorem}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:999: LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.999 \begin{remark}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1001: LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1001 \end{remark}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1003: LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1003 \begin{remark}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1005: LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1005 \end{remark}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1007: LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1007 \begin{remark}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [20]
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1015: LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1015 \end{remark}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1019: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1019 \begin{definition}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (21.81537pt too wide) in paragraph at lines 1020--1026
-[]\TU/SimSun(0)/m/n/12.045 设 $[] \OML/ntxmi/m/it/12.045 a[]$ \TU/SimSun(0)/m/n/12.045 为 \TU/SimSun(0)/b/n/12.045 正 项 级 数\TU/SimSun(0)/m/n/12.045 ，|  若 非 负 函 数 $\OML/ntxmi/m/it/12.045 f\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 X\LMS/ntxsy/m/n/12.045 º$ \TU/SimSun(0)/m/n/12.045 在 $\LMS/ntxsy/m/n/12.045 »\OT1/ntxtlf/m/n/12.045 1\OML/ntxmi/m/it/12.045 ; \LMS/ntxsy/m/n/12.045 Ï1º$ \TU/SimSun(0)/m/n/12.045 上 \TU/SimSun(0)/b/n/12.045 单 调 递 减\TU/SimSun(0)/m/n/12.045 ，|  且 $\OML/ntxmi/m/it/12.045 a[] \U/ntxmia/m/it/12.045 = \OML/ntxmi/m/it/12.045 f\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 n\LMS/ntxsy/m/n/12.045 º  []$\TU/SimSun(0)/m/n/12.045 ，|
- []
-
 Missing character: There is no ， ("FF0C) in font ntx-Regular-tlf-ot1!
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1032: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1032 \end{definition}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1044: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1044 \begin{definition}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1048: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1048 \end{definition}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1052: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1052 \begin{definition}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1072: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1072 \end{definition}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1076: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1076 \begin{theorem}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1079: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1079 \end{theorem}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1081: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1081 \begin{theorem}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [21]
 
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1084: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1084 \end{theorem}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1088: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1088 \begin{definition}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1102: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1102 \end{definition}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1104: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1104 \begin{definition}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1107: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1107 \end{definition}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1109: LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1109 \begin{remark}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1113: LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1113 \end{remark}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1115: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1115 \begin{definition}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1124: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1124 \end{definition}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1128: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1128 \begin{definition}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1134: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1134 \end{definition}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1136: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 \begin{definition}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1141: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1141 \end{definition}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1143: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1143 \begin{definition}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1148: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1148 \end{definition}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [22]
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1150: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1150 \begin{definition}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1156: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1156 \end{definition}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1185: LaTeX Error: Environment lemma undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1185 \begin{lemma}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1199: LaTeX Error: \begin{document} ended by \end{lemma}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1199 \end{lemma}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1205: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1205 \begin{theorem}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1209: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1209 \end{theorem}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (43.78891pt too wide) in paragraph at lines 1206--1210
-[]\TU/SimSun(0)/m/n/12.045 对 幂 级 数 $[] \OML/ntxmi/m/it/12.045 a[]x[]$\TU/SimSun(0)/m/n/12.045 ，|  若 $[] [] \U/ntxmia/m/it/12.045 = \OML/ntxmi/m/it/12.045 ^^Z$\TU/SimSun(0)/m/n/12.045 ，|  则 收 敛 半 径 $\OML/ntxmi/m/it/12.045 R \U/ntxmia/m/it/12.045 = []$
+Overfull \hbox (0.19055pt too wide) in paragraph at lines 1144--1148
+[][]\TU/SimHei(0)/b/n/12.045 定 义 \TU/TeXGyreTermesX(0)/b/n/12.045 3.12 []\TU/SimSun(0)/m/n/12.045 记 $\OML/ntxmi/m/it/12.045 S[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º \U/ntxmia/m/it/12.045 = [] \OML/ntxmi/m/it/12.045 u[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$\TU/TeXGyreTermesX(0)/m/n/12.045 , \TU/SimSun(0)/m/n/12.045 为 $[] \OML/ntxmi/m/it/12.045 u[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$ \TU/SimSun(0)/m/n/12.045 的 前 $\OML/ntxmi/m/it/12.045 n$ \TU/SimSun(0)/m/n/12.045 项 \TU/SimSun(0)/b/n/12.045 部 分 和 \TU/TeXGyreTermesX(0)/b/n/12.045 (\TU/SimSun(0)/b/n/12.045 函 数\TU/TeXGyreTermesX(0)/b/n/12.045 )\TU/SimSun(0)/m/n/12.045 ，|  记 $\OML/ntxmi/m/it/12.045 r[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º \U/ntxmia/m/it/12.045 = [] \OML/ntxmi/m/it/12.045 u[]\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/12.045 º$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1206--1210
-
+Overfull \hbox (72.89766pt too wide) in paragraph at lines 1206--1209
+[][]\TU/SimHei(0)/b/n/12.045 定 理 \TU/TeXGyreTermesX(0)/b/n/12.045 3.9 []\TU/SimSun(0)/m/n/12.045 对 幂 级 数 $[] \OML/ntxmi/m/it/12.045 a[]x[]$\TU/SimSun(0)/m/n/12.045 ，|  若 $[] [] \U/ntxmia/m/it/12.045 = \OML/ntxmi/m/it/12.045 ^^Z$\TU/SimSun(0)/m/n/12.045 ，|  则 收 敛 半 径 $\OML/ntxmi/m/it/12.045 R \U/ntxmia/m/it/12.045 = []$ 
  []
 
 
@@ -2391,40 +1254,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1206--1210
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [23]
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1213: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1213 \begin{theorem}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1217: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1217 \end{theorem}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (43.03236pt too wide) in paragraph at lines 1214--1218
-[]\TU/SimSun(0)/m/n/12.045 对 幂 级 数 $[] \OML/ntxmi/m/it/12.045 a[]x[]$\TU/SimSun(0)/m/n/12.045 ，|  若 $[] [] \U/ntxmia/m/it/12.045 = \OML/ntxmi/m/it/12.045 ^^Z$\TU/SimSun(0)/m/n/12.045 ，|  则 收 敛 半 径 $\OML/ntxmi/m/it/12.045 R \U/ntxmia/m/it/12.045 = []$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1214--1218
-
+Overfull \hbox (78.16362pt too wide) in paragraph at lines 1214--1217
+[][]\TU/SimHei(0)/b/n/12.045 定 理 \TU/TeXGyreTermesX(0)/b/n/12.045 3.10 []\TU/SimSun(0)/m/n/12.045 对 幂 级 数 $[] \OML/ntxmi/m/it/12.045 a[]x[]$\TU/SimSun(0)/m/n/12.045 ，|  若 $[] [] \U/ntxmia/m/it/12.045 = \OML/ntxmi/m/it/12.045 ^^Z$\TU/SimSun(0)/m/n/12.045 ，|  则 收 敛 半 径 $\OML/ntxmi/m/it/12.045 R \U/ntxmia/m/it/12.045 = []$ 
  []
 
 
@@ -2436,111 +1267,6 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [25]
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1300: LaTeX Error: Environment remark undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1300 \begin{remark}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1307: LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1307 \end{remark}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1311: LaTeX Error: Environment definition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1311 \begin{definition}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1321: LaTeX Error: \begin{document} ended by \end{definition}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1321 \end{definition}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1323: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1323 \begin{theorem}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1325: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1325 \end{theorem}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1327: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1327 \begin{theorem}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1331: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1331 \end{theorem}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
@@ -2558,37 +1284,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1398.
 
 
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1424: LaTeX Error: Environment theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1424 \begin{theorem}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
 [28]
-
-c:/Documents/notes/本科/数学/高数2笔记/main.tex:1437: LaTeX Error: \begin{document} ended by \end{theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1437 \end{theorem}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 
 File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 <use sjtu-vi-logo-std-h-cor-red.pdf>
@@ -2597,26 +1296,16 @@ File: sjtu-vi-logo-std-h-cor-red.pdf Graphic file (type pdf)
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025/02/12>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  10DC3856316D2EBE41605B10EF6A3636;8529.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 10DC3856316D2EBE41605B10EF6A3636;8529.
  ) 
 Here is how much of TeX's memory you used:
- 24154 strings out of 473832
- 483132 string characters out of 5733158
- 869618 words of memory out of 5000000
- 46844 multiletter control sequences out of 15000+600000
+ 24340 strings out of 473832
+ 485683 string characters out of 5733158
+ 877034 words of memory out of 5000000
+ 47018 multiletter control sequences out of 15000+600000
  593342 words of font info for 153 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,124p,1208b,2268s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,16n,124p,1208b,2248s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (31 pages).
+Output written on main.pdf (32 pages).
