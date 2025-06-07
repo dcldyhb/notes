@@ -239,7 +239,7 @@
 \subsection{二重积分的变量代换}
 
 \begin{theorem}
-    设变换 \(\displaystyle T :\begin{cases}x=x(u,v)\\y=y(u,v)\end{cases}\) 有连续偏导数，且满足 
+    设变换 \(\displaystyle T :\begin{aligned}x=x(u,v)\\y=y(u,v)\end{aligned}\) 有连续偏导数，且满足 
     \[\displaystyle J = \frac{\partial (x,y)}{\partial (u,v)}\coloneqq \begin{vmatrix}x_u ,x_v\newline y_u,y_v\end{vmatrix} \left(\text{Jacobi 行列式}\right)\neq 0\]，而 \(f(x,y)\in C(D)\)，则
 
     \[\iint_D f(x,y)\,\mathrm{d}\sigma = \iint_{D^*} f(x(u,v),y(u,v))\left\vert J \right\vert \,\mathrm{d}u\mathrm{d}v\]
@@ -248,7 +248,7 @@
 \begin{enumerate}
 \item
   在定理条件下，变换 \(T\) 一定存在逆变换
-  \(T^{-1}:\begin{cases}u=u(x,y)\\v=v(x,y)\end{cases}\)，且
+  \(T^{-1}:\begin{aligned}u=u(x,y)\\v=v(x,y)\end{aligned}\)，且
   \(\frac{\partial (u,v)}{\partial (x,y)}\cdot \frac{\partial (x,y)}{\partial (u,v)} = 1\)
 
   有时，借助此式求 \(J\) 较为简单
@@ -257,7 +257,7 @@
   时，定理结论仍成立
 \item
   在广义极坐标
-  \(\begin{cases}x=ar\cos\theta\\y=br\sin\theta\end{cases}\)
+  \(\begin{aligned}x=ar\cos\theta\\y=br\sin\theta\end{aligned}\)
   下，\(J = abr\)
 \end{enumerate}
 
@@ -327,7 +327,7 @@
 \subsection{三重积分的变量代换}
 
 \begin{theorem}
-    设变换 \(T:\begin{cases}x=x(u,v,w)\\y=y(u,v,w)\\z=z(u,v,w)\end{cases}\)
+    设变换 \(T:\begin{aligned}x=x(u,v,w)\\y=y(u,v,w)\\z=z(u,v,w)\end{aligned}\)
 有连续偏导数，且满足
 \(J=\frac{\partial (x,y,z)}{\partial (u,v,w)}\neq 0\)，而
 \(f(x,y,z)\in C(\Omega)\)，则
@@ -340,11 +340,11 @@
 柱面坐标系，实际上就是将 \(x,y\) 坐标转换为极坐标
 
 \[
-\begin{cases}
+\begin{aligned}
 x = r\cos\theta\\
 y = r\sin\theta\\
 z = z
-\end{cases}
+\end{aligned}
 \]
 
 其 Jacobi 行列式为
@@ -363,11 +363,11 @@ z = z
 
 球面坐标系，实际上就是将 \(x,y,z\) 坐标转换为球坐标
 
-\[\begin{cases}
+\[\begin{aligned}
 x = \rho\sin\varphi\cos\theta\\
 y = \rho\sin\varphi\sin\theta\\
 z = \rho\cos\varphi
-\end{cases}\]
+\end{aligned}\]
 
 其 Jacobi 行列式为
 
@@ -408,11 +408,11 @@ z = \rho\cos\varphi
 体密度为 \(\rho(x, y)\) 的物体占据空间 \(\Omega\)，其质心坐标为
 
 \[
-\begin{cases}
+\begin{aligned}
   \displaystyle\bar{x} = \frac{\iiint_\Omega x\rho(x,y,z)\,\mathrm{d}V}{\iiint_\Omega\mu(x,y,z)\,\mathrm{d}V} \\
   \displaystyle\bar{y} = \frac{\iiint_\Omega y\rho(x,y,z)\,\mathrm{d}V}{\iiint_\Omega\mu(x,y,z)\,\mathrm{d}V}\\
   \displaystyle\bar{z} = \frac{\iiint_\Omega z\rho(x,y,z)\,\mathrm{d}V}{\iiint_\Omega\mu(x,y,z)\,\mathrm{d}V}
-\end{cases}
+\end{aligned}
 \]
 
 \subsubsection{转动惯量}\label{ux8f6cux52a8ux60efux91cf}
@@ -420,11 +420,11 @@ z = \rho\cos\varphi
 设物体的密度为 \(\rho(x,y,z)\)，则物体分别关于 \(x\)，\(y\)，\(z\)
 轴的转动惯量为
 
-\[\begin{cases}
+\[\begin{aligned}
   I_x = \iiint_\Omega \rho(x,y,z)(y^2+z^2)\,\mathrm{d}V\\
   I_y = \iiint_\Omega \rho(x,y,z)(x^2+z^2)\,\mathrm{d}V\\
   I_z = \iiint_\Omega \rho(x,y,z)(x^2+y^2)\,\mathrm{d}V
-\end{cases}\]
+\end{aligned}\]
 
 \subsubsection{引力}
 
@@ -504,7 +504,7 @@ z = \rho\cos\varphi
 \subsection{一类曲线积分的计算}
 
 设函数 \(f(x,y)\) 在光滑曲线 \(C\) 上连续，\(C\) 的参数方程为
-\(\begin{cases}x=x(t)\\y=y(t)\end{cases}\)，\(t\in [a,b]\)，满足
+\(\begin{aligned}x=x(t)\\y=y(t)\end{aligned}\)，\(t\in [a,b]\)，满足
 \(x'(t)\)，\(y'(t)\) 连续，且 \(x'(t)^2 + y'(t)^2 \neq 0\)，则
 
 \[\int_C f(x,y)\,\mathrm{d}s = \int_\alpha^\beta f(x(t),y(t))\sqrt{x'(t)^2 + y'(t)^2}\,\mathrm{d}t\]
@@ -566,7 +566,7 @@ z = \rho\cos\varphi
 \subsubsection{第二类曲线积分的计算}
 
 若曲线 \(C\) 为
-\(\begin{cases}x=x(t)\\y=y(t)\end{cases}\)，\(t:\alpha\rightarrow \beta\)
+\(\begin{aligned}x=x(t)\\y=y(t)\end{aligned}\)，\(t:\alpha\rightarrow \beta\)
 
 起点 \(A\) 对应 \(\alpha\)，终点 \(B\) 对应 \(\beta\)
 
@@ -603,11 +603,11 @@ z = \rho\cos\varphi
 
 一般的
 
-\[\begin{cases}
+\[\begin{aligned}
   \cos\alpha >0 \Leftrightarrow \text{前侧}，\cos\alpha < 0 \Leftrightarrow \text{后侧}\\
   \cos\beta >0 \Leftrightarrow \text{右侧}，\cos\beta < 0 \Leftrightarrow \text{左侧}\\
   \cos\gamma >0 \Leftrightarrow \text{上侧}，\cos\gamma < 0 \Leftrightarrow \text{下侧}
-\end{cases}\]
+\end{aligned}\]
 
 习惯上选取曲面片的上侧为 \(S^+\)；对于封闭曲面，选取外侧为 \(S^+\)
 
@@ -830,7 +830,7 @@ z = \rho\cos\varphi
     常用结论：
 
 \textbf{等比数列}
-\(\displaystyle \sum_{n=1}^\infty aq^{n-1}\begin{cases}\text{收敛于}\frac{a}{1-q}  ,\vert q \vert < 1\newline \text{发散}  ,\vert q \vert \geq 1\end{cases}\)
+\(\displaystyle \sum_{n=1}^\infty aq^{n-1}\begin{aligned}\text{收敛于}\frac{a}{1-q}  ,\vert q \vert < 1\newline \text{发散}  ,\vert q \vert \geq 1\end{aligned}\)
 \end{remark}
 
 \subsection{数项级数的概念}
@@ -903,7 +903,7 @@ z = \rho\cos\varphi
 \begin{remark}
     \(p\) 级数
 
-\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^p} \begin{cases}\text{收敛}  ,p>1\newline \text{发散} ,p\leq 1\end{cases}\)
+\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^p} \begin{aligned}\text{收敛}  ,p>1\newline \text{发散} ,p\leq 1\end{aligned}\)
 \end{remark}
 
 \subsection{正项级数敛散性判别法}
@@ -1110,7 +1110,7 @@ z = \rho\cos\varphi
 \begin{remark}
     \textbf{常用结论：}
 
-\[\displaystyle \sum_{n=1}^\infty \frac{(-1)^{n}}{n^p}\begin{cases}\text{绝对收敛} & ,p>1\\ \text{条件收敛} & , 0 < p\leq 1 \end{cases}\]
+\[\displaystyle \sum_{n=1}^\infty \frac{(-1)^{n}}{n^p}\left\{\begin{aligned}\text{绝对收敛} & ,p>1\\ \text{条件收敛} & , 0 < p\leq 1 \end{aligned}\right.\]
 \end{remark}
 
 \begin{definition}
@@ -1206,7 +1206,7 @@ z = \rho\cos\varphi
 \begin{theorem}
     对幂级数 \(\displaystyle \sum_{n=1}^\infty a_nx^n\)，若
 \(\displaystyle \lim_{n\to+\infty}\left\vert\frac{a_{n+1}}{a_n}\right\vert = \rho\)，则收敛半径
-\[\displaystyle R=\begin{cases}0,\rho=+\infty\newline  \frac{1}{\rho}, 0<\rho<+\infty\newline +\infty ,\rho=0\end{cases}\]
+\[\displaystyle R=\begin{aligned}0,\rho=+\infty\newline  \frac{1}{\rho}, 0<\rho<+\infty\newline +\infty ,\rho=0\end{aligned}\]
 \end{theorem}
 
 \subsection{系数模根值法}
@@ -1214,7 +1214,7 @@ z = \rho\cos\varphi
 \begin{theorem}
     对幂级数 \(\displaystyle \sum_{n=1}^\infty a_nx^n\)，若
 \(\displaystyle \lim_{n\to+\infty}\sqrt[n]{\left\vert a_n\right\vert} = \rho\)，则收敛半径
-\[\displaystyle R=\begin{cases}0,\rho=+\infty\newline  \frac{1}{\rho}, 0<\rho<+\infty\newline +\infty ,\rho=0\end{cases}\]
+\[\displaystyle R=\begin{aligned}0,\rho=+\infty\newline  \frac{1}{\rho}, 0<\rho<+\infty\newline +\infty ,\rho=0\end{aligned}\]
 \end{theorem}
 
 \section{幂级数的性质}
@@ -1372,23 +1372,23 @@ S'(x) = &\left(\sum_{n=0}^\infty a_nx^n\right)'\\
 
 若函数 \(f(x)\) 定义在 \([0,\pi]\) 上，可作奇延拓
 
-\[F(x)=
+\[F(x)=\left\{
 \begin{aligned}
   f(x),  &0< x< \pi\\
   -f(-x),  &-\pi < x < 0\\
   0, & x=0,\pm\pi\\
-\end{aligned}\]
+\end{aligned}\right.\]
 
 使得 \(F(x)\) 为 \([-\pi,\pi]\) 上的奇函数
 
 也可作偶延拓
 
-\[G(x)=
-\begin{cases}
+\[G(x)=\left\{
+\begin{aligned}
   f(x),  0< x< \pi\\
   f(-x),  -\pi < x < 0\\
   0,  x=0,\pm\pi\\
-\end{cases}\]
+\end{aligned}\right.\]
 
 使得函数 \(G(x)\) 为 \([-\pi,\pi]\) 上的偶函数
 
@@ -1429,12 +1429,12 @@ b_n &= \frac{1}{l}\int_{-l}^{l}f(x)\sin\left(\frac{\pi n}{l}x\right)\,\mathrm{d}
 
 收敛到
 
-\[S(n) =
-\begin{cases}
+\[S(n) =\left\{
+\begin{aligned}
   f(x), & x \text{为} f(x) \text{的连续点}\\
   \frac{f(x^+)+f(x^-)}{2}, & x \text{为} f(x) \text{的间断点}\\
   \frac{f(l^-)+f(-l^+)}{2} ,& x=\pm l
-\end{cases}\]
+\end{aligned}\right.\]
 \end{theorem}
 
 \end{document}

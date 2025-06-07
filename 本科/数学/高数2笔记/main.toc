@@ -23,7 +23,7 @@
 \contentsline {subsubsection}{\numberline {1.5.1.3}曲面的面积}{8}{subsubsection.1.5.1.3}%
 \contentsline {subsection}{\numberline {1.5.2}重积分的物理应用}{8}{subsection.1.5.2}%
 \contentsline {subsubsection}{\numberline {1.5.2.1}质心}{8}{subsubsection.1.5.2.1}%
-\contentsline {subsubsection}{\numberline {1.5.2.2}转动惯量}{9}{subsubsection.1.5.2.2}%
+\contentsline {subsubsection}{\numberline {1.5.2.2}转动惯量}{8}{subsubsection.1.5.2.2}%
 \contentsline {subsubsection}{\numberline {1.5.2.3}引力}{9}{subsubsection.1.5.2.3}%
 \contentsline {chapter}{\numberline {第 2 章}曲线积分和曲面积分}{10}{chapter.2}%
 \contentsline {section}{\numberline {2.1}第一类曲线积分和曲面积分}{10}{section.2.1}%
