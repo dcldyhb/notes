@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "本科/数学/高数2笔记.md",
+                "file": "本科/编程/数据结构/数据结构复习.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "高数2笔记"
+              "title": "数据结构复习"
+            }
+          },
+          {
+            "id": "7250666d3ab05f49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "本科/编程/数据结构/数据结构笔记.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "数据结构笔记"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "13d012cba674f72e",
@@ -181,8 +195,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "15ffd7cfb7844ae8",
+  "active": "7250666d3ab05f49",
   "lastOpenFiles": [
+    "本科/编程/数据结构/数据结构复习.md",
+    "本科/数学/高数2笔记.md",
     "本科/数学/高数2笔记.pdf",
     "本科/数学/main.pdf",
     "本科/数学/高数2笔记/main.synctex(busy)",
@@ -193,7 +209,6 @@
     "本科/数学/高数2笔记/main.synctex.gz",
     "本科/数学/高数2笔记/main.dvi",
     "本科/数学/高数2笔记/main.fls",
-    "本科/数学/高数2笔记/latex4740.fls",
     "本科/数学/高数2笔记/main.md",
     "本科/数学/高数2笔记/doc/latex/sjtutex/README.md",
     "本科/数学/sjtutex/doc/latex/sjtutex/README.md",
@@ -214,7 +229,6 @@
     "本科/红课/毛泽东思想概论.md",
     "README.md",
     "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
-    "本科/数学/高数2笔记.md",
     "本科/物理/大学物理3/大学物理3笔记.md",
     "本科/物理/大学物理3/SchrodingerEquationApplication.md",
     "本科/物理/大学物理2笔记.md",
