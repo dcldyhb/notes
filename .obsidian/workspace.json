@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "本科/编程/数据结构/数据结构笔记.md",
+                "file": "本科/编程/数据结构/数据结构复习.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "数据结构笔记"
+              "title": "数据结构复习"
             }
           }
         ],
@@ -167,13 +167,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "本科/编程/数据结构/数据结构笔记.md",
+                "file": "本科/编程/数据结构/数据结构复习.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "数据结构笔记 的大纲"
+              "title": "数据结构复习 的大纲"
             }
           }
         ],
@@ -181,7 +181,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5
+    "width": 398.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,17 +197,17 @@
   },
   "active": "7250666d3ab05f49",
   "lastOpenFiles": [
+    "本科/编程/数据结构/数据结构笔记.md",
+    "本科/编程/数据结构/DS/9_ExternalSorting.md",
     "本科/编程/数据结构/DS/4_Tree.md",
     "本科/编程/数据结构/DS/5_PriorityQuene.md",
     "本科/编程/数据结构/DS/6_StaSearch.md",
     "本科/编程/数据结构/DS/7_DynSearch.md",
     "本科/编程/数据结构/DS/8_InnerSort.md",
-    "本科/编程/数据结构/DS/9_ExternalSorting.md",
     "本科/编程/数据结构/DS/10_Graph.md",
     "本科/编程/数据结构/DS/3_Quene.md",
     "本科/编程/数据结构/DS/2_Stack.md",
     "本科/编程/数据结构/DS/1_List.md",
-    "本科/编程/数据结构/数据结构笔记.md",
     "本科/编程/数据结构/DS/__MACOSX",
     "本科/编程/数据结构/DS",
     "本科/编程/数据结构/数据结构复习.md",
