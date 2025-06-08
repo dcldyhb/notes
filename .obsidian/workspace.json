@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "本科/编程/数据结构/数据结构复习.md",
+                "file": "本科/编程/数据结构/数据结构笔记.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "数据结构复习"
+              "title": "数据结构笔记"
             }
           },
           {
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "本科/编程/数据结构/数据结构复习.md",
+                "file": "本科/编程/数据结构/数据结构笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "数据结构复习 的大纲"
+              "title": "数据结构笔记 的大纲"
             }
           }
         ],
@@ -180,8 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5,
-    "collapsed": true
+    "width": 398.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,10 +195,10 @@
   },
   "active": "15ffd7cfb7844ae8",
   "lastOpenFiles": [
+    "本科/编程/数据结构/数据结构复习.md",
     "本科/数学/高数2笔记/main.pdf",
     "本科/编程/数据结构/数据结构笔记.md",
     "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
-    "本科/编程/数据结构/数据结构复习.md",
     "本科/编程/数据结构/DS/9_ExternalSorting.md",
     "本科/编程/数据结构/DS/4_Tree.md",
     "本科/编程/数据结构/DS/5_PriorityQuene.md",
@@ -220,7 +219,6 @@
     "本科/数学/高数2笔记/main.out",
     "本科/数学/高数2笔记/main.aux",
     "本科/数学/高数2笔记/main.log",
-    "本科/数学/高数2笔记/main.synctex.gz",
     "本科/数学/高数2笔记/main.md",
     "本科/数学/高数2笔记/doc/latex/sjtutex/README.md",
     "本科/数学/sjtutex/doc/latex/sjtutex/README.md",
