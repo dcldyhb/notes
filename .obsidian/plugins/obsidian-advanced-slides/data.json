@@ -10,7 +10,7 @@
   "theme": "black",
   "highlightTheme": "zenburn",
   "transition": "slide",
-  "transitionSpeed": "default",
+  "transitionSpeed": "fast",
   "controls": true,
   "progress": true,
   "slideNumber": false,
