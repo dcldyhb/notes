@@ -109,7 +109,7 @@
               "type": "backlink",
               "state": {
                 "file": "本科/编程/数据结构/数据结构笔记.md",
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -175,12 +175,12 @@
               "title": "数据结构笔记 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 398.5,
-    "collapsed": true
+    "width": 398.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,7 +194,7 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "15ffd7cfb7844ae8",
+  "active": "c48c84668dd7742f",
   "lastOpenFiles": [
     "本科/编程/数据结构/test/数据结构笔记.beamer.toc",
     "本科/编程/数据结构/test/数据结构笔记.beamer.aux",
