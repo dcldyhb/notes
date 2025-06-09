@@ -4,74 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "e491c3e06ac2999f",
-        "type": "split",
-        "children": [
-          {
-            "id": "1f896242e32ae9c5",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "15ffd7cfb7844ae8",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "本科/编程/数据结构/DS/1_List.md",
-                    "mode": "preview",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "1_List"
-                }
-              },
-              {
-                "id": "c8725676d138751c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
-                    "mode": "preview",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "中缀计算式转换为后缀计算式"
-                }
-              }
-            ]
-          },
-          {
-            "id": "3c477f2ac9231700",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "fd75f84787fa1728",
-                "type": "leaf",
-                "state": {
-                  "type": "mindmap",
-                  "state": {},
-                  "icon": "dot-network",
-                  "title": "Mind Map of 1_List"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal"
-      },
-      {
-        "id": "cc21c3c91ec78772",
+        "id": "1f896242e32ae9c5",
         "type": "tabs",
         "children": [
           {
-            "id": "08d83206ff7a8143",
+            "id": "15ffd7cfb7844ae8",
             "type": "leaf",
             "state": {
-              "type": "reveal-preview-view",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "本科/编程/数据结构/数据结构笔记.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Slide Preview"
+              "title": "数据结构笔记"
+            }
+          },
+          {
+            "id": "c8725676d138751c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "中缀计算式转换为后缀计算式"
             }
           }
         ]
@@ -205,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "本科/编程/数据结构/DS/1_List.md",
+                "file": "本科/编程/数据结构/数据结构笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "1_List 的大纲"
+              "title": "数据结构笔记 的大纲"
             }
           }
         ],
@@ -234,17 +195,17 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "fd75f84787fa1728",
+  "active": "15ffd7cfb7844ae8",
   "lastOpenFiles": [
-    "test.md",
+    "本科/编程/数据结构/数据结构复习.md",
+    "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
+    "本科/编程/数据结构/数据结构笔记.md",
     "本科/编程/数据结构/DS/1_List.md",
+    "test.md",
     "本科/通识/汉字文化/卜辞形式.md",
     "未命名.canvas",
     "本科/通识/汉字文化/玺印文与瓦当文.md",
     "README.md",
-    "本科/编程/数据结构/数据结构笔记.md",
-    "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
-    "本科/编程/数据结构/数据结构复习.md",
     "本科/数学/高数2笔记/main.pdf",
     "本科/编程/数据结构/DS/9_ExternalSorting.md",
     "本科/编程/数据结构/DS/4_Tree.md",
