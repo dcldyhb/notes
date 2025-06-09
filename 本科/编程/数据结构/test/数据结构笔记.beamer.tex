@@ -122,7 +122,6 @@
 \usepackage{graphicx}
 \makeatletter
 \newsavebox\pandoc@box
-\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
   \sbox\pandoc@box{#1}%
   \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
   \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
@@ -188,7 +187,6 @@
 \item
   \textbf{图形结构}\\
   每个元素的前趋和后继数量都不限\\
-  \pandocbounded{\includegraphics[keepaspectratio,alt={FourLogicalDataStructures}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/FourLogicalDataStructures.png}}
 \end{itemize}
 \end{block}
 
@@ -484,7 +482,6 @@
 \item
   {} 只有后趋，{} 只有前趋
 
-  \pandocbounded{\includegraphics[keepaspectratio,alt={线性表}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503271603830.png}}
 \end{itemize}
 \end{block}
 
@@ -624,7 +621,6 @@
 \end{Highlighting}
 \end{Shaded}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={seqList}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503271640573.png}}
 \end{block}
 
 \begin{block}{析构函数}
@@ -710,7 +706,6 @@
   若插入后表长超过 \texttt{maxSize}，则将 \texttt{maxSize} 扩大一倍
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={seqList::insert}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503271747022.png}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -740,7 +735,6 @@
   重新申请一个更大规模的动态数组，将原有数组的内容拷贝到新数组中，释放原有数组空间，将新数组作为存储线性表的存储区
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={seqList::doublespace}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503281230588.png}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -762,7 +756,6 @@
 
 \begin{block}{\texttt{remove}}
 \protect\phantomsection\label{remove}
-\pandocbounded{\includegraphics[keepaspectratio,alt={seqlist::remove}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503281238735.png}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -798,7 +791,6 @@
   \texttt{nullptr}
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={单链表}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503281247119.png}}
 
 \begin{block}{头节点、头指针}
 \protect\phantomsection\label{ux5934ux8282ux70b9ux5934ux6307ux9488}
@@ -812,7 +804,6 @@
   头节点使得在表头位置上进行插入和删除和在其他节点位置上是完全一致的，使得插入和删除算法得到简化
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={带头节点的单链表}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503281407312.png}}
 \end{block}
 
 \begin{block}{结点及其组成}
@@ -892,7 +883,6 @@
 
 \begin{block}{构造函数}
 \protect\phantomsection\label{ux6784ux9020ux51fdux6570-1}
-\pandocbounded{\includegraphics[keepaspectratio,alt={sLinklist}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503281418321.png}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -916,7 +906,6 @@
   回收节点空间
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={sLinkList::clear}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503281420756.png}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -975,7 +964,6 @@
   将 \texttt{p} 的 \texttt{next} 指向 \texttt{s}
 \end{enumerate}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={sLinkList::insert}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503281437080.png}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1009,7 +997,6 @@
   释放 \texttt{delp} 的空间
 \end{enumerate}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={sLinkList::remove}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503281444167.png}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1158,7 +1145,6 @@
   \end{itemize}
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={双链表}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503291712872.png}}
 \end{block}
 
 \begin{block}{双链表类的定义}
@@ -1212,7 +1198,6 @@
   申请头节点和尾节点
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={dLinkList}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503291715359.png}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1244,7 +1229,6 @@
   将 \texttt{pos} 的 \texttt{prev} 指向 \texttt{tmp}
 \end{enumerate}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={dLinkList::insert}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503291718343.png}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1278,7 +1262,6 @@
   的前一个节点
 \end{enumerate}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={dLinkList::remove}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503291730399.png}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1306,7 +1289,6 @@
   一般单循环链表不带头节点
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={单循环链表}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503291732560.png}}
 \end{block}
 
 \begin{block}{双循环链表}
@@ -1337,7 +1319,6 @@
   先进后出（LIFO，Last In First Out）
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={栈}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503291811552.png}}
 
 \begin{block}{栈的基本操作}
 \protect\phantomsection\label{ux6808ux7684ux57faux672cux64cdux4f5c}
@@ -1386,7 +1367,6 @@
   进栈和出栈都是在栈顶进行，不会引起类似顺序表中的大量元素的移动，数组的后端为栈顶
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={顺序栈}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503291817453.png}}
 
 \begin{block}{顺序栈类}
 \protect\phantomsection\label{ux987aux5e8fux6808ux7c7b}
@@ -1579,7 +1559,6 @@
   从使用方便性上看，将单链表的头指针指向栈顶
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={链接栈}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503291834782.png}}
 
 \begin{block}{链接栈类}
 \protect\phantomsection\label{ux94feux63a5ux6808ux7c7b}
@@ -1783,7 +1762,6 @@
 \end{Highlighting}
 \end{Shaded}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={函数执行过程}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/img/202503301445662.png}}
 
 \begin{itemize}
 \tightlist
@@ -2023,7 +2001,6 @@ hanoi塔算法
   只允许在一端（队首）进行插入操作，另一端（队尾）进行删除操作
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={队列}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202503310847159.png}}
 
 \begin{block}{队列的基本操作}
 \protect\phantomsection\label{ux961fux5217ux7684ux57faux672cux64cdux4f5c}
@@ -2085,7 +2062,6 @@ hanoi塔算法
 
 \begin{block}{队头位置固定}
 \protect\phantomsection\label{ux961fux5934ux4f4dux7f6eux56faux5b9a}
-\pandocbounded{\includegraphics[keepaspectratio,alt={队头位置固定}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202503311613560.png}}
 
 \textbf{缺点}：出队的时间复杂度为
 {}，因为出队时需要将所有元素向前移动一位
@@ -2093,7 +2069,6 @@ hanoi塔算法
 
 \begin{block}{队头位置不固定}
 \protect\phantomsection\label{ux961fux5934ux4f4dux7f6eux4e0dux56faux5b9a}
-\pandocbounded{\includegraphics[keepaspectratio,alt={队头位置不固定}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202503311614368.png}}
 
 \textbf{优点}：所有操作的时间复杂度均为 {}\\
 \textbf{缺点}：浪费大量的空间
@@ -2101,7 +2076,6 @@ hanoi塔算法
 
 \begin{block}{循环队列}
 \protect\phantomsection\label{ux5faaux73afux961fux5217}
-\pandocbounded{\includegraphics[keepaspectratio,alt={循环队列}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202503311626377.png}}
 
 \begin{itemize}
 \tightlist
@@ -2312,7 +2286,6 @@ hanoi塔算法
   为了方便操作，使用含头节点和尾节点的单链表实现
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={链接队列}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202503311804800.png}}
 
 \textbf{链接队列的特点}
 
@@ -2665,7 +2638,6 @@ hanoi塔算法
 
 \begin{block}{满二叉树}
 \protect\phantomsection\label{ux6ee1ux4e8cux53c9ux6811}
-\pandocbounded{\includegraphics[keepaspectratio,alt={满二叉树}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202503311916690.png}}
 
 \begin{itemize}
 \tightlist
@@ -2686,7 +2658,6 @@ hanoi塔算法
 
 \begin{block}{完全二叉树}
 \protect\phantomsection\label{ux5b8cux5168ux4e8cux53c9ux6811}
-\pandocbounded{\includegraphics[keepaspectratio,alt={完全二叉树}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202503311917668.png}}
 
 \begin{itemize}
 \tightlist
@@ -2869,7 +2840,6 @@ hanoi塔算法
   会导致空间浪费
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={顺序二叉树}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504031058255.png}}
 \end{block}
 
 \begin{block}{二叉树的链接实现}
@@ -2886,7 +2856,6 @@ hanoi塔算法
   \end{itemize}
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={标准形式}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504041445826.png}}
 
 \begin{itemize}
 \tightlist
@@ -2894,7 +2863,6 @@ hanoi塔算法
   广义标准形式：\texttt{data}，\texttt{left}，\texttt{parent}，\texttt{right}
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={广义标准形式}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504041445472.png}}
 \end{block}
 \end{block}
 
@@ -3767,7 +3735,6 @@ hanoi塔算法
   哈夫曼编码是一种前缀编码
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={huffmanTree}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504141528425.png}}
 \end{block}
 
 \begin{block}{哈夫曼算法}
@@ -3981,7 +3948,6 @@ hanoi塔算法
   个孩子节点和一个指针字段，指向父节点
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={树的存储实现}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504211450009.png}}
 \end{block}
 
 \begin{block}{树的表示方法}
@@ -4020,7 +3986,6 @@ hanoi塔算法
   右子树指向兄弟节点的指针
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={孩子兄弟链}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504211559361.png}}
 \end{block}
 
 \begin{block}{双亲表示法}
@@ -4176,7 +4141,6 @@ hanoi塔算法
   后面的讨论都以最小化堆为例
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={binaryHeap}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504081709343.png}}
 
 \begin{block}{二叉堆的特性}
 \protect\phantomsection\label{ux4e8cux53c9ux5806ux7684ux7279ux6027}
@@ -5213,7 +5177,6 @@ hanoi塔算法
 
 \begin{block}{LL问题}
 \protect\phantomsection\label{llux95eeux9898}
-\pandocbounded{\includegraphics[keepaspectratio,alt={LL}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504141158768.png}}
 
 \begin{itemize}
 \tightlist
@@ -5236,7 +5199,6 @@ hanoi塔算法
 
 \begin{block}{LR问题}
 \protect\phantomsection\label{lrux95eeux9898}
-\pandocbounded{\includegraphics[keepaspectratio,alt={LR}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504141206204.png}}
 
 \begin{itemize}
 \tightlist
@@ -5402,35 +5364,30 @@ hanoi塔算法
 \protect\phantomsection\label{ux4e94ux79cdux60c5ux51b5}
 \begin{block}{情况a}
 \protect\phantomsection\label{ux60c5ux51b5a}
-\pandocbounded{\includegraphics[keepaspectratio,alt={Sitiationa}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504191603536.png}}
 
 此时没有失衡，高度也没有改变，返回\texttt{true}
 \end{block}
 
 \begin{block}{情况b}
 \protect\phantomsection\label{ux60c5ux51b5b}
-\pandocbounded{\includegraphics[keepaspectratio,alt={Situationb}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504191604348.png}}
 
 此时没有失衡，但是高度变矮，返回\texttt{false}
 \end{block}
 
 \begin{block}{情况c}
 \protect\phantomsection\label{ux60c5ux51b5c}
-\pandocbounded{\includegraphics[keepaspectratio,alt={Situationc}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504191607359.png}}
 
 经过RR旋转后高度变矮，返回\texttt{false}
 \end{block}
 
 \begin{block}{情况d}
 \protect\phantomsection\label{ux60c5ux51b5d}
-\pandocbounded{\includegraphics[keepaspectratio,alt={Situationd}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504191609189.png}}
 
 经过RL旋转后高度变矮，返回\texttt{false}
 \end{block}
 
 \begin{block}{情况e}
 \protect\phantomsection\label{ux60c5ux51b5e}
-\pandocbounded{\includegraphics[keepaspectratio,alt={Situatione}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504191613240.png}}
 
 经过RR或RL旋转后高度不变，返回\texttt{true}
 \end{block}
@@ -5891,7 +5848,6 @@ hanoi塔算法
 \protect\phantomsection\label{ux7ebfux6027ux63a2ux6d4bux6cd5}
 当散列发生冲突时，依次\textbf{探测下一个单元}，直到发现一个空单元
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={线性探测法}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202504210826498.png}}
 \end{block}
 
 \begin{block}{二次探测法}
@@ -7066,7 +7022,6 @@ B+树是既能提供随机查找，也能提供顺序访问的存储结构
 \protect\phantomsection\label{ux6709ux5411ux56feux7684ux90bbux63a5ux77e9ux9635}
 设有向图有 {} 个顶点，则用一个 {} 的布尔矩阵 {} 来表示该有向图
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={有向图的邻接矩阵}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202505212328867.png}}
 
 \begin{itemize}
 \tightlist
@@ -7085,7 +7040,6 @@ B+树是既能提供随机查找，也能提供顺序访问的存储结构
 \protect\phantomsection\label{ux65e0ux5411ux56feux7684ux90bbux63a5ux77e9ux9635}
 设无向图有 {} 个顶点，则用一个 {} 的布尔矩阵 {} 来表示该无向图
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={无向图的邻接矩阵}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202505212332916.png}}
 
 \begin{itemize}
 \tightlist
@@ -7145,7 +7099,6 @@ B+树是既能提供随机查找，也能提供顺序访问的存储结构
   同一个顶点出发的所有的边形成它的边界点单链表
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={邻接表}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202505222230615.png}}
 \end{block}
 
 \begin{block}{邻接表的特点}
@@ -7405,7 +7358,6 @@ DFS 时，有时并不一定能够保证从某一个结点出发能访问到所�
   哥尼斯堡七桥问题：能否找到一条走遍这七座桥，而且每座桥只经过一次，最后又回到原出发点的路径
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={哥尼斯堡七桥问题}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202505230120835.png}}
 
 \begin{block}{欧拉的证明}
 \protect\phantomsection\label{ux6b27ux62c9ux7684ux8bc1ux660e}
@@ -7435,7 +7387,6 @@ DFS 时，有时并不一定能够保证从某一个结点出发能访问到所�
 \protect\phantomsection\label{ux89e3ux51b3ux65b9ux6cd5}
 找出路径上的另外一个尚有未访问的边的顶点，开始另一次深度优先的搜索，将得到的遍历序列拼接到原来的序列中，直到所有的边都已被访问
 
-\pandocbounded{\includegraphics[keepaspectratio,alt={欧拉回路解决方法}]{https://raw.githubusercontent.com/dcldyhb/Freshman-Notes-Image-Host/main/202505230128080.png}}
 \end{block}
 \end{block}
 
