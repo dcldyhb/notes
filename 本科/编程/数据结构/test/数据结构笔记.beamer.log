@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  9 JUN 2025 18:52
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.12)  9 JUN 2025 18:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -127,8 +127,8 @@ Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 \pgfmath@stack@operation=\toks25
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count292
-))) (c:/texlive/2025/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+))) (c:/texlive/2025/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 ) (c:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
@@ -318,7 +318,6 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
  (c:/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4040.
 Package hyperref Info: Option `bookmarks' set `true' on input line 4040.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 4040.
 Package hyperref Info: Option `implicit' set `false' on input line 4040.
@@ -536,233 +535,47 @@ Package: amsthm 2020/05/29 v2.20.6
 ) (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerbasethemes.sty)) (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerthemedefault.sty (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty) (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty) (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
 \beamer@dima=\dimen293
 \beamer@dimb=\dimen294
-) (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
-Package: pgfpages 2011/01/05 ver 0.02
- (c:/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count344
-\calc@Bcount=\count345
-\calc@Adimen=\dimen295
-\calc@Bdimen=\dimen296
-\calc@Askip=\skip66
-\calc@Bskip=\skip67
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count346
-\calc@Cskip=\skip68
-)
-\pgf@logicalpages=\count347
-\pgf@firstshipout=\count348
-\pgf@lastshipout=\count349
-\pgf@currentshipout=\count350
-\pgf@cpn=\count351
-\pgf@shipoutnextto=\count352
-\pgfphysicalheight=\dimen297
-\pgfphysicalwidth=\dimen298
-\pgfpages@shipoutbox=\box78
-) (c:/texlive/2025/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+) (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (c:/texlive/2025/texmf-dist/tex/latex/ctex/ctex.sty (c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2025-01-18 L3 programming layer (loader) 
  (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
-\g__graphics_track_int=\count353
-\l__pdf_internal_box=\box79
-\g__pdf_backend_annotation_int=\count354
-\g__pdf_backend_link_int=\count355
+\g__graphics_track_int=\count344
+\l__pdf_internal_box=\box78
+\g__pdf_backend_annotation_int=\count345
+\g__pdf_backend_link_int=\count346
 ))
-Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
- (c:/texlive/2025/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
-Package: unicode-math-xetex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
- (c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-08-16 L3 Experimental document command parser
-) (c:/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
-) (c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty
-Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
- (c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
-\l__fontspec_script_int=\count356
-\l__fontspec_language_int=\count357
-\l__fontspec_strnum_int=\count358
-\l__fontspec_tmp_int=\count359
-\l__fontspec_tmpa_int=\count360
-\l__fontspec_tmpb_int=\count361
-\l__fontspec_tmpc_int=\count362
-\l__fontspec_em_int=\count363
-\l__fontspec_emdef_int=\count364
-\l__fontspec_strong_int=\count365
-\l__fontspec_strongdef_int=\count366
-\l__fontspec_tmpa_dim=\dimen299
-\l__fontspec_tmpb_dim=\dimen300
-\l__fontspec_tmpc_dim=\dimen301
- (c:/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/texlive/2025/texmf-dist/tex/latex/base/fix-cm.sty
+Package: ctex 2022/07/14 v2.5.10 Chinese adapter in LaTeX (CTEX)
+ (c:/texlive/2025/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
+) (c:/texlive/2025/texmf-dist/tex/latex/ctex/ctexpatch.sty
+Package: ctexpatch 2022/07/14 v2.5.10 Patching commands (CTEX)
+) (c:/texlive/2025/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
  (c:/texlive/2025/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
-\g__um_fam_int=\count367
-\g__um_fonts_used_int=\count368
-\l__um_primecount_int=\count369
-\g__um_primekern_muskip=\muskip19
- (c:/texlive/2025/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (c:/texlive/2025/texmf-dist/tex/latex/lm/lmodern.sty
-Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (c:/texlive/2025/texmf-dist/tex/latex/upquote/upquote.sty
-Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
- (c:/texlive/2025/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
-)) (c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2025/02/11 v3.2a Micro-typographical refinements (RS)
-\MT@toks=\toks46
-\MT@tempbox=\box80
-\MT@count=\count370
-LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
-LaTeX Info: Redefining \leftprotrusion on input line 1088.
-\MT@prot@toks=\toks47
-LaTeX Info: Redefining \rightprotrusion on input line 1107.
-LaTeX Info: Redefining \textls on input line 1449.
-\MT@outer@kern=\dimen302
-LaTeX Info: Redefining \microtypecontext on input line 2053.
-LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count371
- (c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype-xetex.def
-File: microtype-xetex.def 2025/02/11 v3.2a Definitions specific to xetex (RS)
-LaTeX Info: Redefining \lsstyle on input line 443.
-LaTeX Info: Redefining \lslig on input line 451.
-\MT@outer@space=\skip69
-)
-Package microtype Info: Loading configuration file microtype.cfg.
- (c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2025/02/11 v3.2a microtype main configuration file (RS)
-)
-LaTeX Info: Redefining \microtypesetup on input line 3065.
-) (c:/texlive/2025/texmf-dist/tex/latex/parskip/parskip.sty
-Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
-) (c:/texlive/2025/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
-\FV@CodeLineNo=\count372
-\FV@InFile=\read3
-\FV@TabBox=\box81
-\c@FancyVerbLine=\count373
-\FV@StepNumber=\count374
-\FV@OutFile=\write5
-) (c:/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
-\LTleft=\skip70
-\LTright=\skip71
-\LTpre=\skip72
-\LTpost=\skip73
-\LTchunksize=\count375
-\LTcapwidth=\dimen303
-\LT@head=\box82
-\LT@firsthead=\box83
-\LT@foot=\box84
-\LT@lastfoot=\box85
-\LT@gbox=\box86
-\LT@cols=\count376
-\LT@rows=\count377
-\c@LT@tables=\count378
-\c@LT@chunks=\count379
-\LT@p@ftn=\toks48
-) (c:/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen304
-\lightrulewidth=\dimen305
-\cmidrulewidth=\dimen306
-\belowrulesep=\dimen307
-\belowbottomsep=\dimen308
-\aboverulesep=\dimen309
-\abovetopsep=\dimen310
-\cmidrulesep=\dimen311
-\cmidrulekern=\dimen312
-\defaultaddspace=\dimen313
-\@cmidla=\count380
-\@cmidlb=\count381
-\@aboverulesep=\dimen314
-\@belowrulesep=\dimen315
-\@thisruleclass=\count382
-\@lastruleclass=\count383
-\@thisrulewidth=\dimen316
-) (c:/texlive/2025/texmf-dist/tex/latex/tools/array.sty
-Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen317
-\ar@mcellbox=\box87
-\extrarowheight=\dimen318
-\NC@list=\toks49
-\extratabsurround=\skip74
-\backup@length=\skip75
-\ar@cellbox=\box88
-) (c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen319
-\captionmargin=\dimen320
-\caption@leftmargin=\dimen321
-\caption@rightmargin=\dimen322
-\caption@width=\dimen323
-\caption@indent=\dimen324
-\caption@parindent=\dimen325
-\caption@hangindent=\dimen326
-Package caption Info: beamer document class detected.
- (c:/texlive/2025/texmf-dist/tex/latex/caption/caption-beamer.sto
-File: caption-beamer.sto 2022/01/06 v2.0c Adaption of the caption package to the beamer document classes (AR)
-))
-\c@caption@flags=\count384
-\c@continuedfloat=\count385
-Package caption Info: hyperref package is loaded.
-Package caption Info: Hyperref support is turned off
-(caption)             because hyperref has stopped early.
-Package caption Info: longtable package is loaded.
- (c:/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
-)) (c:/texlive/2025/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+\l__ctex_tmp_int=\count347
+\l__ctex_tmp_box=\box79
+\l__ctex_tmp_dim=\dimen295
+\g__ctex_section_depth_int=\count348
+\g__ctex_font_size_int=\count349
+ (c:/texlive/2025/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+File: ctexopts.cfg 2022/07/14 v2.5.10 Option configuration file (CTEX)
+) (c:/texlive/2025/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
+File: ctex-engine-xetex.def 2022/07/14 v2.5.10 XeLaTeX adapter (CTEX)
+ (c:/texlive/2025/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
 Package: xeCJK 2022/08/05 v3.9.1 Typesetting CJK scripts with XeLaTeX
- (c:/texlive/2025/texmf-dist/tex/latex/ctex/ctexhook.sty
-Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
-) (c:/texlive/2025/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+ (c:/texlive/2025/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2024-08-16 L3 Experimental prototype document functions
 )
-\l__xeCJK_tmp_int=\count386
-\l__xeCJK_tmp_box=\box89
-\l__xeCJK_tmp_dim=\dimen327
-\l__xeCJK_tmp_skip=\skip76
-\g__xeCJK_space_factor_int=\count387
-\l__xeCJK_begin_int=\count388
-\l__xeCJK_end_int=\count389
+\l__xeCJK_tmp_int=\count350
+\l__xeCJK_tmp_box=\box80
+\l__xeCJK_tmp_dim=\dimen296
+\l__xeCJK_tmp_skip=\skip66
+\g__xeCJK_space_factor_int=\count351
+\l__xeCJK_begin_int=\count352
+\l__xeCJK_end_int=\count353
 \c__xeCJK_CJK_class_int=\XeTeXcharclass1
 \c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
 \c__xeCJK_FullRight_class_int=\XeTeXcharclass3
@@ -771,124 +584,354 @@ Package: xtemplate 2024-08-16 L3 Experimental prototype document functions
 \c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
 \c__xeCJK_CM_class_int=\XeTeXcharclass7
 \c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
-\l__xeCJK_last_skip=\skip77
-\c__xeCJK_none_node=\count390
-\g__xeCJK_node_int=\count391
-\c__xeCJK_CJK_node_dim=\dimen328
-\c__xeCJK_CJK-space_node_dim=\dimen329
-\c__xeCJK_default_node_dim=\dimen330
-\c__xeCJK_CJK-widow_node_dim=\dimen331
-\c__xeCJK_normalspace_node_dim=\dimen332
-\c__xeCJK_default-space_node_skip=\skip78
-\l__xeCJK_ccglue_skip=\skip79
-\l__xeCJK_ecglue_skip=\skip80
-\l__xeCJK_punct_kern_skip=\skip81
-\l__xeCJK_indent_box=\box90
-\l__xeCJK_last_penalty_int=\count392
-\l__xeCJK_last_bound_dim=\dimen333
-\l__xeCJK_last_kern_dim=\dimen334
-\l__xeCJK_widow_penalty_int=\count393
+\l__xeCJK_last_skip=\skip67
+\c__xeCJK_none_node=\count354
+\g__xeCJK_node_int=\count355
+\c__xeCJK_CJK_node_dim=\dimen297
+\c__xeCJK_CJK-space_node_dim=\dimen298
+\c__xeCJK_default_node_dim=\dimen299
+\c__xeCJK_CJK-widow_node_dim=\dimen300
+\c__xeCJK_normalspace_node_dim=\dimen301
+\c__xeCJK_default-space_node_skip=\skip68
+\l__xeCJK_ccglue_skip=\skip69
+\l__xeCJK_ecglue_skip=\skip70
+\l__xeCJK_punct_kern_skip=\skip71
+\l__xeCJK_indent_box=\box81
+\l__xeCJK_last_penalty_int=\count356
+\l__xeCJK_last_bound_dim=\dimen302
+\l__xeCJK_last_kern_dim=\dimen303
+\l__xeCJK_widow_penalty_int=\count357
 
 LaTeX template Info: Declaring template type 'xeCJK/punctuation' taking 0
 (template)           argument(s) on line 2396.
 
-\l__xeCJK_fixed_punct_width_dim=\dimen335
-\l__xeCJK_mixed_punct_width_dim=\dimen336
-\l__xeCJK_middle_punct_width_dim=\dimen337
-\l__xeCJK_fixed_margin_width_dim=\dimen338
-\l__xeCJK_mixed_margin_width_dim=\dimen339
-\l__xeCJK_middle_margin_width_dim=\dimen340
-\l__xeCJK_bound_punct_width_dim=\dimen341
-\l__xeCJK_bound_margin_width_dim=\dimen342
-\l__xeCJK_margin_minimum_dim=\dimen343
-\l__xeCJK_kerning_total_width_dim=\dimen344
-\l__xeCJK_same_align_margin_dim=\dimen345
-\l__xeCJK_different_align_margin_dim=\dimen346
-\l__xeCJK_kerning_margin_width_dim=\dimen347
-\l__xeCJK_kerning_margin_minimum_dim=\dimen348
-\l__xeCJK_bound_dim=\dimen349
-\l__xeCJK_reverse_bound_dim=\dimen350
-\l__xeCJK_margin_dim=\dimen351
-\l__xeCJK_minimum_bound_dim=\dimen352
-\l__xeCJK_kerning_margin_dim=\dimen353
-\g__xeCJK_family_int=\count394
-\l__xeCJK_fam_int=\count395
-\g__xeCJK_fam_allocation_int=\count396
-\l__xeCJK_verb_case_int=\count397
-\l__xeCJK_verb_exspace_skip=\skip82
- (c:/texlive/2025/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+\l__xeCJK_fixed_punct_width_dim=\dimen304
+\l__xeCJK_mixed_punct_width_dim=\dimen305
+\l__xeCJK_middle_punct_width_dim=\dimen306
+\l__xeCJK_fixed_margin_width_dim=\dimen307
+\l__xeCJK_mixed_margin_width_dim=\dimen308
+\l__xeCJK_middle_margin_width_dim=\dimen309
+\l__xeCJK_bound_punct_width_dim=\dimen310
+\l__xeCJK_bound_margin_width_dim=\dimen311
+\l__xeCJK_margin_minimum_dim=\dimen312
+\l__xeCJK_kerning_total_width_dim=\dimen313
+\l__xeCJK_same_align_margin_dim=\dimen314
+\l__xeCJK_different_align_margin_dim=\dimen315
+\l__xeCJK_kerning_margin_width_dim=\dimen316
+\l__xeCJK_kerning_margin_minimum_dim=\dimen317
+\l__xeCJK_bound_dim=\dimen318
+\l__xeCJK_reverse_bound_dim=\dimen319
+\l__xeCJK_margin_dim=\dimen320
+\l__xeCJK_minimum_bound_dim=\dimen321
+\l__xeCJK_kerning_margin_dim=\dimen322
+\g__xeCJK_family_int=\count358
+\l__xeCJK_fam_int=\count359
+\g__xeCJK_fam_allocation_int=\count360
+\l__xeCJK_verb_case_int=\count361
+\l__xeCJK_verb_exspace_skip=\skip72
+ (c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty (c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+ (c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count362
+\l__fontspec_language_int=\count363
+\l__fontspec_strnum_int=\count364
+\l__fontspec_tmp_int=\count365
+\l__fontspec_tmpa_int=\count366
+\l__fontspec_tmpb_int=\count367
+\l__fontspec_tmpc_int=\count368
+\l__fontspec_em_int=\count369
+\l__fontspec_emdef_int=\count370
+\l__fontspec_strong_int=\count371
+\l__fontspec_strongdef_int=\count372
+\l__fontspec_tmpa_dim=\dimen323
+\l__fontspec_tmpb_dim=\dimen324
+\l__fontspec_tmpc_dim=\dimen325
+ (c:/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/texlive/2025/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
 File: xeCJK.cfg 2022/08/05 v3.9.1 Configuration file for xeCJK package
 ))
-\pandoc@box=\box91
- (c:/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
-Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
- (c:/texlive/2025/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
-File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
-\BKM@id=\count398
-)) (c:/texlive/2025/texmf-dist/tex/latex/xurl/xurl.sty
-Package: xurl 2022/01/09 v 0.10 modify URL breaks
+\ccwd=\dimen326
+\l__ctex_ccglue_skip=\skip73
 )
+\l__ctex_ziju_dim=\dimen327
+ (c:/texlive/2025/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+Package: zhnumber 2022/07/14 v3.0 Typesetting numbers with Chinese glyphs
+\l__zhnum_scale_int=\count373
+\l__zhnum_tmp_int=\count374
+ (c:/texlive/2025/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
+File: zhnumber-utf8.cfg 2022/07/14 v3.0 Chinese numerals with UTF8 encoding
+)) (c:/texlive/2025/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese.def
+File: ctex-scheme-chinese.def 2022/07/14 v2.5.10 Chinese scheme for generic (CTEX)
+ (c:/texlive/2025/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
+File: ctex-name-utf8.cfg 2022/07/14 v2.5.10 Caption with encoding UTF-8 (CTEX)
+)) (c:/texlive/2025/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def
+File: ctex-fontset-windows.def 2022/07/14 v2.5.10 Windows fonts definition (CTEX)
 
-Package xeCJK Warning: Fandol is being set as the default font for CJK text.
-(xeCJK)                Please make sure it has been properly installed.
+Package fontspec Info: 
+(fontspec)             Could not resolve font "KaiTi/B" (it probably doesn't
+(fontspec)             exist).
 
 
 Package fontspec Info: 
-(fontspec)             Script 'CJK' not explicitly supported within font
-(fontspec)             'FandolHei-Regular'. Check the typeset output, and if
-(fontspec)             it is okay then ignore this warning. Otherwise a
-(fontspec)             different font should be chosen.
+(fontspec)             Could not resolve font "SimHei/I" (it probably doesn't
+(fontspec)             exist).
 
 
 Package fontspec Info: 
-(fontspec)             FandolHei-Regular scale = 0.9977516197419062.
+(fontspec)             Could not resolve font "SimSun/BI" (it probably doesn't
+(fontspec)             exist).
 
 
 Package fontspec Info: 
-(fontspec)             FandolHei-Regular scale = 0.9977516197419062.
-
-
-Package fontspec Info: 
-(fontspec)             FandolHei-Bold scale = 0.9406761396682188.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'FandolHei-Regular(0)' created for font
-(fontspec)             'FandolHei-Regular' with options
-(fontspec)             [Scale=MatchLowercase,Script={CJK},Extension={.otf},BoldFont={FandolHei-Bold}].
+(fontspec)             Font family 'SimSun(0)' created for font 'SimSun' with
+(fontspec)             options
+(fontspec)             [Script={CJK},BoldFont={SimHei},ItalicFont={KaiTi}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.9977516197419062]"[FandolHei-Regular.otf]/OT:script=hani;language=dflt;"
+(fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9406761396682188]"[FandolHei-Bold.otf]/OT:script=hani;language=dflt;"
+(fontspec)             <->"SimHei/OT:script=hani;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
 
-(./数据结构笔记.beamer.aux)
+)) (c:/texlive/2025/texmf-dist/tex/latex/ctex/config/ctex.cfg
+File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
+) (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
+Package: pgfpages 2011/01/05 ver 0.02
+ (c:/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count375
+\calc@Bcount=\count376
+\calc@Adimen=\dimen328
+\calc@Bdimen=\dimen329
+\calc@Askip=\skip74
+\calc@Bskip=\skip75
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count377
+\calc@Cskip=\skip76
+)
+\pgf@logicalpages=\count378
+\pgf@firstshipout=\count379
+\pgf@lastshipout=\count380
+\pgf@currentshipout=\count381
+\pgf@cpn=\count382
+\pgf@shipoutnextto=\count383
+\pgfphysicalheight=\dimen330
+\pgfphysicalwidth=\dimen331
+\pgfpages@shipoutbox=\box82
+) (c:/texlive/2025/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count384
+\FV@InFile=\read3
+\FV@TabBox=\box83
+\c@FancyVerbLine=\count385
+\FV@StepNumber=\count386
+\FV@OutFile=\write5
+) (c:/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
+\LTleft=\skip77
+\LTright=\skip78
+\LTpre=\skip79
+\LTpost=\skip80
+\LTchunksize=\count387
+\LTcapwidth=\dimen332
+\LT@head=\box84
+\LT@firsthead=\box85
+\LT@foot=\box86
+\LT@lastfoot=\box87
+\LT@gbox=\box88
+\LT@cols=\count388
+\LT@rows=\count389
+\c@LT@tables=\count390
+\c@LT@chunks=\count391
+\LT@p@ftn=\toks46
+) (c:/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen333
+\lightrulewidth=\dimen334
+\cmidrulewidth=\dimen335
+\belowrulesep=\dimen336
+\belowbottomsep=\dimen337
+\aboverulesep=\dimen338
+\abovetopsep=\dimen339
+\cmidrulesep=\dimen340
+\cmidrulekern=\dimen341
+\defaultaddspace=\dimen342
+\@cmidla=\count392
+\@cmidlb=\count393
+\@aboverulesep=\dimen343
+\@belowrulesep=\dimen344
+\@thisruleclass=\count394
+\@lastruleclass=\count395
+\@thisrulewidth=\dimen345
+) (c:/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen346
+\ar@mcellbox=\box89
+\extrarowheight=\dimen347
+\NC@list=\toks47
+\extratabsurround=\skip81
+\backup@length=\skip82
+\ar@cellbox=\box90
+) (c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen348
+\captionmargin=\dimen349
+\caption@leftmargin=\dimen350
+\caption@rightmargin=\dimen351
+\caption@width=\dimen352
+\caption@indent=\dimen353
+\caption@parindent=\dimen354
+\caption@hangindent=\dimen355
+Package caption Info: beamer document class detected.
+ (c:/texlive/2025/texmf-dist/tex/latex/caption/caption-beamer.sto
+File: caption-beamer.sto 2022/01/06 v2.0c Adaption of the caption package to the beamer document classes (AR)
+))
+\c@caption@flags=\count396
+\c@continuedfloat=\count397
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+Package caption Info: longtable package is loaded.
+ (c:/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)) (c:/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
+ (c:/texlive/2025/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
+File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
+\BKM@id=\count398
+))
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimSun/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimSun/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimSun/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'SimSun(1)' created for font 'SimSun' with
+(fontspec)             options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"SimSun/OT:script=latn;language=dflt;mapping=tex-text;"
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimHei/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimHei/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimHei/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'SimHei(0)' created for font 'SimHei' with
+(fontspec)             options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"SimHei/OT:script=latn;language=dflt;mapping=tex-text;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'Consolas(0)' created for font 'Consolas'
+(fontspec)             with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"Consolas/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"Consolas/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"Consolas/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"Consolas/BI/OT:script=latn;language=dflt;"
+
+ (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerthemeAnnArbor.sty (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty) (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamercolorthemewolverine.sty)) (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamercolorthemeseagull.sty)
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Microsoft YaHei Bold/I" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Microsoft YaHei/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'MicrosoftYaHei(0)' created for font
+(fontspec)             'Microsoft YaHei' with options
+(fontspec)             [Script={CJK},BoldFont={* Bold}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Microsoft
+(fontspec)             YaHei/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Microsoft YaHei
+(fontspec)             Bold/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Microsoft
+(fontspec)             YaHei/BI/OT:script=hani;language=dflt;"
+
+
+No file 数据结构笔记.beamer.aux.
 \openout1 = `数据结构笔记.beamer.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -897,23 +940,23 @@ LaTeX Font Info:    ... okay on input line 153.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
+* h-part:(L,W,R)=(12.0pt, 340.19536pt, 12.0pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=307.28987pt
+* \textwidth=340.19536pt
 * \textheight=244.6939pt
-* \oddsidemargin=-43.81725pt
-* \evensidemargin=-43.81725pt
+* \oddsidemargin=-60.26999pt
+* \evensidemargin=-60.26999pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=14.22636pt
 * \marginparwidth=4.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -923,7 +966,52 @@ LaTeX Font Info:    ... okay on input line 153.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 153.
+Package hyperref Info: Link coloring OFF on input line 36.
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 36.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 36.
+\symnumbers=\mathgroup6
+\sympureletters=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/SimSun(1)/m/n on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/SimHei(0)/b/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/SimHei(0)/b/n on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/SimHei(0)/m/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/SimHei(0)/m/n on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/SimHei(0)/m/it on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/SimHei(0)/m/it on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/Consolas(0)/m/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/Consolas(0)/m/n on input line 36.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  TU/SimHei(0)/m/n --> TU/SimHei(0)/b/n on input line 36.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  TU/SimHei(0)/m/it --> TU/SimHei(0)/b/it on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/cmss/b/n --> TU/SimSun(1)/b/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  TU/SimHei(0)/b/n --> TU/SimHei(0)/b/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  TU/SimHei(0)/m/n --> TU/SimHei(0)/b/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  TU/SimHei(0)/m/it --> TU/SimHei(0)/b/it on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  TU/Consolas(0)/m/n --> TU/Consolas(0)/b/n on input line 36.
 (c:/texlive/2025/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (c:/texlive/2025/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -936,386 +1024,282 @@ Dictionary: translator-months-dictionary, Language: English
 Dictionary: translator-numbers-dictionary, Language: English 
 ) (c:/texlive/2025/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
+) (c:/texlive/2025/texmf-dist/tex/latex/ctex/dictionary/translator-theorem-dictionary-ChineseUTF8.dict
+Dictionary: translator-theorem-dictionary, Language: ChineseUTF8 2022/07/14 v2.5.10 Chinese translation for theorem name (CTEX)
 )
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 153.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 153.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 153.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 153.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 153.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 153.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 153.
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
 
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'latinmodern-math.otf(0)' created for font
-(fontspec)             'latinmodern-math.otf' with options
-(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,BoldFont={latinmodern-math.otf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1.03015890977869]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1.03015890977869]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
-
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 11.28015pt on input line 153.
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'latinmodern-math.otf(1)' created for font
-(fontspec)             'latinmodern-math.otf' with options
-(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinmodern-math.otf,Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.3075->s*[1.03015890977869]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6.57-9.3075>s*[1.03015890977869]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.57>s*[1.03015890977869]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1.03015890977869]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
-
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 11.28015pt on input line 153.
+\symlegacymaths=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 36.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 36.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 36.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 36.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 36.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 36.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 36.
+LaTeX Font Info:    Redeclaring math accent \check on input line 36.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 36.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 36.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 36.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 36.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 153.
+(Font)              `operators' in the math version `normal' on input line 36.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 153.
+(Font)                  OT1/cmss/m/n --> TU/SimSun(1)/m/n on input line 36.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 153.
+(Font)              `operators' in the math version `bold' on input line 36.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 153.
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.030261925669668.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.030261925669668.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.030261925669668.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.030261925669668.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.030261925669668.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'latinmodern-math.otf(2)' created for font
-(fontspec)             'latinmodern-math.otf' with options
-(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinmodern-math.otf,Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\fontdimen
-(fontspec)             8\font =7.63666pt\relax \fontdimen 9\font
-(fontspec)             =4.44438pt\relax \fontdimen 10\font =5.00839pt\relax
-(fontspec)             \fontdimen 11\font =7.73819pt\relax \fontdimen 12\font
-(fontspec)             =3.89165pt\relax \fontdimen 13\font =4.0947pt\relax
-(fontspec)             \fontdimen 14\font =4.0947pt\relax \fontdimen 15\font
-(fontspec)             =3.25996pt\relax \fontdimen 16\font =2.7862pt\relax
-(fontspec)             \fontdimen 17\font =2.7862pt\relax \fontdimen 18\font
-(fontspec)             =2.82004pt\relax \fontdimen 19\font =2.25603pt\relax
-(fontspec)             \fontdimen 22\font =2.82004pt\relax \fontdimen 20\font
-(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.3075->s*[1.030261925669668]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6.57-9.3075>s*[1.030261925669668]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.57>s*[1.030261925669668]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1.030261925669668]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
-
-LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 153.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 153.
-LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 153.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 153.
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.030055893887712.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.030055893887712.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.030055893887712.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.030055893887712.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.030055893887712.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'latinmodern-math.otf(3)' created for font
-(fontspec)             'latinmodern-math.otf' with options
-(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinmodern-math.otf,Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\fontdimen
-(fontspec)             8\font =0.4512pt\relax \fontdimen 9\font
-(fontspec)             =2.25603pt\relax \fontdimen 10\font =1.88379pt\relax
-(fontspec)             \fontdimen 11\font =1.25209pt\relax \fontdimen 12\font
-(fontspec)             =6.7681pt\relax \fontdimen 13\font =0pt\relax }].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.3075->s*[1.030055893887712]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6.57-9.3075>s*[1.030055893887712]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.57>s*[1.030055893887712]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1.030055893887712]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
-
-LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 153.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 153.
-LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 153.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 153.
-LaTeX Info: Redefining \microtypecontext on input line 153.
-Package microtype Info: Applying patch `item' on input line 153.
-Package microtype Info: Applying patch `toc' on input line 153.
-Package microtype Info: Applying patch `eqnum' on input line 153.
-Package microtype Info: Applying patch `footnote' on input line 153.
-Package microtype Info: Applying patch `verbatim' on input line 153.
-LaTeX Info: Redefining \microtypesetup on input line 153.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using protrusion set `basicmath'.
-Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of spacing.
-Package microtype Info: No adjustment of kerning.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
+(Font)                  OT1/cmss/b/n --> TU/SimSun(1)/m/n on input line 36.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/SimSun(1)/m/n --> TU/SimSun(1)/m/n on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  TU/SimHei(0)/m/it --> TU/SimSun(1)/m/it on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  TU/SimHei(0)/b/n --> TU/SimSun(1)/b/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  TU/SimHei(0)/m/n --> TU/SimHei(0)/m/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  TU/Consolas(0)/m/n --> TU/Consolas(0)/m/n on input line 36.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/SimSun(1)/m/n --> TU/SimSun(1)/b/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  TU/SimHei(0)/b/it --> TU/SimSun(1)/b/it on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  TU/SimHei(0)/b/n --> TU/SimHei(0)/b/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  TU/Consolas(0)/b/n --> TU/Consolas(0)/b/n on input line 36.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./数据结构笔记.beamer.nav)
-LaTeX Font Info:    Font shape `TU/FandolHei-Regular(0)/m/n' will be
-(Font)              scaled to size 14.36769pt on input line 154.
-
 
 [1
+
+]
+No file 数据结构笔记.beamer.toc.
+
+
+[2
+
+]
+
+[3
 
 ]
 \openout4 = `数据结构笔记.beamer.vrb'.
 
  (./数据结构笔记.beamer.vrb
-LaTeX Font Info:    Font shape `TU/FandolHei-Regular(0)/m/n' will be
-(Font)              scaled to size 10.92543pt on input line 3.
-LaTeX Font Info:    Font shape `TU/FandolHei-Regular(0)/m/n' will be
-(Font)              scaled to size 11.97308pt on input line 5.
-LaTeX Font Info:    Font shape `TU/FandolHei-Regular(0)/b/n' will be
-(Font)              scaled to size 10.30037pt on input line 14.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.8961pt on input line 26.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.64008pt on input line 26.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 26.
- (c:/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 11.28131pt on input line 26.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.89691pt on input line 26.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.64066pt on input line 26.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.27914pt on input line 26.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.8954pt on input line 26.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.63957pt on input line 26.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
- (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
- (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.30151pt on input line 88.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.21106pt on input line 88.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.15076pt on input line 88.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.30258pt on input line 88.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.2118pt on input line 88.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.15129pt on input line 88.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.3006pt on input line 88.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.21042pt on input line 88.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.1503pt on input line 88.
-LaTeX Font Info:    Font shape `TU/FandolHei-Regular(0)/m/n' will be
-(Font)              scaled to size 9.97757pt on input line 88.
 
-Package fontspec Info: 
-(fontspec)             Script 'CJK' not explicitly supported within font
-(fontspec)             'FandolFang-Regular'. Check the typeset output, and if
-(fontspec)             it is okay then ignore this warning. Otherwise a
-(fontspec)             different font should be chosen.
+./数据结构笔记.beamer.vrb:2: LaTeX Error: Environment snugshade undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \begin{codeblock}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
 Package fontspec Info: 
-(fontspec)             FandolFang-Regular scale = 0.9694313445096907.
+(fontspec)             Could not resolve font "FangSong/BI" (it probably
+(fontspec)             doesn't exist).
 
 
 Package fontspec Info: 
-(fontspec)             FandolFang-Regular scale = 0.9694313445096907.
+(fontspec)             Could not resolve font "FangSong/B" (it probably
+(fontspec)             doesn't exist).
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'FandolFang-Regular(0)' created for font
-(fontspec)             'FandolFang-Regular' with options
-(fontspec)             [Scale=MatchLowercase,Script={CJK},Extension={.otf}].
+(fontspec)             Could not resolve font "FangSong/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FangSong(0)' created for font 'FangSong'
+(fontspec)             with options [Script={CJK}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.9694313445096907]"[FandolFang-Regular.otf]/OT:script=hani;language=dflt;"
+(fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
 
-LaTeX Font Info:    Font shape `TU/FandolFang-Regular(0)/m/n' will be
-(Font)              scaled to size 10.61533pt on input line 135.
 
-Overfull \hbox (8.91023pt too wide) in alignment at lines 260--265
- [] [] [] [] 
+./数据结构笔记.beamer.vrb:27: LaTeX Error: Not allowed in LR mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27     \end{codeblock}
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./数据结构笔记.beamer.vrb:27: LaTeX Error: Not allowed in LR mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27     \end{codeblock}
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./数据结构笔记.beamer.vrb:27: Missing } inserted.
+<inserted text> 
+                }
+l.27     \end{codeblock}
+                        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./数据结构笔记.beamer.vrb:27: Missing } inserted.
+<inserted text> 
+                }
+l.27     \end{codeblock}
+                        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 10000) detected at line 27
+    
  []
 
+./数据结构笔记.beamer.vrb:27: Missing } inserted.
+<inserted text> 
+                }
+l.27     \end{codeblock}
+                        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-Overfull \hbox (8.91023pt too wide) in alignment at lines 265--270
- [] [] [] [] 
- []
 
-LaTeX Font Info:    Font shape `TU/FandolHei-Regular(0)/b/n' will be
-(Font)              scaled to size 9.40674pt on input line 295.
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 295.
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 340.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.27136pt on input line 671.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.18091pt on input line 671.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.27232pt on input line 671.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.18155pt on input line 671.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.27054pt on input line 671.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.18036pt on input line 671.
-LaTeX Font Info:    Font shape `TU/FandolHei-Regular(0)/m/n' will be
-(Font)              scaled to size 8.97981pt on input line 671.
-LaTeX Font Info:    Font shape `TU/FandolHei-Regular(0)/b/n' will be
-(Font)              scaled to size 8.46606pt on input line 679.
-LaTeX Font Info:    Font shape `TU/FandolHei-Regular(0)/b/n' will be
-(Font)              scaled to size 11.28809pt on input line 5470.
+./数据结构笔记.beamer.vrb:27: LaTeX Error: \begin{codeblock} on input line 2 ended by \end{snugshade}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27     \end{codeblock}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./数据结构笔记.beamer.vrb:27: Extra }, or forgotten \endgroup.
+\FancyVerbFormatLine #1->\FV@ObeyTabs {#1}
+                                          
+l.27     \end{codeblock}
+                        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./数据结构笔记.beamer.vrb:27: Extra }, or forgotten \endgroup.
+\FV@ListProcessLine ...Frame \FV@RightListNumber }
+                                                  \hss }
+l.27     \end{codeblock}
+                        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./数据结构笔记.beamer.vrb:27: Extra }, or forgotten \endgroup.
+\FV@ListProcessLine ...\FV@RightListNumber }\hss }
+                                                  
+l.27     \end{codeblock}
+                        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
 )
+Runaway argument?
+\note {顺序表通过连续内存存储元素，支持随机访问，\ETC.
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: File ended while scanning use of \FancyVerbGetLine.
+<inserted text> 
+                \par 
+l.100 \end{frame}
+                 
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
 
-[2
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: FancyVerb Error:
+  Couldn't find `\end{Verbatim}' to end a verbatim environment on input line 100.
+.
+\FV@Error ...ncyVerb Error:^^J\space \space #1^^J}
+                                                  
+l.100 \end{frame}
+                 
+Probably you mistyped the environment name or included an extraneous 
+space, or are using an improperly defined verbatim environment. 
+Hit return and I will try to terminate this job.
 
-]
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: Infinite glue shrinkage found in a paragraph.
+<recently read> \tex_par:D 
+                           
+l.100 \end{frame}
+                 
+The paragraph just ended includes some glue that has
+infinite shrinkability, e.g., `\hskip 0pt minus 1fil'.
+Such glue doesn't belong there---it allows a paragraph
+of any length to fit on one line. But it's safe to proceed,
+since the offensive shrinkability has been made finite.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: LaTeX Error: \begin{beamer@framepauses} on input line 100 ended by \end{Verbatim}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 \tf@nav=\write6
 \openout6 = `数据结构笔记.beamer.nav'.
 
@@ -1325,19 +1309,656 @@ LaTeX Font Info:    Font shape `TU/FandolHei-Regular(0)/b/n' will be
 \tf@snm=\write8
 \openout8 = `数据结构笔记.beamer.snm'.
 
- (./数据结构笔记.beamer.aux)
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: LaTeX Error: \begin{beamer@frameslide} on input line 100 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(./数据结构笔记.beamer.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2022/08/05>
+L3 programming layer <2022/07/14>
  ***********
- ) 
-Here is how much of TeX's memory you used:
- 33940 strings out of 473832
- 724438 string characters out of 5733158
- 3316136 words of memory out of 5000000
- 56384 multiletter control sequences out of 15000+600000
- 567962 words of font info for 125 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 128i,16n,123p,1041b,1498s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 数据结构笔记.beamer.pdf (2 pages).
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: You can't use `\end' in internal vertical mode.
+\enddocument ...cument/end}\deadcycles \z@ \@@end 
+                                                  
+l.100 \end{frame}
+                 
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: LaTeX Error: \begin{beamer@frameslide} on input line 100 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: Missing } inserted.
+<inserted text> 
+                }
+l.100 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: Extra \endgroup.
+\beamer@doifinframe ...据结构笔记.beamer.vrb}\endgroup 
+                                                  \end {beamer@frameslide}
+l.100 \end{frame}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: LaTeX Error: \begin{document} ended by \end{beamer@framepauses}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: Extra \endgroup.
+\end  ...end#1\endcsname \@checkend {#1}\endgroup 
+                                                  \UseHook {env/#1/after}\if...
+l.100 \end{frame}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: Too many }'s.
+\endbeamer@frameslide ...amer@framepauses}\egroup 
+                                                  \ifx \beamer@frametitle \@...
+l.100 \end{frame}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: Undefined control sequence.
+\endbeamer@frameslide ...box \else \beamer@zoomer 
+                                                  \fi \beamer@undolabels \be...
+l.100 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: LaTeX Error: \begin{document} ended by \end{beamer@frameslide}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:100: Extra \endgroup.
+\end  ...end#1\endcsname \@checkend {#1}\endgroup 
+                                                  \UseHook {env/#1/after}\if...
+l.100 \end{frame}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+
+
+\HyPL@Entry{3<</P(\376\377\0004)>>}
+[4
+
+
+
+
+
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{4}{4/4}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {4}{4}}}
+]
+\openout4 = `数据结构笔记.beamer.vrb'.
+
+ (./数据结构笔记.beamer.vrb
+
+./数据结构笔记.beamer.vrb:2: LaTeX Error: Environment snugshade undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \begin{codeblock}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./数据结构笔记.beamer.vrb:23: LaTeX Error: Not allowed in LR mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23     \end{codeblock}
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./数据结构笔记.beamer.vrb:23: LaTeX Error: Not allowed in LR mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23     \end{codeblock}
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./数据结构笔记.beamer.vrb:23: Missing } inserted.
+<inserted text> 
+                }
+l.23     \end{codeblock}
+                        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./数据结构笔记.beamer.vrb:23: Missing } inserted.
+<inserted text> 
+                }
+l.23     \end{codeblock}
+                        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 10000) detected at line 23
+    
+ []
+
+./数据结构笔记.beamer.vrb:23: Missing } inserted.
+<inserted text> 
+                }
+l.23     \end{codeblock}
+                        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./数据结构笔记.beamer.vrb:23: LaTeX Error: \begin{codeblock} on input line 2 ended by \end{snugshade}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23     \end{codeblock}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./数据结构笔记.beamer.vrb:23: Extra }, or forgotten \endgroup.
+\FancyVerbFormatLine #1->\FV@ObeyTabs {#1}
+                                          
+l.23     \end{codeblock}
+                        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./数据结构笔记.beamer.vrb:23: Extra }, or forgotten \endgroup.
+\FV@ListProcessLine ...Frame \FV@RightListNumber }
+                                                  \hss }
+l.23     \end{codeblock}
+                        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./数据结构笔记.beamer.vrb:23: Extra }, or forgotten \endgroup.
+\FV@ListProcessLine ...\FV@RightListNumber }\hss }
+                                                  
+l.23     \end{codeblock}
+                        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+)
+Runaway argument?
+\begin {itemize} \item 二叉树遍历算法体现递归思想 \item \ETC.
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: File ended while scanning use of \FancyVerbGetLine.
+<inserted text> 
+                \par 
+l.130 \end{frame}
+                 
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: FancyVerb Error:
+  Couldn't find `\end{Verbatim}' to end a verbatim environment on input line 130.
+.
+\FV@Error ...ncyVerb Error:^^J\space \space #1^^J}
+                                                  
+l.130 \end{frame}
+                 
+Probably you mistyped the environment name or included an extraneous 
+space, or are using an improperly defined verbatim environment. 
+Hit return and I will try to terminate this job.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: Infinite glue shrinkage found in a paragraph.
+<argument> ...hskip:D \c_zero_dim \fi: \tex_par:D 
+                                                  \hook_use:n {para/after}\@...
+l.130 \end{frame}
+                 
+The paragraph just ended includes some glue that has
+infinite shrinkability, e.g., `\hskip 0pt minus 1fil'.
+Such glue doesn't belong there---it allows a paragraph
+of any length to fit on one line. But it's safe to proceed,
+since the offensive shrinkability has been made finite.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: LaTeX Error: \begin{beamer@framepauses} on input line 130 ended by \end{Verbatim}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: LaTeX Error: \begin{beamer@frameslide} on input line 130 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\gdef \@abspage@last{4}
+(./数据结构笔记.beamer.aux)
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: You can't use `\end' in internal vertical mode.
+\enddocument ...cument/end}\deadcycles \z@ \@@end 
+                                                  
+l.130 \end{frame}
+                 
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: LaTeX Error: \begin{beamer@frameslide} on input line 130 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: Missing } inserted.
+<inserted text> 
+                }
+l.130 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: Extra \endgroup.
+\beamer@doifinframe ...据结构笔记.beamer.vrb}\endgroup 
+                                                  \end {beamer@frameslide}
+l.130 \end{frame}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: LaTeX Error: \begin{document} ended by \end{beamer@framepauses}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: Extra \endgroup.
+\end  ...end#1\endcsname \@checkend {#1}\endgroup 
+                                                  \UseHook {env/#1/after}\if...
+l.130 \end{frame}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: Too many }'s.
+\endbeamer@frameslide ...amer@framepauses}\egroup 
+                                                  \ifx \beamer@frametitle \@...
+l.130 \end{frame}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: Undefined control sequence.
+\endbeamer@frameslide ...box \else \beamer@zoomer 
+                                                  \fi \beamer@undolabels \be...
+l.130 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: LaTeX Error: \begin{document} ended by \end{beamer@frameslide}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:130: Extra \endgroup.
+\end  ...end#1\endcsname \@checkend {#1}\endgroup 
+                                                  \UseHook {env/#1/after}\if...
+l.130 \end{frame}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+
+
+\HyPL@Entry{4<</P(\376\377\0005)>>}
+[5
+
+
+
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{5}{5/5}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {5}{5}}}
+]
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:152: Missing $ inserted.
+<inserted text> 
+                $
+l.152 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 152.
+(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 152.
+ (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Font Warning: Font shape `TU/SimHei(0)/m/it' undefined
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 152.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:152: LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:152: Missing $ inserted.
+<inserted text> 
+                $
+l.152 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:152: LaTeX Error: Environment snugshade undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Runaway argument?
+ void bubbleSort(int a[], int n) { for (int i = 0; i < n-1; ++i) for \ETC.
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:152: Paragraph ended before \FV@BeginScanning was complete.
+<to be read again> 
+                   \par 
+l.152 \end{frame}
+                 
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:152: LaTeX Error: Environment snugshade undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:152: Argument of \FV@BeginScanning has an extra }.
+<inserted text> 
+                \par 
+l.152 \end{frame}
+                 
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+ void bubbleSort(int a[], int n) { for (int i = 0; i < n-1; ++i) for \ETC.
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:152: Paragraph ended before \FV@BeginScanning was complete.
+<to be read again> 
+                   \par 
+l.152 \end{frame}
+                 
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:152: Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.152 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:152: Extra \fi.
+\iterate ... \end {codeblock} \end {example} }\fi 
+                                                  \ifbeamer@anotherslide \ad...
+l.152 \end{frame}
+                 
+I'm ignoring this; it doesn't match any \if.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:157: Improper \prevdepth.
+\addpenalty ...ance \@tempskipb \ifdim \prevdepth 
+                                                  >\maxdepth \maxdepth \else...
+l.157         \item 
+                    数据结构是算法的基础，选择合适结构可优化程序性能
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:157: Improper \prevdepth.
+\addpenalty ... \maxdepth \else \ifdim \prevdepth 
+                                                  = -\@m \p@ \z@ \else \prev...
+l.157         \item 
+                    数据结构是算法的基础，选择合适结构可优化程序性能
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:157: Improper \prevdepth.
+<recently read> \prevdepth 
+                           
+l.157         \item 
+                    数据结构是算法的基础，选择合适结构可优化程序性能
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:157: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.157         \item 
+                    数据结构是算法的基础，选择合适结构可优化程序性能
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:163: Extra }, or forgotten \endgroup.
+\endframe ->\egroup 
+                    \begingroup \def \@currenvir {frame}
+l.163 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:165: LaTeX Error: \begin{frame} on input line 155 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\gdef \@abspage@last{5}
+(./数据结构笔记.beamer.aux)
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:165: You can't use `\end' in internal vertical mode.
+\enddocument ...cument/end}\deadcycles \z@ \@@end 
+                                                  
+l.165 \end{document}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+c:/Documents/notes/本科/编程/数据结构/test/数据结构笔记.beamer.tex:165: LaTeX Error: \begin{frame} on input line 155 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> ...cuments/notes/本科/编程/数据结构/test/数据结构笔记.beamer
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 29458 strings out of 473832
+ 643037 string characters out of 5733158
+ 1027232 words of memory out of 5000000
+ 51890 multiletter control sequences out of 15000+600000
+ 565900 words of font info for 109 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 128i,16n,123p,481b,1333s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on 数据结构笔记.beamer.pdf (5 pages).

@@ -1,0 +1,165 @@
+% 数据结构笔记 - Beamer 幻灯片
+\documentclass[UTF8, 12pt]{beamer}
+\usepackage{ctex} % 支持中文
+\usepackage{pgfpages}
+\usepackage{graphicx}
+\usepackage{xeCJK}
+\usepackage{fancyvrb}
+\usepackage{color}
+\usepackage{longtable,booktabs,array}
+\usepackage{caption}
+\usepackage{bookmark}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+% 中文字体设置
+\setmainfont{SimSun} % 宋体
+\setsansfont{SimHei} % 黑体
+\setmonofont{Consolas} % 等宽字体
+
+% 幻灯片主题设置
+\usetheme{AnnArbor}
+\usecolortheme{seagull}
+\setbeamertemplate{navigation symbols}{} % 隐藏导航栏
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+
+% 代码块样式定义
+\definecolor{codebg}{RGB}{245,245,245}
+\newenvironment{codeblock}{\begin{snugshade}\begin{Verbatim}[commandchars=\\\{\}]}{\end{Verbatim}\end{snugshade}}
+
+% 标题与作者信息
+\title{数据结构笔记}
+\author{[你的姓名]}
+\date{\today}
+
+\begin{document}
+
+% 标题页
+\begin{frame}
+    \titlepage
+    \centering
+    \href{https://oi-wiki.org/ds}{oiWiki 数据结构参考资料}
+\end{frame}
+
+% 内容框架
+\begin{frame}{目录}
+    \tableofcontents
+\end{frame}
+
+% 数据结构概述
+\begin{frame}{数据结构概述}
+    \begin{block}{定义}
+        数据结构是相互之间存在一种或多种特定关系的数据元素的集合，主要研究数据的逻辑结构、存储结构及操作算法。
+    \end{block}
+
+    \begin{block}{逻辑结构分类}
+        \begin{itemize}
+            \item 线性结构：数组、链表、栈、队列
+            \item 非线性结构：树、图、哈希表
+        \end{itemize}
+    \end{block}
+
+    \begin{block}{基本操作}
+        \begin{itemize}
+            \item 创建、销毁、插入、删除、查找、遍历
+            \item 时间复杂度与空间复杂度分析
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% 线性表示例（顺序表）
+\begin{frame}[fragile]{顺序表实现}
+    \begin{codeblock}
+template <class elemType>
+class seqList : public list<elemType> {
+private:
+    elemType *data;
+    int currentLength;
+    int maxSize;
+    void doubleSpace(); // 扩容函数
+public:
+    seqList(int initSize = 10);
+    ~seqList() { delete[] data; }
+    void clear() { currentLength = 0; }
+    int length() const { return currentLength; }
+    // 其他操作...
+};
+
+template <class elemType>
+void seqList<elemType>::doubleSpace() {
+    elemType *tmp = data;
+    maxSize *= 2;
+    data = new elemType[maxSize];
+    for (int i = 0; i < currentLength; ++i)
+        data[i] = tmp[i];
+    delete[] tmp;
+}
+    \end{codeblock}
+    \note{顺序表通过连续内存存储元素，支持随机访问，但插入/删除需移动元素，时间复杂度为 O(n)。}
+\end{frame}
+
+% 二叉树示例
+\begin{frame}[fragile]{二叉树类定义}
+    \begin{codeblock}
+template <class T>
+class binaryTree {
+private:
+    struct Node {
+        T data;
+        Node *left, *right;
+        Node(T item, Node *L = nullptr, Node *R = nullptr) : data(item), left(L), right(R) {}
+    };
+    Node *root;
+
+public:
+    void preOrder() const { preOrder(root); } // 前序遍历
+    void inOrder() const { inOrder(root); }   // 中序遍历
+    void postOrder() const { postOrder(root); } // 后序遍历
+
+private:
+    void preOrder(Node *t) const;
+    void inOrder(Node *t) const;
+    void postOrder(Node *t) const;
+};
+    \end{codeblock}
+    \begin{itemize}
+        \item 二叉树遍历算法体现递归思想
+        \item 可通过队列实现层序遍历
+    \end{itemize}
+\end{frame}
+
+% 算法分析示例
+\begin{frame}{时间复杂度分析}
+    \begin{block}{常见复杂度级别}
+        \begin{itemize}
+            \item O(1)：常数时间 - 访问数组元素
+            \item O(n)：线性时间 - 顺序查找
+            \item O(n log n)：归并排序、快速排序
+            \item O(2^n)：指数时间 - 斐波那契数列递归实现
+        \end{itemize}
+    \end{block}
+
+    \begin{example}{冒泡排序复杂度}
+        \begin{codeblock}
+void bubbleSort(int a[], int n) {
+    for (int i = 0; i < n-1; ++i)
+        for (int j = 0; j < n-i-1; ++j)
+            if (a[j] > a[j+1]) swap(a[j], a[j+1]);
+} // 时间复杂度 O(n²)
+        \end{codeblock}
+    \end{example}
+\end{frame}
+
+% 结尾页
+\begin{frame}{总结}
+    \begin{itemize}
+        \item 数据结构是算法的基础，选择合适结构可优化程序性能
+        \item 重点掌握线性表、树、图的逻辑与实现
+        \item 多通过 LeetCode 等平台练习算法题
+    \end{itemize}
+    \vfill
+    \centering{感谢观看！}
+\end{frame}
+
+\end{document}
