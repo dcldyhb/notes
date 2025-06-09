@@ -36,6 +36,22 @@
             }
           }
         ]
+      },
+      {
+        "id": "93c8150a782f8d07",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ba102db630c96349",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Slide Preview"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -191,10 +207,11 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "15ffd7cfb7844ae8",
+  "active": "ba102db630c96349",
   "lastOpenFiles": [
     "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
     "本科/编程/数据结构/数据结构笔记.md",
