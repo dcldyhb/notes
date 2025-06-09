@@ -1278,13 +1278,14 @@ Package fontspec Info:
 LaTeX Font Info:    Font shape `TU/FandolFang-Regular(0)/m/n' will be
 (Font)              scaled to size 10.61533pt on input line 135.
 
-Overfull \hbox (8.91023pt too wide) in alignment at lines 265--270
+Overfull \hbox (8.91023pt too wide) in alignment at lines 260--265
  [] [] [] [] 
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1 on input line 270.
+Overfull \hbox (8.91023pt too wide) in alignment at lines 265--270
+ [] [] [] [] 
+ []
 
 LaTeX Font Info:    Font shape `TU/FandolHei-Regular(0)/b/n' will be
 (Font)              scaled to size 9.40674pt on input line 295.
@@ -1324,11 +1325,7 @@ LaTeX Font Info:    Font shape `TU/FandolHei-Regular(0)/b/n' will be
 \tf@snm=\write8
 \openout8 = `数据结构笔记.beamer.snm'.
 
-
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-(./数据结构笔记.beamer.aux)
+ (./数据结构笔记.beamer.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/08/05>
@@ -1337,7 +1334,7 @@ L3 programming layer <2022/08/05>
 Here is how much of TeX's memory you used:
  33940 strings out of 473832
  724438 string characters out of 5733158
- 3316127 words of memory out of 5000000
+ 3316136 words of memory out of 5000000
  56384 multiletter control sequences out of 15000+600000
  567962 words of font info for 125 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
