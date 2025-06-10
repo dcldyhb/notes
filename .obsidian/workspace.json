@@ -11,14 +11,12 @@
             "id": "15ffd7cfb7844ae8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "本科/编程/数据结构/数据结构笔记.md",
-                "mode": "preview",
-                "source": false
+                "file": "本科/物理/大学物理3/复习.pdf"
               },
-              "icon": "lucide-file",
-              "title": "数据结构笔记"
+              "icon": "lucide-file-text",
+              "title": "复习"
             }
           },
           {
@@ -88,8 +86,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -167,13 +164,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "本科/编程/数据结构/数据结构笔记.md",
+                "file": "本科/物理/大学物理3/复习.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "数据结构笔记 的大纲"
+              "title": "复习 的大纲"
             }
           }
         ],
@@ -196,6 +193,10 @@
   },
   "active": "15ffd7cfb7844ae8",
   "lastOpenFiles": [
+    "本科/物理/大学物理3/大学物理3笔记.md",
+    "README.md",
+    "本科/物理/大学物理1笔记.md",
+    "本科/编程/数据结构/数据结构笔记.md",
     "本科/编程/数据结构/ppt.pdf",
     "本科/编程/数据结构/数据结构笔记.pdf",
     "本科/编程/数据结构/test/数据结构笔记.beamer.toc",
@@ -206,16 +207,13 @@
     "本科/编程/数据结构/test/数据结构笔记.beamer.synctex.gz",
     "本科/编程/数据结构/test/数据结构笔记.beamer.snm",
     "本科/编程/数据结构/test/数据结构笔记.beamer.nav",
-    "本科/编程/数据结构/test/数据结构笔记.beamer.pdf",
     "本科/编程/数据结构/数据结构复习.md",
     "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
-    "本科/编程/数据结构/数据结构笔记.md",
     "本科/编程/数据结构/DS/1_List.md",
     "test.md",
     "本科/通识/汉字文化/卜辞形式.md",
     "未命名.canvas",
     "本科/通识/汉字文化/玺印文与瓦当文.md",
-    "README.md",
     "本科/编程/数据结构/DS/9_ExternalSorting.md",
     "本科/编程/数据结构/DS/4_Tree.md",
     "本科/编程/数据结构/DS/5_PriorityQuene.md",
@@ -234,7 +232,6 @@
     "本科/通识/汉字文化/image.png",
     "本科/通识/汉字文化/甲骨文与汉字起源.md",
     "本科/通识/汉字文化/金文与礼乐文明.md",
-    "本科/通识/汉字文化/列国纵横篆籀驰——篆文及六国文与轴心突破.md",
     "本科/通识/汉字文化/汉字与民族审美精神.png",
     "本科/物理/大学物理3/image.png",
     "本科/编程/数据结构/image.png",
