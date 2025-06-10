@@ -193,8 +193,7 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-advanced-slides:Show Slide Preview": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "15ffd7cfb7844ae8",
