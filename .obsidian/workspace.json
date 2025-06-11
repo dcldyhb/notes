@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "本科/红课/毛泽东思想概论.md",
+                "file": "本科/红课/毛概.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "毛泽东思想概论"
+              "title": "毛概"
             }
           },
           {
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "本科/红课/毛泽东思想概论.md",
+                "file": "本科/红课/毛概.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "毛泽东思想概论 的大纲"
+              "title": "毛概 的大纲"
             }
           }
         ],
@@ -195,6 +195,9 @@
   },
   "active": "15ffd7cfb7844ae8",
   "lastOpenFiles": [
+    "本科/红课/理论体系复习资料生成_.md",
+    "本科/红课/毛概.md",
+    "本科/红课/毛泽东思想概论.md",
     "本科/物理/大学物理3/大学物理3笔记.md",
     "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
     "本科/物理/大学物理3/wxzppt.pdf",
@@ -229,8 +232,6 @@
     "本科/数学/高数2笔记.md",
     "本科/数学/高数2笔记/main.md",
     "本科/数学/高数2笔记/doc/latex/sjtutex/README.md",
-    "本科/数学/sjtutex/doc/latex/sjtutex/README.md",
-    "本科/通识/汉字文化/汉字与传统思想.md",
     "本科/通识/汉字文化/汉字与传统思想.png",
     "本科/通识/汉字文化/image.png",
     "本科/通识/汉字文化/汉字与民族审美精神.png",
