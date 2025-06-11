@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "本科/物理/大学物理3/大学物理3笔记.md",
+                "file": "本科/红课/毛泽东思想概论.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "大学物理3笔记"
+              "title": "毛泽东思想概论"
             }
           },
           {
@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "13d012cba674f72e",
@@ -167,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "本科/物理/大学物理3/大学物理3笔记.md",
+                "file": "本科/红课/毛泽东思想概论.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大学物理3笔记 的大纲"
+              "title": "毛泽东思想概论 的大纲"
             }
           }
         ],
@@ -196,8 +195,8 @@
   },
   "active": "15ffd7cfb7844ae8",
   "lastOpenFiles": [
-    "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
     "本科/物理/大学物理3/大学物理3笔记.md",
+    "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
     "本科/物理/大学物理3/wxzppt.pdf",
     "本科/物理/大学物理3/复习.md",
     "本科/物理/大学物理3/复习.pdf",
