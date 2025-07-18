@@ -24,5 +24,5 @@
 空元素没有内容，只有开始标签，没有结束标签
 
 ```html
-
+<img src="images/firefox-icon.png" alt="My test image" />
 ```
