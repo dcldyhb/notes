@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "本科/编程/网页/CSS笔记.md",
-                "mode": "preview",
+                "file": "本科/编程/网页/HTML笔记.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CSS笔记"
+              "title": "HTML笔记"
             }
           },
           {
@@ -92,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "13d012cba674f72e",
@@ -196,9 +197,9 @@
   },
   "active": "15ffd7cfb7844ae8",
   "lastOpenFiles": [
+    "本科/编程/网页/CSS笔记.md",
     "本科/编程/网页/HTML笔记.md",
     "本科/编程/网页/JavaScript笔记.md",
-    "本科/编程/网页/CSS笔记.md",
     "本科/物理/大学物理1笔记.md",
     "本科/物理/image.png",
     "本科/红课/毛概/黑波.md",
