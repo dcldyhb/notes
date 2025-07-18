@@ -26,3 +26,13 @@
 ```html
 <img src="images/firefox-icon.png" alt="My test image" />
 ```
+
+### 案例分析
+
+```html
+<!DOCTYPE html>
+<html lang-"en-US">
+<head>
+  <meta charset="utf-8" />
+</head>
+```
