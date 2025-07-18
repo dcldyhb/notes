@@ -42,3 +42,5 @@
   </body>
 </html>
 ```
+
+- `<!DOCTYPE html>`：文档类型声明，告诉浏览器这是一个 HTML5 文档
