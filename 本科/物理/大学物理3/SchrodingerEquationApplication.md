@@ -15,7 +15,7 @@
 ## 1-D finite square well
 
 $$
-V(x) = 
+V(x) =
 \begin{cases}
     0 , & |x|<\frac{d}{2} \\
     V_0 , & |x|>\frac{d}{2}
@@ -63,7 +63,7 @@ $$
 $$
 \begin{cases}
     \delta = 0\\
-    k = \frac{n\pi}{d} 
+    k = \frac{n\pi}{d}
 \end{cases}
 \Rightarrow
 \begin{cases}
@@ -94,7 +94,7 @@ $$
 The solution should be exponential equation:
 
 $$
-\Psi (x) = 
+\Psi (x) =
 \begin{cases}
     A_{+}e^{k' x}, & x\leq-\frac{d}{2} \\
     A_{-}e^{k' x}, & x\geq\frac{d}{2}
@@ -115,7 +115,6 @@ $$
 
 Classically , if $E<V_0$, the partide will be totally reflected back.
 However , **quantum mechanics** will give a different result.
-
 
 $$
 \frac{d^2\psi(x)}{dx^2}=\frac{2m}{\hbar^2}(V_0-E)\psi(x)
@@ -147,7 +146,7 @@ With this effect, we developped STM.
 $$
 \begin{gathered}
     F(x) = -kx \\
-    V(x) = \frac{1}{2}kx^2 = \frac{1}{2}m\omega^2x^2 \quad (\omega = \sqrt{\frac{k}{m}}) 
+    V(x) = \frac{1}{2}kx^2 = \frac{1}{2}m\omega^2x^2 \quad (\omega = \sqrt{\frac{k}{m}})
 \end{gathered}
 $$
 
@@ -165,7 +164,7 @@ $$
 $$
 
 > **Notes**
-> 
+>
 > 1. $E_0 = \frac{1}{2}\hbar\omega > 0$ . There is no absolute rest.
 > 2. $\Delta E = \hbar\omega$. Similar to photons. There is the basisi for Plank's hypothesis on energy quanta.
 
