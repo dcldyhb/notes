@@ -34,3 +34,57 @@ scoop install git
 ```powershell
 git -v
 ```
+
+### 在 macOS 上安装 Git
+
+在 macOS 上安装 Git 有两种方法：
+
+第一种是使用 [Homebrew](https://brew.sh/) 包管理器，打开终端，输入以下命令：
+
+```bash
+brew install git
+```
+
+第二种是使用 XCode， 内置 了 Git 工具
+
+运行 XCode，选择菜单 "Xcode" -> "Preferences" -> "Downloads"，然后选择一个 Command Line Tools 版本，系统会提示你安装命令行工具，点击 "Instal" 安装即可.
+
+---
+
+使用包管理器安装 Git 是最简单的方式，推荐使用这种方式.
+
+同时使用包管理器更新 Git 也非常方便.
+
+- `scoop update git` (Windows)
+- `brew upgrade git` (macOS)
+
+## 配置 Git
+
+安装完成之后对 Git 进行一些基本的配置
+
+在命令行中输入
+
+```powershell
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+```
+
+其中 `Your Name` 替换为你的名字，`email@example.com` 替换为你的邮箱地址.
+
+`--global` 参数表明这台机器上的所有仓库都会使用这个配置，如果你想为某个特定的仓库设置不同的名字和邮箱，可以进入该仓库目录，去掉 `--global` 参数，重新执行上述命令即可.
+
+配置完之后可以使用以下命令查看配置信息：
+
+```bash
+git config -l
+```
+
+## 创建版本库
+
+版本库也叫做仓库(repository)，是用于存储文件的地方，里面每个文件的变动 Git 都能记录.
+
+首先在你需要创建版本库的目录下打开终端，输入以下命令：
+
+```bash
+git init
+```

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "本科/编程/数据结构/数据结构笔记.md",
+                "file": "README.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "数据结构笔记"
+              "title": "README"
             }
           }
         ]
@@ -176,19 +176,20 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false
+      "command-palette:打开命令面板": false
     }
   },
   "active": "15ffd7cfb7844ae8",
   "lastOpenFiles": [
+    "化学",
+    "本科/编程/Git笔记.md",
+    "本科/编程/数据结构/数据结构笔记.md",
     "本科/编程/网页/CSS笔记.md",
     "本科/编程/网页/JavaScript笔记.md",
     "本科/编程/网页/HTML笔记.md",
     "本科/数学/数理方法笔记.md",
     "本科/数学/高数2笔记.md",
     "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
-    "本科/编程/数据结构/数据结构笔记.md",
     "本科/物理/大学物理3/大学物理3笔记.md",
     "1.html",
     "本科/红课/毛概/黑波.md",
@@ -218,8 +219,6 @@
     "本科/编程/数据结构/DS/9_ExternalSorting.md",
     "本科/编程/数据结构/DS/4_Tree.md",
     "本科/编程/数据结构/DS/5_PriorityQuene.md",
-    "本科/编程/数据结构/DS/6_StaSearch.md",
-    "本科/编程/数据结构/DS/7_DynSearch.md",
     "本科/通识/汉字文化/汉字与传统思想.png",
     "本科/通识/汉字文化/image.png",
     "本科/通识/汉字文化/汉字与民族审美精神.png",
