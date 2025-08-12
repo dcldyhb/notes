@@ -1,8 +1,10 @@
 # git 学习
 
-## 安装git
+## git 的安装和简单的配置
 
-### Windows 系统
+### 安装 Git
+
+#### Windows 系统
 
 在 Windows 系统上安装 Git 有两种方法：
 
@@ -35,7 +37,7 @@ scoop install git
 git -v
 ```
 
-### 在 macOS 上安装 Git
+#### 在 macOS 上安装 Git
 
 在 macOS 上安装 Git 有两种方法：
 
@@ -58,7 +60,7 @@ brew install git
 - `scoop update git` (Windows)
 - `brew upgrade git` (macOS)
 
-## 配置 Git
+### 配置 Git
 
 安装完成之后对 Git 进行一些基本的配置
 
@@ -83,8 +85,28 @@ git config -l
 
 版本库也叫做仓库(repository)，是用于存储文件的地方，里面每个文件的变动 Git 都能记录.
 
-首先在你需要创建版本库的目录下打开终端，输入以下命令：
+首先 `cd` 到你**需要创建版本库的目录下**，输入以下命令：
 
 ```bash
 git init
 ```
+
+这会在当前目录下创建一个名为 `.git` 的隐藏目录，里面存储了 Git 需要的所有信息.
+
+若此时使用 `ls` 命令查看当前的目录,看不到任何新建的文件夹，因为 `.git` 是一个隐藏目录.
+
+### 向版本库中添加文件
+
+首先创建一个 `Readme.md` 文件,内容为
+
+```markdown
+
+# Git 学习
+
+Git is a version control system.
+
+Git is free software.
+
+```
+
+这个文件一定要在刚才创建的版本库的目录下
