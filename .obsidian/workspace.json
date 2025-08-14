@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "本科/编程/Git笔记.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Git笔记"
             }
           }
         ]
@@ -181,6 +181,7 @@
   },
   "active": "15ffd7cfb7844ae8",
   "lastOpenFiles": [
+    "README.md",
     "化学",
     "本科/编程/Git笔记.md",
     "本科/编程/数据结构/数据结构笔记.md",
@@ -202,14 +203,12 @@
     "本科/物理/大学物理3/wxzppt.pdf",
     "本科/物理/大学物理3/复习.md",
     "本科/物理/大学物理3/复习.pdf",
-    "README.md",
     "本科/编程/数据结构/ppt.pdf",
     "本科/编程/数据结构/数据结构笔记.pdf",
     "本科/编程/数据结构/test/数据结构笔记.beamer.toc",
     "本科/编程/数据结构/test/数据结构笔记.beamer.aux",
     "本科/编程/数据结构/test/数据结构笔记.beamer.synctex(busy)",
     "本科/编程/数据结构/test/数据结构笔记.beamer.tex",
-    "本科/编程/数据结构/test/数据结构笔记.beamer.txt",
     "本科/编程/数据结构/数据结构复习.md",
     "本科/编程/数据结构/DS/1_List.md",
     "test.md",
