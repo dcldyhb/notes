@@ -140,27 +140,25 @@ Git is free software.
 以这个笔记的版本库为例，显示
 
 ```bash
+commit 493bb5004ef68c281f0fbf7f22e60e9111c94a86 (HEAD -> main, origin/main, origin/HEAD)
+Author: dcldyhb <1343605393@qq.com>
+Date:   Thu Aug 21 15:41:08 2025 +0800
 
-commit 172fb0bb0c001e1451eab09d8abb04814c755d0d (HEAD -> main, origin/main, origin/HEAD)
+    Update .gitignore and workspace layout settings
+
+    Added duplicate entries for .obsidian and workspace.json in .gitignore. Modified workspace.json to set the left pane as collapsed by default.
+
+commit d63e6e188c19e1f13fbf38ec735125e7c22d5484
+Author: dcldyhb <1343605393@qq.com>
+Date:   Thu Aug 21 15:39:11 2025 +0800
+
+    updated Git notes
+
+commit 172fb0bb0c001e1451eab09d8abb04814c755d0d
 Author: dcldyhb <1343605393@qq.com>
 Date:   Fri Aug 15 01:06:28 2025 +0800
 
     Update .gitignore and workspace settings
-
-    Added a rule to ignore all .json files in .gitignore. Updated workspace.json to change the default open file and title, and adjusted the list of last open files.
-
-commit e536d5721a3fc54e604548fc7d084bf2c3c16aca
-Author: dcldyhb <1343605393@qq.com>
-Date:   Wed Aug 13 14:26:15 2025 +0800
-
-    update Git notes
-
-commit 65d5179b23273b5c3374e06749c4679b3aa251b2
-Author: dcldyhb <1343605393@qq.com>
-Date:   Tue Aug 12 22:31:04 2025 +0800
-
-    updated Git notes
-
 ```
 
 在powee shell 中
@@ -170,13 +168,13 @@ Date:   Tue Aug 12 22:31:04 2025 +0800
 
 该命令会从最近到最远显示提交的记录，在这里我列出了最近的三个提交记录.
 
-最近的一次是 `Update .gitignore and workspace settings`，上一次是 `update Git notes`，再上一次是 `updated Git notes`。
+最近的一次是 `UUpdate .gitignore and workspace layout settings`，上一次是 `update Git notes`，再上一次是 `Update .gitignore and workspace settings`。
 
 加上 `--pretty=oneline` 参数可以让输出显示为一行，方便查看。
 
-形如 `172fb0bb0c001e1451eab09d8abb04814c755d0d` 的是每次提交的版本号，git 会为每次提交生成一个唯一的哈希值，这个哈希值可以用来标识这次提交。
+形如 `493bb5004ef68c281f0fbf7f22e60e9111c94a86` 的是每次提交的版本号，git 会为每次提交生成一个唯一的哈希值，这个哈希值可以用来标识这次提交。
 
-git 使用 `HEAD` 来标识当前版本库的最新提交，这里是 `172fb0bb0c001e1451eab09d8abb04814c755d0d`，上一个版本是 `HEAD^`，也就是 `e536d5721a3fc54e604548fc7d084bf2c3c16aca`，再上一个版本是 `HEAD^^`，也就是 `65d5179b23273b5c3374e06749c4679b3aa251b2`。
+git 使用 `HEAD` 来标识当前版本库的最新提交，这里是 `172fb0bb0c001e1451eab09d8abb04814c755d0d`，上一个版本是 `HEAD^`，也就是 `d63e6e188c19e1f13fbf38ec735125e7c22d5484`，再上一个版本是 `HEAD^^`，也就是 `172fb0bb0c001e1451eab09d8abb04814c755d0d`。
 
 我们使用 `git reset` 命令来回退到上一个版本。
 
@@ -189,9 +187,20 @@ git reset --hard HEAD^
 我们同样可以使用该命令返回更晚的版本，只要记得版本号
 
 ```bash
-git reset --hard 172fb0bb0c001e1451eab09d
+git reset --hard 493bb5004ef68c281f0fbf7f22e60e9111c94a86
 ```
 
 这里的版本号不需要是完整的哈希值，只需要前几位就可以了，Git 会自动匹配到唯一的版本。
 
 git 的版本回退很快，因为 Git 内部有一个指向当前版本的 `HEAD` 指针，回退只需要修改这个指针的指向即可。
+
+如果找不到可以使用 `git reflog` 命令查看所有的提交记录，包括已经被回退的版本。
+
+```bash
+172fb0b HEAD@{1}: reset: moving to HEAD^^
+493bb50 (HEAD -> main, origin/main, origin/HEAD) HEAD@{2}: commit: Update .gitignore and workspace layout settings
+d63e6e1 HEAD@{3}: commit: updated Git notes
+172fb0b HEAD@{4}: commit: Update .gitignore and workspace settings
+```
+
+这里发现 Update .gitignore and workspace layout settings 的版本号是 `493bb50`，可以使用 `git reset --hard 493bb50` 命令回到这个版本。
