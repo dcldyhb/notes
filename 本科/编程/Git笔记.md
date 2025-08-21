@@ -136,3 +136,62 @@ Git is free software.
 ### 版本回退
 
 - 使用 `git log` 命令可以查看版本库的提交历史，显示每次提交的哈希值，作者，日期，提交信息等信息.
+
+以这个笔记的版本库为例，显示
+
+```bash
+
+commit 172fb0bb0c001e1451eab09d8abb04814c755d0d (HEAD -> main, origin/main, origin/HEAD)
+Author: dcldyhb <1343605393@qq.com>
+Date:   Fri Aug 15 01:06:28 2025 +0800
+
+    Update .gitignore and workspace settings
+
+    Added a rule to ignore all .json files in .gitignore. Updated workspace.json to change the default open file and title, and adjusted the list of last open files.
+
+commit e536d5721a3fc54e604548fc7d084bf2c3c16aca
+Author: dcldyhb <1343605393@qq.com>
+Date:   Wed Aug 13 14:26:15 2025 +0800
+
+    update Git notes
+
+commit 65d5179b23273b5c3374e06749c4679b3aa251b2
+Author: dcldyhb <1343605393@qq.com>
+Date:   Tue Aug 12 22:31:04 2025 +0800
+
+    updated Git notes
+
+```
+
+在powee shell 中
+
+- 使用 <kbd>j</kbd> 和 <kbd>k</kbd> 键可以上下移动查看提交记录.
+- 使用 <kbd>q</kbd> 键可以退出日志查看.
+
+该命令会从最近到最远显示提交的记录，在这里我列出了最近的三个提交记录.
+
+最近的一次是 `Update .gitignore and workspace settings`，上一次是 `update Git notes`，再上一次是 `updated Git notes`。
+
+加上 `--pretty=oneline` 参数可以让输出显示为一行，方便查看。
+
+形如 `172fb0bb0c001e1451eab09d8abb04814c755d0d` 的是每次提交的版本号，git 会为每次提交生成一个唯一的哈希值，这个哈希值可以用来标识这次提交。
+
+git 使用 `HEAD` 来标识当前版本库的最新提交，这里是 `172fb0bb0c001e1451eab09d8abb04814c755d0d`，上一个版本是 `HEAD^`，也就是 `e536d5721a3fc54e604548fc7d084bf2c3c16aca`，再上一个版本是 `HEAD^^`，也就是 `65d5179b23273b5c3374e06749c4679b3aa251b2`。
+
+我们使用 `git reset` 命令来回退到上一个版本。
+
+```bash
+git reset --hard HEAD^
+```
+
+`--hard` 参数表明回到上个版本的已提交状态，`--soft` 参数表明回到上个版本的未提交状态，`--mixed` 参数表明回到上个版本的已暂存状态。
+
+我们同样可以使用该命令返回更晚的版本，只要记得版本号
+
+```bash
+git reset --hard 172fb0bb0c001e1451eab09d
+```
+
+这里的版本号不需要是完整的哈希值，只需要前几位就可以了，Git 会自动匹配到唯一的版本。
+
+git 的版本回退很快，因为 Git 内部有一个指向当前版本的 `HEAD` 指针，回退只需要修改这个指针的指向即可。
