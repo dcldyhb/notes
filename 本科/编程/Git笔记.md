@@ -1,5 +1,7 @@
 # git 学习
 
+（学完了才发现最好用的是 [GitHub Desktop](https://desktop.github.com/) 。。。）
+
 ## git 的安装和简单的配置
 
 ### 安装 Git
