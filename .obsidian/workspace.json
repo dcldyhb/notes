@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "本科/编程/Git笔记.md",
+                "file": "本科/编程/rust.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git笔记"
+              "title": "rust"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "13d012cba674f72e",
@@ -182,9 +181,13 @@
   },
   "active": "15ffd7cfb7844ae8",
   "lastOpenFiles": [
+    "本科/编程/rust.md.useredit.20250823222841.bak",
+    "本科/编程/tools/postprocess_pandoc.py",
+    "本科/编程/rust.pandoc.md",
+    "本科/编程/rust.md.20250823221729.bak",
+    "本科/编程/Git笔记.md",
     "README.md",
     "化学",
-    "本科/编程/Git笔记.md",
     "本科/编程/数据结构/数据结构笔记.md",
     "本科/编程/网页/CSS笔记.md",
     "本科/编程/网页/JavaScript笔记.md",
@@ -208,8 +211,6 @@
     "本科/编程/数据结构/数据结构笔记.pdf",
     "本科/编程/数据结构/test/数据结构笔记.beamer.toc",
     "本科/编程/数据结构/test/数据结构笔记.beamer.aux",
-    "本科/编程/数据结构/test/数据结构笔记.beamer.synctex(busy)",
-    "本科/编程/数据结构/test/数据结构笔记.beamer.tex",
     "本科/编程/数据结构/数据结构复习.md",
     "本科/编程/数据结构/DS/1_List.md",
     "test.md",
@@ -218,7 +219,6 @@
     "本科/通识/汉字文化/玺印文与瓦当文.md",
     "本科/编程/数据结构/DS/9_ExternalSorting.md",
     "本科/编程/数据结构/DS/4_Tree.md",
-    "本科/编程/数据结构/DS/5_PriorityQuene.md",
     "本科/通识/汉字文化/汉字与传统思想.png",
     "本科/通识/汉字文化/image.png",
     "本科/通识/汉字文化/汉字与民族审美精神.png",
