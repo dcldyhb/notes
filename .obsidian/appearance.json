@@ -4,5 +4,6 @@
   "baseFontSize": 17,
   "accentColor": "#39c5bb",
   "theme": "system",
-  "nativeMenus": true
+  "nativeMenus": true,
+  "showRibbon": true
 }

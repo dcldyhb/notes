@@ -1,8 +1,10 @@
-# git 学习
+# Git 笔记
 
-（学完了才发现最好用的是 [GitHub Desktop](https://desktop.github.com/) 。。。）
+本文参照了 [廖雪峰的 Git 教程](https://www.liaoxuefeng.com/wiki/896043488029600) 和 [CS 自学指南](https://csdiy.wiki/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/Git/) 的内容
 
-## git 的安装和简单的配置
+（学了好多才发现最好用的是 [GitHub Desktop](https://desktop.github.com/) ...）
+
+## Git 的安装和简单的配置
 
 ### 安装 Git
 
@@ -163,28 +165,28 @@ Date:   Fri Aug 15 01:06:28 2025 +0800
     Update .gitignore and workspace settings
 ```
 
-在powee shell 中
+在 powee shell 中
 
 - 使用 <kbd>j</kbd> 和 <kbd>k</kbd> 键可以上下移动查看提交记录.
 - 使用 <kbd>q</kbd> 键可以退出日志查看.
 
 该命令会从最近到最远显示提交的记录，在这里我列出了最近的三个提交记录.
 
-最近的一次是 `UUpdate .gitignore and workspace layout settings`，上一次是 `update Git notes`，再上一次是 `Update .gitignore and workspace settings`。
+最近的一次是 `UUpdate .gitignore and workspace layout settings`，上一次是 `update Git notes`，再上一次是 `Update .gitignore and workspace settings`.
 
-加上 `--pretty=oneline` 参数可以让输出显示为一行，方便查看。
+加上 `--pretty=oneline` 参数可以让输出显示为一行，方便查看.
 
-形如 `493bb5004ef68c281f0fbf7f22e60e9111c94a86` 的是每次提交的版本号，git 会为每次提交生成一个唯一的哈希值，这个哈希值可以用来标识这次提交。
+形如 `493bb5004ef68c281f0fbf7f22e60e9111c94a86` 的是每次提交的版本号，git 会为每次提交生成一个唯一的哈希值，这个哈希值可以用来标识这次提交.
 
-git 使用 `HEAD` 来标识当前版本库的最新提交，这里是 `172fb0bb0c001e1451eab09d8abb04814c755d0d`，上一个版本是 `HEAD^`，也就是 `d63e6e188c19e1f13fbf38ec735125e7c22d5484`，再上一个版本是 `HEAD^^`，也就是 `172fb0bb0c001e1451eab09d8abb04814c755d0d`。
+git 使用 `HEAD` 来标识当前版本库的最新提交，这里是 `172fb0bb0c001e1451eab09d8abb04814c755d0d`，上一个版本是 `HEAD^`，也就是 `d63e6e188c19e1f13fbf38ec735125e7c22d5484`，再上一个版本是 `HEAD^^`，也就是 `172fb0bb0c001e1451eab09d8abb04814c755d0d`.
 
-我们使用 `git reset` 命令来回退到上一个版本。
+我们使用 `git reset` 命令来回退到上一个版本.
 
 ```bash
 git reset --hard HEAD^
 ```
 
-`--hard` 参数表明回到上个版本的已提交状态，`--soft` 参数表明回到上个版本的未提交状态，`--mixed` 参数表明回到上个版本的已暂存状态。
+`--hard` 参数表明回到上个版本的已提交状态，`--soft` 参数表明回到上个版本的未提交状态，`--mixed` 参数表明回到上个版本的已暂存状态.
 
 我们同样可以使用该命令返回更晚的版本，只要记得版本号
 
@@ -192,11 +194,11 @@ git reset --hard HEAD^
 git reset --hard 493bb5004ef68c281f0fbf7f22e60e9111c94a86
 ```
 
-这里的版本号不需要是完整的哈希值，只需要前几位就可以了，Git 会自动匹配到唯一的版本。
+这里的版本号不需要是完整的哈希值，只需要前几位就可以了，Git 会自动匹配到唯一的版本.
 
-git 的版本回退很快，因为 Git 内部有一个指向当前版本的 `HEAD` 指针，回退只需要修改这个指针的指向即可。
+git 的版本回退很快，因为 Git 内部有一个指向当前版本的 `HEAD` 指针，回退只需要修改这个指针的指向即可.
 
-如果找不到可以使用 `git reflog` 命令查看所有的提交记录，包括已经被回退的版本。
+如果找不到可以使用 `git reflog` 命令查看所有的提交记录，包括已经被回退的版本.
 
 ```bash
 172fb0b HEAD@{1}: reset: moving to HEAD^^
@@ -205,4 +207,12 @@ d63e6e1 HEAD@{3}: commit: updated Git notes
 172fb0b HEAD@{4}: commit: Update .gitignore and workspace settings
 ```
 
-这里发现 Update .gitignore and workspace layout settings 的版本号是 `493bb50`，可以使用 `git reset --hard 493bb50` 命令回到这个版本。
+这里发现 Update .gitignore and workspace layout settings 的版本号是 `493bb50`，可以使用 `git reset --hard 493bb50` 命令回到这个版本.
+
+### 工作区和暂存区
+
+#### 名词解释
+
+- **工作区（Working Directory）：** 电脑中的目录
+- **版本库（Repository）：** 工作区中的 `.git` 目录，默认为隐藏
+  存储有所有的版本信息，其中最重要的就是称为 `stage` （或 `index`）的暂存区，还有 Git 为我们自动创建的第一个分支 `master` 分支，以及指向当前分支的 `HEAD` 指针.

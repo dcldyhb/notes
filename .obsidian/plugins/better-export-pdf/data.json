@@ -18,7 +18,7 @@
     "showTitle": true,
     "open": true,
     "scale": 100,
-    "landscape": false,
+    "landscape": true,
     "marginTop": "10",
     "marginBottom": "10",
     "marginLeft": "10",
