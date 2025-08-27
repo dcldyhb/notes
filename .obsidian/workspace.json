@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ccf243bcadbe0ae1",
+        "id": "99372c0af8d50c8a",
         "type": "tabs",
         "children": [
           {
-            "id": "5a8d4757aea94572",
+            "id": "67cb0618e17e70e0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "13d012cba674f72e",
@@ -181,10 +180,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5a8d4757aea94572",
+  "active": "67cb0618e17e70e0",
   "lastOpenFiles": [
-    "本科/物理/大学物理1笔记.md",
     "本科/数学/数理方法笔记.md",
+    "本科/物理/大学物理1笔记.md",
     "本科/数学/高数2笔记.md",
     "本科/红课/毛概/毛概.md",
     "本科/红课/毛概/黑波.md",

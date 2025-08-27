@@ -12,5 +12,6 @@
   },
   "strictLineBreaks": false,
   "defaultViewMode": "preview",
-  "focusNewTab": false
+  "focusNewTab": false,
+  "vimMode": false
 }
