@@ -15,7 +15,7 @@
               "state": {
                 "file": "本科/数学/数理方法笔记.md",
                 "mode": "preview",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "数理方法笔记"
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "13d012cba674f72e",
