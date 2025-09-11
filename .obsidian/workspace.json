@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1e488c6893085d48",
+        "id": "db675ef0e04c8ed7",
         "type": "tabs",
         "children": [
           {
-            "id": "32d4b88bc34b1e6a",
+            "id": "7e2368f40d7e4c43",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "本科/数学/数理方法笔记.md",
+                "file": "本科/编程/网页/个人博客搭建.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "数理方法笔记"
+              "title": "个人博客搭建"
             }
           }
         ]
@@ -180,16 +180,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "32d4b88bc34b1e6a",
+  "active": "7e2368f40d7e4c43",
   "lastOpenFiles": [
-    "本科/数学/高数2笔记.md",
+    "本科/编程/网页/个人博客搭建.md",
+    "本科/物理/大学物理3/大学物理3笔记.md",
     "本科/数学/数理方法笔记.md",
+    "本科/数学/高数2笔记.md",
     "本科/数学/数理方法笔记.html",
     "本科/物理/大学物理1笔记.md",
     "本科/红课/毛概/毛概.md",
     "本科/红课/毛概/黑波.md",
     "本科/编程/数据结构/数据结构笔记.md",
-    "本科/物理/大学物理3/大学物理3笔记.md",
     "本科/物理/大学物理3/SchrodingerEquationApplication.md",
     "README.md",
     "本科/数学/数理方法笔记~.md",
