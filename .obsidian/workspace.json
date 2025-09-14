@@ -11,12 +11,14 @@
             "id": "15ffd7cfb7844ae8",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.9.10"
+                "file": "本科/编程/网页/个人博客搭建.md",
+                "mode": "preview",
+                "source": true
               },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.9.10"
+              "icon": "lucide-file",
+              "title": "个人博客搭建"
             }
           }
         ]
@@ -76,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "13d012cba674f72e",
@@ -180,6 +183,9 @@
   },
   "active": "15ffd7cfb7844ae8",
   "lastOpenFiles": [
+    "ter.txt",
+    "tertxt",
+    "本科/红课/毛概/黑波.md",
     "本科/编程/网页/个人博客搭建.md",
     "本科/编程/rust.md.useredit.20250823222841.bak",
     "本科/编程/tools/postprocess_pandoc.py",
@@ -197,7 +203,6 @@
     "本科/编程/数据结构/中缀计算式转换为后缀计算式.md",
     "本科/物理/大学物理3/大学物理3笔记.md",
     "1.html",
-    "本科/红课/毛概/黑波.md",
     "本科/物理/大学物理1笔记.md",
     "本科/物理/image.png",
     "本科/红课/毛概.md",
@@ -209,7 +214,6 @@
     "本科/物理/大学物理3/复习.pdf",
     "本科/编程/数据结构/ppt.pdf",
     "本科/编程/数据结构/数据结构笔记.pdf",
-    "本科/编程/数据结构/test/数据结构笔记.beamer.toc",
     "本科/编程/数据结构/数据结构复习.md",
     "本科/编程/数据结构/DS/1_List.md",
     "test.md",
@@ -217,7 +221,6 @@
     "未命名.canvas",
     "本科/通识/汉字文化/玺印文与瓦当文.md",
     "本科/编程/数据结构/DS/9_ExternalSorting.md",
-    "本科/编程/数据结构/DS/4_Tree.md",
     "本科/通识/汉字文化/汉字与传统思想.png",
     "本科/通识/汉字文化/image.png",
     "本科/通识/汉字文化/汉字与民族审美精神.png",
