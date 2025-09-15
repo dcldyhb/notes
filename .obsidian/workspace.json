@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d7f91224c2abdcfa",
+        "id": "d0c9b31076a23837",
         "type": "tabs",
         "children": [
           {
-            "id": "36a07b138ec38426",
+            "id": "c49dec22df54ad13",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -74,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "13d012cba674f72e",
@@ -176,7 +177,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "36a07b138ec38426",
+  "active": "c49dec22df54ad13",
   "lastOpenFiles": [
     "本科/专业课/自动控制原理.md",
     "本科/编程/网页/个人博客搭建.md",
