@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1f896242e32ae9c5",
+        "id": "d7f91224c2abdcfa",
         "type": "tabs",
         "children": [
           {
-            "id": "15ffd7cfb7844ae8",
+            "id": "36a07b138ec38426",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "本科/编程/网页/个人博客搭建.md",
-                "mode": "preview",
-                "source": true
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "个人博客搭建"
+              "title": "新标签页"
             }
           }
         ]
@@ -78,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "13d012cba674f72e",
@@ -181,12 +176,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "15ffd7cfb7844ae8",
+  "active": "36a07b138ec38426",
   "lastOpenFiles": [
+    "本科/专业课/自动控制原理.md",
+    "本科/编程/网页/个人博客搭建.md",
+    "本科/专业课",
     "ter.txt",
     "tertxt",
     "本科/红课/毛概/黑波.md",
-    "本科/编程/网页/个人博客搭建.md",
     "本科/编程/rust.md.useredit.20250823222841.bak",
     "本科/编程/tools/postprocess_pandoc.py",
     "本科/编程/rust.pandoc.md",
@@ -212,8 +209,6 @@
     "本科/物理/大学物理3/wxzppt.pdf",
     "本科/物理/大学物理3/复习.md",
     "本科/物理/大学物理3/复习.pdf",
-    "本科/编程/数据结构/ppt.pdf",
-    "本科/编程/数据结构/数据结构笔记.pdf",
     "本科/编程/数据结构/数据结构复习.md",
     "本科/编程/数据结构/DS/1_List.md",
     "test.md",
