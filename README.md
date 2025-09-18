@@ -5,8 +5,6 @@ hide: true
 
 # Notes
 
-本科笔记
-
 ## 本科
 
 - 编程
