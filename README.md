@@ -1,3 +1,8 @@
+---
+title: readme
+hide: true
+---
+
 # Notes
 
 本科笔记

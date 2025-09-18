@@ -1,14 +1,15 @@
-<head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [['$','$']]
-            }
-        });
-    </script>
-</head>
+---
+title: Schrodinger Equation Application
+category:
+  - 专业课程
+  - 物理
+tags:
+  - 物理
+  - 量子力学
+  - 课程笔记补充
+math: true
+hide: true
+---
 
 # Schrodinger Equation Application
 
