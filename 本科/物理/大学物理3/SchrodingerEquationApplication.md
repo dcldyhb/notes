@@ -9,6 +9,7 @@ tags:
   - 课程笔记补充
 math: true
 hide: true
+date: 2025-4-18 16:24:28
 ---
 
 # Schrodinger Equation Application
