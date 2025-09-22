@@ -42,6 +42,8 @@ usually we start in normal mode.
 
 #### normal mode
 
+we can go through and use commends in normal mode
+
 In normal mode, we can use keys to move the cursor
 
 - <kbd>h</kbd>: move left
@@ -51,6 +53,8 @@ In normal mode, we can use keys to move the cursor
 
 #### insert mode
 
+We can edit text in insert mode.
+
 there are several ways to enter insert mode
 
 - <kbd>i</kbd>: insert
@@ -59,3 +63,5 @@ there are several ways to enter insert mode
 - <kbd>I</kbd>: insert before the line
 - <kbd>A</kbd>: append at the end of the line
 - <kbd>O</kbd>: open a new line above
+
+and use <kbd>Esc</kbd> to exit insert mode and return to normal mode
