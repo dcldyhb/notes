@@ -1,7 +1,7 @@
 ---
 title: Schrodinger Equation Application
 category:
-  - 专业课程
+  - 本科课程
   - 物理
 tags:
   - 物理
