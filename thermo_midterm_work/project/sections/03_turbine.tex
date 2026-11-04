@@ -1,0 +1,915 @@
+\section{汽轮机}
+
+%! src=25 kind=orig title=汽轮机·章节导入
+\begin{frame}[t,shrink]{\src{25}{汽轮机：章节导入}}
+\chapterintro{03}{汽轮机}{Steam turbine: stage, velocity triangle and expansion}
+{\begin{itemize}
+  \item 蒸汽怎样在喷嘴和动叶中完成能量转换？
+  \item 速度三角形、反动度和级效率之间是什么关系？
+  \item 多级汽轮机为什么能提高效率？凝汽器为什么重要？
+\end{itemize}}
+{原页 25--46 \,$\cdot$\, 主线：蒸汽膨胀 $\rightarrow$ 速度三角形 $\rightarrow$ 轮周功 $\rightarrow$ 级效率 $\rightarrow$ 多级与冷端}
+\vspace{3mm}
+\begin{center}
+\small
+\textbf{关键词}\quad 级 \enspace$\cdot$\enspace 速度三角形 \enspace$\cdot$\enspace 反动度 \enspace$\cdot$\enspace 余速 \enspace$\cdot$\enspace 凝汽器
+\end{center}
+\end{frame}
+
+%! src=26 kind=orig title=汽轮机定义及能量转换链
+\begin{frame}[t,shrink]{\src{26}{汽轮机定义及能量转换链}}
+汽轮机利用蒸汽膨胀驱动叶轮旋转，输出机械功。
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,scale=0.9,transform shape]
+  \node[box,text width=23mm] (fuel) at (12,0) {燃料化学能};
+  \node[box,text width=25mm] (boil) at (47,0) {锅炉\\蒸汽热能};
+  \node[box,text width=25mm] (st) at (82,0) {汽轮机\\机械能};
+  \node[boxb,text width=23mm] (gen) at (117,0) {发电机\\电能};
+  \draw[arr] (fuel) -- (boil);
+  \draw[arr] (boil) -- (st);
+  \draw[arr] (st) -- (gen);
+  \node[lab,text=black!55] at (65,-8) {膨胀做功};
+\end{tikzpicture}
+\end{center}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.53\textwidth}
+  \begin{itemize}
+    \item 蒸汽可来自锅炉，也可来自其他蒸汽发生器（核电、余热锅炉等）。
+    \item 汽轮机可驱动发电机，也可直接驱动泵、风机、压缩机或舰船螺旋桨。
+    \item 课件列举用途：火电、核电、舰船、工业驱动。
+    \item 锅炉向工质输入热量；汽轮机从蒸汽中取得机械功。
+  \end{itemize}
+\end{column}
+\begin{column}{0.44\textwidth}
+  \begin{keybox}{能量边界}
+  \small 汽轮机不是“把热能直接变成电能”。它先把蒸汽的焓降和动能转成轴功，发电机再把轴功转成电能。
+  \end{keybox}
+  \vspace{0.8mm}
+  \begin{amberbox}{不要混淆}
+  \small 锅炉负责产生蒸汽，凝汽器负责冷端排热；二者都不是汽轮机的通流部件。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=27 kind=orig title=汽轮机的分类
+\begin{frame}[t,shrink]{\src{27}{汽轮机的分类}}
+\begin{smalltab}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{24mm}p{45mm}X@{}}
+  \toprule
+  分类依据 & 主要类型 & 关注点\\
+  \midrule
+  工作原理 & 冲动式、反动式 & 蒸汽在静叶、动叶中的膨胀分配\\
+  流动方向 & 轴流式、径流式、混流式 & 蒸汽整体流动方向\\
+  主蒸汽参数 & 低压、中压、高压、超高压、亚临界、超临界、超超临界 & 机组的热力条件\\
+  \bottomrule
+\end{tabularx}
+\end{smalltab}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.51\textwidth}
+  \begin{itemize}
+    \item 冲动/反动描述\textbf{级的膨胀分配}，不是“有没有叶片受力”。
+    \item 轴流式蒸汽沿轴向流动；径流式沿径向流动。
+    \item 主蒸汽参数等级与锅炉参数共同决定机组的温度、压力边界。
+  \end{itemize}
+\end{column}
+\begin{column}{0.46\textwidth}
+  \begin{keybox}{分类维度不同}
+  \small 一台机组可以同时是“反动式、轴流式、超超临界”。回答分类题时要先说明按什么依据分类。
+  \end{keybox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=28 kind=orig title=汽轮机的基本做功单元：级
+\begin{frame}[t,shrink]{\src{28}{汽轮机的基本做功单元：级}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.52\textwidth}
+  \begin{itemize}
+    \item 一个级由\textbf{一列喷嘴叶栅}与配合工作的\textbf{动叶栅}组成。
+    \item 动叶栅可为单列，也可为多列（例如双列复速级）。
+    \item 相邻静叶形成喷嘴通道；相邻动叶形成动叶通道。
+    \item 第一阶段：喷嘴中热能 $\rightarrow$ 汽流动能。
+    \item 第二阶段：动叶中汽流动能 $\rightarrow$ 转子机械能。
+  \end{itemize}
+\end{column}
+\begin{column}{0.45\textwidth}
+  \begin{keybox}{读“级”的概念}
+  \small 级是\textbf{静叶 + 动叶}的组合；不要把一排叶片单独叫作级。多级汽轮机由多个这样的组合串联。
+  \end{keybox}
+  \vspace{0.8mm}
+  \begin{amberbox}{反动级也要先加速}
+  \small 在反动级中，蒸汽还在动叶内继续膨胀加速；但“喷嘴先把热能变动能”这一总体描述仍成立。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\vspace{1mm}
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,scale=0.9,transform shape]
+  \node[box,text width=20mm] (in) at (8,0) {蒸汽\\\(p_0,c_0\)};
+  \node[box,text width=28mm] (noz) at (42,0) {静叶 / 喷嘴\\膨胀加速};
+  \node[box,text width=28mm] (rot) at (78,0) {动叶\\动量交换};
+  \node[boxb,text width=22mm] (shaft) at (112,0) {轴功\\\(P\)};
+  \draw[arr] (in) -- (noz);
+  \draw[arr] (noz) -- node[lab,above]{\(c_1\)} (rot);
+  \draw[arr] (rot) -- (shaft);
+  \node[lab,text=black!55] at (60,-9) {热能 $\rightarrow$ 动能};
+  \node[lab,text=black!55] at (95,-9) {动能 $\rightarrow$ 机械能};
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+%! src=29 kind=orig title=速度三角形与参考系
+\begin{frame}[t,shrink]{\src{29}{速度三角形与参考系}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.57\textwidth}
+\begin{tikzpicture}[x=8.2mm,y=7.4mm]
+  % 入口
+  \coordinate (A) at (0,0); \coordinate (B) at (2.2,0); \coordinate (C) at (3.0,2.4);
+  \draw[arrb] (A) -- (C) node[midway,above left,lab] {\(\vec c_1\)};
+  \draw[arr] (A) -- (B) node[midway,below,lab] {\(\vec u\)};
+  \draw[arr] (B) -- (C) node[midway,above right,lab] {\(\vec w_1\)};
+  \node[lab,anchor=south east] at (A) {入口 1};
+  \node[lab,text=black!55] at (2.0,3.0) {\(\alpha_1\)};
+  \node[lab,text=black!55] at (2.6,0.3) {\(\beta_1\)};
+  % 出口
+  \coordinate (D) at (5.6,0); \coordinate (E) at (7.8,0); \coordinate (F) at (8.5,1.7);
+  \draw[arrb] (D) -- (F) node[midway,above left,lab] {\(\vec c_2\)};
+  \draw[arr] (D) -- (E) node[midway,below,lab] {\(\vec u\)};
+  \draw[arr] (E) -- (F) node[midway,above right,lab] {\(\vec w_2\)};
+  \node[lab,anchor=south west] at (D) {出口 2};
+  \node[lab,text=black!55] at (7.3,1.9) {\(\alpha_2\)};
+  \node[lab,text=black!55] at (7.6,0.4) {\(\beta_2\)};
+  \draw[dashline] (C) -- (C |- A);
+  \draw[dashline] (F) -- (F |- D);
+\end{tikzpicture}
+\figcap{速度三角形：\(\vec c=\vec u+\vec w\)；绝对速度 \(\vec c\)、圆周速度 \(\vec u\)、相对速度 \(\vec w\)。}
+\end{column}
+\begin{column}{0.40\textwidth}
+  \begin{itemize}
+    \item \(\vec c\)：汽流相对静止坐标系的绝对速度。
+    \item \(\vec u\)：动叶圆周速度，方向沿叶轮切线。
+    \item \(\vec w\)：汽流相对动叶的相对速度。
+    \item 下标 1、2 表示动叶入口、出口。
+    \item 速度三角形把\textbf{流动方向、叶片运动、做功}联系起来。
+  \end{itemize}
+  \vspace{0.5mm}
+  \begin{amberbox}{矢量和}
+  \small 不能把 \(c=u+w\) 当作标量直接相加；要求分量或按三角形闭合。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\vspace{1mm}
+\begin{keybox}{速度分量}
+\small 设 \(\alpha\) 为 \(\vec c\) 与周向的夹角：周向分量 \(c_{\mathrm{u}}=c\cos\alpha\)，轴向分量 \(c_{\mathrm{a}}=c\sin\alpha\)；叶片速度 \(u=\pi dn/60\)（\(d\) 为平均直径）。轴向分量主要影响通流，周向分量与轮周功直接相关。
+\end{keybox}
+\end{frame}
+
+
+%! src=29 kind=supp title=从速度三角形到欧拉方程
+\begin{frame}[t,shrink]{\srcsupp{29}{从速度三角形到欧拉方程}}
+在平均半径处取圆周速度 \(u\)，用有符号的周向分量表示：
+$$
+w_{\mathrm{u}}=u\left(c_{1\mathrm{u}}-c_{2\mathrm{u}}\right),
+\qquad
+P_{\mathrm{u}}=\dot m\,w_{\mathrm{u}}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.50\textwidth}
+  \begin{itemize}
+    \item \(c_{1\mathrm{u}}\)、\(c_{2\mathrm{u}}\)：入口、出口绝对速度的周向分量。
+    \item \(w_{\mathrm{u}}\)：单位质量蒸汽的轮周功，\(\mathrm{J/kg}\)。
+    \item \(P_{\mathrm{u}}\)：轮周功率，\(\mathrm{W}\)；已乘质量流量 \(\dot m\)。
+  \end{itemize}
+\end{column}
+\begin{column}{0.47\textwidth}
+  \begin{keybox}{符号约定}
+  \small 图中若把出口周向分量画成“反向长度”，公式外观可能变成加号。计算时先规定正方向，再代代数符号。
+  \end{keybox}
+  \vspace{0.7mm}
+  \begin{amberbox}{量纲}
+  \small \(u\Delta c_{\mathrm{u}}\) 的单位是 \(\mathrm{m^2/s^2}=\mathrm{J/kg}\)；要得到功率，必须再乘 \(\mathrm{kg/s}\)。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\vspace{0.5mm}
+\begin{plainbox}
+\small \textbf{读图步骤}：先确定入口/出口 $\rightarrow$ 画 \(\vec u\) $\rightarrow$ 用 \(\vec c=\vec u+\vec w\) 闭合三角形 $\rightarrow$ 分解周向和轴向分量 $\rightarrow$ 代入欧拉方程。
+\end{plainbox}
+\end{frame}
+
+%! src=30 kind=orig title=级内速度变化与轮周功
+\begin{frame}[t,shrink]{\src{30}{级内速度变化与轮周功}}
+在课件采用的绝热、忽略位能变化的级模型中：
+$$
+w_{\mathrm{u}}
+=\left(h_0+\frac{c_0^2}{2}\right)
+-\left(h_2+\frac{c_2^2}{2}\right)
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.49\textwidth}
+  \begin{smalltab}
+  \begin{tabularx}{\linewidth}{@{}>{\bfseries}p{13mm}XXX@{}}
+    \toprule
+    站位 & 压力 & 速度 & 焓\\
+    \midrule
+    0 & \(p_0\) & \(c_0\) & \(h_0\)\\
+    1 & \(p_1<p_0\) & \(c_1>c_0\) & \(h_1<h_0\)\\
+    2 & \(p_2<p_1\) & 通常 \(c_2<c_1\) & \(h_2<h_1\)\\
+    \bottomrule
+  \end{tabularx}
+  \end{smalltab}
+  \vspace{0.5mm}
+  \begin{itemize}
+    \item \(w_{\mathrm{u}}\) 是单位质量蒸汽的\textbf{轮周比功}。
+    \item \(c^2/2\) 按 \(\mathrm{J/kg}\) 计；换成 \(\mathrm{kJ/kg}\) 时要除以 1000。
+  \end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+  \begin{amberbox}{原课件表述有问题}
+  \small 原页把 \(w_{\mathrm{u}}\) 说成“单位质量蒸汽在单位时间内所做的功”。单位质量已经是比量，不应再除时间；要得到功率必须乘以质量流量。
+  \end{amberbox}
+  \vspace{0.7mm}
+  \begin{keybox}{与欧拉方程一致}
+  \small 热力学焓降表达与 \(u(c_{1u}-c_{2u})\) 描述同一能量交换，前提是边界、符号和速度参考系一致。
+  \end{keybox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=31 kind=orig title=级的焓降及损失符号
+\begin{frame}[t,shrink]{\src{31}{级的焓降及损失符号}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.51\textwidth}
+$$
+\begin{aligned}
+\Delta h_{c0}&=\frac{c_0^2}{2},&
+\Delta h_{c2}&=\frac{c_2^2}{2}\\
+\Delta h_{\mathrm{n}}&=h_0-h_{1\mathrm{t}},&
+\Delta h_{\mathrm{n}\xi}&=h_1-h_{1\mathrm{t}}\\
+\Delta h_{\mathrm{b}}&=h_1-h_{2\mathrm{t}},&
+\Delta h_{\mathrm{b}\xi}&=h_2-h_{2\mathrm{t}}\\
+\Delta h_{\mathrm{t}}&=h_0-h_{2\mathrm{t}'},&
+\Delta h_{\mathrm{t}}^*&=\Delta h_{\mathrm{t}}+\Delta h_{c0}
+\end{aligned}
+$$
+\end{column}
+\begin{column}{0.46\textwidth}
+  \begin{itemize}
+    \item \(\mathrm{n}\)、\(\mathrm{b}\) 分别表示喷嘴、动叶；\(\xi\) 表示相应损失。
+    \item \(1\mathrm{t}\)、\(2\mathrm{t}\) 是分段等熵出口；\(2\mathrm{t}'\) 是整级等熵出口。
+    \item \(\Delta h_{\mathrm{t}}^*\) 是计入入口动能后的级滞止理想焓降。
+  \end{itemize}
+\end{column}
+\end{columns}
+\vspace{0.8mm}
+\begin{amberbox}{原页的两处符号问题}
+\small (1) 原式写作 \(h_{2t'}\) 还是 \(h_{2t}'\)，投影不易分辨；本整理把“整级等熵出口”记为 \(2\mathrm{t}'\)。(2) \(\Delta h_{\mathrm{t}}\approx\Delta h_{\mathrm{n}}+\Delta h_{\mathrm{b}}\) 是近似式；有损失时 \(h_{1}>h_{1t}\)，等式不严格成立。
+\end{amberbox}
+\end{frame}
+
+%! src=31 kind=supp title=沿焓熵图区分理想与实际状态
+\begin{frame}[t,shrink]{\srcsupp{31}{沿焓熵图区分实际与理想状态}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.55\textwidth}
+\begin{tikzpicture}[x=6.4mm,y=5.8mm]
+  \draw[axis] (0,0) -- (10.6,0) node[below,lab] {\(s\)};
+  \draw[axis] (0,0) -- (0,9.8) node[left,lab] {\(h\)};
+  \draw[hline] (0.4,8.6) -- (9.8,9.3) node[right,lab] {\(p_0\)};
+  \draw[hline] (0.4,5.8) -- (9.8,6.8) node[right,lab] {\(p_1\)};
+  \draw[hline] (0.4,2.0) -- (9.8,3.0) node[right,lab] {\(p_2\)};
+  \coordinate (O) at (2.0,8.71); \coordinate (Os) at (2.0,9.4);
+  \coordinate (T1) at (4.2,6.2); \coordinate (A1) at (5.4,6.33);
+  \coordinate (T2) at (5.4,2.53); \coordinate (A2) at (7.2,2.71);
+  \coordinate (T2p) at (2.0,2.16);
+  \draw[thick,cprimary] (O) -- (T1);
+  \draw[thick,cprimary] (O) -- (A1);
+  \draw[thick,cprimary] (A1) -- (T2);
+  \draw[thick,cprimary] (A1) -- (A2);
+  \draw[dashline] (O) -- (T2p);
+  \foreach \p/\n/\a in {O/0/below left,Os/0^*/above left,T1/1t/below right,A1/1/above right,T2/2t/below left,A2/2/above right,T2p/2t'/below right}{
+    \fill[cprimary] (\p) circle (0.13);
+    \node[font=\fontsize{5.2}{6}\selectfont,text=black!75,\a] at (\p) {\(\n\)};
+  }
+  \draw[<->,thin] (1.1,9.4) -- (1.1,2.16) node[midway,left,lab] {\(\Delta h_{\mathrm{t}}^*\)};
+  \draw[<->,thin] (2.9,8.71) -- (2.9,2.16) node[midway,right,lab] {\(\Delta h_{\mathrm{t}}\)};
+  \draw[<->,thin] (5.4,6.33) -- (5.4,2.53) node[midway,right,lab] {\(\Delta h_{\mathrm{b}}\)};
+  \draw[<->,thin] (3.5,8.71) -- (3.5,6.2) node[midway,right,lab] {\(\Delta h_{\mathrm{n}}\)};
+  \end{tikzpicture}
+\end{column}
+\begin{column}{0.42\textwidth}
+  \begin{itemize}
+    \item 纵轴比焓 \(h\)，横轴比熵 \(s\)。
+    \item \(0^*\) 是计入入口动能的滞止状态。
+    \item \(1\mathrm{t}\)、\(2\mathrm{t}\) 是喷嘴、动叶各自的等熵出口。
+    \item \(2\mathrm{t}'\) 是从级入口直接等熵膨胀到 \(p_2\) 的状态。
+    \item 实际出口焓高于对应理想值，差值就是损失。
+  \end{itemize}
+  \begin{amberbox}{读图关键}
+  \small 比较焓降前先确认起点、终点和等熵参考；不要把分段等熵与整级等熵混在一起。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=32 kind=orig title=反动度的定义
+\begin{frame}[t,shrink]{\src{32}{反动度的定义}}
+反动度衡量蒸汽在\textbf{动叶通道内}的膨胀程度：
+$$
+\Omega_{\mathrm{m}}
+=\frac{\Delta h_{\mathrm{b}}}{\Delta h_{\mathrm{t}}^*}
+\approx
+\frac{\Delta h_{\mathrm{b}}}{\Delta h_{\mathrm{n}}^*+\Delta h_{\mathrm{b}}}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.50\textwidth}
+  \begin{itemize}
+    \item 分子：动叶中的理想比焓降 \(\Delta h_{\mathrm{b}}\)。
+    \item 分母：级的滞止理想比焓降 \(\Delta h_{\mathrm{t}}^*\)。
+    \item \(\Delta h_{\mathrm{n}}^*\)：把入口动能计入的喷嘴理想能量。
+    \item 反动度越大，动叶承担的膨胀份额越大。
+  \end{itemize}
+\end{column}
+\begin{column}{0.47\textwidth}
+  \begin{amberbox}{它不是功率份额}
+  \small \(\Omega_{\mathrm{m}}\) 是\textbf{焓降分配比例}，不是动叶输出功占整级输出功的比例。输出功还取决于速度三角形和损失。
+  \end{amberbox}
+  \vspace{0.7mm}
+  \begin{keybox}{分母怎么选}
+  \small 用带星号的滞止量时，分母要把入口动能算进去；忽略入口动能时，才可近似用静焓降。
+  \end{keybox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=32 kind=supp title=反动度为0或0.5意味着什么
+\begin{frame}[t,shrink]{\srcsupp{32}{反动度为 0 或 0.5 分别意味着什么}}
+从课件近似式出发：
+$$
+\Delta h_{\mathrm{b}}\approx\Omega_{\mathrm{m}}\Delta h_{\mathrm{t}}^*,
+\qquad
+\Delta h_{\mathrm{n}}^*\approx\left(1-\Omega_{\mathrm{m}}\right)\Delta h_{\mathrm{t}}^*
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.48\textwidth}
+  \begin{itemize}
+    \item \(\Omega_{\mathrm{m}}=0\)：动叶没有理想膨胀焓降，但仍可通过汽流转向做功。
+    \item \(\Omega_{\mathrm{m}}=0.5\)：静叶与动叶的上述理想能量份额各约一半。
+    \item 反动度小不等于轴功小；轴功还取决于速比和速度三角形。
+  \end{itemize}
+\end{column}
+\begin{column}{0.49\textwidth}
+\begin{center}
+\begin{tikzpicture}[x=4.8mm,y=4.8mm]
+  \draw[axis] (0,0) -- (13,0) node[below,lab] {流程};
+  \draw[axis] (0,0) -- (0,7) node[left,lab] {\(p\)};
+  \draw[thick,cprimary] (1,6) -- (4,6) -- (4,3) -- (11,3) -- (11,2.8);
+  \draw[thick,cblue] (1,5.4) -- (4,5.4) -- (4,2.2) -- (11,2.2) -- (11,0.6);
+  \node[lab,anchor=south] at (2.5,6.1) {纯冲动};
+  \node[lab,anchor=south] at (2.5,5.5) {反动};
+  \node[lab,anchor=north] at (7,2.9) {动叶};
+  \node[lab,anchor=north] at (7,2.1) {动叶};
+  \node[lab,text=black!55] at (2.4,1.2) {喷嘴};
+\end{tikzpicture}
+\end{center}
+\figcap{压力示意：纯冲动级动叶内理想压力近似不变；反动级动叶内继续降压。}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=33 kind=orig title=冲动原理与反动原理
+\begin{frame}[t,shrink]{\src{33}{冲动原理与反动原理}}
+\begin{smalltab}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{16mm}p{48mm}X@{}}
+  \toprule
+  原理 & 物理图像 & 在叶片中的体现\\
+  \midrule
+  冲动 & 流体速度大小或方向改变，对叶片产生作用力 & 汽流转向，向动叶传递动量\\
+  反动 & 流体在运动部件通道内膨胀加速，产生反作用 & 动叶内继续膨胀、加速并做功\\
+  \bottomrule
+\end{tabularx}
+\end{smalltab}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.51\textwidth}
+  \begin{itemize}
+    \item 冲动原理强调\textbf{动量改变}产生的力。
+    \item 反动原理强调\textbf{膨胀加速}产生的反作用力。
+    \item 实际汽轮机中两种作用常同时存在；判断级型要看动叶压降和反动度。
+  \end{itemize}
+\end{column}
+\begin{column}{0.46\textwidth}
+  \begin{keybox}{术语链}
+  \small 冲动原理 $\rightarrow$ 冲动级；反动原理 $\rightarrow$ 反动级；工程冲动级往往带有小反动度。
+  \end{keybox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=34 kind=orig title=纯冲动级与反动级
+\begin{frame}[t,shrink]{\src{34}{纯冲动级与反动级}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.48\textwidth}
+  \begin{center}
+  \begin{tikzpicture}[x=4.8mm,y=4.8mm]
+    \draw[axis] (0,0) -- (12.5,0) node[below,lab] {流程};
+    \draw[axis] (0,0) -- (0,7) node[left,lab] {\(p\)};
+    \draw[thick,cprimary] (1,6) -- (4,6) -- (4,2.4) -- (11.5,2.4);
+    \node[lab,anchor=south] at (2.5,6.1) {\(p_0\)};
+    \node[lab,anchor=north] at (4,2.4) {\(p_1\)};
+    \node[lab,anchor=north] at (10,2.4) {\(p_2\approx p_1\)};
+    \node[lab,text=black!55] at (2.5,1) {喷嘴};
+    \node[lab,text=black!55] at (8,1) {动叶};
+  \end{tikzpicture}
+  \end{center}
+  {\small\bfseries 纯冲动级：\(\Omega_{\mathrm{m}}=0\)}
+  \begin{itemize}
+    \item 蒸汽主要在喷嘴内膨胀，动叶中不膨胀，只改变方向。
+    \item 课件比较：做功能力较大，但损失较大、效率较低。
+  \end{itemize}
+\end{column}
+\begin{column}{0.49\textwidth}
+  \begin{center}
+  \begin{tikzpicture}[x=4.8mm,y=4.8mm]
+    \draw[axis] (0,0) -- (12.5,0) node[below,lab] {流程};
+    \draw[axis] (0,0) -- (0,7) node[left,lab] {\(p\)};
+    \draw[thick,cblue] (1,6) -- (4,6) -- (4,3.8) -- (11.5,1.4);
+    \node[lab,anchor=south] at (2.5,6.1) {\(p_0\)};
+    \node[lab,anchor=north] at (4,3.8) {\(p_1\)};
+    \node[lab,anchor=north] at (10,1.7) {\(p_2<p_1\)};
+    \node[lab,text=black!55] at (2.5,1) {喷嘴};
+    \node[lab,text=black!55] at (8,1) {动叶};
+  \end{tikzpicture}
+  \end{center}
+  {\small\bfseries 反动级：课件典型 \(\Omega_{\mathrm{m}}=0.5\)}
+  \begin{itemize}
+    \item 喷嘴和动叶中叶型相同，蒸汽在动叶内继续膨胀。
+    \item 课件比较：做功能力较小，但效率较纯冲动级高。
+  \end{itemize}
+\end{column}
+\end{columns}
+\vspace{0.5mm}
+\begin{amberbox}{条件}
+\small 表中“做功能力”“效率”是课件在相应设计条件下的比较，不能脱离速比、损失和通流设计直接泛化。
+\end{amberbox}
+\end{frame}
+
+%! src=35 kind=orig title=带反动度的冲动级
+\begin{frame}[t,shrink]{\src{35}{带反动度的冲动级}}
+课件给出的典型范围：
+$$
+\Omega_{\mathrm{m}}=0.05\sim0.3
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.52\textwidth}
+  \begin{itemize}
+    \item 以冲动作用为主，同时保留一定反动作用。
+    \item 动叶中有一定膨胀，入口压力高于出口压力。
+    \item 在课件比较的最佳速比条件下，做功能力比反动级大。
+    \item 效率比纯冲动级高，是工程中广泛采用的形式。
+  \end{itemize}
+\end{column}
+\begin{column}{0.45\textwidth}
+  \begin{keybox}{记忆}
+  \small 冲动级不一定是纯冲动级；只有 \(\Omega_{\mathrm{m}}=0\) 才是纯冲动级。工程冲动级通常带有小反动度。
+  \end{keybox}
+  \vspace{0.8mm}
+  \begin{amberbox}{参数条件}
+  \small 反动度范围是课件给出的典型值，不是所有冲动级的设计约束。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=36 kind=orig title=级的理想能量与余速利用
+\begin{frame}[t,shrink]{\src{36}{级的理想能量与余速利用}}
+$$
+E_0
+=\frac{c_0^2}{2}+\Delta h_{\mathrm{t}}
+-\mu_1\frac{c_2^2}{2}
+=\Delta h_{\mathrm{t}}^*-\mu_1\Delta h_{c2}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.49\textwidth}
+  \begin{itemize}
+    \item \(\mu_1\)：余速利用系数，表示本级出口动能被下一级利用的份额。
+    \item 课件取值：排汽级为 \(0\)，抽汽级约 \(0\sim0.5\)，中间级为 \(1\)。
+    \item \(E_0\) 从理想滞止焓降中扣除“归给下一级利用”的出口动能。
+  \end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+  \begin{keybox}{设计关注}
+  \small 减小动叶出口绝对速度 \(c_2\)，并提高余速利用系数 \(\mu_1\)，都能减少本级的未利用余速。
+  \end{keybox}
+  \vspace{0.8mm}
+  \begin{amberbox}{编号问题}
+  \small 原页标题编号写作“2.2 级的工作原理”，内容仍属于汽轮机级；按内容归入 3.2 节理解。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=36 kind=supp title=余速未利用部分怎样进入损失
+\begin{frame}[t,shrink]{\srcsupp{36}{余速未利用部分怎样进入损失评价}}
+设喷嘴、动叶和其他级内损失合计为 \(L\)，则：
+$$
+\eta_{\mathrm{i}}
+=\frac{\Delta h_{\mathrm{t}}^*-\Delta h_{c2}-L}
+{\Delta h_{\mathrm{t}}^*-\mu_1\Delta h_{c2}}
+=1-\frac{L+\left(1-\mu_1\right)\Delta h_{c2}}{E_0}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.51\textwidth}
+  \begin{itemize}
+    \item \(\mu_1=0\)：出口动能没有交给下一级利用，全部作为未利用余速项。
+    \item \(\mu_1=1\)：按课件计量方法，出口动能从本级理想能量边界中扣除。
+    \item 不能把“本级出口还有速度”直接等同于“整机完全损失了这部分能量”。
+  \end{itemize}
+\end{column}
+\begin{column}{0.46\textwidth}
+  \begin{amberbox}{公式性质}
+  \small 本式只是前页定义的代数整理，仍须满足课件的能量和损失定义；不要把 \(\mu_1\) 当成效率本身。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=37 kind=orig title=级的相对内效率
+\begin{frame}[t,shrink]{\src{37}{级的相对内效率}}
+$$
+\eta_{\mathrm{i}}
+=\frac{\Delta h_{\mathrm{i}}}{E_0}
+=\frac{\Delta h_{\mathrm{i}}}
+{\Delta h_{\mathrm{t}}^*-\mu_1\Delta h_{c2}}
+$$
+$$
+\Delta h_{\mathrm{i}}
+=\Delta h_{\mathrm{t}}^*
+-\Delta h_{\mathrm{n}\xi}
+-\Delta h_{\mathrm{b}\xi}
+-\Delta h_{c2}
+-\sum\Delta h
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.50\textwidth}
+  \begin{itemize}
+    \item 分子 \(\Delta h_{\mathrm{i}}\)：扣除各项损失后的有效比焓降。
+    \item \(\sum\Delta h\)：课件未逐项展开的其他级内损失。
+    \item 余速利用既影响损失评价，也影响理想能量的计量边界。
+  \end{itemize}
+\end{column}
+\begin{column}{0.47\textwidth}
+  \begin{smalltab}
+  \begin{tabularx}{\linewidth}{@{}>{\bfseries}p{25mm}X@{}}
+    \toprule
+    损失 & 来源\\
+    \midrule
+    喷嘴损失 & 静叶流动、摩擦、尾迹\\
+    动叶损失 & 动叶流动、分离、尾迹\\
+    余速损失 & 出口绝对动能未利用部分\\
+    其他 & 漏汽、湿汽、部分进汽等\\
+    \bottomrule
+  \end{tabularx}
+  \end{smalltab}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=38 kind=orig title=汽轮机级的练习结论
+\begin{frame}[t,shrink]{\src{38}{汽轮机级的练习结论}}
+\begin{enumerate}
+  \item 推动叶轮旋转做功的有效力是\textbf{周向力}，原题选 \textbf{C}。周向力形成绕主轴的转矩。
+  \item 反动度 \(0.05\sim0.3\) 的冲动级，动叶内仍有膨胀，因此 \(p_1>p_2\)，原题选 \textbf{A}。
+  \item 反动度 \(0.5\) 时，喷嘴理想滞止焓降与动叶理想焓降相等，原题选 \textbf{C}。
+\end{enumerate}
+$$
+\Omega_{\mathrm{m}}\approx
+\frac{\Delta h_{\mathrm{b}}}
+{\Delta h_{\mathrm{n}}^*+\Delta h_{\mathrm{b}}}=0.5
+\quad\Rightarrow\quad
+\Delta h_{\mathrm{n}}^*=\Delta h_{\mathrm{b}}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.51\textwidth}
+  \begin{itemize}
+    \item 轴向力主要造成轴向推力，不直接形成绕轴的转矩。
+    \item 反动度增加意味着动叶内膨胀份额增加，出口压力低于入口。
+  \end{itemize}
+\end{column}
+\begin{column}{0.46\textwidth}
+  \begin{amberbox}{判断题陷阱}
+  \small “反动度为 0.5”是理想焓降分配，不是说动叶输出功恰好占一半；后者还要看速度三角形和损失。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=39 kind=orig title=多级汽轮机为何效率较高
+\begin{frame}[t,shrink]{\src{39}{多级汽轮机为何效率较高}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.53\textwidth}
+  \begin{enumerate}
+    \item 总焓降分配给多个级，每级焓降减小，更容易在较小直径下匹配最佳速比。
+    \item 上一级出口的余速动能可在下一级继续利用。
+    \item 叶片中汽流多为亚音速，有利于减小流动损失。
+    \item 级的直径较小，当通流面积一定时可增加叶高。
+  \end{enumerate}
+\end{column}
+\begin{column}{0.45\textwidth}
+  \begin{keybox}{通流面积与叶高}
+  \small
+  \(A\approx\pi d l\)，\(\dot V=\dot m v\approx A c_{\mathrm{a}}\)，\(u=\pi d n/60\)。
+  \(d\) 为平均直径、\(l\) 为叶高、\(v\) 为比容、\(c_{\mathrm{a}}\) 为轴向速度。
+  \end{keybox}
+\end{column}
+\end{columns}
+\vspace{0.8mm}
+\begin{amberbox}{为什么“级数多”不是无限制地好}
+\small 级数增加会带来轴向长度、漏汽、摩擦和制造成本；设计要在效率、尺寸、冷却和强度之间平衡。
+\end{amberbox}
+\end{frame}
+
+%! src=40 kind=orig title=高、中、低压缸的特征
+\begin{frame}[t,shrink]{\src{40}{高、中、低压缸的特征}}
+\begin{smalltab}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{22mm}XXX@{}}
+  \toprule
+  比较项 & 高压缸 & 中压缸 & 低压缸\\
+  \midrule
+  蒸汽状态 & 高温、高压 & 高温、中压 & 低温、低压\\
+  容积流量 / 平均直径 & 小 / 小 & 中 / 中 & 大 / 大\\
+  级焓降、反动度 & 较小 & 中等 & 较大\\
+  主要损失 & 叶高、漏汽、部分进汽 & 漏汽 & 湿汽\\
+  课件效率比较 & 较低 & 较高 & 稍低\\
+  \bottomrule
+\end{tabularx}
+\end{smalltab}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.51\textwidth}
+  \begin{itemize}
+    \item 蒸汽膨胀后比容增大，后部需要更大的通流面积。
+    \item 高压缸叶片短、漏汽相对影响大；低压缸末级叶片长、湿汽问题突出。
+    \item 课件效率排序：\textbf{中压缸 > 低压缸 > 高压缸}。
+  \end{itemize}
+\end{column}
+\begin{column}{0.46\textwidth}
+  \begin{amberbox}{条件是课件示例}
+  \small 效率排序随容量、参数、冷却方式和运行工况变化，不宜当作所有机组固定排序。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=41 kind=orig title=汽轮机与发电机的效率边界
+\begin{frame}[t,shrink]{\src{41}{汽轮机与发电机的效率边界}}
+$$
+\eta_{\mathrm{m}}=\frac{P_{\mathrm{e}}}{P_{\mathrm{i}}},
+\qquad
+\eta_{\mathrm{g}}=\frac{P_{\mathrm{el}}}{P_{\mathrm{e}}},
+\qquad
+\eta_{\mathrm{i}}=\frac{\Delta h_{\mathrm{i}}^{\mathrm{mac}}}{\Delta h_{\mathrm{t}}^{\mathrm{mac}}}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.50\textwidth}
+  \begin{itemize}
+    \item \(P_{\mathrm{i}}\)：汽轮机内功率。
+    \item \(P_{\mathrm{e}}\)：联轴器端输出的轴功率。
+    \item \(P_{\mathrm{el}}\)：发电机电功率。
+    \item 机械效率反映轴承摩擦、主油泵等耗功；发电机效率反映机电转换损失。
+  \end{itemize}
+\end{column}
+\begin{column}{0.47\textwidth}
+  \begin{keybox}{功率链}
+  \small
+  \(P_{\mathrm{e}}=\eta_{\mathrm{m}}P_{\mathrm{i}}\)，\quad
+  \(P_{\mathrm{el}}=\eta_{\mathrm{g}}P_{\mathrm{e}}=\eta_{\mathrm{g}}\eta_{\mathrm{m}}P_{\mathrm{i}}\)。
+  \end{keybox}
+  \vspace{0.7mm}
+  \begin{amberbox}{符号歧义}
+  \small 这里 \(P_{\mathrm{e}}\) 是轴功率；内燃机章节又用 \(P_{\mathrm{e}}\) 表示有效功率。跨章节引用时必须重新声明。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=42 kind=orig title=凝汽系统与不凝结气体
+\begin{frame}[t,shrink]{\src{42}{凝汽系统与不凝结气体}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.52\textwidth}
+  \begin{itemize}
+    \item 凝汽系统主要由\textbf{凝汽器、循环水泵、凝结水泵、抽气器}组成。
+    \item 凝汽器：把排汽凝结，维持低排汽压力并回收凝结水。
+    \item 循环水泵：输送冷却水；凝结水泵：抽出凝结水送回系统。
+    \item 抽气器：排除空气等不凝结气体。
+    \item 不凝结气体积聚 $\rightarrow$ 总压力升高、局部换热恶化 $\rightarrow$ 真空变差。
+  \end{itemize}
+\end{column}
+\begin{column}{0.45\textwidth}
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,scale=0.78,transform shape]
+  \node[box,text width=22mm] (t) at (30,30) {汽轮机排汽};
+  \node[box,text width=24mm,minimum height=12mm] (c) at (30,15) {凝汽器};
+  \node[boxg,text width=17mm] (ej) at (62,15) {抽气器};
+  \node[boxg,text width=17mm] (cw) at (0,15) {循环水泵};
+  \node[boxg,text width=17mm] (cp) at (30,0) {凝结水泵};
+  \draw[arr] (t) -- (c);
+  \draw[arr] (c) -- (ej);
+  \draw[arr] (cw) -- (c);
+  \draw[arr] (c) -- (cp);
+  \draw[arr] (cp) -- (12,0);
+  \node[lab,text=cblue] at (14,20) {冷却水};
+  \node[lab,text=black!55] at (15,4) {凝结水};
+\end{tikzpicture}
+\end{center}
+\figcap{凝汽器把排汽凝结，循环水泵与凝结水泵的任务不同。}
+\end{column}
+\end{columns}
+\vspace{0.5mm}
+\begin{keybox}{凝结热由冷却水带走}
+\footnotesize 忽略散热和漏入质量。\\
+记 \(\Delta h_{\mathrm{cond}}=h_{\mathrm{ex}}-h_{\mathrm{cond}}\)，\(\Delta T_{\mathrm{w}}=T_{\mathrm{w,out}}-T_{\mathrm{w,in}}\)：
+$$
+\dot m_{\mathrm{s}}\Delta h_{\mathrm{cond}}
+\approx
+\dot m_{\mathrm{w}}c_{p,\mathrm{w}}\Delta T_{\mathrm{w}}
+$$
+\end{keybox}
+\end{frame}
+
+%! src=43 kind=orig title=最佳真空、极限真空与有效真空
+\begin{frame}[t,shrink]{\src{43}{最佳真空、极限真空与有效真空}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.54\textwidth}
+\begin{tikzpicture}
+\begin{axis}[
+  width=79mm,height=47mm,
+  xmin=0,xmax=10,ymin=40,ymax=105,
+  xlabel={冷却水流量 \(D_{\mathrm{c}}\)（相对值）},
+  ylabel={功率（相对值）},
+  xlabel style={font=\fontsize{6.5}{8}\selectfont},
+  ylabel style={font=\fontsize{6.5}{8}\selectfont},
+  ticklabel style={font=\fontsize{6}{7}\selectfont},
+  axis lines=left,
+  legend style={font=\fontsize{6}{7}\selectfont,at={(0.02,0.98)},anchor=north west,draw=none,fill=none},
+  legend cell align=left,
+]
+\addplot[cprimary,thick,domain=0:10,samples=80] {100-40*exp(-x/2)};
+\addlegendentry{\(N_{\mathrm{el}}\)}
+\addplot[cblue,thick,domain=0:10,samples=2] {5+5*x};
+\addlegendentry{\(P_{\mathrm{pump}}\)}
+\addplot[cgreen,thick,domain=0:10,samples=80] {95-40*exp(-x/2)-5*x};
+\addlegendentry{\(N_{\mathrm{el}}-P_{\mathrm{pump}}\)}
+\draw[dashline] (axis cs:2.77,40) -- (axis cs:2.77,90);
+\node[font=\fontsize{6}{7}\selectfont,anchor=south,text=cprimary!80!black] at (axis cs:2.77,91) {最佳};
+\end{axis}
+\end{tikzpicture}
+\figcap{补充示意图，不是课件原始曲线；纵轴是功率，不是凝汽器压力。}
+\end{column}
+\begin{column}{0.43\textwidth}
+  \begin{itemize}
+    \item 冷却水流量增加，凝汽器压力下降，汽轮机出力增加。
+    \item 循环水泵耗功也增加；净收益为 \(P_{\mathrm{net}}=N_{\mathrm{el}}-P_{\mathrm{pump}}\)。
+    \item \textbf{最佳（经济）真空}：净收益最大的运行点。
+    \item \textbf{极限真空}：课件以冷却水进口温度对应的蒸汽饱和压力表示。
+    \item \textbf{最大有效真空}：末级动叶达到极限膨胀时的真空。
+  \end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=43 kind=supp title=经济真空的边际条件与真空度
+\begin{frame}[t,shrink]{\srcsupp{43}{经济真空的边际条件与真空度}}
+若最优点位于可行范围内部且曲线可导：
+$$
+\frac{\mathrm{d}N_{\mathrm{el}}}{\mathrm{d}D_{\mathrm{c}}}
+=\frac{\mathrm{d}P_{\mathrm{pump}}}{\mathrm{d}D_{\mathrm{c}}}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.51\textwidth}
+  \begin{itemize}
+    \item 左侧：增加冷却水带来的边际出力。
+    \item 右侧：增加冷却水带来的边际泵功。
+    \item 真空度常用 \(p_{\mathrm{atm}}-p_{\mathrm{c}}\) 或相对百分比表示；\textbf{绝对压力越低，真空越高}。
+    \item 提高真空受末级通流能力、冷却水温度、空气漏入和泵组运行限制。
+  \end{itemize}
+\end{column}
+\begin{column}{0.46\textwidth}
+  \begin{amberbox}{原图纵轴标注不清}
+  \small 原课件在纵轴旁写了 \(p_{\mathrm{c}}\)（凝汽器压力），但图中两条曲线实际是 \(N_{\mathrm{el}}\) 与 \(P_{\mathrm{pump}}\)。读图时不要把纵轴当成压力。
+  \end{amberbox}
+  \vspace{0.7mm}
+  \begin{keybox}{“极限”的条件性}
+  \small 课件把冷却水进口温度对应的饱和压力称为极限真空，这是理论下界；实际还受传热端差、空气分压和末级膨胀限制。
+  \end{keybox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=44 kind=orig title=表面式与混合式凝汽器
+\begin{frame}[t,shrink]{\src{44}{表面式与混合式凝汽器}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.49\textwidth}
+  \begin{center}
+  \begin{tikzpicture}[x=1mm,y=1mm,scale=0.9,transform shape]
+    \draw[thick,black!55,rounded corners=2pt] (0,0) rectangle (55,34);
+    \draw[thick,cblue] (7,8) rectangle (48,26);
+    \foreach \y in {10,13,16,19,22,24}{\draw[cblue] (7,\y)--(48,\y);}
+    \draw[arr] (27,38) -- (27,30);
+    \node[lab,anchor=south] at (27,38) {蒸汽入口};
+    \draw[arrb] (0,17) -- (7,17);
+    \draw[arrb] (48,17) -- (55,17);
+    \node[lab,anchor=south] at (2,17) {冷却水进};
+    \node[lab,anchor=south] at (53,17) {冷却水出};
+    \draw[arr] (22,0) -- (22,-5);
+    \node[lab,anchor=north] at (22,-5) {凝结水};
+    \node[lab] at (27,5) {管束};
+  \end{tikzpicture}
+  \end{center}
+  {\small\bfseries 表面式：蒸汽与冷却水由壁面隔开}
+\end{column}
+\begin{column}{0.49\textwidth}
+  \begin{center}
+  \begin{tikzpicture}[x=1mm,y=1mm,scale=0.9,transform shape]
+    \draw[thick,black!55,rounded corners=2pt] (0,0) rectangle (55,34);
+    \draw[arr] (27,38) -- (27,30);
+    \node[lab,anchor=south] at (27,38) {蒸汽入口};
+    \draw[arrb] (7,34) -- (7,8);
+    \foreach \x in {13,20,27,34,41}{\fill[cblue] (\x,28) circle (0.8);}
+    \draw[arrb] (0,17) -- (7,17);
+    \node[lab,anchor=south] at (2,17) {冷却水};
+    \draw[arr] (22,0) -- (22,-5);
+    \node[lab,anchor=north] at (22,-5) {混合凝结水};
+    \node[lab] at (30,13) {直接接触};
+  \end{tikzpicture}
+  \end{center}
+  {\small\bfseries 混合式：蒸汽与冷却水直接接触}
+\end{column}
+\end{columns}
+\begin{keybox}{区分依据}
+\small 看蒸汽与冷却介质是否直接混合，而不是看有没有凝结过程。火电机组基本采用表面式凝汽器。
+\end{keybox}
+\end{frame}
+
+%! src=45 kind=orig title=表面式凝汽器的流程数
+\begin{frame}[t,shrink]{\src{45}{表面式凝汽器的流程数}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.49\textwidth}
+  \begin{center}
+  \begin{tikzpicture}[x=1mm,y=1mm,scale=0.92,transform shape]
+    \draw[thick,black!55] (0,0) rectangle (60,26);
+    \foreach \y in {6,10,14,18,22}{\draw[black!20] (5,\y)--(55,\y);}
+    \draw[arrb,thick] (0,14) -- (58,14);
+    \node[lab,anchor=south] at (2,14) {进};
+    \node[lab,anchor=south] at (58,14) {出};
+    \node[lab] at (30,3) {单流程};
+  \end{tikzpicture}
+  \end{center}
+\end{column}
+\begin{column}{0.49\textwidth}
+  \begin{center}
+  \begin{tikzpicture}[x=1mm,y=1mm,scale=0.92,transform shape]
+    \draw[thick,black!55] (0,0) rectangle (60,26);
+    \foreach \y in {6,10,14,18,22}{\draw[black!20] (5,\y)--(55,\y);}
+    \draw[arrb,thick] (0,8) -- (55,8) -- (55,20) -- (3,20);
+    \node[lab,anchor=south] at (2,8) {进};
+    \node[lab,anchor=south] at (2,20) {出};
+    \node[lab] at (30,3) {多流程（双流程示意）};
+  \end{tikzpicture}
+  \end{center}
+\end{column}
+\end{columns}
+\begin{itemize}
+  \item 单流程：冷却水沿管束通过一次。
+  \item 多流程：借助水室分隔和转向，使冷却水分段通过管束。
+  \item “流程数”描述冷却水路径，不是汽轮机的级数。
+\end{itemize}
+\end{frame}
+
+%! src=46 kind=orig title=水冷与空冷的比较
+\begin{frame}[t,shrink]{\src{46}{水冷与空冷的比较}}
+\begin{smalltab}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{30mm}XX@{}}
+  \toprule
+  比较项 & 水冷 & 空冷\\
+  \midrule
+  排汽压力 / 真空 & 较低 / 较高 & 较高 / 较低\\
+  投资 & 课件比较中较小 & 课件比较中较大\\
+  耗水 & 较大 & 较小\\
+  适用条件 & 水源条件较好 & 富煤缺水地区\\
+  \bottomrule
+\end{tabularx}
+\end{smalltab}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.52\textwidth}
+  \begin{itemize}
+    \item 课件列举空冷适用地区：山西、内蒙古等。
+    \item 课件节水示例：冷却系统节水超过 \(97\%\)，全厂节水约 \(65\%\)。
+    \item 水冷可维持较高真空，机组出力通常较好，但耗水量大。
+  \end{itemize}
+\end{column}
+\begin{column}{0.44\textwidth}
+  \begin{amberbox}{数字的条件}
+  \small 节水率是课件示例，取决于比较基准和系统边界；空冷的投资、厂用电和背压也随环境温度变化。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}

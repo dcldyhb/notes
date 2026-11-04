@@ -1,0 +1,596 @@
+\section{燃气轮机}
+
+%! src=47 kind=orig title=燃气轮机·章节导入
+\begin{frame}[t,shrink]{\src{47}{燃气轮机：章节导入}}
+\chapterintro{04}{燃气轮机}{Gas turbine: compressor, combustor, turbine and Brayton cycle}
+{\begin{itemize}
+  \item 压气机、燃烧室、涡轮各自完成什么过程？
+  \item 布雷顿循环的效率由什么决定？
+  \item 为什么最大净比功与最高效率不在同一个增压比？
+\end{itemize}}
+{原页 47--59 \,$\cdot$\, 主线：压缩 $\rightarrow$ 定压燃烧 $\rightarrow$ 膨胀 $\rightarrow$ 循环性能}
+\vspace{3mm}
+\begin{center}
+\small
+\textbf{关键词}\quad 压气机 \enspace$\cdot$\enspace 燃烧室 \enspace$\cdot$\enspace 透平 \enspace$\cdot$\enspace 增压比 \enspace$\cdot$\enspace 温比
+\end{center}
+\end{frame}
+
+%! src=48 kind=orig title=燃气轮机的定义与组成
+\begin{frame}[t,shrink]{\src{48}{燃气轮机的定义与组成}}
+燃气轮机是以连续流动气体为工质的旋转叶轮式热力发动机。
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,scale=0.88,transform shape]
+  \node[box,text width=26mm,minimum height=12mm] (c) at (20,0) {压气机\\提高空气压力};
+  \node[box,text width=28mm,minimum height=12mm] (b) at (58,0) {燃烧室\\喷燃料、燃烧};
+  \node[box,text width=26mm,minimum height=12mm] (t) at (96,0) {涡轮 / 透平\\膨胀做功};
+  \node[boxb,text width=24mm,minimum height=12mm] (g) at (132,0) {发电机 / 负载};
+  \draw[arr] (c) -- node[lab,above]{高压空气} (b);
+  \draw[arr] (b) -- node[lab,above]{高温燃气} (t);
+  \draw[arr] (t) -- (g);
+  \draw[arr] (6,0) -- (c);
+  \node[lab,anchor=east] at (5,0) {空气};
+  \node[lab,text=cprimary!80!black] at (40,8) {\(w_{\mathrm{C}}\)};
+  \node[lab,text=cprimary!80!black] at (112,8) {\(w_{\mathrm{T}}\)};
+  \draw[arr,draw=black!55,line width=1pt] (96,-13) -- (20,-13);
+  \node[lab,text=black!55] at (58,-16) {涡轮轴功的一部分返回压气机};
+\end{tikzpicture}
+\end{center}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.53\textwidth}
+  \begin{itemize}
+    \item 三大部件：\textbf{压气机、燃烧室、涡轮（透平）}。
+    \item 空气经压气机升压，在燃烧室与燃料混合燃烧，高温燃气在涡轮中膨胀。
+    \item 涡轮功的一部分驱动压气机，其余对外输出。
+    \item 实际机组是开式循环：吸入新空气，排出燃气。
+  \end{itemize}
+\end{column}
+\begin{column}{0.44\textwidth}
+  \begin{keybox}{净功边界}
+  \small
+  \(w_{\mathrm{net}}=w_{\mathrm{T}}-w_{\mathrm{C}}\)，\quad
+  \(P_{\mathrm{net}}=\dot m\left(w_{\mathrm{T}}-w_{\mathrm{C}}\right)\)。
+  \end{keybox}
+  \vspace{0.8mm}
+  \begin{amberbox}{不要混淆}
+  \small 涡轮输出功不等于机组净输出功；压气机是内部耗功部件。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=48 kind=supp title=三个主要部件的能量方程
+\begin{frame}[t,shrink]{\srcsupp{48}{三个主要部件的能量方程}}
+对简化稳态气体循环，忽略外部散热、位能和额外机械损失：
+$$
+\begin{aligned}
+w_{\mathrm{C}}&=h_2^*-h_1^*,\\
+q_{\mathrm{in}}&=h_3^*-h_2^*,\\
+w_{\mathrm{T}}&=h_3^*-h_4^*,\\
+w_{\mathrm{net}}&=w_{\mathrm{T}}-w_{\mathrm{C}}
+\end{aligned}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.51\textwidth}
+  \begin{itemize}
+    \item 总焓 \(h^*=h+c^2/2\) 已包含动能；使用总焓时不可重复添加速度项。
+    \item 闭合理想循环按同一工质质量基准计算。
+    \item 实际开式机组加入燃料后，燃气质量流量大于空气流量。
+  \end{itemize}
+\end{column}
+\begin{column}{0.46\textwidth}
+  \begin{amberbox}{符号}
+  \small 压气机耗功取正值输入；涡轮输出功取正值输出，净功为两者之差。若采用统一符号约定，要在式前说明。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=49 kind=orig title=压气机的作用
+\begin{frame}[t,shrink]{\src{49}{压气机的作用}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.53\textwidth}
+  \begin{itemize}
+    \item 旋转叶片连续对气体做功，使空气总压逐渐升高。
+    \item 压气机向燃烧室提供高压空气。
+    \item 与往复式压缩相比，轴流压气机实现\textbf{连续做功}。
+    \item 压气机是机组内部的主要耗功部件，涡轮必须先满足其功率需求。
+  \end{itemize}
+  \vspace{0.8mm}
+  \begin{keybox}{两种“增压”不要混}
+  \small 相变增压（如泵送液体）与做功增压不同；燃气轮机压气机属于\textbf{做功增压、连续流动}。
+  \end{keybox}
+\end{column}
+\begin{column}{0.44\textwidth}
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,scale=0.86,transform shape]
+  \node[box,text width=18mm] (in) at (11,10) {低压空气};
+  \node[box,text width=21mm] (r1) at (38,10) {转子\\加功};
+  \node[box,text width=18mm] (s1) at (62,10) {静子\\扩压};
+  \node[boxb,text width=16mm] (out) at (62,-4) {高压空气};
+  \draw[arr] (in) -- (r1);
+  \draw[arr] (r1) -- (s1);
+  \draw[arr] (s1) -- ++(0,-4) -- (out.north);
+  \node[lab,text=black!55] at (46,18) {总压升高};
+\end{tikzpicture}
+\end{center}
+\figcap{轴流压气机：转子输入功，静子把动能转为静压。}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=49 kind=supp title=总压升高与扩压减速
+\begin{frame}[t,shrink]{\srcsupp{49}{总压升高与扩压减速不矛盾}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.51\textwidth}
+  \begin{itemize}
+    \item \textbf{动叶}由轴输入机械功，提升气流总焓，并建立总压升高。
+    \item \textbf{静叶}主要整流、扩压，把部分动能转为静压。
+    \item 静压、总压和绝对速度、相对速度描述不同，不能在一句话中混用。
+    \item 绝热不等于等熵；只有理想可逆绝热过程才可直接使用等熵关系。
+    \item 相同压比下，实际压气机需要比理想压气机更多的轴功。
+  \end{itemize}
+\end{column}
+\begin{column}{0.46\textwidth}
+  \begin{keybox}{压气机绝热效率}
+  \small
+  $$
+  \eta_{\mathrm{C}}
+  =\frac{h_{2\mathrm{s}}^*-h_1^*}{h_2^*-h_1^*}
+  $$
+  分母是实际耗功，分子是理想等熵耗功。
+  \end{keybox}
+  \vspace{0.6mm}
+  \begin{amberbox}{读图}
+  \small 扩压意味着流速下降、静压上升；总压是否上升取决于是否输入了足够的机械功。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=50 kind=orig title=燃烧室的作用与可靠性
+\begin{frame}[t,shrink]{\src{50}{燃烧室的作用与可靠性}}
+燃烧室使压气机送来的高压空气与燃料混合、燃烧，向涡轮提供高温燃气。
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.52\textwidth}
+  \begin{smalltab}
+  \begin{tabularx}{\linewidth}{@{}>{\bfseries}p{37mm}X@{}}
+    \toprule
+    问题 & 可能后果\\
+    \midrule
+    燃烧不稳定 & 熄火\\
+    出口局部温度过高 & 透平叶片过热甚至烧毁\\
+    燃烧组织不良 & 流动损失增加、燃烧效率降低、积炭\\
+    \bottomrule
+  \end{tabularx}
+  \end{smalltab}
+\end{column}
+\begin{column}{0.45\textwidth}
+  \begin{itemize}
+    \item 稳定燃烧、出口温度分布均匀、压力损失小。
+    \item 高压主要由压气机建立；实际燃烧室中存在压力损失。
+    \item 燃烧室性能直接影响机组效率与可靠性。
+  \end{itemize}
+\end{column}
+\end{columns}
+\vspace{0.8mm}
+\begin{keybox}{三个“温度”要区分}
+\small 压气机出口温度 \(T_2^*\)、燃烧室出口（涡轮进口）温度 \(T_3^*\)、涡轮排气温度 \(T_4^*\)。材料限制通常针对 \(T_3^*\)，而不是压气机出口温度。
+\end{keybox}
+\end{frame}
+
+%! src=51 kind=orig title=三种燃烧室结构
+\begin{frame}[t,shrink]{\src{51}{三种燃烧室结构}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.32\textwidth}
+  \begin{center}
+  \begin{tikzpicture}[x=1mm,y=1mm,scale=0.9,transform shape]
+    \draw[thick,black!55] (0,0) circle (4);
+    \draw[thick,black!55] (0,0) circle (14);
+    \foreach \a in {0,60,...,300}{\fill[cprimary!50] (\a:9) circle (2.6);}
+    \node[lab] at (0,-17) {分管型};
+  \end{tikzpicture}
+  \end{center}
+  {\footnotesize 多个独立管形火焰筒沿周向布置。}
+\end{column}
+\begin{column}{0.32\textwidth}
+  \begin{center}
+  \begin{tikzpicture}[x=1mm,y=1mm,scale=0.9,transform shape]
+    \draw[thick,black!55] (0,0) circle (4);
+    \draw[thick,black!55] (0,0) circle (14);
+    \draw[thick,black!55] (0,0) circle (10);
+    \foreach \a in {0,45,...,315}{\fill[cblue!45] (\a:12) circle (2.1);}
+    \node[lab] at (0,-17) {环管型};
+  \end{tikzpicture}
+  \end{center}
+  {\footnotesize 多个火焰筒置于共同环形机匣内。}
+\end{column}
+\begin{column}{0.32\textwidth}
+  \begin{center}
+  \begin{tikzpicture}[x=1mm,y=1mm,scale=0.9,transform shape]
+    \draw[thick,black!55] (0,0) circle (4);
+    \draw[thick,black!55] (0,0) circle (14);
+    \draw[thick,cprimary!50,line width=2.2pt] (0,0) circle (9);
+    \foreach \a in {0,60,...,300}{\fill[cprimary!50] (\a:9) circle (1.0);}
+    \node[lab] at (0,-17) {环型};
+  \end{tikzpicture}
+  \end{center}
+  {\footnotesize 单一连续环形燃烧空间。}
+\end{column}
+\end{columns}
+\begin{itemize}
+  \item 三者都承担燃料喷入、混合、稳定燃烧和向涡轮供气的任务。
+  \item 区分依据是\textbf{火焰筒/燃烧室的几何组织方式}，不是“有几个喷嘴”。
+  \item 不能仅凭本页示意图推断三种结构的绝对优劣或固定适用功率。
+\end{itemize}
+\end{frame}
+
+%! src=52 kind=orig title=燃气透平的类型与特点
+\begin{frame}[t,shrink]{\src{52}{燃气透平的类型与特点}}
+燃气透平把高温、高压燃气中的能量转换为机械功。
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.52\textwidth}
+  \begin{itemize}
+    \item \textbf{轴流式}：课件概括为功率大、流量大、效率高。
+    \item \textbf{径流式}：主要用于小功率燃气轮机。
+    \item 工质温度高，对材料、冷却和可靠性提出要求。
+    \item 级焓降较高，单级能量转换较大。
+    \item 级的气动负荷大，整个透平通常采用较少的级数。
+  \end{itemize}
+\end{column}
+\begin{column}{0.44\textwidth}
+  \begin{keybox}{记忆链}
+  \small 高温 $\rightarrow$ 材料与冷却要求高；高级焓降 $\rightarrow$ 级数少、单级负荷大。
+  \end{keybox}
+  \vspace{0.8mm}
+  \begin{amberbox}{比较条件}
+  \small “效率高”“级数少”是相对比较，随功率等级、冷却方式和设计目标变化。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=53 kind=orig title=涡轮与压气机对比
+\begin{frame}[t,shrink]{\src{53}{涡轮与压气机对比}}
+\begin{smalltab}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{25mm}XX@{}}
+  \toprule
+  比较项 & 涡轮 & 压气机\\
+  \midrule
+  能量方向 & 工质能量 $\rightarrow$ 机械能 & 机械能 $\rightarrow$ 工质能量\\
+  叶栅通道 & 收敛式 & 扩散式\\
+  典型流动 & 膨胀加速 & 扩压减速\\
+  级的构成顺序 & 静叶 + 动叶 & 动叶 + 静叶\\
+  叶型 & 厚、弯度大 & 薄、弯度小\\
+  温度 / 级数 & 高 / 少 & 相对低 / 多\\
+  \bottomrule
+\end{tabularx}
+\end{smalltab}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.51\textwidth}
+  \begin{itemize}
+    \item 两者都是叶轮机械，但能量转换方向和流动过程相反。
+    \item 压气机总压上升由动叶输入功实现，不能把“扩压减速”理解为所有速度分量都减小。
+    \item 涡轮级数少，是因为单级焓降大、气动负荷高。
+  \end{itemize}
+\end{column}
+\begin{column}{0.46\textwidth}
+  \begin{keybox}{读表}
+  \small “级的构成顺序”是沿流动方向看的：涡轮先静后动，压气机先动后静；不是压气机没有静叶。
+  \end{keybox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=54 kind=orig title=燃气轮机的比功与热效率
+\begin{frame}[t,shrink]{\src{54}{燃气轮机的比功与热效率}}
+$$
+w_{\mathrm{n}}=\frac{P}{q_{m\mathrm{a}}},
+\qquad
+\eta_{\mathrm{s}}=\frac{P}{q_{m\mathrm{f}}H_{\mathrm{u}}}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.50\textwidth}
+  \begin{itemize}
+    \item \(P\)：机组净输出功率，\(\mathrm{kW}\)。
+    \item \(q_{m\mathrm{a}}\)：空气质量流量，\(\mathrm{kg/s}\)。
+    \item \(w_{\mathrm{n}}\)：按空气流量计的比功，\(\mathrm{kJ/kg}\)。
+    \item \(q_{m\mathrm{f}}\)：燃料质量流量，\(\mathrm{kg/s}\)；\(H_{\mathrm{u}}\)：低位发热量，\(\mathrm{kJ/kg}\)。
+  \end{itemize}
+\end{column}
+\begin{column}{0.47\textwidth}
+  \begin{keybox}{两个指标回答不同问题}
+  \small 比功：单位空气流量能输出多少功。热效率：燃料热量中有多少变成净功。
+  \end{keybox}
+  \vspace{0.7mm}
+  \begin{amberbox}{符号}
+  \small 原课件用 \(W_n\)、\(\eta_s\)；本整理统一用小写 \(w_{\mathrm{n}}\) 表示比功，避免和功率 \(P\)、功 \(W\) 混淆。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=55 kind=orig title=理想布雷顿循环的四个过程
+\begin{frame}[t,shrink]{\src{55}{理想布雷顿循环的四个过程}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.45\textwidth}
+  \begin{smalltab}
+  \begin{tabularx}{\linewidth}{@{}>{\bfseries}p{13mm}p{23mm}X@{}}
+    \toprule
+    过程 & 理想过程 & 设备\\
+    \midrule
+    \(1\to2\) & 等熵压缩 & 压气机\\
+    \(2\to3\) & 定压吸热 & 燃烧室\\
+    \(3\to4\) & 等熵膨胀 & 涡轮\\
+    \(4\to1\) & 定压放热 & 闭合循环的放热\\
+    \bottomrule
+  \end{tabularx}
+  \end{smalltab}
+  \vspace{0.5mm}
+  \begin{itemize}
+    \item 正向循环把输入热量的一部分转变为净机械功。
+    \item 涡轮输出功大部分要返回压气机。
+    \item 实际开式机组吸入新空气并排出燃气；闭合回路是理想模型。
+  \end{itemize}
+\end{column}
+\begin{column}{0.52\textwidth}
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,scale=0.82,transform shape]
+  \node[box,text width=19mm] (c) at (10,12) {压气机\\\(1\to2\)};
+  \node[box,text width=21mm] (b) at (45,24) {燃烧室\\\(2\to3\)};
+  \node[box,text width=19mm] (t) at (80,12) {涡轮\\\(3\to4\)};
+  \node[boxg,text width=22mm] (r) at (45,-2) {放热 / 排气\\\(4\to1\)};
+  \draw[arr] (c) -- (b);
+  \draw[arr] (b) -- (t);
+  \draw[arr] (t) -- (80,-2) -- (r.east);
+  \draw[arr] (r.west) -- (10,-2) -- (c.south);
+  \node[lab,text=black!55] at (27,18) {\(p\uparrow\)};
+  \node[lab,text=black!55] at (63,18) {\(T\uparrow\)};
+  \node[lab,text=black!55] at (63,5) {膨胀};
+  \node[lab,text=cprimary!80!black] at (45,-9) {净功 \(=w_{\mathrm{T}}-w_{\mathrm{C}}\)};
+\end{tikzpicture}
+\end{center}
+\figcap{布雷顿循环示意图；实际开式循环的 \(4\to1\) 由排气和吸入新空气完成。}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=56 kind=orig title=由温差计算理想循环效率
+\begin{frame}[t,shrink]{\src{56}{由温差计算理想循环效率}}
+采用定比热理想气体模型；\(T_j^*\) 表示各状态点的总温，使用 \(\mathrm{K}\)。
+$$
+\begin{aligned}
+q_{\mathrm{in}}&=c_p\left(T_3^*-T_2^*\right),\\
+q_{\mathrm{out}}&=c_p\left(T_4^*-T_1^*\right),\\
+w_{\mathrm{net}}&=q_{\mathrm{in}}-q_{\mathrm{out}}
+\end{aligned}
+$$
+$$
+\eta=\frac{w_{\mathrm{net}}}{q_{\mathrm{in}}}
+=1-\frac{T_4^*-T_1^*}{T_3^*-T_2^*}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.49\textwidth}
+  \begin{itemize}
+    \item 用单位质量的热量和比功推导；若用功率，热输入也应改为热流率。
+    \item 定压吸热、定压放热是理想化；实际燃烧与排气有压降。
+  \end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+  \begin{keybox}{不要只看温差}
+  \small 这个式子把效率写成温差比；下一步用等熵关系把温度换成增压比，才能看出 \(\eta\) 与 \(\pi\) 的关系。
+  \end{keybox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=56 kind=supp title=温熵图上的面积如何解释热量
+\begin{frame}[t,shrink]{\srcsupp{56}{温熵图上的面积如何解释热量}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.54\textwidth}
+\begin{tikzpicture}[x=7.0mm,y=6.0mm]
+  \draw[axis] (0,0) -- (8.8,0) node[below,lab] {\(s\)};
+  \draw[axis] (0,0) -- (0,7.8) node[left,lab] {\(T\)};
+  \coordinate (P1) at (1.0,2.0); \coordinate (P2) at (1.0,4.8);
+  \coordinate (P3) at (5.2,6.4); \coordinate (P4) at (5.2,3.0);
+  \draw[thick,cprimary] (P1) -- (P2) -- (P3) -- (P4) -- cycle;
+  \draw[arr] (1.0,3.1) -- (1.0,3.7);
+  \draw[arr] (2.8,5.4) -- (3.3,5.7);
+  \draw[arr] (5.2,4.9) -- (5.2,4.4);
+  \draw[arr] (3.6,2.55) -- (3.1,2.35);
+  \node[lab,anchor=north] at (P1) {1};
+  \node[lab,anchor=east] at (P2) {2};
+  \node[lab,anchor=south] at (P3) {3};
+  \node[lab,anchor=north] at (P4) {4};
+  \node[lab,text=cprimary] at (3.7,6.0) {\(q_{\mathrm{in}}\)};
+  \node[lab,text=cblue] at (3.3,2.0) {\(q_{\mathrm{out}}\)};
+\end{tikzpicture}
+\end{column}
+\begin{column}{0.43\textwidth}
+  \begin{itemize}
+    \item 对内部可逆过程：\(\delta q_{\mathrm{rev}}=T\,\mathrm{d}s\)。
+    \item 过程线下的面积对应可逆传热量。
+    \item 理想循环围成的面积对应净热量，也等于净比功。
+    \item 对实际不可逆过程，不能仅把面积直接当作实际传热量。
+  \end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=57 kind=orig title=增压比与理想热效率
+\begin{frame}[t,shrink]{\src{57}{增压比与理想热效率}}
+令 \(\pi=p_2^*/p_1^*\)，\(\kappa=c_p/c_v\)。理想定压过程给出 \(p_2^*=p_3^*\)、\(p_4^*=p_1^*\)，结合等熵关系：
+$$
+\frac{T_2^*}{T_1^*}
+=\frac{T_3^*}{T_4^*}
+=\pi^{(\kappa-1)/\kappa}
+\quad\Rightarrow\quad
+\eta=1-\pi^{-(\kappa-1)/\kappa}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.51\textwidth}
+  \begin{itemize}
+    \item 固定 \(\kappa\) 时，提高增压比可提高理想热效率。
+    \item 固定增压比而提高 \(T_3^*\)，净比功和吸热量增加，但\textbf{理想热效率不变}。
+    \item 温比定义：\(\tau=T_3^*/T_1^*\)。
+  \end{itemize}
+\end{column}
+\begin{column}{0.46\textwidth}
+  \begin{amberbox}{这是理想模型结论}
+  \small 实际循环中，提高 \(T_3^*\) 往往通过提高部件效率、减少损失间接影响效率；不能把“\(\eta\) 与 \(\tau\) 无关”直接推广到实际机组。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=57 kind=supp title=从等熵温比一步步消去温度
+\begin{frame}[t,shrink]{\srcsupp{57}{从等熵温比一步步消去温度}}
+记 \(r=\pi^{(\kappa-1)/\kappa}\)，则 \(T_2^*=rT_1^*\)、\(T_4^*=T_3^*/r\)。
+$$
+\begin{aligned}
+\frac{q_{\mathrm{out}}}{q_{\mathrm{in}}}
+&=\frac{T_3^*/r-T_1^*}{T_3^*-rT_1^*}\\
+&=\frac{(T_3^*-rT_1^*)/r}{T_3^*-rT_1^*}
+=\frac{1}{r}
+\end{aligned}
+$$
+$$
+\eta=1-\frac{1}{r}
+=1-\pi^{-(\kappa-1)/\kappa}
+$$
+\begin{keybox}{前提}
+\small 定比热理想气体、压缩与膨胀等熵、吸热与放热定压，并且吸热量为正。实际循环还要考虑部件效率和压力损失。
+\end{keybox}
+\end{frame}
+
+%! src=58 kind=orig title=最大净比功对应的增压比
+\begin{frame}[t,shrink]{\src{58}{最大净比功对应的增压比}}
+令 \(a=(\kappa-1)/\kappa\)，\(\tau=T_3^*/T_1^*\)，则：
+$$
+w_{\mathrm{net}}
+=c_pT_1^*\left[\tau\left(1-\pi^{-a}\right)-\left(\pi^a-1\right)\right]
+$$
+固定 \(T_1^*\)、\(T_3^*\) 与 \(c_p\)，对增压比求极值：
+$$
+\frac{\partial w_{\mathrm{net}}}{\partial\pi}=0
+\quad\Rightarrow\quad
+\pi_{\mathrm{opt}}=\tau^{\kappa/[2(\kappa-1)]}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.51\textwidth}
+  \begin{itemize}
+    \item 温比越高，最大净比功对应的增压比越高。
+    \item 最大比功点与最高效率的追求不同；增压比过高会使净比功下降。
+    \item 最优点上的理想效率也随温比提高。
+  \end{itemize}
+\end{column}
+\begin{column}{0.45\textwidth}
+  \begin{amberbox}{符号问题}
+  \small 原课件用 \(P_{\mathrm{gt}}\) 表示这个式子，但它的量纲是比功（\(\mathrm{kJ/kg}\)），不是功率。本整理统一写作 \(w_{\mathrm{net}}\)。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=58 kind=supp title=最大净比功的推导与图
+\begin{frame}[t,shrink]{\srcsupp{58}{最大净比功的推导与可运行区间}}
+继续令 \(r=\pi^{(\kappa-1)/\kappa}\)，由原式整理：
+$$
+\frac{w_{\mathrm{net}}}{c_pT_1^*}
+=\tau+1-r-\frac{\tau}{r},
+\qquad
+\frac{\mathrm{d}}{\mathrm{d}r}
+\left(\frac{w_{\mathrm{net}}}{c_pT_1^*}\right)
+=-1+\frac{\tau}{r^2}
+$$
+$$
+r_{\mathrm{opt}}=\sqrt{\tau},
+\qquad
+w_{\mathrm{net,max}}=c_pT_1^*\left(\sqrt{\tau}-1\right)^2
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.47\textwidth}
+  \begin{itemize}
+    \item 有正净比功需 \(1<r<\tau\)；最优点在两者之间。
+    \item 最优点上 \(T_2^*=T_4^*=\sqrt{T_1^*T_3^*}\)。
+    \item 本页是理想模型推导，不代表实际机组可忽略材料和部件效率约束。
+  \end{itemize}
+\end{column}
+\begin{column}{0.50\textwidth}
+\begin{tikzpicture}
+\begin{axis}[
+  width=64mm,height=39mm,
+  xmin=1,xmax=20,ymin=0,ymax=2.2,
+  xlabel={\(\pi\)},ylabel={\(\dfrac{w_{\mathrm{net}}}{c_pT_1^*}\)},
+  xlabel style={font=\fontsize{6.5}{8}\selectfont},
+  ylabel style={font=\fontsize{6.5}{8}\selectfont},
+  ticklabel style={font=\fontsize{5.8}{7}\selectfont},
+  axis lines=left,legend style={font=\fontsize{5.8}{7}\selectfont,draw=none,fill=none,at={(0.98,0.98)},anchor=north east},
+  legend cell align=left,
+]
+\addplot[cblue,thick,domain=1.01:20,samples=100] {3*(1-x^(-0.286))-(x^0.286-1)};
+\addlegendentry{\(\tau=3\)}
+\addplot[cprimary,thick,domain=1.01:20,samples=100] {4*(1-x^(-0.286))-(x^0.286-1)};
+\addlegendentry{\(\tau=4\)}
+\addplot[cgreen,thick,domain=1.01:20,samples=100] {5*(1-x^(-0.286))-(x^0.286-1)};
+\addlegendentry{\(\tau=5\)}
+\end{axis}
+\end{tikzpicture}
+\figcap{横轴增压比，纵轴无量纲净比功；曲线峰值对应 \(\pi_{\mathrm{opt}}\)。}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=59 kind=orig title=实际循环与绝热效率
+\begin{frame}[t,shrink]{\src{59}{实际循环与绝热效率}}
+实际过程：\(1\to2a\) 不可逆绝热压缩，\(3\to4a\) 不可逆绝热膨胀；吸热与放热过程还伴随压力损失。
+$$
+\eta_{\mathrm{C}}
+=\frac{h_{2\mathrm{s}}-h_1}{h_{2\mathrm{a}}-h_1},
+\qquad
+\eta_{\mathrm{T}}
+=\frac{h_3-h_{4\mathrm{a}}}{h_3-h_{4\mathrm{s}}}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.51\textwidth}
+  \begin{itemize}
+    \item \(\mathrm{s}\)：相同出口压力下的等熵参考状态；\(\mathrm{a}\)：实际状态。
+    \item 压气机：理想耗功 / 实际耗功。
+    \item 涡轮：实际出功 / 理想出功。
+    \item 不可逆损失使压气机耗功增加、涡轮出功减少，降低净输出与循环效率。
+  \end{itemize}
+\end{column}
+\begin{column}{0.46\textwidth}
+  \begin{amberbox}{原页下标}
+  \small 原页涡轮效率分母写作 \(h_3-h_{4s1}\)，其中的“1”疑为笔误；按等熵出口 \(4\mathrm{s}\) 理解，并注意全文统一。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=59 kind=supp title=实际部件效率怎样改变净比功
+\begin{frame}[t,shrink]{\srcsupp{59}{实际部件效率怎样改变净比功}}
+暂忽略燃烧室压降，采用同一 \(c_p\)、\(\kappa\)：
+$$
+\begin{aligned}
+w_{\mathrm{C,a}}&=\frac{c_pT_1^*\left(r-1\right)}{\eta_{\mathrm{C}}},\\
+w_{\mathrm{T,a}}&=\eta_{\mathrm{T}}c_pT_3^*\left(1-r^{-1}\right),\\
+w_{\mathrm{net,a}}&=w_{\mathrm{T,a}}-w_{\mathrm{C,a}}
+\end{aligned}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.50\textwidth}
+  \begin{itemize}
+    \item 压气机效率在分母：效率下降使耗功增加。
+    \item 涡轮效率在乘数：效率下降使出功减少。
+    \item 若再计入压力损失，应分别确定压缩压比和膨胀压比，不能继续共用同一 \(r\)。
+    \item 由 \(\mathrm{d}w_{\mathrm{net,a}}/\mathrm{d}r=0\) 可得实际最优 \(r_{\mathrm{opt}}\approx\sqrt{\eta_{\mathrm{C}}\eta_{\mathrm{T}}\tau}\)（同一 \(r\) 近似下）。
+  \end{itemize}
+\end{column}
+\begin{column}{0.46\textwidth}
+  \begin{keybox}{结论}
+  \small 实际部件效率降低，既减小涡轮出功，又增大压气机耗功，因此净比功和最佳增压比都会变化。
+  \end{keybox}
+\end{column}
+\end{columns}
+\end{frame}

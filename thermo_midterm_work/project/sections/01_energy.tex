@@ -1,0 +1,359 @@
+\section{能源形式与科学用能}
+
+%! src=2 kind=orig title=能源形式与科学用能·章节导入
+\begin{frame}[t,shrink]{\src{2}{能源形式与科学用能：章节导入}}
+\chapterintro{01}{能源形式与科学用能}{Energy resources and scientific energy use}
+{\begin{itemize}
+  \item 能源有哪些形式？分类依据是什么？
+  \item 能量通过哪些设备转换？介质怎样流动？
+  \item 怎样做到“温度对口、梯级利用”？
+\end{itemize}}
+{原页 2--7 \,$\cdot$\, 一条主线：资源 $\rightarrow$ 转换设备 $\rightarrow$ 能量链 $\rightarrow$ 科学用能}
+\vspace{3mm}
+\begin{center}
+\small
+\textbf{关键词}\quad 能源分类 \enspace$\cdot$\enspace 能量转换 \enspace$\cdot$\enspace 温度品位 \enspace$\cdot$\enspace 梯级利用
+\end{center}
+\vspace{1mm}
+\begin{plainbox}
+\small \textbf{阅读本单元时反复问}：这种“能源”是资源、载体，还是已经转换过的能量形式？它的品位与最终用途匹配吗？
+\end{plainbox}
+\end{frame}
+
+%! src=3 kind=orig title=能源类型及利用方式
+\begin{frame}[t,shrink]{\src{3}{能源类型及利用方式}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.55\textwidth}
+  \begin{smalltab}
+  \begin{tabularx}{\linewidth}{@{}>{\bfseries}p{24mm}X@{}}
+    \toprule
+    课件分类 & 列举对象与读法\\
+    \midrule
+    不可再生能源 & 煤炭、石油、天然气；也是常规能源\\
+    非水可再生能源 & 风能、太阳能、生物质能\\
+    其他形式 & 水能、核能、氢能、储能\\
+    \bottomrule
+  \end{tabularx}
+  \end{smalltab}
+  \vspace{1mm}
+  \begin{itemize}
+    \item 课件把“新能源”与“常规能源”并置，是\textbf{利用历史与规模}的分类。
+    \item 可再生性描述资源能否持续补给，和“是否清洁”也不是同一个判断。
+  \end{itemize}
+\end{column}
+\begin{column}{0.42\textwidth}
+  \begin{bluebox}{三个分类维度}
+  \small
+  \begin{tabularx}{\linewidth}{@{}>{\bfseries}p{12mm}X@{}}
+    可再生 & 风、光、水、生物质可持续补给\\
+    不可再生 & 煤、油、气、核燃料储量有限\\
+    载体 & 电力、氢、热、压缩空气\\
+  \end{tabularx}
+  \end{bluebox}
+  \vspace{0.8mm}
+  \begin{amberbox}{易混点}
+  \small 氢主要是\textbf{能量载体}；是否“绿氢”取决于制氢电源。储能是技术功能，不应当作一次能源。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\vspace{1mm}
+\begin{plainbox}
+\small \textbf{答题模板}：先说明分类依据（可再生性 / 转换来源 / 利用方式），再举对象；不要把资源、载体和技术放在同一层级比较。
+\end{plainbox}
+\end{frame}
+
+%! src=3 kind=supp title=一次能源、二次能源与储能
+\begin{frame}[t,shrink]{\srcsupp{3}{一次能源、二次能源与储能的关系}}
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,scale=0.84,transform shape]
+  \node[box,text width=30mm,minimum height=12mm] (p) at (18,0) {\textbf{一次能源}\\煤、油、气、风、光、核};
+  \node[boxb,text width=30mm,minimum height=12mm] (c) at (58,0) {\textbf{转换与储存}\\锅炉、燃机、电解、电池};
+  \node[boxb,text width=30mm,minimum height=12mm] (s) at (98,0) {\textbf{二次能源 / 载体}\\电、氢、蒸汽、热水};
+  \node[boxg,text width=25mm,minimum height=12mm] (e) at (134,0) {\textbf{终端服务}\\动力、照明、供热};
+  \draw[arr] (p) -- (c);
+  \draw[arr] (c) -- (s);
+  \draw[arr] (s) -- (e);
+  \node[lab,text=cprimary!80!black] at (38,7) {损失 / 排放};
+  \node[lab,text=cprimary!80!black] at (78,7) {转换损失};
+  \node[lab,text=cprimary!80!black] at (116,7) {输配损失};
+  \draw[thinarr] (38,5.5) -- (38,1.5);
+  \draw[thinarr] (78,5.5) -- (78,1.5);
+  \draw[thinarr] (116,5.5) -- (116,1.5);
+  \draw[dashline] (58,-10) -- (58,-7);
+  \node[boxg,text width=26mm] (st) at (58,-15) {储能：跨时间调节};
+  \draw[thinarr] (st) -- (c);
+\end{tikzpicture}
+\end{center}
+\vspace{0.2mm}
+\begin{keybox}{三个容易混淆的概念}
+\small
+\textbf{资源量}是自然界可获得的资源数量；\textbf{能量载体}是便于输运和再转换的介质（电、氢）；\textbf{储能}是把能量暂时存入某种介质、按需释放。比较“绿色”或“高效”时，要说明是否计入制造、输配、储存和末端利用。
+\end{keybox}
+\end{frame}
+
+%! src=4 kind=orig title=能源转换设备的分工
+\begin{frame}[t,shrink]{\src{4}{能源转换设备的分工}}
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,scale=0.78,transform shape]
+  \node[box,text width=24mm] (ch) at (14,0) {燃料化学能};
+  \node[box,text width=27mm] (bo) at (47,0) {锅炉\\燃烧 + 传热};
+  \node[box,text width=23mm] (st) at (79,0) {蒸汽热能};
+  \node[box,text width=28mm] (tb) at (113,0) {汽轮机 / 燃机 / 内燃机};
+  \node[boxb,text width=20mm] (me) at (145,0) {机械能};
+  \draw[arr] (ch) -- (bo);
+  \draw[arr] (bo) -- (st);
+  \draw[arr] (st) -- (tb);
+  \draw[arr] (tb) -- (me);
+  \node[lab,text=black!55] at (80,-8) {每一级都有损失与排放};
+\end{tikzpicture}
+\end{center}
+\vspace{0.8mm}
+\begin{tinytab}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{15mm}p{31mm}X@{}}
+  \toprule
+  设备 & 主要转换 & 在系统中的作用\\
+  \midrule
+  锅炉 & 化学能 $\rightarrow$ 工质热能 & 产生指定压力、温度和流量的蒸汽\\
+  汽轮机 & 蒸汽热能 $\rightarrow$ 机械能 & 蒸汽膨胀，驱动发电机或工业机械\\
+  燃气轮机 & 燃料 $\rightarrow$ 燃气 $\rightarrow$ 机械能 & 压气、燃烧、膨胀连续进行\\
+  内燃机 & 缸内燃烧热 $\rightarrow$ 机械能 & 活塞往复，经曲轴输出转矩\\
+  \bottomrule
+\end{tabularx}
+\end{tinytab}
+\vspace{0.5mm}
+\begin{amberbox}{读表提示}
+\small “化学能 $\rightarrow$ 热能”不是直接变成机械能：锅炉先加热工质，汽轮机再从蒸汽取功。机械能还要经发电机才能变成电能。
+\end{amberbox}
+\end{frame}
+
+%! src=5 kind=orig title=火力发电厂的蒸汽动力循环
+\begin{frame}[t,shrink]{\src{5}{火力发电厂的蒸汽动力循环}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.45\textwidth}
+  \begin{itemize}
+    \item \textbf{燃料侧}：煤的制备、输送与燃烧。
+    \item \textbf{汽水侧}：给水 $\rightarrow$ 锅炉 $\rightarrow$ 过热蒸汽 $\rightarrow$ 汽轮机。
+    \item \textbf{冷端}：排汽 $\rightarrow$ 凝汽器 $\rightarrow$ 凝结水 $\rightarrow$ 给水泵。
+    \item \textbf{电力侧}：汽轮机 $\rightarrow$ 发电机 $\rightarrow$ 升压送出。
+    \item \textbf{风烟侧}：空气助燃，烟气放热后净化排出。
+  \end{itemize}
+  \vspace{1mm}
+  \begin{keybox}{读图顺序}
+  \small 先沿汽水闭合回路走一圈，再分别追燃料、空气、烟气和冷却水。
+  \end{keybox}
+\end{column}
+\begin{column}{0.53\textwidth}
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,scale=0.72,transform shape]
+  \node[box,text width=24mm,minimum height=11mm] (b) at (15,26) {锅炉\\加热 / 蒸发 / 过热};
+  \node[box,text width=22mm,minimum height=10mm] (t) at (55,33) {汽轮机};
+  \node[boxb,text width=17mm,minimum height=9mm] (g) at (80,33) {发电机};
+  \node[box,text width=23mm,minimum height=10mm] (c) at (55,8) {凝汽器};
+  \node[boxg,text width=14mm,minimum height=9mm] (p) at (15,8) {给水泵};
+  \draw[arr] (b.east) -- ++(4,0) |- (t.north west);
+  \draw[arr] (t.south) -- (c.north);
+  \draw[arr] (c.west) -- (p.east);
+  \draw[arr] (p.north) -- (b.south);
+  \draw[arr] (t.east) -- (g.west);
+  \draw[arr] (0,26) -- (b.west);
+  \node[lab,anchor=south east] at (4,34) {燃料 + 空气};
+  \draw[arr] (b.north) ++(0,2) -- ++(0,-5);
+  \node[lab,text=black!55] at (19,38.5) {热烟气};
+  \draw[arr] (c.south) -- ++(0,-4);
+  \node[lab,anchor=north] at (55,-1) {冷却水带走热量};
+  \node[lab,text=cprimary!80!black] at (67,26) {机械功};
+\end{tikzpicture}
+\end{center}
+\figcap{最小闭环：锅炉—汽轮机—凝汽器—给水泵}
+\end{column}
+\end{columns}
+\end{frame}
+
+%! src=5 kind=supp title=读电厂总图：四个回路
+\begin{frame}[t,shrink]{\srcsupp{5}{读电厂总图：先找四个回路}}
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,scale=0.82,transform shape]
+  % 汽水回路
+  \draw[cprimary!70,line width=1.3pt] (10,12) rectangle (44,32);
+  \node[font=\fontsize{7}{8}\selectfont\bfseries,text=cprimary!80!black] at (27,29) {锅炉};
+  \node[box,text width=18mm,minimum height=7mm] (b2) at (27,21) {炉膛 / 受热面};
+  \node[box,text width=18mm,minimum height=7mm] (t2) at (67,25) {汽轮机};
+  \node[box,text width=18mm,minimum height=7mm] (c2) at (67,5) {凝汽器};
+  \node[box,text width=14mm,minimum height=6mm] (p2) at (27,5) {给水泵};
+  \draw[arr] (b2.east) -- (t2.west);
+  \draw[arr] (t2.south) -- (c2.north);
+  \draw[arr] (c2.west) -- (p2.east);
+  \draw[arr] (p2.north) -- (b2.south);
+  \draw[arr] (t2.east) -- ++(8,0) node[lab,right] {发电机};
+  % 燃料/风烟回路
+  \node[boxg,text width=15mm] (mill) at (10,-6) {磨煤机};
+  \node[boxg,text width=14mm] (furn) at (29,-6) {炉膛};
+  \node[boxg,text width=15mm] (ap) at (56,-6) {空预器};
+  \node[boxg,text width=13mm] (esp) at (79,-6) {除尘};
+  \node[boxg,text width=13mm] (idf) at (97,-6) {引风机};
+  \node[boxg,text width=12mm] (stk) at (114,-6) {烟囱};
+  \draw[arr] (mill) -- (furn);
+  \draw[arr] (furn) -- (ap);
+  \draw[arr] (ap) -- (esp);
+  \draw[arr] (esp) -- (idf);
+  \draw[arr] (idf) -- (stk);
+  \draw[arrb] (41,37) -- (41,32);
+  \node[lab,text=cblue] at (42,39) {冷空气};
+  \node[lab,text=black!55] at (114,0) {烟气};
+  % 冷却水
+  \draw[arrb] (88,5) -- (102,5) -- (102,32) -- (89,32);
+  \node[lab,text=cblue] at (102,18) {冷却水};
+\end{tikzpicture}
+\end{center}
+\begin{keybox}{四个回路，各看各的“压力—温度—相态”}
+\small
+\textbf{汽水}闭环：水—汽—水，工质回收；\quad
+\textbf{燃料}：煤 $\rightarrow$ 煤粉 $\rightarrow$ 炉膛；\quad
+\textbf{风烟}：空气 $\rightarrow$ 燃烧 $\rightarrow$ 烟气 $\rightarrow$ 烟囱；\quad
+\textbf{冷却水}：带走凝汽器排汽的凝结热。
+\end{keybox}
+\begin{amberbox}{看图时问三个问题}
+\small 这条线里流的是什么？它的压力和温度往哪边走？它与哪条线在哪个设备交换热量？
+\end{amberbox}
+\end{frame}
+
+%! src=6 kind=orig title=串联能量转换效率
+\begin{frame}[t,shrink]{\src{6}{串联能量转换效率}}
+课件示例：锅炉环节约 \(92\%\)，汽轮机环节约 \(42\%\)，发电机环节约 \(98\%\)。
+
+$$
+\eta_{\mathrm{tot}}
+=\eta_{\mathrm{b}}\,\eta_{\mathrm{ST}}\,\eta_{\mathrm{g}}
+=0.92\times0.42\times0.98
+\approx0.379\approx38\%
+$$
+
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.49\textwidth}
+  \begin{itemize}
+    \item 下标 \(\mathrm{b}\)、\(\mathrm{ST}\)、\(\mathrm{g}\) 分别指锅炉、汽轮机、发电机。
+    \item 只有\textbf{前一级输出就是后一级输入}、且边界首尾相接时，总效率才能直接相乘。
+    \item 课件中热能转机械能这一环的转换比例最低。
+  \end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+  \begin{amberbox}{数值不是通用常数}
+  \small 这些是课件用来说明“串联损失”的示例值，不是所有机组的设计值。
+  \end{amberbox}
+\end{column}
+\end{columns}
+\vspace{0.5mm}
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,scale=0.78,transform shape]
+  \node[box,text width=28mm] (a) at (16,0) {燃料化学能\\$100$};
+  \node[box,text width=28mm] (b) at (51,0) {蒸汽热能\\$92$};
+  \node[box,text width=31mm] (c) at (89,0) {机械能\\$38.64$};
+  \node[boxb,text width=27mm] (d) at (126,0) {电能\\$37.87$};
+  \draw[arr] (a) -- node[lab,above]{锅炉 $92\%$} (b);
+  \draw[arr] (b) -- node[lab,above]{汽轮机 $42\%$} (c);
+  \draw[arr] (c) -- node[lab,above]{发电机 $98\%$} (d);
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+%! src=6 kind=supp title=按课件效率做一次能量账
+\begin{frame}[t,shrink]{\srcsupp{6}{按课件效率做一次能量账}}
+以输入燃料能量为 \(100\) 个单位，按环节逐级相乘：
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm,scale=0.86,transform shape]
+  \foreach \x/\h/\n/\v in {18/24/燃料/100,55/22.1/锅炉出口/92,92/9.3/汽轮机出口/38.64,129/9.1/发电机出口/37.87}{
+    \fill[cprimary!65] (\x-6,0) rectangle (\x+6,\h);
+    \node[above=0.6mm,font=\fontsize{6.7}{7.7}\selectfont\bfseries] at (\x,\h) {\v};
+    \node[below=0.6mm,font=\fontsize{6.2}{7.2}\selectfont,text=black!60] at (\x,0) {\n};
+  }
+  \draw[->,thin] (0,23) -- (150,23) node[right,lab] {能量单位};
+\end{tikzpicture}
+\end{center}
+\begin{keybox}{百分数的基准}
+\small 汽轮机环节的 \(58\%\) 是相对于其输入 \(92\) 而言，不是燃料输入的 \(58\%\)。差额包含排热、摩擦和流动损失；不能笼统称为能量“消失”。
+\end{keybox}
+\begin{plainbox}
+\small 能量链：\(100\rightarrow92\rightarrow38.64\rightarrow37.87\)。写效率时必须同时写清分母对应的系统边界。
+\end{plainbox}
+\end{frame}
+
+%! src=7 kind=orig title=科学用能与梯级利用
+\begin{frame}[t,shrink]{\src{7}{科学用能与梯级利用}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.55\textwidth}
+  \begin{keybox}{吴仲华院士的十六字原则}
+  \small \textbf{分配得当，各取所需，温度对口，梯级利用。}
+  \end{keybox}
+  \begin{itemize}
+    \item 高品位热量优先用于发电、动力等“温度要求高”的用途。
+    \item 做功后的中温余热可用于吸收式制冷、工业供热。
+    \item 更低温度的热量可服务供暖、热泵、干燥或除湿。
+    \item 课件示意：燃机 / 内燃机余热 $\rightarrow$ 吸收式制冷 $\rightarrow$ 低温供热。
+  \end{itemize}
+\end{column}
+\begin{column}{0.43\textwidth}
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm]
+  \fill[cprimary!12] (0,0) rectangle (56,8);
+  \fill[cprimary!22] (0,9) rectangle (56,17);
+  \fill[cprimary!32] (0,18) rectangle (56,26);
+  \fill[cprimary!45] (0,27) rectangle (56,35);
+  \node[anchor=west,font=\fontsize{6.3}{7.5}\selectfont] at (2.5,4) {低温 $100\sim200\mathrm{^\circ C}$：供热 / 除湿};
+  \node[anchor=west,font=\fontsize{6.3}{7.5}\selectfont] at (2.5,13) {中温 $300\sim500\mathrm{^\circ C}$：制冷 / 工艺热};
+  \node[anchor=west,font=\fontsize{6.3}{7.5}\selectfont] at (2.5,22) {高温：动力转换优先};
+  \node[anchor=west,font=\fontsize{6.3}{7.5}\selectfont] at (2.5,31) {燃料化学能};
+  \draw[arr] (61,31) -- (61,4);
+  \node[font=\fontsize{6.2}{7.4}\selectfont,text=cprimary!80!black] at (21,-5) {温度降低 $\rightarrow$ 用途逐级匹配};
+\end{tikzpicture}
+\end{center}
+\figcap{梯级利用不是“把热用完”，而是让温度与用途对应。}
+\end{column}
+\end{columns}
+\vspace{0.5mm}
+\begin{amberbox}{阅读提示}
+\small 课件图中的温度是示意范围；引用具体数值时应注明热源与工艺条件。
+\end{amberbox}
+\end{frame}
+
+%! src=7 kind=supp title=为什么高温热应优先用于动力
+\begin{frame}[t,shrink]{\srcsupp{7}{为什么高温热应优先用于动力转换}}
+两个恒温热源之间的可逆热机效率上限为：
+$$
+\eta_{\mathrm{Carnot}}=1-\frac{T_{\mathrm{c}}}{T_{\mathrm{h}}}
+$$
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.48\textwidth}
+  \begin{itemize}
+    \item \(T_{\mathrm{h}}\)、\(T_{\mathrm{c}}\) 为高、低温热源的\textbf{热力学温度}，单位 \(\mathrm{K}\)。
+    \item 相同冷源温度下，热源温度越高，热量转成功率的理论上限越高。
+    \item 先做功、再把余热用于供热，可让不同温度的能量各尽其用。
+  \end{itemize}
+\end{column}
+\begin{column}{0.50\textwidth}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=68mm,height=40mm,
+  xbar,bar width=3.4mm,
+  xmin=0,xmax=100,
+  xlabel={$\eta_{\mathrm{Carnot}}/\%$},xlabel style={font=\fontsize{6.5}{8}\selectfont},
+  ytick={1,2,3},yticklabels={{$500\mathrm{^\circ C}$},{$800\mathrm{^\circ C}$},{$1200\mathrm{^\circ C}$}},
+  ytick style={draw=none},yticklabel style={font=\fontsize{6.3}{7.6}\selectfont},
+  xticklabel style={font=\fontsize{6}{7}\selectfont},
+  axis lines=left,ymin=0.4,ymax=3.6,
+  nodes near coords,point meta=explicit symbolic,
+  nodes near coords style={font=\fontsize{6}{7}\selectfont},
+  tick align=outside,enlarge y limits=0.15,
+]
+\addplot[fill=cprimary!55,draw=none] coordinates {(60.8,1) [60.8] (71.8,2) [71.8] (79.4,3) [79.4]};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\figcap{补充算例：\(T_{\mathrm{c}}=303\,\mathrm{K}\)，仅表示可逆上限。}
+\end{column}
+\end{columns}
+\vspace{0.3mm}
+\begin{plainbox}
+\small \textbf{边界}：卡诺效率只说明温度品位的上限；实际循环还受传热温差、流阻、材料和部件效率限制。
+\end{plainbox}
+\end{frame}

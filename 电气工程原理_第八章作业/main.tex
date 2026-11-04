@@ -1,0 +1,121 @@
+% !TEX program = xelatex
+
+\documentclass[
+  lang = zh,
+  final,
+  oneside,
+  openany,
+  notitlepage,
+  zihao = -4,
+  linespread = 1.3,
+  baselineskip = false,
+  cjk-font = fandol,
+  text-font = newtx,
+  math-font = newtx
+]{sjtureport}
+
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{needspace}
+\usepackage[most]{tcolorbox}
+\usepackage[hidelinks]{hyperref}
+
+% ------------------------------------------------------------------
+% 作业信息
+% ------------------------------------------------------------------
+\newcommand{\course}{电气工程原理}
+\newcommand{\assignment}{第八章作业}
+\newcommand{\studentname}{方言}
+\newcommand{\studentid}{523111910131}
+\newcommand{\duedate}{2026年11月3日}
+
+\title{\course\ \assignment}
+\author{\studentname}
+
+% ------------------------------------------------------------------
+% 题目与解答格式
+% ------------------------------------------------------------------
+\setlist[enumerate,1]{
+  label = \textbf{题目 \arabic*.},
+  leftmargin = *,
+  labelsep = 0.6em,
+  itemsep = 0.8em,
+  topsep = 0.4em
+}
+\setlist[enumerate,2]{
+  label = (\arabic*),
+  leftmargin = 1.8em,
+  labelsep = 0.5em
+}
+
+\newenvironment{solution}
+  {\par\vspace{0.4em}\noindent\textbf{解答：}\par\nopagebreak}
+  {\par\vspace{0.8em}}
+
+% 课件来源与解题思路框
+\newtcolorbox{coursebox}{
+  breakable,
+  title = {课件来源与解题思路},
+  fonttitle = \bfseries\small,
+  colback = black!2,
+  colframe = black!55,
+  colbacktitle = black!8,
+  coltitle = black,
+  boxrule = 0.4pt,
+  arc = 1mm,
+  left = 0.8em,
+  right = 0.8em,
+  top = 0.5em,
+  bottom = 0.5em,
+  fontupper = \small,
+  before skip = 0.5em,
+  after skip = 0.7em
+}
+
+\captionsetup{font=small, labelfont=bf}
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
+\graphicspath{{figures/}}
+
+\newcommand{\stephead}[1]{%
+  \needspace{3.5\baselineskip}%
+  \par\noindent\textbf{#1}\par\nopagebreak
+}
+
+\begin{document}
+
+% ------------------------------------------------------------------
+% 标题：与正文同页
+% ------------------------------------------------------------------
+\begin{center}
+    {\large\bfseries\course\par}
+    \vspace{0.4em}
+    {\Large\bfseries\assignment\par}
+\end{center}
+
+\vspace{0.6em}
+{\large
+    \noindent
+    \begin{tabular}{@{}l@{\quad}l@{\qquad}l@{\quad}l@{}}
+        \textbf{姓名：} & \studentname & \textbf{学号：} & \studentid \\[0.25em]
+        \textbf{日期：} & \duedate
+    \end{tabular}
+    \par}
+\vspace{0.4em}
+
+% ------------------------------------------------------------------
+% 说明与索引
+% ------------------------------------------------------------------
+\noindent
+\textbf{说明：}下文 \(U\) 为线电压，\(\tilde S\) 为三相复功率，阻抗为每相值；有功、无功单位分别为 \(\mathrm{MW}\)、\(\mathrm{Mvar}\)。课件第 5 页指出，单相、三相与标幺值形式的电压降落结论相同，故以下直接采用有名值。本文页码均为课件 PDF 页码：两题原文见第八章课件第 37 页，电压降落与功率损耗公式见第 5、7、9 页，开式网逐段推算法见第 13--14 页，变压器变比定义见第四章课件第 12 页。
+
+% ------------------------------------------------------------------
+% 题目与解答
+% ------------------------------------------------------------------
+\input{body.tex}
+
+\end{document}

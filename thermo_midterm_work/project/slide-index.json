@@ -1,0 +1,723 @@
+[
+  {
+    "page": 1,
+    "src": 0,
+    "kind": "cover",
+    "title": "封面",
+    "section": "封面"
+  },
+  {
+    "page": 2,
+    "src": 1,
+    "kind": "orig",
+    "title": "课件封面与整理说明",
+    "section": "课程导读"
+  },
+  {
+    "page": 3,
+    "src": 0,
+    "kind": "nav",
+    "title": "课程地图",
+    "section": "课程导读"
+  },
+  {
+    "page": 4,
+    "src": 2,
+    "kind": "orig",
+    "title": "能源形式与科学用能·章节导入",
+    "section": "能源形式与科学用能"
+  },
+  {
+    "page": 5,
+    "src": 3,
+    "kind": "orig",
+    "title": "能源类型及利用方式",
+    "section": "能源形式与科学用能"
+  },
+  {
+    "page": 6,
+    "src": 3,
+    "kind": "supp",
+    "title": "一次能源、二次能源与储能",
+    "section": "能源形式与科学用能"
+  },
+  {
+    "page": 7,
+    "src": 4,
+    "kind": "orig",
+    "title": "能源转换设备的分工",
+    "section": "能源形式与科学用能"
+  },
+  {
+    "page": 8,
+    "src": 5,
+    "kind": "orig",
+    "title": "火力发电厂的蒸汽动力循环",
+    "section": "能源形式与科学用能"
+  },
+  {
+    "page": 9,
+    "src": 5,
+    "kind": "supp",
+    "title": "读电厂总图：四个回路",
+    "section": "能源形式与科学用能"
+  },
+  {
+    "page": 10,
+    "src": 6,
+    "kind": "orig",
+    "title": "串联能量转换效率",
+    "section": "能源形式与科学用能"
+  },
+  {
+    "page": 11,
+    "src": 6,
+    "kind": "supp",
+    "title": "按课件效率做一次能量账",
+    "section": "能源形式与科学用能"
+  },
+  {
+    "page": 12,
+    "src": 7,
+    "kind": "orig",
+    "title": "科学用能与梯级利用",
+    "section": "能源形式与科学用能"
+  },
+  {
+    "page": 13,
+    "src": 7,
+    "kind": "supp",
+    "title": "为什么高温热应优先用于动力",
+    "section": "能源形式与科学用能"
+  },
+  {
+    "page": 14,
+    "src": 8,
+    "kind": "orig",
+    "title": "锅炉·章节导入",
+    "section": "锅炉"
+  },
+  {
+    "page": 15,
+    "src": 9,
+    "kind": "orig",
+    "title": "锅炉的作用与蒸汽参数",
+    "section": "锅炉"
+  },
+  {
+    "page": 16,
+    "src": 9,
+    "kind": "supp",
+    "title": "蒸发量怎样联系到有效吸热",
+    "section": "锅炉"
+  },
+  {
+    "page": 17,
+    "src": 10,
+    "kind": "orig",
+    "title": "锅炉的两类分类依据",
+    "section": "锅炉"
+  },
+  {
+    "page": 18,
+    "src": 11,
+    "kind": "orig",
+    "title": "“炉”与“锅”的结构分工",
+    "section": "锅炉"
+  },
+  {
+    "page": 19,
+    "src": 11,
+    "kind": "supp",
+    "title": "预热、蒸发、过热的热量",
+    "section": "锅炉"
+  },
+  {
+    "page": 20,
+    "src": 12,
+    "kind": "orig",
+    "title": "锅炉本体的主要部件",
+    "section": "锅炉"
+  },
+  {
+    "page": 21,
+    "src": 13,
+    "kind": "orig",
+    "title": "锅炉辅助设备",
+    "section": "锅炉"
+  },
+  {
+    "page": 22,
+    "src": 14,
+    "kind": "orig",
+    "title": "按蒸汽参数比较机组",
+    "section": "锅炉"
+  },
+  {
+    "page": 23,
+    "src": 15,
+    "kind": "orig",
+    "title": "自然循环、强制循环与直流锅炉",
+    "section": "锅炉"
+  },
+  {
+    "page": 24,
+    "src": 15,
+    "kind": "supp",
+    "title": "自然循环的驱动力",
+    "section": "锅炉"
+  },
+  {
+    "page": 25,
+    "src": 16,
+    "kind": "orig",
+    "title": "锅炉系统总览",
+    "section": "锅炉"
+  },
+  {
+    "page": 26,
+    "src": 17,
+    "kind": "orig",
+    "title": "煤粉制备和燃烧流程",
+    "section": "锅炉"
+  },
+  {
+    "page": 27,
+    "src": 18,
+    "kind": "orig",
+    "title": "风烟系统与余热回收",
+    "section": "锅炉"
+  },
+  {
+    "page": 28,
+    "src": 19,
+    "kind": "orig",
+    "title": "煤粉与风烟系统的耦合",
+    "section": "锅炉"
+  },
+  {
+    "page": 29,
+    "src": 20,
+    "kind": "orig",
+    "title": "汽水系统的状态变化",
+    "section": "锅炉"
+  },
+  {
+    "page": 30,
+    "src": 20,
+    "kind": "supp",
+    "title": "过热、再热与给水预热的区别",
+    "section": "锅炉"
+  },
+  {
+    "page": 31,
+    "src": 21,
+    "kind": "orig",
+    "title": "汽包锅炉的汽水循环",
+    "section": "锅炉"
+  },
+  {
+    "page": 32,
+    "src": 22,
+    "kind": "orig",
+    "title": "煤的分析方法与成分基准",
+    "section": "锅炉"
+  },
+  {
+    "page": 33,
+    "src": 22,
+    "kind": "supp",
+    "title": "煤质基准转换的分母",
+    "section": "锅炉"
+  },
+  {
+    "page": 34,
+    "src": 23,
+    "kind": "orig",
+    "title": "锅炉热平衡的六项输出",
+    "section": "锅炉"
+  },
+  {
+    "page": 35,
+    "src": 23,
+    "kind": "supp",
+    "title": "把热平衡统一到同一基准",
+    "section": "锅炉"
+  },
+  {
+    "page": 36,
+    "src": 24,
+    "kind": "orig",
+    "title": "正平衡、反平衡与热损失",
+    "section": "锅炉"
+  },
+  {
+    "page": 37,
+    "src": 24,
+    "kind": "supp",
+    "title": "从损失项反推运行检查",
+    "section": "锅炉"
+  },
+  {
+    "page": 38,
+    "src": 25,
+    "kind": "orig",
+    "title": "汽轮机·章节导入",
+    "section": "汽轮机"
+  },
+  {
+    "page": 39,
+    "src": 26,
+    "kind": "orig",
+    "title": "汽轮机定义及能量转换链",
+    "section": "汽轮机"
+  },
+  {
+    "page": 40,
+    "src": 27,
+    "kind": "orig",
+    "title": "汽轮机的分类",
+    "section": "汽轮机"
+  },
+  {
+    "page": 41,
+    "src": 28,
+    "kind": "orig",
+    "title": "汽轮机的基本做功单元：级",
+    "section": "汽轮机"
+  },
+  {
+    "page": 42,
+    "src": 29,
+    "kind": "orig",
+    "title": "速度三角形与参考系",
+    "section": "汽轮机"
+  },
+  {
+    "page": 43,
+    "src": 29,
+    "kind": "supp",
+    "title": "从速度三角形到欧拉方程",
+    "section": "汽轮机"
+  },
+  {
+    "page": 44,
+    "src": 30,
+    "kind": "orig",
+    "title": "级内速度变化与轮周功",
+    "section": "汽轮机"
+  },
+  {
+    "page": 45,
+    "src": 31,
+    "kind": "orig",
+    "title": "级的焓降及损失符号",
+    "section": "汽轮机"
+  },
+  {
+    "page": 46,
+    "src": 31,
+    "kind": "supp",
+    "title": "沿焓熵图区分理想与实际状态",
+    "section": "汽轮机"
+  },
+  {
+    "page": 47,
+    "src": 32,
+    "kind": "orig",
+    "title": "反动度的定义",
+    "section": "汽轮机"
+  },
+  {
+    "page": 48,
+    "src": 32,
+    "kind": "supp",
+    "title": "反动度为0或0.5意味着什么",
+    "section": "汽轮机"
+  },
+  {
+    "page": 49,
+    "src": 33,
+    "kind": "orig",
+    "title": "冲动原理与反动原理",
+    "section": "汽轮机"
+  },
+  {
+    "page": 50,
+    "src": 34,
+    "kind": "orig",
+    "title": "纯冲动级与反动级",
+    "section": "汽轮机"
+  },
+  {
+    "page": 51,
+    "src": 35,
+    "kind": "orig",
+    "title": "带反动度的冲动级",
+    "section": "汽轮机"
+  },
+  {
+    "page": 52,
+    "src": 36,
+    "kind": "orig",
+    "title": "级的理想能量与余速利用",
+    "section": "汽轮机"
+  },
+  {
+    "page": 53,
+    "src": 36,
+    "kind": "supp",
+    "title": "余速未利用部分怎样进入损失",
+    "section": "汽轮机"
+  },
+  {
+    "page": 54,
+    "src": 37,
+    "kind": "orig",
+    "title": "级的相对内效率",
+    "section": "汽轮机"
+  },
+  {
+    "page": 55,
+    "src": 38,
+    "kind": "orig",
+    "title": "汽轮机级的练习结论",
+    "section": "汽轮机"
+  },
+  {
+    "page": 56,
+    "src": 39,
+    "kind": "orig",
+    "title": "多级汽轮机为何效率较高",
+    "section": "汽轮机"
+  },
+  {
+    "page": 57,
+    "src": 40,
+    "kind": "orig",
+    "title": "高、中、低压缸的特征",
+    "section": "汽轮机"
+  },
+  {
+    "page": 58,
+    "src": 41,
+    "kind": "orig",
+    "title": "汽轮机与发电机的效率边界",
+    "section": "汽轮机"
+  },
+  {
+    "page": 59,
+    "src": 42,
+    "kind": "orig",
+    "title": "凝汽系统与不凝结气体",
+    "section": "汽轮机"
+  },
+  {
+    "page": 60,
+    "src": 43,
+    "kind": "orig",
+    "title": "最佳真空、极限真空与有效真空",
+    "section": "汽轮机"
+  },
+  {
+    "page": 61,
+    "src": 43,
+    "kind": "supp",
+    "title": "经济真空的边际条件与真空度",
+    "section": "汽轮机"
+  },
+  {
+    "page": 62,
+    "src": 44,
+    "kind": "orig",
+    "title": "表面式与混合式凝汽器",
+    "section": "汽轮机"
+  },
+  {
+    "page": 63,
+    "src": 45,
+    "kind": "orig",
+    "title": "表面式凝汽器的流程数",
+    "section": "汽轮机"
+  },
+  {
+    "page": 64,
+    "src": 46,
+    "kind": "orig",
+    "title": "水冷与空冷的比较",
+    "section": "汽轮机"
+  },
+  {
+    "page": 65,
+    "src": 47,
+    "kind": "orig",
+    "title": "燃气轮机·章节导入",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 66,
+    "src": 48,
+    "kind": "orig",
+    "title": "燃气轮机的定义与组成",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 67,
+    "src": 48,
+    "kind": "supp",
+    "title": "三个主要部件的能量方程",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 68,
+    "src": 49,
+    "kind": "orig",
+    "title": "压气机的作用",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 69,
+    "src": 49,
+    "kind": "supp",
+    "title": "总压升高与扩压减速",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 70,
+    "src": 50,
+    "kind": "orig",
+    "title": "燃烧室的作用与可靠性",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 71,
+    "src": 51,
+    "kind": "orig",
+    "title": "三种燃烧室结构",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 72,
+    "src": 52,
+    "kind": "orig",
+    "title": "燃气透平的类型与特点",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 73,
+    "src": 53,
+    "kind": "orig",
+    "title": "涡轮与压气机对比",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 74,
+    "src": 54,
+    "kind": "orig",
+    "title": "燃气轮机的比功与热效率",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 75,
+    "src": 55,
+    "kind": "orig",
+    "title": "理想布雷顿循环的四个过程",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 76,
+    "src": 56,
+    "kind": "orig",
+    "title": "由温差计算理想循环效率",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 77,
+    "src": 56,
+    "kind": "supp",
+    "title": "温熵图上的面积如何解释热量",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 78,
+    "src": 57,
+    "kind": "orig",
+    "title": "增压比与理想热效率",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 79,
+    "src": 57,
+    "kind": "supp",
+    "title": "从等熵温比一步步消去温度",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 80,
+    "src": 58,
+    "kind": "orig",
+    "title": "最大净比功对应的增压比",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 81,
+    "src": 58,
+    "kind": "supp",
+    "title": "最大净比功的推导与图",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 82,
+    "src": 59,
+    "kind": "orig",
+    "title": "实际循环与绝热效率",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 83,
+    "src": 59,
+    "kind": "supp",
+    "title": "实际部件效率怎样改变净比功",
+    "section": "燃气轮机"
+  },
+  {
+    "page": 84,
+    "src": 60,
+    "kind": "orig",
+    "title": "内燃机·章节导入",
+    "section": "内燃机"
+  },
+  {
+    "page": 85,
+    "src": 61,
+    "kind": "orig",
+    "title": "内燃机的定义与分类",
+    "section": "内燃机"
+  },
+  {
+    "page": 86,
+    "src": 62,
+    "kind": "orig",
+    "title": "一个机体、两大机构、五大系统",
+    "section": "内燃机"
+  },
+  {
+    "page": 87,
+    "src": 62,
+    "kind": "supp",
+    "title": "从结构图联系机构与系统",
+    "section": "内燃机"
+  },
+  {
+    "page": 88,
+    "src": 63,
+    "kind": "orig",
+    "title": "上、下止点与活塞行程",
+    "section": "内燃机"
+  },
+  {
+    "page": 89,
+    "src": 63,
+    "kind": "supp",
+    "title": "行程、转速与平均活塞速度",
+    "section": "内燃机"
+  },
+  {
+    "page": 90,
+    "src": 64,
+    "kind": "orig",
+    "title": "工作容积、排量与燃烧室容积",
+    "section": "内燃机"
+  },
+  {
+    "page": 91,
+    "src": 64,
+    "kind": "supp",
+    "title": "用几何关系检查排量与单位",
+    "section": "内燃机"
+  },
+  {
+    "page": 92,
+    "src": 65,
+    "kind": "orig",
+    "title": "气缸总容积与压缩比",
+    "section": "内燃机"
+  },
+  {
+    "page": 93,
+    "src": 66,
+    "kind": "orig",
+    "title": "喷油与点火时序",
+    "section": "内燃机"
+  },
+  {
+    "page": 94,
+    "src": 67,
+    "kind": "orig",
+    "title": "四冲程工作循环",
+    "section": "内燃机"
+  },
+  {
+    "page": 95,
+    "src": 67,
+    "kind": "supp",
+    "title": "四冲程的做功频率",
+    "section": "内燃机"
+  },
+  {
+    "page": 96,
+    "src": 68,
+    "kind": "orig",
+    "title": "二冲程工作循环",
+    "section": "内燃机"
+  },
+  {
+    "page": 97,
+    "src": 68,
+    "kind": "supp",
+    "title": "二冲程的扫气与循环重叠",
+    "section": "内燃机"
+  },
+  {
+    "page": 98,
+    "src": 69,
+    "kind": "orig",
+    "title": "汽油机与柴油机比较",
+    "section": "内燃机"
+  },
+  {
+    "page": 99,
+    "src": 70,
+    "kind": "orig",
+    "title": "有效转矩与有效功率",
+    "section": "内燃机"
+  },
+  {
+    "page": 100,
+    "src": 70,
+    "kind": "supp",
+    "title": "9550 系数从哪里来",
+    "section": "内燃机"
+  },
+  {
+    "page": 101,
+    "src": 71,
+    "kind": "orig",
+    "title": "热效率与有效燃油消耗率",
+    "section": "内燃机"
+  },
+  {
+    "page": 102,
+    "src": 71,
+    "kind": "supp",
+    "title": "指示效率、有效效率与油耗率",
+    "section": "内燃机"
+  },
+  {
+    "page": 103,
+    "src": 72,
+    "kind": "orig",
+    "title": "结束页与复习自检",
+    "section": "内燃机"
+  }
+]
