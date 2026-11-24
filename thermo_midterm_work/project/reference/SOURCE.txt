@@ -1,7 +1,0 @@
-原始来源（未修改）：
-PDF: /Users/fangyan/Documents/大学资料/大三上/热能动力工程/ppt/期中总结.pdf
-PDF SHA-256: 6f8f5a1c16be65363f6eea0049ea6d8956514483544663aad000c5cb4b6e3225
-Markdown: /Users/fangyan/Downloads/期中总结_逐页总结_Marp.md
-Markdown SHA-256: 08b836f38e22a1385813926a586f02a9ab28ba35741fc866d7751e7fa8fd11a1
-PDF 页数: 72
-整理日期: 2026-11-03
